@@ -111,7 +111,6 @@ a{
 }
 .leibie-box{
     width: 3.45rem;height: 2.57rem;
-    background: palegoldenrod;
 }
 .leibie-box:nth-child(1){
     background: url("../images/bg1.png") no-repeat top right /100% auto;
@@ -125,18 +124,21 @@ a{
 .leibie-box:nth-child(4){
     background: url("../images/bg4.png") no-repeat center center /100% auto;
 }
+
 .leibie-box-tittle{
-    width: 1.28rem;height: 0.32rem;
+    width: 3.45rem;height: 0.32rem;
     line-height: 0.32rem;
     font-size: 0.32rem;
     margin-top: 0.3rem;
-    margin-left: 0.3rem;
     font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:  wrap;
 }
-.daojishi{
+.add{
 
-    width: 1.28rem;height: 0.32rem;
-    margin-right: 0.3rem;
+    width: 1.02rem;height: 0.32rem;
+
 }
 .leibie-box-img{
     width: 1.55rem;height: 1.55rem;
@@ -236,7 +238,7 @@ a{
     border: 1px solid #dddddd
 }
 .xihuan-img{
-    width: 3.36rem;height: 3.42rem;
+    width: 3.36rem;height: 3.58rem;
     background: url("../images/第七公社.jpg") no-repeat center /100% auto;
 }
 .xihuan-name{
