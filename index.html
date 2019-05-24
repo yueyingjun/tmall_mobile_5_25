@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--逻辑像素-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>天猫移动端</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script>
+        window.onload=function () {
+            /*第一次刷新的时候，如果要是在规定的范围内，就要进行浮动*/
+            var min_height=document.querySelector(".top").clientHeight;
+            var ss = pageYOffset;
+            if(ss < min_height){
+                document.querySelector(".top2").style.display="none"
+
+            }else{
+                document.querySelector(".top2").style.display="block"
+            }
+            /*滚动*/
+            window.onscroll=function () {
+                var ss = pageYOffset;
+                if(ss < min_height){
+                    document.querySelector(".top2").style.display="none"
+
+                }else{
+                    document.querySelector(".top2").style.display="block"
+                }
+            }
+           /*上面的轮播图*/
+            var banner = document.querySelectorAll(".banner")
+            var gan = document.querySelectorAll(".gan")
+            var num = 0
+            setInterval(function () {
+
+                if (num == 4) {
+                    num = 0
+                }
+                for (var i = 0; i < banner.length; i++) {
+                    banner[i].style.display = "none"
+                    gan[i].style.background = "azure"
+                }
+                banner[num].style.display = "block"
+                gan[num].style.background = "orange"
+                num++
+            }, 3000);
+
+/*鞋子的轮播图*/
+            var b = document.querySelectorAll(".xie")
+            var n = 0
+            setInterval(function () {
+
+                if (n == 2) {
+                    n = 0
+                }
+                for (var i = 0; i < b.length; i++) {
+                    b[i].style.display = "none"
+                }
+                b[n].style.display = "block"
+                n++
+            }, 3000);
+
+
+
+        }
+
+
+
+    </script>
+</head>
+<body>
+    <!--天猫top端-->
+    <div class="top">
+        <div class="top-top">
+            <div class="top-top-left">
+            </div>
+            <img src="images/toplogo.webp" alt="">
+            <div class="top-top-right"><a href="">登录</a></div>
+        </div>
+        <div class="top-bot">
+            <div type="text" class="input">
+                <img src="images/fangdajing.webp" alt="">
+                搜索商品、品牌</div>
+        </div>
+    </div>
+    <div class="top2">
+        <img src="images/caidan.png" alt="">
+        <input type="text" placeholder="搜索商品、品牌">
+        <span><a href="">登录</a></span>
+    </div>
+    <!--top地下的-->
+    <div class="nav">
+        <div class="su">
+            <div class="t"></div>
+            <div class="z">苏宁易购</div>
+        </div>
+        <div class="su">
+            <div class="t"></div>
+            <div class="z">天猫超市</div>
+        </div>
+        <div class="su">
+            <div class="t"></div>
+            <div class="z">天猫国际</div>
+        </div>
+        <div class="su">
+            <div class="t"></div>
+            <div class="z">聚划算</div>
+        </div>
+        <div class="su">
+            <div class="t"></div>
+            <div class="z">分类</div>
+        </div>
+    </div>
+<!--轮播图-->
+    <div class="banners">
+        <div class="banner banner1"></div>
+        <div class="banner banner2"></div>
+        <div class="banner banner3"></div>
+        <div class="banner banner4"></div>
+
+        <div class="gan gan1"></div>
+        <div class="gan gan2"></div>
+        <div class="gan gan3"></div>
+        <div class="gan gan4"></div>
+    </div>
+    </div>
+<!--门槛-->
+<div class="menkan"></div>
+<!--限时抢购  天猫好物-->
+    <div class="wai">
+        <div class="nei-left">
+            <div class="left-up">限时抢购</div>
+            <div class="left-down">
+                <div class="l">
+                    <div class="up"></div>
+                    <div class="down">
+                        <span>爆款直降</span>
+                    </div>
+                </div>
+                <div class="r">
+                    <div class="up"></div>
+                    <div class="down">
+                        <span>限时特价</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nei-right">
+            <div class="left-up">天猫好物</div>
+            <div class="left-down">
+                <div class="l">
+                    <div class="up"></div>
+                    <div class="down">
+                        <span>设计感</span>
+                    </div>
+                </div>
+                <div class="r">
+                    <div class="up"></div>
+                    <div class="down">
+                        <span>萌趣童装</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wai">
+        <div class="nei-left">
+            <div class="left-up">聚集算</div>
+            <div class="left-down">
+                <div class="l">
+                    <div class="up"></div>
+                    <div class="down">
+                        <span>大牌3折起</span>
+                    </div>
+                </div>
+                <div class="r">
+                    <div class="up"></div>
+                    <div class="down">
+                        <span>满499减20</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nei-right">
+            <div class="left-up">天猫闪降</div>
+            <div class="left-down">
+                <div class="l">
+                    <div class="up"></div>
+                    <div class="down">
+                        <span>已降70元</span>
+                    </div>
+                </div>
+                <div class="r">
+                    <div class="up"></div>
+                    <div class="down">
+                        <span>已降10元</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--天猫榜单-->
+<div class="bang">天猫榜单</div>
+<div class="bdcontent">
+    <!--a是背景-->
+    <div class="one">
+        <img src="images/qushi.webp" alt="">
+        <div class="t"><!--行李箱--></div>
+        <div class="n">
+            优质金属箱子榜
+        </div>
+        <div class="b">
+            人气上升227%
+        </div>
+    </div>
+    <div class="two">
+        <img src="images/qushi.webp" alt="">
+        <div class="t"><!--行李箱--></div>
+        <div class="n">
+            居家一字拖榜
+        </div>
+        <div class="b">
+            人气上升305%
+        </div>
+    </div>
+    <div class="three">
+        <img src="images/qushi.webp" alt="">
+        <div class="t"><!--行李箱--></div>
+        <div class="n">
+            专业山地车榜
+        </div>
+        <div class="b">
+            人气上升2280%
+        </div>
+    </div>
+</div>
+<!--人气榜-->
+<div class="renqi">
+    <div class="renqi-left">
+        <img src="images/renqibang.jpg" alt="">
+        <br>
+        <span>轻奢户外休闲鞋榜</span>
+        <p>火爆热卖中</p>
+    </div>
+    <div class="renqi-right">
+            <div class="xie xie1">
+                <div class="xieyi">
+                    <div class="mingci"></div>
+                    <div class="xiezi"></div>
+                </div>
+                <div class="xieyi">
+                    <div class="mingci"></div>
+                    <div class="xiezi"></div>
+                </div>
+                <div class="xieyi">
+                    <div class="mingci"></div>
+                    <div class="xiezi"></div>
+                </div>
+            </div>
+            <div class="xie xie2">
+                <div class="xieyi">
+                    <div class="mingci"></div>
+                    <div class="xiezi"></div>
+                </div>
+                <div class="xieyi">
+                    <div class="mingci"></div>
+                    <div class="xiezi"></div>
+                </div>
+                <div class="xieyi">
+                    <div class="mingci"></div>
+                    <div class="xiezi"></div>
+                </div>
+            </div>
+    </div>
+    </div>
+    <!--人气榜2-->
+    <div class="bangdan">
+        <div class="bangdan-left">
+            <div class="bd-l-l">
+                <h5>人气榜</h5>
+                <span>高街优雅上衣榜</span>
+                <p>火爆热卖中</p>
+            </div>
+            <div class="bd-l-r"></div>
+        </div>
+        <div class="bangdan-right">
+            <div class="bd-l-l">
+                <h5>人气榜</h5>
+                <span>高街优雅上衣榜</span>
+                <p>火爆热卖中</p>
+            </div>
+            <div class="bd-l-r"></div>
+        </div>
+    </div>
+    <div class="bangdan">
+        <div class="bangdan-left">
+            <div class="bd-l-l">
+                <h5>人气榜</h5>
+                <span>高街优雅上衣榜</span>
+                <p>火爆热卖中</p>
+            </div>
+            <div class="bd-l-r"></div>
+        </div>
+        <div class="bangdan-right">
+            <div class="bd-l-l">
+                <h5>人气榜</h5>
+                <span>高街优雅上衣榜</span>
+                <p>火爆热卖中</p>
+            </div>
+            <div class="bd-l-r"></div>
+        </div>
+    </div>
+
+
+    <!--猜你喜欢-->
+    <div class="bang">猜你喜欢</div>
+    <!--猜你喜欢的东西-->
+    <div class="xihuan">
+        <div class="xh-l xh">
+            <div class="tu"></div>
+            <div class="name">彩俏姿</div>
+            <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+            <div class="juan">5元券</div>
+            <div class="end">
+                <span class="qian">￥195</span>
+                <span class="xs">看相似</span>
+            </div>
+        </div>
+        <div class="xh-r xh">
+            <div class="tu"></div>
+            <div class="name">彩俏姿</div>
+            <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+            <div class="juan">5元券</div>
+            <div class="end">
+                <span class="qian">￥195</span>
+                <span class="xs">看相似</span>
+            </div>
+        </div>
+    </div>
+    <!--在往下-->
+    <div class="lingqu">
+        <div class="xh-l xh">
+            <div class="tu"></div>
+            <div class="name">彩俏姿</div>
+            <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+            <div class="juan">5元券</div>
+            <div class="end">
+                <span class="qian">￥195</span>
+                <span class="xs">看相似</span>
+            </div>
+        </div>
+        <div class="lingqu-right"></div>
+    </div>
+    <div class="lingqu">
+        <div class="lingqu-right"></div>
+            <div class="xh-l xh">
+                <div class="tu"></div>
+                <div class="name">彩俏姿</div>
+                <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+                <div class="juan">5元券</div>
+                <div class="end">
+                    <span class="qian">￥195</span>
+                    <span class="xs">看相似</span>
+                </div>
+            </div>
+        </div>
+    <div class="lingqu">
+        <div class="xh-l xh">
+            <div class="tu"></div>
+            <div class="name">彩俏姿</div>
+            <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+            <div class="juan">5元券</div>
+            <div class="end">
+                <span class="qian">￥195</span>
+                <span class="xs">看相似</span>
+            </div>
+        </div>
+        <div class="lingqu-right"></div>
+    </div>
+    <div class="xihuan">
+        <div class="xh-l xh">
+            <div class="tu"></div>
+            <div class="name">彩俏姿</div>
+            <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+            <div class="juan">5元券</div>
+            <div class="end">
+                <span class="qian">￥195</span>
+                <span class="xs">看相似</span>
+            </div>
+        </div>
+        <div class="xh-r xh">
+            <div class="tu"></div>
+            <div class="name">彩俏姿</div>
+            <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+            <div class="juan">5元券</div>
+            <div class="end">
+                <span class="qian">￥195</span>
+                <span class="xs">看相似</span>
+            </div>
+        </div>
+    </div>
+    <div class="xihuan">
+        <div class="xh-l xh">
+            <div class="tu"></div>
+            <div class="name">彩俏姿</div>
+            <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+            <div class="juan">5元券</div>
+            <div class="end">
+                <span class="qian">￥195</span>
+                <span class="xs">看相似</span>
+            </div>
+        </div>
+        <div class="xh-r xh">
+            <div class="tu"></div>
+            <div class="name">彩俏姿</div>
+            <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+            <div class="juan">5元券</div>
+            <div class="end">
+                <span class="qian">￥195</span>
+                <span class="xs">看相似</span>
+            </div>
+        </div>
+    </div>
+    <div class="xihuan">
+        <div class="xh-l xh">
+            <div class="tu"></div>
+            <div class="name">彩俏姿</div>
+            <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+            <div class="juan">5元券</div>
+            <div class="end">
+                <span class="qian">￥195</span>
+                <span class="xs">看相似</span>
+            </div>
+        </div>
+        <div class="xh-r xh">
+            <div class="tu"></div>
+            <div class="name">彩俏姿</div>
+            <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+            <div class="juan">5元券</div>
+            <div class="end">
+                <span class="qian">￥195</span>
+                <span class="xs">看相似</span>
+            </div>
+        </div>
+    </div>
+    <div class="xihuan">
+        <div class="xh-l xh">
+            <div class="tu"></div>
+            <div class="name">彩俏姿</div>
+            <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+            <div class="juan">5元券</div>
+            <div class="end">
+                <span class="qian">￥195</span>
+                <span class="xs">看相似</span>
+            </div>
+        </div>
+        <div class="xh-r xh">
+            <div class="tu"></div>
+            <div class="name">彩俏姿</div>
+            <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+            <div class="juan">5元券</div>
+            <div class="end">
+                <span class="qian">￥195</span>
+                <span class="xs">看相似</span>
+            </div>
+        </div>
+    </div>
+    <div class="xihuan">
+        <div class="xh-l xh">
+            <div class="tu"></div>
+            <div class="name">彩俏姿</div>
+            <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+            <div class="juan">5元券</div>
+            <div class="end">
+                <span class="qian">￥195</span>
+                <span class="xs">看相似</span>
+            </div>
+        </div>
+        <div class="xh-r xh">
+            <div class="tu"></div>
+            <div class="name">彩俏姿</div>
+            <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+            <div class="juan">5元券</div>
+            <div class="end">
+                <span class="qian">￥195</span>
+                <span class="xs">看相似</span>
+            </div>
+        </div>
+    </div>
+    <div class="xihuan">
+        <div class="xh-l xh">
+            <div class="tu"></div>
+            <div class="name">彩俏姿</div>
+            <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+            <div class="juan">5元券</div>
+            <div class="end">
+                <span class="qian">￥195</span>
+                <span class="xs">看相似</span>
+            </div>
+        </div>
+        <div class="xh-r xh">
+            <div class="tu"></div>
+            <div class="name">彩俏姿</div>
+            <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+            <div class="juan">5元券</div>
+            <div class="end">
+                <span class="qian">￥195</span>
+                <span class="xs">看相似</span>
+            </div>
+        </div>
+    </div>
+    <div class="xihuan">
+        <div class="xh-l xh">
+            <div class="tu"></div>
+            <div class="name">彩俏姿</div>
+            <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+            <div class="juan">5元券</div>
+            <div class="end">
+                <span class="qian">￥195</span>
+                <span class="xs">看相似</span>
+            </div>
+        </div>
+        <div class="xh-r xh">
+            <div class="tu"></div>
+            <div class="name">彩俏姿</div>
+            <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+            <div class="juan">5元券</div>
+            <div class="end">
+                <span class="qian">￥195</span>
+                <span class="xs">看相似</span>
+            </div>
+        </div>
+    </div>
+    <div class="xihuan">
+        <div class="xh-l xh">
+            <div class="tu"></div>
+            <div class="name">彩俏姿</div>
+            <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+            <div class="juan">5元券</div>
+            <div class="end">
+                <span class="qian">￥195</span>
+                <span class="xs">看相似</span>
+            </div>
+        </div>
+        <div class="xh-r xh">
+            <div class="tu"></div>
+            <div class="name">彩俏姿</div>
+            <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+            <div class="juan">5元券</div>
+            <div class="end">
+                <span class="qian">￥195</span>
+                <span class="xs">看相似</span>
+            </div>
+        </div>
+    </div>
+    <div class="xihuan">
+        <div class="xh-l xh">
+            <div class="tu"></div>
+            <div class="name">彩俏姿</div>
+            <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+            <div class="juan">5元券</div>
+            <div class="end">
+                <span class="qian">￥195</span>
+                <span class="xs">看相似</span>
+            </div>
+        </div>
+        <div class="xh-r xh">
+            <div class="tu"></div>
+            <div class="name">彩俏姿</div>
+            <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+            <div class="juan">5元券</div>
+            <div class="end">
+                <span class="qian">￥195</span>
+                <span class="xs">看相似</span>
+            </div>
+        </div>
+    </div>
+    <div class="xihuan">
+        <div class="xh-l xh">
+            <div class="tu"></div>
+            <div class="name">彩俏姿</div>
+            <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+            <div class="juan">5元券</div>
+            <div class="end">
+                <span class="qian">￥195</span>
+                <span class="xs">看相似</span>
+            </div>
+        </div>
+        <div class="xh-r xh">
+            <div class="tu"></div>
+            <div class="name">彩俏姿</div>
+            <div class="des">2019春秋韩版款冬牛仔外套女长袖学生小...</div>
+            <div class="juan">5元券</div>
+            <div class="end">
+                <span class="qian">￥195</span>
+                <span class="xs">看相似</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

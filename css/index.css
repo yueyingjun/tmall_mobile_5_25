@@ -1,0 +1,563 @@
+html{
+    font-size: 13.33333vw;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    position: relative;
+}
+.top2{
+    height: .7rem;
+    width: 100vw;
+    background: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+
+
+}
+.top2 img{
+    width: .7rem;
+    height: 100%;
+    float: left;
+}
+.top2 input{
+    width: 80vw;
+    height: 100%;
+    float: left;
+}
+.top2 span{
+    line-height: .7rem;
+    height: 100%;
+    float: right;
+    font-size: .3rem;
+    color: white;
+    width:10.5vw ;
+    text-align: center;
+}
+.top{
+    height: 14vh;
+    width: 100vw;
+    background: red;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.top-top{
+    height: 50%;
+    width: 100%;
+    align-items: center;
+}
+.top-top .top-top-left{
+    width: .7rem;
+    height: 100%;
+    float: left;
+    background: url("../images/caidan.png") no-repeat;
+}
+.top-top img{
+    width: 20vw;
+    height: 50%;
+    float: left;
+    margin-left: 20vw;
+    margin-top: .2rem;
+}
+
+.top-top .top-top-right{
+    width: 12vw;
+    height: 100%;
+    float: right;
+    font-size: .25rem;
+    color: white;
+    text-align: center;
+    line-height: 7vh;
+}
+
+.top-bot{
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+}
+.top-bot img{
+    height: 80%;
+    float: left;
+    margin-left: .1rem;
+
+}
+
+.top-bot .input{
+    width: 95vw;
+    height: 80%;
+    margin: 0.5vw 2vw;
+    border-radius: 10vw;
+    float: left;
+    background: white;
+    font-size: .3rem;
+    color: gray;
+    text-align: center;
+    align-items: center;
+}
+.nav{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav .su{
+    height: 100%;
+    width: 20%;
+    margin-left: 3vw;
+
+}
+.nav .su .t{
+    background: url("../images/tu.webp") no-repeat;
+    height: .5rem;
+    width: .6rem;
+    background-size: contain;
+}
+.nav .su .z{
+    font-size: .05rem;
+}
+/*轮播图*/
+.banners{
+    height:2.6rem;
+    width:96vw;
+    position: relative;
+    margin:2vh auto;
+}
+
+.banners .banner1{
+    background: url("../images/w2.webp") no-repeat ;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 4;
+}
+
+.banners .banner2{
+    background: url("../images/w1.webp") no-repeat ;
+    background-size: 100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.banners .banner3{
+    background: url("../images/w3.webp") no-repeat ;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.banners .banner4{
+    background: url("../images/w4.webp") no-repeat ;
+    background-size: 100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.banners .gan{
+    height: .05rem;
+    width: .4rem;
+}
+.banners .gan1{
+    background:orange;
+    position: absolute;
+    right: 60%;
+    bottom: 10%;
+    z-index: 6;
+    border-radius: 10px;
+}
+.banners .gan2{
+    background:azure;
+    position: absolute;
+    right: 50%;
+    bottom: 10%;
+    z-index: 6;
+    border-radius: 10px;
+}
+.banners .gan3{
+    background:azure;
+    position: absolute;
+    right: 40%;
+    bottom: 10%;
+    z-index: 6;
+    border-radius: 10px;
+}
+.banners .gan4{
+    background:azure;
+    position: absolute;
+    right: 30%;
+    bottom: 10%;
+    z-index: 6;
+    border-radius: 10px;
+}
+/*门槛*/
+.menkan{
+    width: 100%;
+    height: 35vh;
+    background: url("../images/menkan.webp") no-repeat;
+    background-size: 100% ;
+}
+/*限时抢购*/
+.wai{
+    width:96vw;
+    margin:2vh auto;
+    height: 26vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.wai .nei-left,.wai .nei-right{
+    width: 49%;
+    height: 100%;
+    background: url("../images/beijing.png") no-repeat;
+    background-size: 100%;
+}
+.wai .left-up{
+    font-size: .3rem;
+    font-weight: bolder;
+    width: 95%;
+    margin: auto;
+    height:23%;
+}
+.wai .left-down{
+    height:77%;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.wai .l,.wai .r{
+    width: 48%;
+    height: 100%;
+}
+.wai .up{
+    height: 80%;
+    width: 100%;
+    background: url("../images/qunqun.webp") no-repeat;
+    background-size: 100%;
+}
+.wai .down{
+    height: 20%;
+    width: 100%;
+    font-size: .1rem;
+}
+.wai .down span{
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    border: 1px red solid;
+    color: red;
+    text-align: center;
+}
+/*天猫榜单*/
+.bang{
+    width: 96vw;
+    height: 7vh;
+    font-size: .3rem;
+    font-weight: bolder;
+    margin: auto;
+}
+/*榜单地下的商品*/
+.bdcontent{
+    height: 40vh;
+    width: 96vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.bdcontent .one,.bdcontent .three{
+    height: 90%;
+    width: 33%;
+    background: url("../images/a.webp") no-repeat;
+    background-size: 100%;
+    margin-top: 4vh;
+    position: relative;
+}
+.bdcontent .two{
+    height: 100%;
+    width: 33%;
+    background: url("../images/a.webp") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.bdcontent img{
+    position: absolute;
+    height: .5rem;
+    width: .7rem;
+    top:0;
+    left: 0;
+}
+.bdcontent .t{
+    background: url("../images/xingli.webp") no-repeat;
+    height: 50%;
+    width: 80%;
+    margin: .2rem auto;
+    background-size: 100%;
+
+}
+.bdcontent .n{
+    font-size: .2rem;
+    color: white;
+    text-align: center;
+    background: url("../images/lansebg.webp") no-repeat;
+    background-size: 100%;
+    height: 20%;
+    width: 90%;
+    margin: auto;
+}
+.bdcontent .b{
+    height: 10%;
+    font-size: .2rem;
+    width: 80%;
+    margin: auto;
+
+}
+/*人气榜单*/
+.renqi{
+    height: 30vh;
+    width: 96vw;
+    margin: auto;
+}
+.renqi-left{
+    height: 100%;
+    width: 34%;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    background:  rgb(248,248,248);
+}
+.renqi-left img{
+    position: absolute;
+    top:0;
+    left: .2rem;
+}
+.renqi-left span{
+    display: block;
+    font-size: .3rem;
+    font-weight: bolder;
+    margin:  auto ;
+}
+.renqi-left p{
+    font-size: .3rem;
+    color: gray;
+    margin: auto;
+    text-align: center;
+}
+.renqi-right {
+    width: 66%;
+    height: 100%;
+    float: left;
+    position: relative;
+    background:  rgb(248,248,248);
+}
+.renqi-right .xie{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.xie .xieyi{
+    height: 100%;
+    width: 33.3%;
+    float: left;
+    position: relative;
+
+}
+.xie .mingci{
+    position: absolute;
+    top: .3rem;
+    left: .2rem;
+    height: 30%;
+    width: 30%;
+    background: url("../images/diyi.webp") no-repeat;
+    background-size: 100%;
+    z-index: 2;
+
+}
+.xie .xiezi{
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top: .5rem;
+    left: .2rem;
+    background: url("../images/qiansanxie.webp") no-repeat;
+    background-size: contain;
+}
+.renqi-right .xie2{
+    display: none;
+}
+.xie2 .mingci{
+    background: url("../images/disi.webp") no-repeat;
+    background-size: contain;
+}
+.xie2 .xiezi{
+    background: url("../images/housanxie.webp") no-repeat;
+    background-size: contain;
+}
+/*人气榜地下的人气榜*/
+.bangdan{
+    width: 96vw;
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+.bangdan .bangdan-left,.bangdan .bangdan-right{
+    width: 48%;
+    background: rgb(248,248,248);
+    height: 100%;
+}
+.bd-l-l{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.bd-l-l h5{
+    font-size: .2rem;
+    margin: .3rem auto;
+    width: 80%;
+    color: darkorange;
+
+}
+.bd-l-l span{
+    display: block;
+    font-size: .2rem;
+    font-weight: bolder;
+    margin:  auto ;
+}
+.bd-l-l p{
+    font-size: .3rem;
+    color: gray;
+    margin: auto;
+}
+.bd-l-r{
+    background: url("../images/shangyi.webp") no-repeat 10px 20px;
+    background-size:contain;
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+/*猜你喜欢的东西*/
+.xihuan{
+    width: 96vw;
+    height: 60vh;
+    background: beige;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.xh{
+    width: 48%;
+    height: 100%;
+    background: rgb(248,248,248);
+}
+.xh .tu{
+    background: url("../images/caiqiaozi.webp") no-repeat;
+    background-size: 100%;
+    width: 96%;
+    margin: .2rem auto;
+    height: 50%;
+}
+.xh .name{
+    font-size: .2rem;
+    color: white;
+    width: 30%;
+    height:6%;
+    line-height: 3.6vh;
+    background: orchid;
+    text-align: center;
+}
+.xh .des{
+    height: 20%;
+    width: 96%;
+    margin: auto;
+    font-size: .25rem;
+
+}
+.xh .juan{
+    color: red;
+    border: 1px solid red;
+    height:.3rem;
+    line-height: .3rem;
+    font-size: .2rem;
+    width: 20%;
+    text-align: center;
+    margin-left: 5%;
+}
+.xh .end{
+    height:10% ;
+    width: 96%;
+    margin: auto;
+
+}
+.xh .end .qian{
+    color: red;
+    font-size: .4rem;
+    float: left;
+}
+.xh .end .xs{
+    display: inline-block;
+    height: 90%;
+    line-height: 5.4vh;
+    width: 30%;
+    float: right;
+    color: red;
+    background: pink;
+    border-radius: .1rem;
+    font-size: .2rem;
+    text-align: center;
+}
+.lingqu{
+    width: 96vw;
+    height: 70vh;
+    background: beige;
+    margin: .3rem auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.lingqu .xh{
+    height: 60vh;
+}
+
+.lingqu .xh ,.lingqu-right{
+    width: 48%;
+    background: rgb(248,248,248);
+}
+.lingqu .lingqu-right{
+    width: 48%;
+    height: 100%;
+    background: url("../images/lingqu.webp") no-repeat;
+    background-size: 100% 100%;
+}
