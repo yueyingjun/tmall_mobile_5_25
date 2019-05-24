@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/yidong.css">
+    <script>
+        window.onload=function (ev) {
+            var banners = document.querySelectorAll(".banner")
+            var btns = document.querySelectorAll(".btn");
+            var num=0
+            setInterval(function () {
+                num++
+                if (num==4){
+                    num=0
+                }
+                for (var i=0;i<banners.length;i++){
+                    banners[i].style.display="none";
+                    btns[i].style.background="white";
+                }
+                banners[num].style.display="block";
+                btns[num].style.background="orange";
+            },3000)
+
+        }
+    </script>
+
+</head>
+<body>
+
+<div class="header">
+    <div class="header-left">
+
+    </div>
+        <img src="imgs/2.jpg" alt="">
+    <div class="header-right">
+        <a href="">登录</a>
+    </div>
+
+</div>
+<div class="header2">
+    <div class="search">
+        <div class="search-icon"></div>
+        <div class="search-text">搜索、商品品牌</div>
+    </div>
+
+</div>
+<div class="list">
+    <a class="list-box">
+        <img src="imgs/3.jpg" alt="">
+        <div class="list-box-item">苏宁易购</div>
+    </a>
+    <a class="list-box ">
+        <img src="imgs/4.jpg" alt="">
+        <div class="list-box-item">天猫超市</div>
+    </a>
+    <a class="list-box ">
+        <img src="imgs/5.jpg" alt="">
+        <div class="list-box-item">天猫国际</div>
+    </a>
+    <a class="list-box ">
+        <img src="imgs/6.jpg" alt="">
+        <div class="list-box-item">聚划算</div>
+    </a>
+    <a class="list-box ">
+        <img src="imgs/7.jpg" alt="">
+        <div class="list-box-item">分类</div>
+    </a>
+</div>
+<div class="lb">
+    <a class="lunbo">
+        <div class="banner banner1"></div>
+        <div class="banner banner2"></div>
+        <div class="banner banner3"></div>
+        <div class="banner banner4"></div>
+        <div class="btns">
+            <div class="btn " style="background-color: white;"></div>
+            <div class="btn "></div>
+            <div class="btn "></div>
+            <div class="btn "></div>
+        </div>
+
+    </a>
+</div>
+<div class="blank"></div>
+<div class="ad">
+    <a href="">
+        <img src="imgs/ad.jpg" alt="">
+    </a>
+</div>
+<div class="ad2">
+    <div class="ad2-d">
+        <div class="adver">
+            <div class="ad-a">限时抢购</div>
+            <div class="ad-b">
+                <div class="im"><img src="imgs/ad1.jpg" alt="" class="iim"><div class="jr">为你精选</div></div>
+                <div class="im"><img src="imgs/ad2.jpg" alt="" class="iim"><div class="jr">实惠好货</div></div>
+            </div>
+        </div>
+        <div class="adver">
+            <div class="ad-a">天猫好物</div>
+            <div class="ad-b">
+                <div class="im"><img src="imgs/ad3.jpg" alt="" class="iim"><div class="jr">设计感</div></div>
+                <div class="im"><img src="imgs/ad4.jpg" alt="" class="iim"><div class="jr">萌趣童装</div></div>
+            </div>
+        </div>
+        <div class="adver">
+            <div class="ad-a">聚划算</div>
+            <div class="ad-b">
+                <div class="im"><img src="imgs/ad5.jpg" alt="" class="iim"><div class="jr">10点抢神券</div></div>
+                <div class="im"><img src="imgs/ad6.jpg" alt="" class="iim"><div class="jr">抢5折券</div></div>
+            </div>
+        </div>
+        <div class="adver">
+            <div class="ad-a">天猫闪降</div>
+            <div class="ad-b">
+                <div class="im"><img src="imgs/ad7.jpg" alt="" class="iim"><div class="jr">已降70元</div></div>
+                <div class="im"><img src="imgs/ad8.jpg" alt="" class="iim"><div class="jr">已降10元</div></div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div class="bd">
+    <div class="bd-1">
+        <span>天猫榜单</span>
+    </div>
+    <div class="bd-2">
+        <div class="bd-one">
+            <div class="bd-one-1"><img src="imgs/bd1-1.jpg" alt=""></div>
+            <div class="db-one-2"><img src="imgs/bd-1.jpg" alt=""></div>
+            <div class="bd-one-3">时尚简约领针榜</div>
+            <span>人气上升约679%</span>
+        </div>
+        <div class="bd-one">
+            <div class="bd-one-1"><img src="imgs/bd1-1.jpg" alt=""></div>
+            <div class="db-one-2"><img src="imgs/bd-1.jpg" alt=""></div>
+            <div class="bd-one-3">时尚简约领针榜</div>
+            <span>人气上升约679%</span>
+        </div>
+        <div class="bd-one">
+            <div class="bd-one-1"><img src="imgs/bd1-1.jpg" alt=""></div>
+            <div class="db-one-2"><img src="imgs/bd-1.jpg" alt=""></div>
+            <div class="bd-one-3">时尚简约领针榜</div>
+            <span>人气上升约679%</span>
+        </div>
+    </div>
+    <div class="bd-3">
+        <div class="bd-3-left">
+            <div class="bd-3-1">
+                <a href="" class="bd-3-one">人气榜</a>
+            </div>
+            <div class="bd-3-2">质感家具睡裙榜</div>
+            <div class="bd-3-3">月销151件</div>
+        </div>
+        <div class="bd-3-right">
+            <div class="r1"><img src="imgs/bd3-3.jpg" alt=""></div>
+            <div class="r1"><img src="imgs/bd3-4.jpg" alt=""></div>
+            <div class="r1"><img src="imgs/bd-3-5.jpg" alt=""></div>
+        </div>
+    </div>
+    <div class="bd-4">
+        <div class="bd4-1">
+            <div class="bd-left">
+                <div class="bl-1">人气榜</div>
+                <div class="bl-2">高阶绣花连衣裙榜</div>
+                <div class="bl-3">月销123件</div>
+            </div>
+            <div class="bd-right">
+                <img src="imgs/123.jpg" alt="">
+            </div>
+        </div>
+        <div class="bd4-1">
+            <div class="bd-left">
+                <div class="bl-1">人气榜</div>
+                <div class="bl-2">高阶绣花连衣裙榜</div>
+                <div class="bl-3">月销123件</div>
+            </div>
+            <div class="bd-right">
+                <img src="imgs/123.jpg" alt="">
+            </div>
+        </div>
+        <div class="bd4-1">
+            <div class="bd-left">
+                <div class="bl-1">人气榜</div>
+                <div class="bl-2">高阶绣花连衣裙榜</div>
+                <div class="bl-3">月销123件</div>
+            </div>
+            <div class="bd-right">
+                <img src="imgs/123.jpg" alt="">
+            </div>
+        </div>
+        <div class="bd4-1">
+            <div class="bd-left">
+                <div class="bl-1">人气榜</div>
+                <div class="bl-2">高阶绣花连衣裙榜</div>
+                <div class="bl-3">月销123件</div>
+            </div>
+            <div class="bd-right">
+                <img src="imgs/123.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cai">猜你喜欢</div>
+<div class="tail">
+    <div class="tail-l">
+        <img src="imgs/tai.jpg" alt="">
+        <div class="tl-1">佳宝丽</div>
+        <div class="tl-2">土木便携式免漆版带修边家用封边机</div>
+        <div class="tl-3">100元券</div>
+        <div class="tl-4">
+            <span>89元</span>
+            <div class="rig">看相似</div>
+        </div>
+
+    </div>
+    <div class="tail-l">
+        <img src="imgs/tai.jpg" alt="">
+        <div class="tl-1">佳宝丽</div>
+        <div class="tl-2">土木便携式免漆版带修边家用封边机</div>
+        <div class="tl-3">100元券</div>
+        <div class="tl-4">
+            <span>89元</span>
+            <div class="rig">看相似</div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
