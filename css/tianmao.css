@@ -1,0 +1,670 @@
+html{
+    font-size: 13.33333vw;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/*头部*/
+.header{
+    width: 7.5rem;
+    height: 1.8rem;
+    background: red;
+}
+.top-one{
+    width: 100%;
+    height: 0.88rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.xuanxian{
+    width: 0.48rem;
+    height: 0.42rem;
+   background: white;
+}
+
+.biaoti{
+    width: 2.43rem;
+    height: 0.43rem;
+    font-size: 0.43rem;
+    font-weight: bold;
+    color: white;
+}
+
+.biaoti img{
+    width: 100%;
+    height: 100%;
+}
+
+.denglu{
+    width: 0.7rem;
+    height: 0.42rem;
+    font-size: 0.32rem;
+    color: white;
+    text-decoration: none;
+}
+.search-box{
+    width: 100%;
+    height: 0.92rem;
+    box-sizing: border-box;
+}
+
+.sou{
+    margin-left: 0.15rem;
+    width: 7.1rem;
+    height: 0.72rem;
+    display: block;
+
+}
+
+/*商店*/
+
+.sd{
+    width: 7rem;
+    height: 1.8rem;
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+}
+
+.sd .tubiao{
+    width:1.4rem;
+    height: 100%;
+    box-sizing: border-box;
+    justify-content:space-around;
+
+}
+
+.tubiao .tupian{
+    width: 1rem;
+    height: 1rem;
+    box-sizing: border-box;
+    margin: 0.2rem;
+}
+.tupian img{
+    width: 100%;
+    height: 100%;
+}
+.tubiao span{
+    text-align: center;
+    width:1.4rem;
+    font-size: 0.26rem;
+    display: block;
+}
+
+/*轮播图*/
+.lunbo{
+    width: 7.5rem;
+    height: 2.8rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.lunbo .tu{
+    width: 7.02rem;
+    height: 2.645rem;
+    margin: 0.1rem auto 0;
+    position: relative;
+    display: flex;
+}
+
+.lunbo .ban{
+    width: 1.64rem;
+    height: 0.08rem;
+    position: absolute;
+    bottom: 0.3rem;
+    left: 2.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ban .ban1{
+    width: 0.32rem;
+    height: 0.04rem;
+    background: #000;
+}
+.tu img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.geli{
+    width: 7.5rem;
+    height: 0.29rem;
+}
+.geli img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/*推荐*/
+.TJ1{
+    width: 7.5rem;
+    height: 3.6rem;
+}
+
+.TJ1 img{
+    width: 100%;
+    height: 100%;
+}
+.js{
+    width: 7.5rem;
+    height: 5.5rem;
+    box-sizing: border-box;
+}
+
+.js .js-1{
+    width: 7.02rem;
+    height: 5.3rem;
+    box-sizing: border-box;
+    display: flex;
+    margin: 0.15rem auto 0;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.js-1 .js-1-1{
+    width: 3.4rem;
+    height: 2.57rem;
+    background: url("../tupian/images1/LG.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.js-1-1 .j-top{
+    width: 100%;
+    height:0.76rem;
+    box-sizing: border-box;
+    font-size: 0.32rem;
+    color: rgb(32,32,32);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+}
+.j-top span{
+    display: block;
+}
+
+.j-top .djs{
+    width: 1.4rem;
+    height: 0.44rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+}
+
+.djs span{
+    color: black;
+}
+.djs .sj{
+    width: 0.4rem;
+    height: 0.4rem;
+    background: black;
+    font-size: 0.24rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 0.4rem;
+}
+
+.djs span{
+    display: block;
+}
+
+.js-1-1 .j-bot{
+    width: 100%;
+    height:1.8rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+.j-bot .tp{
+    width: 1.55rem;
+    height: 1.55rem;
+    position: relative;
+}
+
+.tp img{
+    width: 100%;
+    height: 100%;
+}
+
+.j-bot .sm{
+    color: red;
+    font-size: 0.24rem;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0.4rem;
+    border: 1px solid red;
+    background: white;
+}
+
+/*推荐2*/
+.tmbd{
+    width: 7.02rem;
+    height: 0.6rem;
+    margin: auto;
+    font-size: 0.36rem;
+    color: rgb(51,51,51);
+    font-weight: bold;
+    line-height: 0.6rem;
+}
+.TJ2{
+
+    width: 7.14rem;
+    height: 2.99rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.TJ2 img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.TJ2 .aa{
+    width: 2.26rem;
+    height:2.73rem;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 0.25rem;
+    background: url("../tupian/images2/bj1.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.TJ2 .bb{
+    position: relative;
+    width: 2.26rem;
+    height:2.99rem;
+    box-sizing: border-box;
+    background: url("../tupian/images2/bj1.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.aa .qsb{
+    position: absolute;
+    top:0;
+    left:0;
+    width:0.63rem ;
+    height:0.51rem ;
+}
+
+.aa .aa-tu{
+
+    width: 1.46rem;
+    height: 1.46rem;
+    background-color: rgba(0, 0, 0, 0.027451);
+    position: absolute;
+    top:0.36rem;
+    left:0.4rem;
+}
+
+.aa .aa-wz{
+    width: 2.08rem;
+    height: 0.36rem;
+    position: absolute;
+    top:1.92rem;
+    left:0.06rem;
+    font-size: 0.32rem;
+    text-align: center;
+    color: white;
+}
+.aa-wz .mp{
+    width: 1.92rem;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0.1rem;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    font-size: 0.28rem;
+}
+
+.aa .aa-rq{
+    width: 1.6rem;
+    height: 0.36rem;
+    position: absolute;
+    top:2.3rem;
+    left:0.28rem;
+    text-align: center;
+    color: #000;
+    box-sizing: border-box;
+    font-size: 0.24rem;
+}
+
+
+
+.bb .qsb{
+    position: absolute;
+    top:0;
+    left:0;
+    width:0.63rem ;
+    height:0.51rem ;
+}
+
+.bb .bb-tu{
+
+    width: 1.46rem;
+    height: 1.46rem;
+    background-color: rgba(0, 0, 0, 0.027451);
+    position: absolute;
+    top:0.36rem;
+    left:0.4rem;
+}
+
+.bb .bb-wz{
+    width: 2.08rem;
+    height: 0.36rem;
+    position: absolute;
+    top:2.17rem;
+    left:0.06rem;
+    font-size: 0.32rem;
+    text-align: center;
+    color: white;
+}
+.bb-wz .mp{
+    width: 1.92rem;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0.1rem;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    font-size: 0.28rem;
+}
+
+.bb .bb-rq{
+    width: 1.6rem;
+    height: 0.36rem;
+    position: absolute;
+    top:2.55rem;
+    left:0.28rem;
+    text-align: center;
+    color: #000;
+    box-sizing: border-box;
+    font-size: 0.24rem;
+}
+
+/*推荐3*/
+
+.TJ3{
+    position: relative;
+    display: flex;
+    width: 7.02rem;
+    height: 1.69rem;
+    margin: auto;
+    background: rgb(248,248,248);
+}
+
+.TJ3 .t3-left {
+    width: 1.715rem;
+    height: 1.69rem;
+    margin-left: 0.2rem;
+}
+
+.t3-left .bd{
+    display: flex;
+    width: 0.72rem;
+    height: 0.36rem;
+    background: url("../tupian/images2/juse.jpg") no-repeat;
+    background-size: 100% 100%;
+    font-size: 0.24rem;
+    margin-left: 0;
+    margin-top: 0;
+    color: white;
+}
+
+.t3-left .ms{
+    display: flex;
+    width: 100%;
+    height: 0.38rem;
+    font-size: 0.24rem;
+    margin-left: 0;
+    margin-top: 0;
+    color: black;
+    text-align: center;
+    line-height: 0.38rem;
+    font-weight: bold;
+}
+
+.t3-left .yx{
+    display: flex;
+    width: 1.14rem;
+    height: 0.38rem;
+    font-size: 0.24rem;
+    margin-left: 0;
+    margin-top: 0;
+    color: rgb(153,153,153);
+    text-align: center;
+    line-height: 0.38rem;
+    font-weight: bold;
+}
+
+.TJ3 .t3-right{
+    position: absolute;
+    top:0;
+    right: 0;
+    /*display: flex;*/
+    width: 4.16rem;
+    height: 1.69rem;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-left: 1.1rem;
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
+}
+
+.t3-right .lb{
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.3rem;
+    float: left;
+}
+
+.lb .pm{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0.43rem;
+    height: 0.43rem;
+}
+
+.pm img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.lb img{
+    width: 100%;
+    height: 100%;
+}
+
+.TJ4{
+    width: 7.02rem;
+    height: 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.TJ4 .t4{
+    width: 3.45rem;
+    height: 1.69rem;
+    box-sizing: border-box;
+    background: rgb(248,248,248);
+    display: flex;
+    align-items: center;
+}
+
+.t4 .t4-left{
+
+    width: 1.96rem;
+    height: 1.35rem;
+    margin-left: 0.2rem;
+}
+
+.t4 .t4-right{
+    width: 1.1rem;
+    height: 1.1rem;
+    background-color: rgba(0, 0, 0, 0.027451);
+}
+
+.t4-right img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.t4-left .bd{
+    display: flex;
+    width: 0.72rem;
+    height: 0.36rem;
+    font-size: 0.24rem;
+    margin-left: 0;
+    margin-top: 0;
+    color: rgb(200, 157, 107);
+}
+
+.t4-left .ms{
+    display: flex;
+    width: 100%;
+    height: 0.38rem;
+    font-size: 0.24rem;
+    margin-left: 0;
+    margin-top: 0;
+    color: black;
+    text-align: center;
+    line-height: 0.38rem;
+    font-weight: bold;
+}
+
+.t4-left .yx{
+    display: flex;
+    width: 1.14rem;
+    height: 0.38rem;
+    font-size: 0.24rem;
+    margin-left: 0;
+    margin-top: 0;
+    color: rgb(153,153,153);
+    text-align: center;
+    line-height: 0.38rem;
+    font-weight: bold;
+}
+
+/*猜你喜欢*/
+.love{
+    width:7.02rem;
+    height: 5.54rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url("../tupian/images3/bjtp.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.love .LO{
+    width: 3.4rem;
+    height: 5.34rem;
+}
+
+.LO img{
+    width: 100%;
+    height: 100%;
+}
+.LO .L-top{
+    width: 3.36rem;
+    height: 3.36rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.L-top .tp{
+    width: 2.76rem;
+    height: 2.76rem;
+}
+
+.tp img{
+    width: 100%;
+    height: 100%;
+}
+
+.LO .zt{
+    width: 0.52rem;
+    height: 0.36rem;
+    font-size: 0.22rem;
+    display: block;
+    text-align: center;
+    line-height: 0.36rem;
+    color: white;
+    font-weight: bold;
+    background: rgb(205, 163, 177);
+    margin-left: 0.2rem;
+    margin-top: -0.2rem;
+}
+
+.LO .sm{
+    width: 2.96rem;
+    height: 0.72rem;
+    margin: auto;
+    color: rgb(62, 62, 62);
+    font-size: 0.28rem;
+}
+
+.LO .juan{
+    width: 2.96rem;
+    height: 0.28rem;
+    margin: auto;
+    color: red;
+    font-size: 0.24rem;
+}
+
+.juan span{
+    border: 1px solid red;
+}
+
+.LO .L-bot{
+    width: 3.4rem;
+    height: 0.6rem;
+    margin: auto;
+    color: red;
+    font-size: 0.24rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.L-bot .space{
+    width: 0.865rem;
+    height:0.56rem ;
+    font-size: 0.32rem;
+    line-height: 0.56rem;
+    font-weight: bold;
+}
+
+.L-bot .xs{
+    width: 1.08rem;
+    height:0.46rem ;
+    background: rgb(255, 230, 235);
+    border-radius: 30%;
+    color: red;
+    text-align: center;
+    line-height: 0.46rem;
+}
