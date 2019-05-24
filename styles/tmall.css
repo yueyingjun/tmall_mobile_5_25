@@ -1,0 +1,265 @@
+html{
+    font-size: 13.3333vw;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.header-top{
+    width: 7.5rem;
+    height: 0.88rem;
+    background-color: red ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-top-icon{
+
+    width: 0.4rem; height: 0.4rem;
+    margin-left: -0.6rem;
+
+}
+.header-top-logo{
+
+    width: 2.37rem;height: 0.41rem;
+}
+.header-top-login{
+
+    font-size:0.3rem;
+    line-height: 0.88rem;
+    margin-right: -0.6rem;
+    color: white;
+}
+.header-search{
+    width: 7.5rem;
+    height: 0.88rem;
+    background-color: red ;
+}
+.header-search-container{
+    width: 7.10rem;height: 0.72rem;
+    margin: 0 auto;
+    border-radius: 0.06rem;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.header-search-container img{
+    margin-left: 0.03rem;
+    float: left;
+    width: 0.45rem;height: 0.5rem;
+}
+.kuang{
+    float: left;
+    width: 5rem;height: 0.72rem;
+    font-size: 0.28rem;
+    line-height: 0.72rem;
+    color: darkgray;
+}
+.main{
+    width: 7.5rem;height: 1.56rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    place-content: flex-start center;
+}
+.main-box{
+    width: 1.4rem;height:1.56rem ;
+}
+.main-img{
+    width: 0.96rem;height: 0.96rem;
+    margin-left:0.25rem;
+}
+.main-name{
+    width: 1.4rem;height: 0.3rem;
+    font-size: 0.26rem;
+    line-height: 0.3rem;
+    color: #555555;
+    text-align: center;
+}
+.banner{
+    margin-top: 0.48em;
+    width: 7.5rem;height: 2.645rem;
+    display: flex;
+    justify-content: space-around;
+}
+.banner img{
+
+    width: 7.02rem;height: 2.645rem;
+}
+.shadow{
+    width: 7.5rem;height: 0.29rem;
+    display: flex;
+}
+
+
+.fuli{
+    width: 7.5rem;height: 3.6rem;
+    display: flex;
+    justify-content: space-around;
+}
+.leibie{
+    width: 7.5rem;height: 5.46rem;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+
+}
+.leibie-box{
+    width: 3.45rem;height: 2.57rem;
+    background: palegoldenrod;
+}
+.leibie-box:nth-child(1){
+    background: url("../images/bg1.png") no-repeat top right /100% auto;
+}
+.leibie-box:nth-child(2){
+    background: url("../images/bg2.png") no-repeat center center /100% auto;
+}
+.leibie-box:nth-child(3){
+    background: url("../images/bg3.png") no-repeat center center /100% auto;
+}
+.leibie-box:nth-child(4){
+    background: url("../images/bg4.png") no-repeat center center /100% auto;
+}
+.leibie-box-tittle{
+    width: 1.28rem;height: 0.32rem;
+    line-height: 0.32rem;
+    font-size: 0.32rem;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+    font-weight: bold;
+}
+.daojishi{
+
+    width: 1.28rem;height: 0.32rem;
+    margin-right: 0.3rem;
+}
+.leibie-box-img{
+    width: 1.55rem;height: 1.55rem;
+    margin-top: 0.3rem;
+}
+.bangdan{
+    width: 7.5rem;height: 9.36rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+}
+.bangdan-tittle{
+    width: 7.02rem;height:0.6rem;
+    font-size: 0.36rem;
+    line-height: 0.36rem;
+    font-weight: bold;
+}
+.bangdan_one{
+    width: 7.02rem;height:2.99rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.di{
+    width: 2.26rem;height:2.73rem ;
+    background: url("../images/低.jpg") no-repeat center /100% auto;
+}
+.gao{
+    width: 2.26rem;height:2.99rem ;
+    background: url("../images/高.jpg") no-repeat center /100% auto;
+}
+.bangdan_two{
+    width: 7.02rem;height:1.69rem;
+    background: rgb(248,248,248);
+    display: flex;
+    justify-content: space-around;
+}
+.bangdan_two-left{
+    width: 1.92rem;height:1.69rem;
+    background:url("../images/bangdan_two-left.jpg") no-repeat center /100% auto;
+}
+.bangdan_two-right{
+    width: 4rem;height:1.69rem;
+    background:url("../images/bangdan_two-right.jpg") no-repeat center /100% auto;
+}
+.bangdan_three{
+    width:3.45rem;height:1.69rem;
+    background: rgb(248,248,248);
+    font-size: 0.24rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bangdan_three-left{
+    width:1.5266rem;height:1.35rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column;
+}
+.hengxian{
+    width: 0.22rem;height: 0.3rem;
+    line-height: 0.3rem;
+    color: darkgray;
+}
+.bangdan_three-left-tittle{
+    color: #c89d6b;
+}
+.bangdan_three-left-des{
+    color: darkgray;
+}
+.bangdan_three-right{
+    width:1.1rem;height:1.1rem;
+    background: url("../images/衣服女.webp") no-repeat center /100% auto;
+}
+.cainixihuan{
+    width: 7.5rem;height: 0.6rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+.cainixihuan-tittle{
+    width: 7.02rem;height: 0.6rem;
+    font-size: 0.36rem;
+    font-weight: bold;
+}
+.xihuan-container{
+    width: 7.5rem;height: 5.54rem;
+    display: flex;
+    justify-content: space-around;
+}
+.xihuan{
+    width: 3.4rem;height: 5.34rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.xihuan-img{
+    width: 3.36rem;height: 3.42rem;
+    background: url("../images/第七公社.jpg") no-repeat center /100% auto;
+}
+.xihuan-name{
+    width: 2.96rem;height: 0.72rem;
+    font-size: 0.28rem;
+}
+.kong{
+    width: 2.96rem;height: 0.28rem;
+}
+.price{
+    width: 3.4rem;height: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+.price-left{
+    color: red;
+    font-size: 0.32rem;
+
+}
+.price-right{
+    color: red;
+    width: 1.08rem;height: 0.46rem;
+    font-size: 0.24rem;
+    text-align: center;
+    background: #ffe6eb;
+    border-radius: 35%;
+}
