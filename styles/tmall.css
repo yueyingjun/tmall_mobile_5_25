@@ -233,6 +233,7 @@ a{
     display: flex;
     flex-flow: column;
     align-items: center;
+    border: 1px solid #dddddd
 }
 .xihuan-img{
     width: 3.36rem;height: 3.42rem;
