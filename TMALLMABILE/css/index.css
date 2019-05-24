@@ -1,0 +1,1753 @@
+html{
+    font-size:13.33333vw;
+}
+body{
+    margin:0;padding:0;
+}
+
+/*头部*/
+.title{
+    width:100vw;
+    height:2.2rem;
+    background: red;
+}
+.title_top{
+    width:100vw;
+    height:1.05rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    position: relative;
+    /*border:1px solid green;*/
+}
+.title .title_top_left{
+    width:0.81rem;
+    height:0.72rem;
+    left:0.24rem;
+    top:0.24rem;
+    background: url(http://gw.alicdn.com/tfs/TB17oY3qbGYBuNjy0FoXXciBFXa-564-62.png_620x10000.jpg_.webp) no-repeat 0 0;
+    background-size:cover;
+    position: absolute;
+}
+.title .title_top_middle{
+    width:3rem;
+    height:0.52rem;
+    background: url(http://gw.alicdn.com/tfs/TB1wQw8qamWBuNjy1XaXXXCbXXa-237-41.png_240x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    position: absolute;
+    left:2.2rem;
+    top:0.3rem;
+}
+.title .title_top_right{
+    width:0.76rem;
+    height:0.36rem;
+    font-size:0.34rem;
+    color:#fff;position: absolute;
+    top:0.3rem;
+    right:0.25rem;
+}
+.title_bottom{
+    width:100vw;
+    height:0.8rem;
+    display: flex;
+    flex-wrap:wrap;
+    position: relative;
+    /*border:1px solid green;*/
+}
+.title .title_bottom_text{
+    width:6.5rem;
+    height:0.8rem;
+    background: #fff;
+    border-radius: 0.1rem;
+    color:#ccc;
+    border:1px solid #fff;
+    position: absolute;
+    top:0.1rem;
+    left:0.5rem;
+    font-size:0.4rem;
+}
+.title .title_bottom_text i{
+    width:0.6rem;
+    height:0.55rem;
+    background: url(http://gw.alicdn.com/tfs/TB1rIFEqCBYBeNjy0FeXXbnmFXa-60-64.png_110x10000.jpg_.webp) no-repeat 0 0;
+    /*border:1px solid green;*/
+    background-size: cover;
+    float:left;
+    position: absolute;
+    left:0.1rem;
+    top:0.1rem;
+}
+
+.title .title_bottom_text_one{
+    width:4rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+    float:left;
+    position: absolute;
+    left:0.8rem;
+    top:0.1rem;
+}
+/*产品*/
+.produce{
+    width:100vw;
+    height:2.1rem;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    /*position: relative;*/
+    /*border:1px solid red;*/
+}
+.produce .produce_one{
+    width:1.4rem;
+    height:1.5rem;
+    /*border:1px solid red;*/
+    position: relative;
+}
+.produce .produce_one_top{
+    width:1.2rem;
+    height:1.2rem;
+    border-radius: 50%;
+    background: url(http://gw.alicdn.com/tfs/TB1ISdWSFXXXXbFXXXXXXXXXXXX-146-147.png_110x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    position: absolute;
+    left:0.15rem;
+    float:left;
+}
+.produce .produce_one1_top{
+    width:1.2rem;
+    height:1.2rem;
+    border-radius: 50%;
+    background: url(http://gw.alicdn.com/tfs/TB1wSoFa5qAXuNjy1XdXXaYcVXa-196-196.png?avatar=1_110x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    position: absolute;
+    left:0.15rem;
+    float:left;
+}
+.produce .produce_one2_top{
+    width:1.2rem;
+    height:1.2rem;
+    border-radius: 50%;
+    background: url(http://gw.alicdn.com/tfs/TB1Jc0fSFXXXXXTapXXXXXXXXXX-146-147.png_110x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    position: absolute;
+    left:0.15rem;
+    float:left;
+}
+.produce .produce_one3_top{
+    width:1.2rem;
+    height:1.2rem;
+    border-radius: 50%;
+    background: url(http://gw.alicdn.com/tfs/TB15lhOSFXXXXaKXpXXXXXXXXXX-147-147.png_110x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    position: absolute;
+    left:0.15rem;
+    float:left;
+}
+.produce .produce_one4_top{
+    width:1.2rem;
+    height:1.2rem;
+    border-radius: 50%;
+    background: url(http://gw.alicdn.com/tfs/TB12CFXSFXXXXcpapXXXXXXXXXX-146-147.png_110x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    position: absolute;
+    left:0.15rem;
+    float:left;
+}
+.produce .produce_one_bottom{
+    width:1.2rem;
+    height:0.7rem;
+    font-size:0.3rem;
+    position: absolute;
+    text-align: center;
+    top:1.5rem;
+    left:0.15rem;
+}
+
+/*轮播图*/
+.banners_box{
+    width:100vw;
+    height:3rem;
+    /*border:1px solid red;*/
+}
+.banner{
+    width:7rem;
+    height:3rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    position: relative;
+    margin:auto;
+}
+.banner1{
+    width:7rem;
+    height:3rem;
+    background: url(http://gw.alicdn.com/tfs/TB1HHWbNrPpK1RjSZFFXXa5PpXa-1035-390.png_790x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    /*border:1px solid red;*/
+    z-index:10;
+    position: absolute;
+    left:0.25rem;
+}
+.banner2{
+    width:7rem;
+    height:3rem;
+    background: url(http://gw.alicdn.com/tps/i4/TB1jj93c2c3T1VjSZLeSuvZsVXa.jpg_790x10000Q75.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    /*border:1px solid red;*/
+    z-index:9;
+    position: absolute;
+    left:0.25rem;
+}
+.banner3{
+    width:7rem;
+    height:3rem;
+    background: url(http://gw.alicdn.com/tps/i4/TB1TtzHUhjaK1RjSZFASuvdLFXa.jpg_790x10000Q75.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    /*border:1px solid red;*/
+    z-index:8;
+    position: absolute;
+    left:0.25rem;
+}
+.banner4{
+    width:7rem;
+    height:3rem;
+    background: url(http://gw.alicdn.com/tps/i4/TB10g6hXLWG3KVjSZPcwu2kbXXa.png_790x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+   /* border:1px solid red;*/
+    z-index:7;
+    position: absolute;
+    left:0.25rem;
+}
+.banner5{
+    width:7rem;
+    height:3rem;
+    background: url(http://gw.alicdn.com/imgextra/i1/32/O1CN017R8JWU1C6hCiWmE22_!!32-0-luban.jpg_790x10000Q75.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+   /* border:1px solid red;*/
+    z-index:6;
+    position: absolute;
+    left:0.25rem;
+}
+.banner6{
+    width:7rem;
+    height:3rem;
+    background: url(http://gw.alicdn.com/imgextra/i3/77/O1CN01PZy1KI1CRJ1meEj9X_!!77-0-lubanu.jpg_790x10000Q75.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    /*border:1px solid red;*/
+    z-index:5;
+    position: absolute;
+    left:0.25rem;
+}
+.banner7{
+    width:7rem;
+    height:3rem;
+    background: url(http://gw.alicdn.com/imgextra/i3/173/O1CN01X2D8lO1D9H36UWfxc_!!173-0-lubanu.jpg_790x10000Q75.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    /*border:1px solid red;*/
+    z-index:4;
+    position: absolute;
+    left:0.25rem;
+}
+.banner8{
+    width:7rem;
+    height:3rem;
+    background: url(http://gw.alicdn.com/imgextra/i2/2/O1CN01qoImwQ1BsxJzOROkB_!!2-0-lubanu.jpg_790x10000Q75.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    /*border:1px solid red;*/
+    z-index:3;
+    position: absolute;
+    left:0.25rem;
+}
+.banner9{
+    width:7rem;
+    height:3rem;
+    background: url(http://gw.alicdn.com/imgextra/i2/193/O1CN01Znmgab1DIQxtcvKXV_!!193-0-lubanu.jpg_790x10000Q75.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    /*border:1px solid red;*/
+    z-index:2;
+    position: absolute;
+    left:0.25rem;
+}
+.banner10{
+    width:7rem;
+    height:3rem;
+    background: url(http://gw.alicdn.com/imgextra/i2/139/O1CN01Jsr2tY1CthaBMcPkG_!!139-0-lubanu.jpg_790x10000Q75.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+   /* border:1px solid red;*/
+    z-index:1;
+    position: absolute;
+    left:0.25rem;
+}
+.btns{
+    width:4.5rem;
+    height:0.15rem;
+    /*border:1px solid green;*/
+     position:absolute;
+     left:1.5rem;
+     top:6.5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    z-index:11;
+}
+.btns .btn{
+    width:0.4rem;
+    height:100%;
+    background: #ccc;
+}
+.btns .btn:hover{
+    background: #fff;
+}
+.btns .active{
+    background: #fff;
+}
+
+/*新人领卷*/
+.newPeo{
+    width:100vw;
+    height:3.4rem;
+    /*border:1px solid red;*/
+    margin-top:0.2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+.newPeo .newPeo_one{
+    width:7rem;
+    height:100%;
+    background: url(http://gw.alicdn.com/tfs/TB1TwtpNxTpK1RjSZR0XXbEwXXa-750-386.png_790x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+}
+/*限时抢购*/
+.limit{
+    width:100vw;
+    height:6.6rem;
+    /*border:1px solid red;*/
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    margin-top:0.1rem;
+}
+.limit_top{
+    width:100%;
+    height:3.2rem;
+   /* border:1px solid red;*/
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+.limit .limit_top_two{
+    width:3.5rem;
+    height:100%;
+    /*border:1px solid red;*/
+    background: #f3f2f2;
+}
+.limit .limit_top_two_top{
+    width:3.3rem;
+    height:0.5rem;
+    /*border:1px solid red;*/
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    text-align: center;
+}
+.limit .limit_top_two_top{
+    width:3.3rem;
+    height:0.5rem;
+    /*border:1px solid red;*/
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    text-align: center;
+}
+.limit .limit_top_two_top_left{
+     width:3.3rem;
+     height:100%;
+     font-size:0.3rem;
+     text-align: left;
+ }
+/*.limit .limit_top_two_top_right{
+    width:1.6rem;
+    height:100%;
+    font-size:0.3rem;
+}
+.limit .limit_top_two_top_right span{
+    width:0.45rem;
+    height:100%;
+    border:1px solid red;
+    background: #000;
+    color:#fff;
+}*/
+.limit .limit_top_two_bottom{
+    width:3.3rem;
+    height:2.7rem;
+    /*border:1px solid red;*/
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    text-align: center;
+}
+.limit .limit_top_two_bottom_left{
+    width:1.6rem;
+    height:1.6rem;
+    background: url(https://gw.alicdn.com/tps/bao/upload/TB1orWYiNTpK1RjSZR0wu2EwXXa.png_170x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    margin-top:0.55rem;
+
+   /* border:1px solid red;*/
+}
+.limit .limit_top_two_bottom_right{
+    width:1.6rem;
+    height:1.6rem;
+    background:url(https://gw.alicdn.com/tps/i2/654162011/O1CN01ZH9O9L1Qj4zeovB2o_!!2-item_pic.png_170x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    /*border:1px solid red;*/
+    margin-top:0.55rem;
+    position:relative;
+}
+.limit .limit_top_two_bottom_left span{
+    width:1.2rem;
+    height:0.3rem;
+    margin-top:1.75rem;
+    border:1px solid red;
+    color:red;
+    background: #fff;
+    font-size:0.25rem;
+}
+.limit .limit_top_two_bottom_right span{
+    width:1.2rem;
+    height:0.3rem;
+   /* margin-top:3rem;*/
+    border:1px solid red;
+    color:red;
+    background: #fff;
+    font-size:0.25rem;
+    position: absolute;
+    right:0.2rem;
+    top:1.75rem;
+}
+
+.limit .limit_top_two1_bottom_left{
+    width:1.6rem;
+    height:1.6rem;
+    background: url(https://gw.alicdn.com/tps/i4/1962813339/TB2N3aSef2H8KJjy1zkXXXr7pXa_!!1962813339.png_170x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    margin-top:0.55rem;
+
+    /* border:1px solid red;*/
+}
+.limit .limit_top_two1_bottom_right{
+    width:1.6rem;
+    height:1.6rem;
+    background:url(https://gw.alicdn.com/tps/bao/upload/TB1aeFeTmrqK1RjSZK9XXXyypXa.png_170x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    /*border:1px solid red;*/
+    margin-top:0.55rem;
+    position:relative;
+}
+.limit .limit_top_two1_bottom_left span{
+    width:1.2rem;
+    height:0.3rem;
+    margin-top:1.75rem;
+    border:1px solid red;
+    color:red;
+    background: #fff;
+    font-size:0.25rem;
+}
+.limit .limit_top_two1_bottom_right span{
+    width:1.2rem;
+    height:0.3rem;
+    /* margin-top:3rem;*/
+    border:1px solid red;
+    color:red;
+    background: #fff;
+    font-size:0.25rem;
+    position: absolute;
+    right:0.2rem;
+    top:1.75rem;
+}
+.limit .limit_top_one{
+    width:3.5rem;
+    height:100%;
+    /*border:1px solid red;*/
+    background: #f3f2f2;
+}
+.limit .limit_top_one_top{
+    width:3.3rem;
+    height:0.5rem;
+    /*border:1px solid red;*/
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    text-align: center;
+}
+.limit .limit_top_one_top{
+    width:3.3rem;
+    height:0.5rem;
+    /*border:1px solid red;*/
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    text-align: center;
+}
+.limit .limit_top_one_top_left{
+    width:1.6rem;
+    height:100%;
+    font-size:0.3rem;
+}
+.limit .limit_top_one_top_right{
+    width:1.6rem;
+    height:100%;
+    font-size:0.3rem;
+}
+.limit .limit_top_one_top_right span{
+    width:0.45rem;
+    height:100%;
+    /*border:1px solid red;*/
+    background: #000;
+    color:#fff;
+}
+.limit .limit_top_one_bottom{
+    width:3.3rem;
+    height:2.7rem;
+    /*border:1px solid red;*/
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    text-align: center;
+    
+}
+.limit .limit_top_one_bottom_left{
+    width:1.6rem;
+    height:100%;
+    background: url(https://gw.alicdn.com/i4/1830353146/O1CN011Z6uUX25PGp0Cij_!!1830353146.png_170x10000.jpg_.webp) no-repeat -0.5rem 0;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    /* border:1px solid red;*/
+}
+.limit .limit_top_one_bottom_left span{
+    width:1.2rem;
+    height:0.3rem;
+    margin-top:2.3rem;
+    border:1px solid red;
+    color:red;
+    background: #fff;
+    font-size:0.25rem;
+}
+.limit .limit_top_one_bottom_right span{
+    width:1.2rem;
+    height:0.3rem;
+    border:1px solid red;
+    color:red;
+    background: #fff;
+    font-size:0.25rem;
+    position: absolute;
+    right:0.25rem;
+    top:1.75rem;
+}
+.limit .limit_top_one_bottom_right{
+    width:1.6rem;
+    height:1.6rem;
+    background:url(https://gw.alicdn.com/i1/3332158851/TB2.H6tXRjTBKNjSZFuXXb0HFXa_!!3332158851.png_170x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    /*border:1px solid red;*/
+    margin-top:0.55rem;
+    position: relative;
+}
+
+.limit .limit_top_one_top_left{
+    width:1.6rem;
+    height:100%;
+    font-size:0.3rem;
+}
+.limit .limit_top_one_top_right{
+    width:1.6rem;
+    height:100%;
+    font-size:0.3rem;
+}
+.limit .limit_top_one_top_right span{
+    width:0.45rem;
+    height:100%;
+    /*border:1px solid red;*/
+    background: #000;
+    color:#fff;
+}
+/*.limit .limit_top_one_bottom{
+    width:3.3rem;
+    height:2.7rem;
+    !*border:1px solid red;*!
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    text-align: center;
+
+}*/
+.limit .limit_top_one1_bottom_left{
+    width:1.6rem;
+    height:1.6rem;
+    background: url(https://gw.alicdn.com/tps/O1CN01Fj7Fsp1CVQagxwlVC_!!86-2-lubanu.png_170x10000.jpg_.webp) no-repeat 0 0 ;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    margin-top:0.55rem;
+    /*  background: #f3f2f2;
+    border:1px solid red;*/
+}
+.limit .limit_top_one1_bottom_left span{
+    width:1.5rem;
+    height:0.3rem;
+    margin-top:1.75rem;
+    border:1px solid red;
+    color:red;
+    background: #fff;
+    font-size:0.25rem;
+}
+.limit .limit_top_one1_bottom_right span{
+    width:1.2rem;
+    height:0.3rem;
+    border:1px solid red;
+    color:red;
+    background: #fff;
+    font-size:0.25rem;
+    position: absolute;
+    right:0.25rem;
+    top:1.75rem;
+}
+.limit .limit_top_one1_bottom_right{
+    width:1.6rem;
+    height:1.6rem;
+    background:url(https://gw.alicdn.com/tps/O1CN01TY1y8l1Csmn5jGyA0_!!137-2-lubanu.png_170x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    /*border:1px solid red;*/
+    margin-top:0.55rem;
+    position: relative;
+}
+/*天猫榜单*/
+.list{
+    width:100vw;
+    height:11.2rem;
+    /*border:1px solid red;*/
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top:0.2rem;
+    position: relative;
+}
+.list_top{
+    width:7rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size:0.4rem;
+    /*font-weight: bold;
+    border:1px solid red;*/
+}
+.list_top_text{
+    width:2rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+    /*display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;*/
+    font-size:0.4rem;
+    /*font-weight: bold;*/
+    margin-left:-5rem;
+   /* border:1px solid red;*/
+}
+.list_middle_one{
+    width:7rem;
+    height:3.5rem;
+    /*border:1px solid red;*/
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: absolute;
+    top:0.7rem;
+}
+
+.list_middle_one_left{
+    width:2.2rem;
+    height:3.3rem;
+    margin-top:0.2rem;
+    background: #f1e7e7;
+}
+.list_middle_one_left_one{
+    width:0.6rem;
+    height:0.5rem;
+    background: url(http://gw.alicdn.com/tfs/TB1MlAtzAPoK1RjSZKbXXX1IXXa-63-50.png_110x10000.jpg_.webp) no-repeat 0 0;
+    background-size:cover ;
+}
+.list_middle_one_left_two{
+    width:1.8rem;
+    height:1.7rem;
+    background: url(https://gw.alicdn.com/bao/uploaded/O1CN01fyXwE41JjLvAb7HQ2_!!2-item_pic.png_150x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    margin-left:0.2rem;
+}
+.list_middle_one_left_three{
+    width:2.1rem;
+    height:0.5rem;
+    line-height: 0.5rem;
+    border-radius: 0.25rem;
+    background: url(https://gw.alicdn.com/tfs/TB1luRbtMHqK1RjSZFkXXX.WFXa-208-36.png_220x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    color:#fff;
+    font-size:0.25rem;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.list_middle_one_left_four{
+    width:2.1rem;
+    height:0.5rem;
+    border-radius: 0.25rem;
+    /*background: #364aa2;*/
+    color:#000;
+    font-size:0.3rem;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.list_middle_one_middle{
+    width:2.2rem;
+    height:3.5rem;
+    /*margin-top:0.2rem;*/
+    background: #f1e7e7;
+}
+.list_middle_one_middle_one{
+    width:0.6rem;
+    height:0.5rem;
+    background: url(http://gw.alicdn.com/tfs/TB1MlAtzAPoK1RjSZKbXXX1IXXa-63-50.png_110x10000.jpg_.webp) no-repeat 0 0;
+    background-size:cover ;
+}
+.list_middle_one_middle_two{
+    width:1.8rem;
+    height:1.9rem;
+    background: url(https://gw.alicdn.com/bao/uploaded/O1CN01PoIbop28sYHXEAWn5_!!2-item_pic.png_150x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    margin-left:0.1rem;
+}
+.list_middle_one_middle_three{
+    width:2.1rem;
+    height:0.5rem;
+    line-height: 0.5rem;
+    border-radius: 0.25rem;
+    background: url(https://gw.alicdn.com/tfs/TB1luRbtMHqK1RjSZFkXXX.WFXa-208-36.png_220x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    color:#fff;
+    font-size:0.25rem;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.list_middle_one_middle_four{
+    width:2.1rem;
+    height:0.5rem;
+    border-radius: 0.25rem;
+    /*background: #364aa2;*/
+    color:#000;
+    font-size:0.3rem;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.list_middle_one_right{
+    width:2.2rem;
+    height:3.3rem;
+    margin-top:0.2rem;
+    background: #f1e7e7;
+}
+.list_middle_one_right_one{
+    width:0.6rem;
+    height:0.5rem;
+    background: url(http://gw.alicdn.com/tfs/TB1MlAtzAPoK1RjSZKbXXX1IXXa-63-50.png_110x10000.jpg_.webp) no-repeat 0 0;
+    background-size:cover ;
+}
+.list_middle_one_right_two{
+    width:1.8rem;
+    height:1.7rem;
+    background: url(https://gw.alicdn.com/bao/uploaded/TB1gvf.h7voK1RjSZFDwu0Y3pXa.png_150x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    margin-left:0.2rem;
+}
+.list_middle_one_right_three{
+    width:2.1rem;
+    height:0.5rem;
+    line-height: 0.5rem;
+    border-radius: 0.25rem;
+    background: url(https://gw.alicdn.com/tfs/TB1luRbtMHqK1RjSZFkXXX.WFXa-208-36.png_220x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    color:#fff;
+    font-size:0.25rem;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.list_middle_one_right_four{
+    width:2.1rem;
+    height:0.5rem;
+    border-radius: 0.25rem;
+    /*background: #364aa2;*/
+    color:#000;
+    font-size:0.3rem;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.list_middle_two{
+    width:7rem;
+    height:2rem;
+    /*border:1px solid red;*/
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top:-1.1rem;
+    background: #f7f7f7;
+    position:relative;
+}
+.list_middle_two_left{
+    width:2.1rem;
+    height:100%;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    z-index: 2;
+    /*border:1px solid red;*/
+    position: absolute;
+    left:0.15rem;
+}
+.list_middle_two_left_top{
+    width:1.7rem;
+    height:0.8rem;
+    background: url(https://gw.alicdn.com/tfs/TB1CxpTsVzqK1RjSZFCXXbbxVXa-92-43.png_110x10000.jpg_.webp);
+    background-size: cover;
+    font-size:0.4rem;
+    text-align:center;
+    color:#fff;
+    margin-left:-0.7rem;
+}
+.list_middle_two_left_middle{
+    width:2.1rem;
+    height:0.5rem;
+    line-height: 0.5rem;
+    /*border:1px solid red;*/
+    font-size:0.3rem;
+    color:#000;
+}
+.list_middle_two_left_right{
+    width:2.1rem;
+    height:0.5rem;
+    line-height: 0.5rem;
+    /*border:1px solid red;*/
+    font-size:0.3rem;
+    color:#ccc;
+}
+
+.list_middle_two_right_box{
+    width:4.7rem;
+    height:100%;
+    position: relative;
+    margin-left:2.15em;
+}
+.list_middle_two_right{
+    width:4.7rem;
+    height:100%;
+    /*border:1px solid red;*/
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index:2;
+    background: #f8f8f8;
+    /*left:2.35rem;*/
+}
+.list_middle_two_right_one{
+    width:1.45rem;
+    height:100%;
+    /*border:1px solid red;*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+.list_middle_two_right_one_top{
+    width:0.5rem;
+    height:0.5rem;
+   /* border:1px solid red;*/
+    border-radius:50% ;
+    position:absolute;
+    top:0.2rem;
+    background: url(https://gw.alicdn.com/tfs/TB1oGXNJr9YBuNjy0FgXXcxcXXa-86-86.png_110x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+}
+.list_middle_two_right_one_bottom{
+    width:1.4rem;
+    height:1.6rem;
+    background: url(http://gw.alicdn.com/bao/uploaded/i1/bao/upload/TB1z1dDs3HqK1RjSZJnXXbNLpXa.png_140x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    align-items: center;
+    margin-top:0.2rem;
+}
+.list_middle_two_right_two{
+    width:1.45rem;
+    height:100%;
+    /*border:1px solid red;*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+.list_middle_two_right_two_top{
+    width:0.5rem;
+    height:0.5rem;
+    /*border:1px solid red;*/
+    border-radius:50% ;
+    position:absolute;
+    top:0.2rem;
+    background: url(https://gw.alicdn.com/tfs/TB1e.b7JkyWBuNjy0FpXXassXXa-86-86.png_110x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+}
+.list_middle_two_right_two_bottom{
+    width:1.4rem;
+    height:1.6rem;
+    background: url(https://gw.alicdn.com/bao/uploaded/i1/bao/upload/TB1HLakjrZnBKNjSZFhwu3.oXXa.png_140x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    align-items: center;
+    margin-top:0.2rem;
+}
+.list_middle_two_right_three{
+    width:1.45rem;
+    height:100%;
+    /*border:1px solid red;*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+.list_middle_two_right_three_top{
+    width:0.5rem;
+    height:0.5rem;
+   /* border:1px solid red;*/
+    border-radius:50% ;
+    position:absolute;
+    top:0.2rem;
+    background: url(https://gw.alicdn.com/tfs/TB1CBBWcjrguuRjy0FeXXXcbFXa-86-86.png_110x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+}
+.list_middle_two_right_three_bottom{
+    width:1.4rem;
+    height:1.6rem;
+    background: url(https://gw.alicdn.com/bao/uploaded/i1/bao/upload/TB1HLakjrZnBKNjSZFhwu3.oXXa.png_140x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    align-items: center;
+    margin-top:0.2rem;
+}
+
+
+.list_middle_two_right1{
+    width:4.7rem;
+    height:100%;
+    /*border:1px solid red;*/
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index:1;
+    background: #f8f8f8;
+    /*left:2.35rem;*/
+}
+.list_middle_two_right1_one{
+    width:1.45rem;
+    height:100%;
+   /* border:1px solid red;*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+.list_middle_two_right1_one_top{
+    width:0.5rem;
+    height:0.5rem;
+    /*border:1px solid red;*/
+    border-radius:50% ;
+    position:absolute;
+    top:0.2rem;
+    background: url(https://gw.alicdn.com/tfs/TB1Fh97A3mTBuNjy1XbXXaMrVXa-64-64.png_110x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+}
+.list_middle_two_right1_one_bottom{
+    width:1.4rem;
+    height:1.6rem;
+    background: url(https://gw.alicdn.com/bao/uploaded/i1/bao/upload/TB1mW.9q4uTBuNkHFNRwu39qpXa.png_140x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    align-items: center;
+    margin-top:0.2rem;
+}
+.list_middle_two_right1_two{
+    width:1.45rem;
+    height:100%;
+    /*border:1px solid red;*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+.list_middle_two_right1_two_top{
+    width:0.5rem;
+    height:0.5rem;
+   /* border:1px solid red;*/
+    border-radius:50% ;
+    position:absolute;
+    top:0.2rem;
+    background: url(https://gw.alicdn.com/tfs/TB1wz_VA1uSBuNjy1XcXXcYjFXa-64-64.png_110x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+}
+.list_middle_two_right1_two_bottom{
+    width:1.4rem;
+    height:1.6rem;
+    background: url(https://gw.alicdn.com/bao/uploaded/i1/bao/upload/TB1gnPooRjTBKNjSZFDwu2VgVXa.png_140x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    align-items: center;
+    margin-top:0.2rem;
+}
+.list_middle_two_right1_three{
+    width:1.45rem;
+    height:100%;
+    /*border:1px solid red;*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+.list_middle_two_right1_three_top{
+    width:0.5rem;
+    height:0.5rem;
+   /* border:1px solid red;*/
+    border-radius:50% ;
+    position:absolute;
+    top:0.2rem;
+    background: url(https://gw.alicdn.com/tfs/TB1te8EBamWBuNjy1XaXXXCbXXa-64-64.png_110x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+}
+.list_middle_two_right1_three_bottom{
+    width:1.4rem;
+    height:1.6rem;
+    background: url(https://gw.alicdn.com/bao/uploaded/i1/bao/upload/TB1QU.PygTqK1RjSZPhXXXfOFXa.png_140x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+    align-items: center;
+    margin-top:0.2rem;
+}
+
+.list_bottom{
+    width:7rem;
+    height:4.4rem;
+    /*border:1px solid red;*/
+    position: absolute;
+    bottom:0.2rem;
+    left:0.25rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.list_bottom_top{
+    width:7rem;
+    height:2.1rem;
+    /*border:1px solid red;*/
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.list_bottom_top_left{
+    width:3.3rem;
+    height:2.1rem;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.list_bottom_top_left_text{
+    width:1.8rem;
+    height:2.1rem;
+    /*border:1px solid red;*/
+    font-size:0.25rem;
+}
+.list_bottom_top_left_text_one{
+    width:0.8rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+    color: #c89c6a;
+}
+.list_bottom_top_left_text_two{
+    width:1.7rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+    color:#000;
+}
+.list_bottom_top_left_text_three{
+    width:1.7rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+    color:#ccc;
+}
+.list_bottom_top_left_picture{
+    width:1.45rem;
+    height:1.7rem;
+    margin-top:0.2rem;
+    background: url(https://gw.alicdn.com/bao/uploaded/O1CN01kmnh6A1xfJ4VSzpae_!!2-item_pic.png_140x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+}
+.list_bottom_top1_left_picture{
+    width:1.45rem;
+    height:1.7rem;
+    margin-top:0.2rem;
+    background: url(https://gw.alicdn.com/bao/uploaded/TB1vLUEokzoK1RjSZFlXXai4VXa.png_140x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+}
+
+.list_bottom_bottom{
+    width:7rem;
+    height:2.1rem;
+    /*border:1px solid red;*/
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top:0.2rem;
+}
+.list_bottom_bottom_left{
+    width:3.3rem;
+    height:2.1rem;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.list_bottom_bottom_left_text{
+    width:1.8rem;
+    height:2.1rem;
+    /*border:1px solid red;*/
+    font-size:0.25rem;
+}
+.list_bottom_bottom_left_text_one{
+    width:0.8rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+    color: #c89c6a;
+}
+.list_bottom_bottom_left_text_two{
+    width:1.7rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+    color:#000;
+}
+.list_bottom_bottom_left_text_three{
+    width:1.7rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+    color:#ccc;
+}
+.list_bottom_bottom_left_picture{
+    width:1.45rem;
+    height:1.7rem;
+    margin-top:0.2rem;
+    background: url(https://gw.alicdn.com/bao/uploaded/O1CN01ef1HPM1lv5JmrRTaA_!!2-item_pic.png_140x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+}
+.list_bottom_bottom1_left_picture{
+    width:1.45rem;
+    height:1.7rem;
+    margin-top:0.2rem;
+    background: url(https://gw.alicdn.com/bao/uploaded/LB1tMDmbynrK1RjSsziXXXptpXa.png_140x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+}
+
+/*猜你喜欢*/
+.love_box{
+    width:100vw;
+    height:4.2rem;
+    background: url(https://gw.alicdn.com/tfs/TB1Pq4.x9zqK1RjSZPcXXbTepXa-750-294.png_790x10000.jpg_.webp) no-repeat 0 0;
+    background-size: cover;
+}
+.love{
+    width:7rem;
+    height:160rem;
+    /*border:1px solid red;*/
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin:auto;
+    margin-top:0.1rem;
+    position: relative;
+}
+.love_one{
+    width:7rem;
+    height:6rem;
+    /*border:1px solid ;*/
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.love_one_left{
+    width:3.3rem;
+    height:6rem;
+    border:1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+.love_one_left_one{
+    width:3.3rem ;
+    height:3.4rem;
+    background: #f6f6f6;
+}
+.love_one_left_one_picture{
+    width:2.9rem ;
+    height:3rem;
+    background: url(https://gw.alicdn.com/bao/uploaded/i1/TB1TvtgGYrpK1RjSZTESuwWAVXa.jpg_290x10000Q75.jpg_.webp)no-repeat 0 0;
+    background-size: cover;
+    margin:0.2rem;
+}
+.love_one_left_one_picture1{
+    width:2.9rem ;
+    height:3rem;
+    background: url(https://gw.alicdn.com/bao/uploaded/i2/3692878586/O1CN01BSvAt62DIR7GC8tf5_!!0-item_pic.jpg_290x10000Q75.jpg_.webp)no-repeat 0 0;
+    background-size: cover;
+    margin:0.2rem;
+}
+.love_one_left_two{
+    width:3rem;
+    height:0.3rem;
+    background: #cca2b0;
+    font-size:0.25rem;
+    color:#fff;
+    position: absolute;
+    top:3.3rem;
+}
+.love_one_left_two1{
+    width:0.8rem;
+    height:0.3rem;
+    background: #c89c6a;
+    font-size:0.25rem;
+    color:#fff;
+    position: absolute;
+    top:3.3rem;
+    left:0.1rem;
+}
+.love_one_left_three{
+    width:2.8rem;
+    height:0.8rem;
+    font-size:0.3rem;
+    color:#000;
+    overflow: hidden;
+    /*border:1px solid red;*/
+    position:absolute;
+    top:3.7rem;
+}
+.love_one_left_four{
+    width:0.8rem;
+    height:0.4rem;
+    line-height: 0.4rem;
+    font-size:0.25rem;
+    color:red;
+    border: 1px solid red;
+    position:absolute;
+    top:4.7rem;
+    left:0.1rem;
+}
+.love_one_left_five{
+    width:3.3rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+    font-size:0.25rem;
+    color:#fff;/*
+    border:1px solid green;*/
+    position:absolute;
+    top:5.2rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+.love_one_left_five_left{
+    width:1.5rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+    color:red;
+    font-size:0.3rem;
+
+}
+.love_one_left_five_right{
+    width:1rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+    border-radius: 0.3rem;
+    background: #fde5ea;
+    color:red;
+    font-size:0.25rem;
+    text-align: center;
+}
+
+
+.love_two{
+     width:7rem;
+     height:6.5rem;
+     border:1px solid red;
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     position: absolute;
+     margin-top:6.2rem;
+ }
+.love_two_left{
+    width:3.3rem;
+    height:6rem;
+    border:1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+.love_two_left_one{
+    width:3.3rem ;
+    height:3.4rem;
+    background: #f6f6f6;
+}
+.love_two_left_one_picture{
+    width:2.9rem ;
+    height:3rem;
+    background: url(https://gw.alicdn.com/bao/uploaded/i1/2258807504/O1CN017flgDf25IsZ58oxo6_!!2-item_pic.png_290x10000.jpg_.webp)no-repeat 0 0;
+    background-size: cover;
+    margin:0.2rem;
+}
+.love_two_left_one_picture1{
+    width:3.3rem ;
+    height:6.3rem;
+    background: url(https://gw.alicdn.com/tfs/TB1Hga4O4TpK1RjSZFKXXa2wXXa-344-622.png_360x10000.jpg_.webp)no-repeat 0 0;
+    background-size: cover;
+}
+.love_two_left_two{
+    width:1.5rem;
+    height:0.3rem;
+    background: #cca2b0;
+    font-size:0.25rem;
+    color:#fff;
+    position: absolute;
+    top:3.3rem;
+    left:0.2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.love_two_left_two i{
+    width:0.5rem;
+    height:0.25rem;
+    background: url(http://g.alicdn.com/mui/flag-img/biger@2x/JP.png) no-repeat 0 0;
+    background-size: cover;
+}
+.love_two_left_two1{
+    width:0.8rem;
+    height:0.3rem;
+    background: #c89c6a;
+    font-size:0.25rem;
+    color:#fff;
+    position: absolute;
+    top:3.3rem;
+    left:0.1rem;
+}
+.love_two_left_three{
+    width:2.8rem;
+    height:0.8rem;
+    font-size:0.3rem;
+    color:#000;
+    overflow: hidden;
+    /*border:1px solid red;*/
+    position:absolute;
+    top:3.7rem;
+}
+.love_two_left_four{
+    width:0.8rem;
+    height:0.4rem;
+    line-height: 0.4rem;
+    font-size:0.25rem;
+    color:red;
+    border: 1px solid red;
+    position:absolute;
+    top:4.7rem;
+    left:0.1rem;
+}
+.love_two_left_five{
+    width:3.3rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+    font-size:0.25rem;
+    color:#fff;/*
+    border:1px solid green;*/
+    position:absolute;
+    top:5.2rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+.love_two_left_five_left{
+    width:1.5rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+    color:red;
+    font-size:0.3rem;
+
+}
+.love_two_left_five_right {
+    width: 1rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    border-radius: 0.3rem;
+    background: #fde5ea;
+    color: red;
+    font-size: 0.25rem;
+    text-align: center;
+}
+
+.love_three_left{
+    width:3.3rem;
+    height:6rem;
+    border:1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+.love_three_left_one{
+    width:3.3rem ;
+    height:3.4rem;
+    background: #f6f6f6;
+}
+.love_three_left_one_picture{
+    width:2.9rem ;
+    height:3rem;
+    background: url(https://gw.alicdn.com/bao/uploaded/bao/upload/TB1JhPLCmzqK1RjSZFLXXcn2XXa.png_290x10000.jpg_.webp)no-repeat 0 0;
+    background-size: cover;
+    margin:0.2rem;
+}
+.love_three_left_one_picture1{
+    width:3.3rem ;
+    height:6.3rem;
+    background: url(https://gw.alicdn.com/tfs/TB1VB2dOCzqK1RjSZFpXXakSXXa-344-622.png_360x10000.jpg_.webp)no-repeat 0 0;
+    background-size: cover;
+}
+.love_three_left_two{
+    width:1.5rem;
+    height:0.3rem;
+    background: #cca2b0;
+    font-size:0.25rem;
+    color:#fff;
+    position: absolute;
+    top:3.3rem;
+    left:0.2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.love_three_left_two i{
+    width:0.5rem;
+    height:0.25rem;
+    background: url(http://g.alicdn.com/mui/flag-img/biger@2x/JP.png) no-repeat 0 0;
+    background-size: cover;
+}
+.love_three_left_two1{
+    width:0.8rem;
+    height:0.3rem;
+    background: #c89c6a;
+    font-size:0.25rem;
+    color:#fff;
+    position: absolute;
+    top:3.3rem;
+    left:0.1rem;
+}
+.love_three_left_three{
+    width:2.8rem;
+    height:0.8rem;
+    font-size:0.3rem;
+    color:#000;
+    overflow: hidden;
+    /*border:1px solid red;*/
+    position:absolute;
+    top:3.7rem;
+}
+.love_three_left_four{
+    width:0.8rem;
+    height:0.4rem;
+    line-height: 0.4rem;
+    font-size:0.25rem;
+    color:red;
+    border: 1px solid red;
+    position:absolute;
+    top:4.7rem;
+    left:0.1rem;
+}
+.love_three_left_five{
+    width:3.3rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+    font-size:0.25rem;
+    color:#fff;/*
+    border:1px solid green;*/
+    position:absolute;
+    top:5.2rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+.love_three_left_five_left{
+    width:1.5rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+    color:red;
+    font-size:0.3rem;
+
+}
+.love_three_left_five_right {
+    width: 1rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    border-radius: 0.3rem;
+    background: #fde5ea;
+    color: red;
+    font-size: 0.25rem;
+    text-align: center;
+}
+
+.love_four_left{
+    width:3.3rem;
+    height:6rem;
+    border:1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+.love_four_left_one{
+    width:3.3rem ;
+    height:3.4rem;
+    background: #f6f6f6;
+}
+.love_four_left_one_picture{
+    width:2.9rem ;
+    height:3rem;
+    background: url(https://gw.alicdn.com/bao/uploaded/i4/908094717/O1CN01mdDoVd1kiQjaNHKlU_!!0-item_pic.jpg_290x10000Q75.jpg_.webp)no-repeat 0 0;
+    background-size: cover;
+    margin:0.2rem;
+}
+.love_four_left_one_picture1{
+    width:3.3rem ;
+    height:6.3rem;
+    background: url(https://gw.alicdn.com/tfs/TB1JDWPOsbpK1RjSZFyXXX_qFXa-344-622.png_360x10000.jpg_.webp)no-repeat 0 0;
+    background-size: cover;
+}
+.love_four_left_two{
+    width:2.2rem;
+    height:0.3rem;
+    background: #cca2b0;
+    font-size:0.25rem;
+    color:#fff;
+    position: absolute;
+    top:3.3rem;
+    left:0.2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.love_four_left_two i{
+    width:0.5rem;
+    height:0.25rem;
+    background: url(http://g.alicdn.com/mui/flag-img/biger@2x/JP.png) no-repeat 0 0;
+    background-size: cover;
+}
+.love_four_left_two1{
+    width:0.8rem;
+    height:0.3rem;
+    background: #c89c6a;
+    font-size:0.25rem;
+    color:#fff;
+    position: absolute;
+    top:3.3rem;
+    left:0.1rem;
+}
+.love_four_left_three{
+    width:2.8rem;
+    height:0.8rem;
+    font-size:0.3rem;
+    color:#000;
+    overflow: hidden;
+    /*border:1px solid red;*/
+    position:absolute;
+    top:3.7rem;
+}
+.love_four_left_four{
+    width:0.8rem;
+    height:0.4rem;
+    line-height: 0.4rem;
+    font-size:0.25rem;
+    color:red;
+    border: 1px solid red;
+    position:absolute;
+    top:4.7rem;
+    left:0.1rem;
+}
+.love_four_left_five{
+    width:3.3rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+    font-size:0.25rem;
+    color:#fff;/*
+    border:1px solid green;*/
+    position:absolute;
+    top:5.2rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+.love_four_left_five_left{
+    width:1.5rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+    color:red;
+    font-size:0.3rem;
+
+}
+.love_four_left_five_right {
+    width: 1rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    border-radius: 0.3rem;
+    background: #fde5ea;
+    color: red;
+    font-size: 0.25rem;
+    text-align: center;
+}
+
+.love_five_left{
+    width:3.3rem;
+    height:6rem;
+    border:1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+.love_five_left_one{
+    width:3.3rem ;
+    height:3.4rem;
+    background: #f6f6f6;
+}
+.love_five_left_one_picture img{
+    width:2.9rem ;
+    height:3rem;
+    /*background: url(https://gw.alicdn.com/bao/uploaded/i4/908094717/O1CN01mdDoVd1kiQjaNHKlU_!!0-item_pic.jpg_290x10000Q75.jpg_.webp)no-repeat 0 0;
+    background-size: cover;*/
+    margin:0.2rem;
+}
+/*.love_five_left_one_picture1{
+    width:3.3rem ;
+    height:6.3rem;
+    background: url(https://gw.alicdn.com/tfs/TB1JDWPOsbpK1RjSZFyXXX_qFXa-344-622.png_360x10000.jpg_.webp)no-repeat 0 0;
+    background-size: cover;
+}*/
+.love_five_left_two{
+    width:2.2rem;
+    height:0.3rem;
+    background: #cca2b0;
+    font-size:0.25rem;
+    color:#fff;
+    position: absolute;
+    top:3.3rem;
+    left:0.2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.love_five_left_two i img{
+    width:0.5rem;
+    height:0.25rem;
+    /*background: url(http://g.alicdn.com/mui/flag-img/biger@2x/JP.png) no-repeat 0 0;
+    background-size: cover;*/
+}
+.love_five_left_two1{
+    width:0.8rem;
+    height:0.3rem;
+    background: #c89c6a;
+    font-size:0.25rem;
+    color:#fff;
+    position: absolute;
+    top:3.3rem;
+    left:0.1rem;
+}
+.love_five_left_three{
+    width:2.8rem;
+    height:0.8rem;
+    font-size:0.3rem;
+    color:#000;
+    overflow: hidden;
+    /*border:1px solid red;*/
+    position:absolute;
+    top:3.7rem;
+}
+.love_five_left_four{
+    width:0.8rem;
+    height:0.4rem;
+    line-height: 0.4rem;
+    font-size:0.25rem;
+    color:red;
+    border: 1px solid red;
+    position:absolute;
+    top:4.7rem;
+    left:0.1rem;
+}
+.love_five_left_five{
+    width:3.3rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+    font-size:0.25rem;
+    color:#fff;/*
+    border:1px solid green;*/
+    position:absolute;
+    top:5.2rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+.love_five_left_five_left{
+    width:1.5rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+    color:red;
+    font-size:0.3rem;
+
+}
+.love_five_left_five_right {
+    width: 1rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    border-radius: 0.3rem;
+    background: #fde5ea;
+    color: red;
+    font-size: 0.25rem;
+    text-align: center;
+}
