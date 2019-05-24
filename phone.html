@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>手机天猫</title>
+    <link rel="stylesheet" href="CSS/phone.css">
+    <script>
+        window.onload=function () {
+
+
+            var num=0;
+            setInterval(function () {
+                if(num==10){
+                    num=0;
+                }
+                var btns=document.querySelectorAll(".btns");
+                var wss=document.querySelectorAll(".ws");
+
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].style.background = "rgba(255,255,255,0.6)";
+                    wss[i].style.display = "none";
+                }
+                btns[num].style.background = "rgb(255,255,255)";
+                wss[num].style.display = "block";
+
+                num++;
+            },3000);
+
+            var num1=0;
+            setInterval(function () {
+                if(num1==2){
+                    num1=0;
+                }
+                var renqi_wss=document.querySelectorAll(".renqi_ws");
+
+                for (var i = 0; i < renqi_wss.length; i++) {
+                    renqi_wss[i].style.display = "none";
+                }
+                renqi_wss[num1].style.display = "block";
+
+                num1++;
+            },3000);
+        }
+        function get_scrollTop_of_body() {
+            var a = document.getElementById('returntop');
+            var scrollTop;
+            if (typeof window.pageYOffset != 'undefined') {
+                scrollTop = window.pageYOffset;
+            } else if (typeof document.compatMode != 'undefined' &&
+                document.compatMode != 'BackCompat') {
+                scrollTop = document.documentElement.scrollTop;
+            } else if (typeof document.body != 'undefined') {
+                scrollTop = document.body.scrollTop;
+            }
+            if (scrollTop != 0) {
+                a.style.display = 'block';
+            } else {
+                a.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body onscroll="get_scrollTop_of_body()">
+<div class="body">
+    <div class="head">
+        <div class="head_center">
+            <div class="head_left"></div>
+            <div class="head_middle"></div>
+            <div class="head_right">登录</div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="search">
+            <div class="search_icon"></div>
+            <input type="text" placeholder="搜索商品、品牌" class="input">
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav_center">
+            <div><img src="pictures/h1.webp" width="55rem" height="55rem">苏宁易购</div>
+            <div><img src="pictures/h2.png" width="55rem" height="55rem">天猫超市</div>
+            <div><img src="pictures/h3.webp" width="55rem" height="55rem">天猫国际</div>
+            <div><img src="pictures/h4.webp" width="55rem" height="55rem">聚划算</div>
+            <div><img src="pictures/h5.webp" width="55rem" height="55rem">分&nbsp;&nbsp;类</div>
+        </div>
+    </div>
+    <div class="whole_sheet">
+        <div class="ws_">
+            <div class="ws w1"></div>
+            <div class="ws w2"></div>
+            <div class="ws w3"></div>
+            <div class="ws w4"></div>
+            <div class="ws w5"></div>
+            <div class="ws w6"></div>
+            <div class="ws w7"></div>
+            <div class="ws w8"></div>
+            <div class="ws w9"></div>
+            <div class="ws w10"></div>
+            <div class="btns_">
+                <div class="btns btn1"></div>
+                <div class="btns btn2"></div>
+                <div class="btns btn3"></div>
+                <div class="btns btn4"></div>
+                <div class="btns btn5"></div>
+                <div class="btns btn6"></div>
+                <div class="btns btn7"></div>
+                <div class="btns btn8"></div>
+                <div class="btns btn9"></div>
+                <div class="btns btn10"></div>
+            </div>
+        </div>
+    </div>
+    <div class="shadow"></div>
+    <div class="redbao"></div>
+    <div class="middle">
+        <div class="xs xs1">
+            <div class="xs_text">限时抢购</div>
+            <div class="xs_bottom">
+                <div><img src="pictures/xs1.webp" width="80rem" height="80rem"><div class="text">限时特价</div></div>
+                <div><img src="pictures/xs2.webp" width="80rem" height="80rem"><div class="text">为你精选</div></div>
+            </div>
+        </div>
+        <div class="xs xs2">
+            <div class="xs_text">天猫好物</div>
+            <div class="xs_bottom">
+                <div><img src="pictures/xs3.webp" width="80rem" height="80rem"><div class="text">设计感</div></div>
+                <div><img src="pictures/xs4.webp" width="80rem" height="80rem"><div class="text">萌趣童装</div></div>
+            </div>
+        </div>
+        <div class="xs xs3">
+            <div class="xs_text">聚划算</div>
+            <div class="xs_bottom">
+                <div><img src="pictures/xs5.webp" width="80rem" height="80rem"><div class="text" style="width: 15vw">大牌3折起</div></div>
+                <div><img src="pictures/xs6.webp" width="80rem" height="80rem"><div class="text" style="width: 17vw">满49元减20元</div></div>
+            </div>
+        </div>
+        <div class="xs xs4">
+            <div class="xs_text">天猫闪降</div>
+            <div class="xs_bottom">
+                <div><img src="pictures/xs7.webp" width="80rem" height="80rem"><div class="text">已降70元</div></div>
+                <div><img src="pictures/xs8.webp" width="80rem" height="80rem"><div class="text">已降10元</div></div>
+            </div>
+        </div>
+    </div>
+    <div class="bangdan">
+        <div class="bangdan_title">天猫榜单</div>
+        <div class="bangdan_body">
+            <div class="qs1"><div class="qushibang"></div><div class="qsback"><img src="pictures/qushi2.webp" width="90rem" height="90rem"></div><div class="blueback">优选时尚行李箱榜</div><span>人气上升786%</span></div>
+            <div class="qs2"><div class="qushibang"></div><div class="qsback"><img src="pictures/qushi1.webp" width="90rem" height="90rem"></div><div class="blueback">优选时尚行李箱榜</div><span>人气上升786%</span></div>
+            <div class="qs3"><div class="qushibang"></div><div class="qsback"><img src="pictures/qushi3.webp" width="80rem" height="80rem"></div><div class="blueback">优选时尚行李箱榜</div><span>人气上升786%</span></div>
+        </div>
+    </div>
+    <div class="renqi">
+        <div class="renqi_left">
+            <div class="renqi_left_center">
+                <div class="renqibang">人气榜</div>
+                <span style="font-weight: bold">质感家居睡裙榜</span><br>
+                <span style="color: gray">月销141件</span>
+            </div>
+        </div>
+        <div class="renqi_right">
+            <div class="renqi_ws">
+                <div><div class="top1"></div><img src="pictures/rq1.webp" width="80rem" height="80rem"></div>
+                <div><div class="top2"></div><img src="pictures/rq2.webp" width="70rem" height="70rem"></div>
+                <div><div class="top3"></div><img src="pictures/rq3.webp" width="75rem" height="75rem"></div>
+            </div>
+            <div class="renqi_ws">
+                <div><div class="top4"></div><img src="pictures/rq4.webp" width="70rem" height="70rem"></div>
+                <div><div class="top5"></div><img src="pictures/rq5.webp" width="80rem" height="80rem"></div>
+                <div><div class="top6"></div><img src="pictures/rq6.webp" width="70rem" height="70rem"></div>
+            </div>
+        </div>
+    </div>
+    <div class="renqi_bottom">
+        <div class="rqq">
+            <div class="rqq_left">
+                <span style="color: goldenrod">人气榜</span><br>
+                <span style="color: #c9c9c9">—</span><br>
+                <span>品质牛皮鞋子榜</span><br>
+                <span style="color: gray;font-weight: normal;">月销538件</span>
+            </div>
+            <div class="rqq_right">
+                <img src="pictures/rq7.webp" width="60rem" height="60rem">
+            </div>
+        </div>
+        <div class="rqq">
+            <div class="rqq_left">
+                <span style="color: goldenrod">人气榜</span><br>
+                <span style="color: #c9c9c9">—</span><br>
+                <span>专业防泼水外套榜</span><br>
+                <span style="color: gray;font-weight: normal;">火爆热卖中</span>
+            </div>
+            <div class="rqq_right">
+                <img src="pictures/rq8.webp" width="60rem" height="60rem">
+            </div>
+        </div>
+        <div class="rqq">
+            <div class="rqq_left">
+                <span style="color: goldenrod">人气榜</span><br>
+                <span style="color: #c9c9c9">—</span><br>
+                <span>品质圆领运动服榜</span><br>
+                <span style="color: gray;font-weight: normal;">月销9120件</span>
+            </div>
+            <div class="rqq_right">
+                <img src="pictures/rq9.webp" width="60rem" height="60rem">
+            </div>
+        </div>
+        <div class="rqq">
+            <div class="rqq_left">
+                <span style="color: goldenrod">人气榜</span><br>
+                <span style="color: #c9c9c9">—</span><br>
+                <span>高阶段款衬衫榜</span><br>
+                <span style="color: gray;font-weight: normal;">月销205件</span>
+            </div>
+            <div class="rqq_right">
+                <img src="pictures/rq10.webp" width="60rem" height="60rem">
+            </div>
+        </div>
+    </div>
+    <div class="like_title">猜你喜欢</div>
+    <div class="like">
+        <div class="like_">
+            <div class="like_top">
+                <img src="pictures/like1.webp" width="140rem" height="140rem">
+            </div>
+            <div class="like_bottom">
+                <div class="like_bottom_top">2019年新款哈哈哈哈哈哈哈哈哈哈哈哈哈哈</div>
+                <div class="like_bottom_bottom">
+                    <span style="font-weight: bold">￥149</span>
+                    <span class="box">看相似</span>
+                </div>
+            </div>
+        </div>
+        <div class="like_">
+            <div class="like_top">
+                <img src="pictures/like2.webp" width="140rem" height="140rem">
+            </div>
+            <div class="like_bottom">
+                <div class="like_bottom_top">2019年新款哈哈哈哈哈哈哈哈哈哈哈哈哈哈</div>
+                <div class="like_bottom_bottom">
+                    <span style="font-weight: bold">￥149</span>
+                    <span class="box">看相似</span>
+                </div>
+            </div>
+        </div>
+        <div class="like_">
+            <div class="like_top">
+                <img src="pictures/like3.webp" width="140rem" height="140rem">
+            </div>
+            <div class="like_bottom">
+                <div class="like_bottom_top">2019年新款哈哈哈哈哈哈哈哈哈哈哈哈哈哈</div>
+                <div class="like_bottom_bottom">
+                    <span style="font-weight: bold">￥149</span>
+                    <span class="box">看相似</span>
+                </div>
+            </div>
+        </div>
+        <div class="like_">
+            <img src="pictures/reddd.webp" width="168rem" height="265rem">
+        </div>
+        <div class="like_">
+            <div class="like_top">
+                <img src="pictures/like4.webp" width="140rem" height="140rem">
+            </div>
+            <div class="like_bottom">
+                <div class="like_bottom_top">2019年新款哈哈哈哈哈哈哈哈哈哈哈哈哈哈</div>
+                <div class="like_bottom_bottom">
+                    <span style="font-weight: bold">￥149</span>
+                    <span class="box">看相似</span>
+                </div>
+            </div>
+        </div>
+        <div class="like_">
+            <div class="like_top">
+                <img src="pictures/like2.webp" width="140rem" height="140rem">
+            </div>
+            <div class="like_bottom">
+                <div class="like_bottom_top">2019年新款哈哈哈哈哈哈哈哈哈哈哈哈哈哈</div>
+                <div class="like_bottom_bottom">
+                    <span style="font-weight: bold">￥149</span>
+                    <span class="box">看相似</span>
+                </div>
+            </div>
+        </div>
+        <div class="like_">
+            <div class="like_top">
+                <img src="pictures/like1.webp" width="140rem" height="140rem">
+            </div>
+            <div class="like_bottom">
+                <div class="like_bottom_top">2019年新款哈哈哈哈哈哈哈哈哈哈哈哈哈哈</div>
+                <div class="like_bottom_bottom">
+                    <span style="font-weight: bold">￥149</span>
+                    <span class="box">看相似</span>
+                </div>
+            </div>
+        </div>
+        <div class="like_">
+            <div class="like_top">
+                <img src="pictures/like3.webp" width="140rem" height="140rem">
+            </div>
+            <div class="like_bottom">
+                <div class="like_bottom_top">2019年新款哈哈哈哈哈哈哈哈哈哈哈哈哈哈</div>
+                <div class="like_bottom_bottom">
+                    <span style="font-weight: bold">￥149</span>
+                    <span class="box">看相似</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="returntop" id="returntop"></div>
+</div>
+</body>
+</html>
