@@ -6,6 +6,32 @@
 maximum-scale=1.0,minimum-scale=1.0">
     <link rel="stylesheet" href="./styles/tmall.css">
     <link rel="icon" href="images/web-icon.png" type="image/x-icon"/>
+    <script>
+        window.onload = function (ev) {
+            var banner = document.querySelectorAll(".banner img");
+            var btn=document.querySelectorAll(".btn");
+            var num = 1
+            var numb = num-1;
+
+
+            setInterval(function () {
+
+                if (num == 3) {
+                    num = 0;
+                }
+
+                for (var i = 0; i < banner.length; i++) {
+                    banner[i].style.left = "7.5rem";
+                    btn[i].style.background = "rgba(255,255,255,.5)";
+                }
+                    btn[num].style.background="white"
+                    banner[num].style.animation = "banner-img-in .2s ease-in-out 0s 1";
+                    banner[num].style.left="0.24rem";
+
+                num++;
+            }, 5000)
+        }
+    </script>
     <title>天猫TMALL</title>
 </head>
 <body>
@@ -45,6 +71,13 @@ maximum-scale=1.0,minimum-scale=1.0">
     </div>
     <div class="banner">
         <img src="./images/banner1.webp" alt="">
+        <img src="./images/banner2.webp" alt="">
+        <img src="./images/banner3.webp" alt="">
+        <div class="btns">
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+        </div>
     </div>
     <img src="images/阴影.webp" alt="" class="shadow">
     <img src="./images/新人福利.webp" alt="" class="fuli">
