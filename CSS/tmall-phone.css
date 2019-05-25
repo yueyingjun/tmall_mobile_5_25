@@ -95,7 +95,6 @@ body{
 
 .lb .choose{
     width: 2rem; height: 0.05rem;
-    border: 1px solid blue;
     display: flex;
     justify-content: space-around;
     position: absolute;
