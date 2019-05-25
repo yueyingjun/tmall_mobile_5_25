@@ -1,0 +1,511 @@
+html{
+    font-size: 13.33333vw;
+}
+body{
+     margin: 0;
+     padding: 0;
+ }
+/*头部*/
+.header-up{
+    width: 100vw;
+    height: .88rem;
+    background-color: rgb(255,0,54);
+}
+.header-down{
+    width: 100vw;
+    height: .92rem;
+    background-color: rgb(255,0,54);
+}
+.header-up .header-opt{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-opt .header-opt-top{
+    font-size: .4rem;
+}
+.header-opt-top a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.header-opt-top img{
+    width: 2.37rem;
+    height: 0.41rem;
+}
+.header-search{
+    width:100%;
+    height: 100%;
+}
+.header-search .search-box{
+    width: 80%;
+    height: 0.72rem;
+    margin: auto;
+    border-radius: 0.1rem;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+}
+.search-box-icon{
+    width: 0.5rem;
+    height: 0.5rem;
+    float: left;
+    margin-right: 0.2rem;
+}
+.search-box-icon img{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.search-box-desc{
+    font-size: 0.25rem;
+    color: gray;
+}
+
+/*列表*/
+.list{
+    width: 100%;
+    height: 1.55rem;
+}
+.list-items{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.list-item1-icon{
+    width: 0.96rem;
+    height: 0.96rem;
+    margin-bottom: 0.2rem;
+    margin-left: 0.2rem;
+    border-radius: 50%;
+}
+.list-item1-icon img {
+    width: 100%;
+    height: 100%;
+}
+.list-item1{
+    width: 1.4rem;
+    height: 100%;
+    align-items: center;
+}
+.list-item1-desc{
+    font-size: 0.24rem;
+    color: dimgray;
+    text-align: center;
+}
+
+/*轮播图*/
+.wheel-box{
+    width: 7.02rem;
+    height: 2.65rem;
+    margin: auto;
+    position: relative;
+}
+.wheel-box img{
+    width: 7.02rem;
+    height: 2.65rem;
+}
+.wheel-box a{
+    display: block;
+    width:100%;
+    height:100%;
+    position: absolute;
+}
+.wheel-box .lunbo1{
+    width:100%;
+    height: 100%;
+    z-index: 5;
+    position: absolute;
+}
+.wheel-box .lunbo2{
+    width:100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+}
+.wheel-box .lunbo3{
+    width:100%;
+    height: 100%;
+    z-index: 3;
+    position: absolute;
+}
+.wheel-box .lunbo4{
+    width:100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+}
+.wheel-box .lunbo5{
+    width:100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+}
+.btn{
+    width: 6rem;
+    height:0.2rem;
+    position: absolute;
+    right:0;
+    bottom: .2rem;
+    z-index: 6;
+}
+.btn1{
+    width:.4rem;
+    height: .1rem;
+    background: #555;
+    margin-left: .3rem;
+    float: left;
+}
+
+/*背景1*/
+.beijing1{
+    width: 7.5rem;
+    height: 3.6rem;
+}
+.beijing1 img{
+    width: 100%;
+    height: 100%;
+}
+
+/*限时抢购*/
+.qianggou{
+    width: 7.5rem;
+    height: 5.46rem;
+    align-items: center;
+}
+.qianggou1{
+    width: 3.45rem;
+    height: 2.57rem;
+    float: left;
+    margin-left: .2rem;
+    background:url("../images4/qianggoubj.png") no-repeat;
+    background-size: cover;
+}
+.qianggou1-left{
+    width: 1.55rem;
+    height: 100%;
+    float: left;
+}
+.qianggou1-left-up{
+    width: 1.55rem;
+    height: .4rem;
+}
+.qianggou1-left-up span{
+    font-size: 0.3rem;
+    color: #202020;
+    float: left;
+    margin-left: .2rem;
+    font-weight: bold;
+}
+.qianggou1-left-down{
+    width: 1.55rem;
+    height: 1.55rem;
+}
+.qianggou1-left-down img{
+    width: 100%;
+    height: 100%;
+}
+.qianggou1-left-end{
+    width: 1.55rem;
+    height: .3rem;
+}
+.qianggou1-left-end span{
+    font-size: 0.22rem;
+    color: red;
+    float: left;
+    margin-left: .3rem;
+    font-weight: bold;
+}
+.qianggou1-right{
+    width: 1.55rem;
+    height: 100%;
+    float: left;
+    margin-left: .2rem;
+}
+
+/*天猫榜单*/
+.tmall-top{
+    width: 7.02rem;
+    height: .59rem;
+    margin: auto;
+}
+.tmall-top-title{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+.tmall-top-title span{
+    display: inline-block;
+    float: left;
+    font-size: .3rem;
+    font-weight: bold;
+}
+
+/*天猫趋势榜*/
+.qushibang{
+    width: 7.14rem;
+    height: 2.26rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-around;
+}
+.qushibang-1{
+    width: 2.26rem;
+    height: 2.26rem;
+    float: left;
+    background-color: rgba(0,0,0,0.03);
+    border: 1px solid lightgrey;
+    position: relative;
+}
+.qushibang-1-dec{
+    width: .63rem;
+    height: .51rem;
+    position: absolute;
+    margin-top: .1rem;
+    margin-left: .2rem;
+}
+.qushibang-1-dec img{
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.qushibang-1-top{
+    width: 100%;
+    height: 1.4rem;
+}
+.qushibang-1-top img{
+    width: 1rem;
+    height: 1rem;
+    margin-top: .3rem;
+    margin-left: .6rem;
+}
+.qushibang-1-mid{
+    width: 90%;
+    height: .36rem;
+    line-height: .36rem;
+    border: 1px solid darkblue;
+    background-color: darkslateblue;
+    border-radius: 20%;
+}
+.qushibang-1-mid span{
+    display: inline-block;
+    float: left;
+    margin-left: .3rem;
+    font-size: .25rem;
+    color: #ffffff;
+}
+.qushibang-1-bottom{
+    width: 100%;
+    height: .36rem;
+}
+.qushibang-1-bottom span{
+    display: inline-block;
+    float: left;
+    margin-left: .3rem;
+    font-size: .25rem;
+    color: #313131;
+}
+/*人气榜*/
+.people-top{
+    width: 7.02rem;
+    height: 1.69rem;
+    margin: auto;
+    display: flex;
+    justify-content:space-around;
+    background-color: #f8f8f8;
+}
+.people-top-left{
+    width: 1.92rem;
+    height: 100%;
+}
+.people-top-right{
+    width: 5rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.people-top-right-1 {
+    width: 1.3rem;
+    height: 1.3rem;
+    float: left;
+    border: 1px solid lightgray;
+}
+.people-top-right-1 img{
+    width:1.3rem;
+    height: 1.3rem;
+}
+
+/*4大人气排行榜*/
+.people-top-four{
+    width: 7.02rem;
+    height: 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+}
+.people-top-four-1{
+    width: 3.45rem;
+    height: 1.69rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f8f8f8;
+}
+.people-top-four-1-left{
+    width: 2.05rem;
+    height: 1.326rem;
+}
+.people-top-left-1{
+    width: 100%;
+    height: .3rem;
+}
+.people-top-left-1 span{
+    display: inline-block;
+    float: left;
+    font-size: .24rem;
+    color: #c89d68;
+}
+.people-top-left-2{
+    width: .22rem;
+    height: .1rem;
+}
+.people-top-left-2 span{
+    display: inline-block;
+    float: left;
+    font-size: .3rem;
+    margin-top: -0.2rem;
+    color: #c89d68;
+}
+.people-top-left-3{
+    width: 100%;
+    height: .368rem;
+}
+.people-top-left-3 span{
+    display: inline-block;
+    float: left;
+    font-size: .25rem;
+    font-weight: bold;
+    color: #313131;
+}
+.people-top-left-4{
+    width: 100%;
+    height: .368rem;
+}
+.people-top-left-4 span{
+    display: inline-block;
+    float: left;
+    font-size: .22rem;
+    color: #999999;
+}
+.people-top-four-1-right{
+    width: 1.1rem;
+    height: 1.1rem;
+    background-color: rgba(0,0,0,0.03);
+}
+.people-top-four-1-right img{
+    width: 100%;
+    height: 100%;
+}
+/*猜你喜欢*/
+.your-love{
+    width: 7.02rem;
+    height: .59rem;
+    margin: auto;
+}
+.your-love-title{
+    width: 100%;
+    height: 100%;
+}
+.your-love-title span{
+    font-size: .3rem;
+    font-weight: bold;
+    display: inline-block;
+    float: left;
+}
+
+/*猜你喜欢列表*/
+.love-list{
+    width: 7.5rem;
+    height: 28rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.love-list-item{
+    width: 3.51rem;
+    height: 5.54rem;
+    border:1px solid lightgrey;
+}
+.love-list-item img{
+    width: 100%;
+    height: 100%;
+}
+.love-list-item .item-cont{
+    width: 3.51rem;
+    height: 3.51rem;
+    background-color: rgba(0,0,0,0.03);
+}
+.item-cont img{
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-left: .33rem;
+    margin-top: .33rem;
+}
+.item-desc{
+    width: 3.51rem;
+    height:2.03rem;
+    margin-top: -0.25rem;
+}
+.item-prand{
+    width: 0.936rem;
+    height: .36rem;
+    margin-left: .2rem;
+    margin-bottom: .15rem;
+    background-color: #cda3b1;
+}
+.item-prand span{
+    display: inline-block;
+    float: left;
+    line-height: .36rem;
+    font-size: .2rem;
+}
+.item-detail{
+    width: 2.8rem;
+    height: 0.72rem;
+    margin-left:.2rem;
+    margin-bottom: .5rem;
+    bottom: .1rem;
+}
+.item-detail span{
+    display: inline-block;
+    float: left;
+    font-size: .26rem;
+    color: #3e3e3e;
+}
+.item-price{
+    width: 3.4rem;
+    height: .3rem;
+    display: flex;
+    justify-content: space-around;
+}
+.item-price span{
+    color: red;
+    font-size: .4rem;
+}
+.item-same a{
+    display: block;
+    color: red;
+    font-size: .23rem;
+    text-decoration: none;
+    border-radius: 20%;
+    background-color: #ffe6eb;
+    border: 1px solid red;
+}
+
