@@ -1,0 +1,365 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 26.66667vw;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 0.16rem;
+}
+
+/* 头部 */
+.header-top {
+	width: 100vw;
+	height: 0.44rem;
+	color: white;
+	border: 1px solid red;
+	background-color: #FF0000;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* 菜单 */
+.header-top-menu {
+	display: block;
+	width: 0.3rem;
+	height: 0.3rem;
+	background: url(../img/top/top-icon.webp) no-repeat;
+	background-size: cover;
+}
+
+.header-top-img {
+	margin: 0 auto;
+	width: 1.185rem;
+	height: 0.205rem;
+}
+
+.header-input-out {
+	width: 100vw;
+	height: 0.46rem;
+	background-color: #FF0000;
+	display: flex;
+	justify-content: center;
+}
+
+.header-top a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* 头部搜索 */
+.header-input {
+	width: 3.35rem;
+	height: 0.36rem;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+}
+
+.header-input-icon {
+	width: 0.2rem;
+	height: 0.2rem;
+	background: url(../img/top/top-icon.webp) no-repeat -0.5rem 0;
+	background-size: cover;
+	margin-right: 0.05rem;
+}
+
+.header-input-info {
+	font-size: 0.14rem;
+}
+
+/* 功能模块划分 */
+.model-lists {
+	width: 100vw;
+	height: 0.77rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+.model-list {
+	width: 0.7rem;
+	height: 0.77rem;
+	display: block;
+	color: #555;
+	text-decoration: none;
+	text-align: center;
+	font-size: 0.14rem;
+}
+
+.model-list-img {
+	display: block;
+	width: 0.48rem;
+	height: 0.48rem;
+	margin: 0 auto;
+	margin-top: 0.14rem;
+	border-radius: 50%;
+}
+
+.lunbos {
+	display: block;
+	margin-top: 0.1rem;
+	width: 100vw;
+	height: 1.3225rem;
+	position: relative;
+}
+
+.lunbo {
+	display: block;
+	width: 3.51rem;
+	height: 1.3225rem;
+	position: absolute;
+	left: 0.12rem;
+}
+
+.lunbos-indexs {
+	position: absolute;
+	width: 100vw;
+	height: 0.02rem;
+	bottom: 0.1rem;
+	display: flex;
+	justify-content: center;
+}
+
+.lunos-index {
+	width: 0.16rem;
+	height: 0.02rem;
+	margin-right: 0.05rem;
+	background-color: #aaa;
+}
+
+#lunbos-index1 {
+	background-color: #fff;
+}
+
+/* 新人优惠 */
+.newPeople {
+	width: 100vw;
+	height: 1.8rem;
+	display: block;
+}
+
+.newPeople-img {
+	width: 3.75rem;
+	height: 1.8rem;
+}
+
+/* 活动 */
+.activity {
+	width: 100vw;
+	height: 2.73rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.acticity-model {
+	width: 1.725rem;
+	height: 1.285rem;
+}
+
+.activity-model-top {
+	width: 0.64rem;
+	height: 0.16rem;
+	font-weight: bold;
+	margin: 0.1rem 0 0 0.1rem;
+}
+
+.activity-model-bottom {
+	width: 1.72rem;
+	height: 0.775rem;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 0.2rem;
+}
+
+.activity-model-bottom-box {
+	width: 0.775rem;
+	height: 0.775rem;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.activity-model-bottom-box-img {
+	width: 0.65rem;
+	height: 0.65rem;
+}
+
+.activity-model-bottom-box-info {
+	position: absolute;
+	font-size: 0.12rem;
+	bottom: 0;
+	border: 0.01rem solid red;
+	color: red;
+}
+
+/* 天猫榜单 */
+.tianmaobangdan {
+	width: 100vw;
+	height: 4.58rem;
+}
+
+.tianmaobangdan-title {
+	width: 3.51rem;
+	height: 0.3rem;
+	margin: 0.1rem auto 0 auto;
+	font-weight: bold;
+	font-size: 0.2rem;
+}
+
+.tianmaobangdan-tops {
+	width: 100vw;
+	height: 1.495rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+.tianmaobangdan-top {
+	width: 1.13rem;
+	height: 1.365rem;
+	margin-top: 0.13rem;
+	position: relative;
+	display: flex;
+	border: 0.01rem solid gray;
+	box-sizing: border-box;
+	justify-content: center;
+}
+
+.tianmaobangdan-top1 {
+	height: 1.49rem;
+	margin-top: 0;
+}
+
+.tianmaobangdan-top-img {
+	width: 0.315rem;
+	height: 0.255rem;
+	margin-left: -0.8rem;
+}
+
+.tianmaobangdan-top-name {
+	height: 0.18rem;
+	background-color: #0000FF;
+	color: white;
+	position: absolute;
+	bottom: 0.2rem;
+	font-size: 0.11rem;
+}
+
+.tianmaobangdan-top-taishi {
+	height: 0.18rem;
+	position: absolute;
+	bottom: 0.02rem;
+	font-size: 0.11rem;
+}
+
+.tianmaobangdan-renqibang-big {
+	width: 3.51rem;
+	height: 0.845rem;
+	background-color: red;
+	margin: 0.05rem auto;
+	position: relative;
+}
+
+.tianmaobangdan-renqibang-big-left {
+	width: 1.75rem;
+	height: 0.845rem;
+	float: left;
+	background-color: white;
+	font-size: 0.11rem;
+	z-index: 1;
+	position: absolute;
+}
+
+.tianmaobangdan-renqibang-big-right {
+	width: 1.95rem;
+	height: 0.845rem;
+	float: right;
+	background-color: white;
+	display: flex;
+	overflow: hidden;
+	align-items: center;
+}
+
+.tianmaobangdan-renqibang-big-left-title {
+	background-color: burlywood;
+	color: white;
+}
+
+.tianmaobangdan-renqibang-left-middle {
+	font-weight: bold;
+	margin: 0.1rem 0;
+}
+
+.tianmaobangdan-renqibang-left-info {
+	color: #555;
+}
+
+.tianmaobangdan-renqibang-big-right {
+	width: 3.51rem;
+	height: 0.845rem;
+}
+
+.tianmaobangdan-renqibang-big-right-box {
+	width: 1.95rem;
+	height: 0.65rem;
+	float: right;
+	display: flex;
+	justify-content: space-around;
+}
+
+.tianmaobangdan-renqibang-big-right-box-in {
+	width: 0.55rem;
+	height: 0.55rem;
+	position: relative;
+}
+
+.tianmaobangdan-renqibang-big-right-box-img {
+	width: 0.65rem;
+	height: 0.55rem;
+	display: block;
+}
+
+.tianmaobangdan-renqibang-big-right-box-icon {
+	width: 0.215rem;
+	height: 0.215rem;
+	position: absolute;
+	top: 0;
+}
+
+.tianmaobangdan-renqibang-smalls {
+	width: 3.51rem;
+	height: 1.7rem;
+	font-size: 0.11rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 0 auto;
+}
+
+.tianmaobangdan-renqibang-small {
+	width: 1.725rem;
+	height: 0.825rem;
+	position: relative;
+	margin-bottom: 0.1rem;
+	background-color: #eee;
+}
+
+.tianmaobangdan-renqibang-small-right {
+	width: 0.55rem;
+	height: 0.825rem;
+	float: right;
+	background-color: #AAAAAA;
+	position: absolute;
+	right: 0;
+	top: 0;
+	border: 1px solid gray;
+	box-sizing: border-box;
+}
+
+
+/* 猜你喜欢 */
