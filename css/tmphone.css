@@ -76,7 +76,7 @@ body{
 
     width: .15rem;
     height: .15rem;
-    margin: .1rem .1rem 0px;
+    margin: .1rem .1rem 0;
 }
 .sousuo span{
 
@@ -171,7 +171,7 @@ body{
 
     width: 1.5rem;
 
-    height: 4px;
+    height: .04rem;
     position: absolute;
     left: 0;
     right: 0;
@@ -191,7 +191,7 @@ body{
     opacity: .4;
 }
 .btn2{
-    margin: 0 5px;
+    margin: 0 .05rem;
     float: left;
     width: .16rem;
     height: .02rem;
@@ -200,7 +200,7 @@ body{
     opacity: .4;
 }
 .btn3{
-    margin: 0 5px;
+    margin: 0 .05rem;
     float: left;
     width: .16rem;
     height: .02rem;
@@ -209,7 +209,7 @@ body{
     opacity: .4;
 }
 .btn4{
-    margin: 0 5px;
+    margin: 0 .05rem;
     float: left;
     width: .16rem;
     height: .02rem;
@@ -218,7 +218,7 @@ body{
     opacity: .4;
 }
 .btn5{
-    margin: 0 5px;
+    margin: 0 .05rem;
     float: left;
     width: .16rem;
     height: .02rem;
@@ -292,14 +292,14 @@ body{
 }
 
 .opt-text span{
-    border: 0.5px solid rgb(255, 0, 54);
+    border: .005rem solid rgb(255, 0, 54);
     box-sizing: border-box;
     font-size: .1rem;
     max-width: .775rem;
     color: rgb(255, 0, 54);
     height: .12rem;
     text-align: center;
-    line-height: 11px;
+    line-height: .11rem;
     background: rgb(255, 237, 241);
 
 }
@@ -628,10 +628,10 @@ body{
 .xihuan-brand span{
     float: right;
     display: flex;
-    font-size: 10px;
-    height: 18px;
+    font-size: .1rem;
+    height: .1rem;
     color: rgb(255, 255, 255);
-    line-height: 18px;
+    line-height: .18rem;
 }
 .xihuan-text span{
     margin: .02rem .1rem;
@@ -665,11 +665,11 @@ body{
 }
 .xihuan-bottom .qian{
     float: right;
-    font-size: 16px;
+    font-size: .16rem;
     text-align: left;
     font-weight: 600;
     color: rgb(255, 0, 0);
-    line-height: 28px
+    line-height: .28rem;
 }
 .xiangsi{
     height: .23rem;
@@ -681,10 +681,10 @@ body{
     justify-content: center
 }
 .xiangsi span{
-    font-size: 11px;
+    font-size: .11rem;
     color: rgb(255, 0, 54);
-    height: 11px;
-    line-height: 11px;
+    height: .11rem;
+    line-height: .11rem;
 
 }
 
