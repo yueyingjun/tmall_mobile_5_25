@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/TianMao.css">
+    <script>
+        window.onload=function(ev){
+            var banner = document.querySelectorAll(".img")
+            var btns = document.querySelectorAll(".lunbo-btn-style")
+            var num=0
+            setInterval(function () {
+                if (num == banner.length) {
+                    num = 0;
+                }
+                for (var i = 0; i < banner.length; i++) {
+                    banner[i].style.display = "none";
+                    btns[i].style.background="rgba(63, 63, 63,0.59)";
+                }
+                banner[num].style.display = "block";
+                btns[num].style.background="white";
+                num++
+            },3000)
+        }
+        window.onload=function () {
+            var lunbos=document.querySelectorAll(".right-imglunbo");
+            var nums=0;
+            setInterval(function () {
+                if(nums==lunbos.length){
+                    nums=0
+                }
+                for(var i=0;i<lunbos.length;i++){
+                    lunbos[i].style.display="none";
+                }
+                lunbos[nums].style.display="block";
+                nums++;
+            },3000)
+        }
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="top-left">
+                <a href="">
+                三
+                </a>
+            </div>
+            <div class="top-center">
+                <img src="../Imgs/header/logo.webp" alt="">
+            </div>
+            <div class="top-right"><a href="">登录</a></div>
+        </div>
+        <a href=""><div class="search">
+
+            <div class="search-icon">
+
+            </div>
+
+
+            <div class="search-info">搜索商品、品牌</div>
+
+        </div>
+        </a>
+    </header>
+    <!--   五个  -->
+    <div class="tip">
+        <a href="">
+        <div class="tip-style">
+            <div class="tip-style-top">
+                <img src="../Imgs/wuge/suning.webp" alt="">
+            </div>
+            <div class="tip-style-btommon">苏宁易购</div>
+        </div>
+        </a>
+            <a href=""><div class="tip-style">
+            <div class="tip-style-top">
+                <img src="../Imgs/wuge/tianmaochaoshi.png" alt="">
+            </div>
+            <div class="tip-style-btommon">天猫超市</div>
+        </div></a>
+            <a href=""><div class="tip-style">
+            <div class="tip-style-top">
+                <img src="../Imgs/wuge/tianmaoguoji.webp" alt="">
+            </div>
+            <div class="tip-style-btommon">天猫国际</div>
+        </div></a>
+            <a href=""><div class="tip-style">
+            <div class="tip-style-top">
+                <img src="../Imgs/wuge/juhuasuan.webp" alt="">
+            </div>
+            <div class="tip-style-btommon">聚划算</div>
+        </div></a>
+            <a href=""><div class="tip-style">
+            <div class="tip-style-top">
+                <img src="../Imgs/wuge/fenlei.webp" alt="">
+            </div>
+            <div class="tip-style-btommon">分类</div>
+        </div></a>
+
+    </div>
+    <!--   五个  -->
+    <!--   轮播 -->
+    <div class="lunbo">
+        <div class="lunbo-img">
+            <a href=""><img src="../Imgs/lunbo/1.webp" alt="" class="img1 img"></a>
+            <a href=""><img src="../Imgs/lunbo/2.webp" alt="" class="img2 img" style="display: none"></a>
+            <a href=""><img src="../Imgs/lunbo/3.webp" alt="" class="img3 img" style="display: none"></a>
+            <a href=""><img src="../Imgs/lunbo/4.webp" alt="" class="img4 img" style="display: none"></a>
+            <a href=""><img src="../Imgs/lunbo/5.webp" alt="" class="img5 img" style="display: none"></a>
+        </div>
+        <div class="lunbo-btn">
+            <div class="lunbo-btn-style"></div>
+            <div class="lunbo-btn-style"></div>
+            <div class="lunbo-btn-style"></div>
+            <div class="lunbo-btn-style"></div>
+            <div class="lunbo-btn-style"></div>
+
+        </div>
+    </div>
+    <!--   轮播 -->
+    <!--   天猫红包 -->
+    <div class="redbox">
+        <a href="">
+        <img src="../Imgs/hongbao.webp" alt="">
+        </a>
+    </div>
+    <!--   天猫红包 -->
+    <!--   限时抢购&天猫好物  -->
+    <div class="model">
+        <div class="model-row"><!--   限时抢购&天猫好物  -->
+            <a href=""><div class="model-style">
+                <div class="model-style-top"><!--   上部  -->
+                    <div class="tittle">限时抢购</div>
+                    <div class="time">00:00:00</div>
+                </div>
+                <div class="model-style-btmmon"><!--   下部  -->
+                    <div class="clothes">
+                        <img src="../Imgs/xianshi/5.webp" alt="">
+                        <span>限时特价</span>
+                    </div>
+                    <div class="clothes">
+                        <img src="../Imgs/xianshi/2.webp" alt="">
+                        <span>为你精选</span>
+                    </div>
+                </div>
+
+            </div></a>
+            <a href=""><div class="model-style">
+                <div class="model-style-top"><!--   上部  -->
+                    <div class="tittle">天猫好物</div>
+
+                </div>
+                <div class="model-style-btmmon"><!--   下部  -->
+                    <div class="clothes">
+                        <img src="../Imgs/xianshi/3.webp" alt="">
+                        <span>好货必买</span>
+                    </div>
+                    <div class="clothes">
+                        <img src="../Imgs/xianshi/4.webp" alt="">
+                        <span>网纱拼接</span>
+                    </div>
+                </div>
+            </div></a>
+        </div>
+        <div class="model-row"><!--   聚划算&天猫闪降  -->
+            <a href=""><div class="model-style">
+                <div class="model-style-top"><!--   上部  -->
+                    <div class="tittle">聚划算</div>
+
+                </div>
+                <div class="model-style-btmmon"><!--   下部  -->
+                    <div class="clothes">
+                        <img src="../Imgs/xianshi/6.webp" alt="">
+                        <span>20点抢神券</span>
+                    </div>
+                    <div class="clothes">
+                        <img src="../Imgs/xianshi/7.webp" alt="">
+                        <span>满188减10</span>
+                    </div>
+                </div>
+            </div></a>
+            <a href=""><div class="model-style">
+                <div class="model-style-top"><!--   上部  -->
+                    <div class="tittle">天猫直降</div>
+
+                </div>
+                <div class="model-style-btmmon"><!--   下部  -->
+                    <div class="clothes">
+                        <img src="../Imgs/xianshi/8.webp" alt="">
+                        <span>已降40元</span>
+                    </div>
+                    <div class="clothes">
+                        <img src="../Imgs/xianshi/9.webp" alt="">
+                        <span>已降40元</span>
+                    </div>
+                </div>
+            </div></a>
+        </div>
+
+    </div>
+    <!--   限时抢购&天猫好物  -->
+    <!--   天猫榜单  &猜你喜欢 -->
+    <div class="bangdan">
+        <div class="tittle">
+            <span>天猫榜单</span>
+        </div>
+        <div class="content">
+            <a href=""><div class="content-1">
+                <img src="../Imgs/bangdan/biao.webp" alt="">
+                <div class="pho">
+                    <img src="../Imgs/bangdan/1.webp" alt="">
+                </div>
+                <div class="names">时尚简约领针榜</div>
+                <span>人气上升679%</span>
+            </div></a>
+            <a href=""><div class="content-2">
+                <img src="../Imgs/bangdan/biao.webp" alt="">
+                <div class="pho">
+                    <img src="../Imgs/bangdan/2.webp" alt="">
+                </div>
+                <div class="names">魅力网眼内衣榜</div>
+                <span>人气上升496%</span>
+            </div></a>
+            <a href=""><div class="content-1">
+                <img src="../Imgs/bangdan/biao.webp" alt="">
+                <div class="pho">
+                    <img src="../Imgs/bangdan/3.webp" alt="">
+                </div>
+                <div class="names">精品帅气帆布鞋榜</div>
+                <span>人气上升313%</span>
+            </div></a>
+        </div>
+        <div class="renqibang">
+            <a href=""><div class="renqibang-left">
+                <div class="left-tittle">人气榜</div>
+                <span class="left-info-1">质感家居睡裙榜</span>
+                <span class="left-info-2">月销155件</span>
+            </div></a>
+            <div class="renqibang-right">
+                <div class="right-imglunbo">
+                    <a href=""><div class="right-imgstyle">
+                        <img src="../Imgs/renqibang/xuhao1.webp" alt="" class="right-imgstyle-img1">
+                        <img src="../Imgs/renqibang/yifu1.webp" alt="" class="right-imgstyle-img2">
+                    </div></a>
+                    <a href=""><div class="right-imgstyle">
+                        <img src="../Imgs/renqibang/xuhao2.webp" alt="" class="right-imgstyle-img1">
+                        <img src="../Imgs/renqibang/yifu2.webp" alt="" class="right-imgstyle-img2">
+                    </div></a>
+                    <a href=""><div class="right-imgstyle">
+                        <img src="../Imgs/renqibang/xuhao3.webp" alt="" class="right-imgstyle-img1">
+                        <img src="../Imgs/renqibang/yifu3.webp" alt="" class="right-imgstyle-img2">
+                    </div></a>
+                </div>
+                <div class="right-imglunbo"  style="display: none">
+                    <a href=""><div class="right-imgstyle">
+                        <img src="../Imgs/renqibang/xuhao4.webp" alt="" class="right-imgstyle-img1">
+                        <img src="../Imgs/renqibang/yifu4.webp" alt="" class="right-imgstyle-img2">
+                    </div></a>
+                        <a href=""><div class="right-imgstyle">
+                        <img src="../Imgs/renqibang/xuhao5.webp" alt="" class="right-imgstyle-img1">
+                        <img src="../Imgs/renqibang/yifu5.webp" alt="" class="right-imgstyle-img2">
+                    </div></a>
+                            <a href=""><div class="right-imgstyle">
+                        <img src="../Imgs/renqibang/xuhao6.webp" alt="" class="right-imgstyle-img1">
+                        <img src="../Imgs/renqibang/yifu6.webp" alt="" class="right-imgstyle-img2">
+                    </div></a>
+                </div>
+            </div>
+        </div>
+        <div class="renqibang-info">
+        <div class="renqibang-info-style">
+            <a href=""><div class="renqibang-info-style-left">
+                <span class="info-tittle">人气榜</span>
+                <div class="xiahuaxian"></div>
+                <span class="info-center">高街绣花连衣裙</span>
+                <span class="info-btoomn">月销127件</span>
+            </div></a>
+            <div class="renqibang-info-style-right">
+                <a href=""><div class="renqibang-info-style-img">
+                    <img src="../Imgs/renqibanginfo/1.png" alt="">
+                </div></a>
+            </div>
+        </div>
+        <div class="renqibang-info-style">
+            <a href=""><div class="renqibang-info-style-left">
+                <span class="info-tittle">人气榜</span>
+                <div class="xiahuaxian"></div>
+                <span class="info-center">品牌牛皮鞋子榜</span>
+                <span class="info-btoomn">月销519件</span>
+            </div>
+            </a>
+            <div class="renqibang-info-style-right">
+                <a href=""><div class="renqibang-info-style-img">
+                    <img src="../Imgs/renqibanginfo/2.jpg" alt="">
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+        <div class="renqibang-info">
+            <div class="renqibang-info-style">
+                <a href="">
+                    <div class="renqibang-info-style-left">
+                    <span class="info-tittle">人气榜</span>
+                    <div class="xiahuaxian"></div>
+                    <span class="info-center">专业防泼水外套</span>
+                    <span class="info-btoomn">火爆热卖中</span>
+                    </div>
+                </a>
+                <div class="renqibang-info-style-right">
+                    <a href="">
+                        <div class="renqibang-info-style-img">
+                            <img src="../Imgs/renqibanginfo/3.webp" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="renqibang-info-style">
+                <a href="">
+                    <div class="renqibang-info-style-left">
+                        <span class="info-tittle">人气榜</span>
+                        <div class="xiahuaxian"></div>
+                        <span class="info-center">轻奢牛皮包包榜</span>
+                        <span class="info-btoomn">月销120件</span>
+                    </div>
+                </a>
+                <div class="renqibang-info-style-right">
+                    <a href="">
+                    <div class="renqibang-info-style-img">
+                        <img src="../Imgs/renqibanginfo/4.webp" alt="">
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="cainixihuantittle">
+            <span>猜你喜欢</span>
+        </div>
+        <div class="cainixihuaninfo">
+            <img src="../Imgs/cainixihaun/beijing.webp" alt="">
+            <div class="goods1">
+                <div class="goods-img">
+                    <img src="../Imgs/cainixihaun/shangpin1.webp" alt="">
+                </div>
+                <span>旺娇</span>
+                <span class="span2">2019夏季韩版ins网红港风短袖t恤女宽松原宿bf风百搭半袖上衣服潮</span>
+                <span class="span3">2元券</span>
+                <span class="span4">￥19.9</span>
+                <a href="">看相似</a>
+            </div>
+            <div class="goods2">
+                <div class="goods-img">
+                    <img src="../Imgs/cainixihaun/shangpin2.webp" alt="">
+                </div>
+                <span>雯凤燕</span>
+                <span class="span2">结婚敬酒服新娘现代2019新款春季订婚礼服女红色回门连衣裙小个子</span>
+                <span class="span3">5元券</span>
+                <span class="span4">￥228</span>
+                <a href="">看相似</a>
+            </div>
+        </div>
+        <div class="cainixihuaninfo1">
+
+            <div class="goods1">
+                <div class="goods-img">
+                    <img src="../Imgs/cainixihaun/shangpin3.webp" alt="">
+                </div>
+                <span>初穆</span>
+                <span class="span2">2019新款很仙法国小众早春超仙洋气减龄法式赫本网红两件套装夏季</span>
+                <span class="span3">10元券</span>
+                <span class="span4">￥178</span>
+                <a href="">看相似</a>
+            </div>
+            <div class="hongbao">
+                <img src="../Imgs/cainixihaun/hongbao.webp" alt="">
+            </div>
+
+        </div>
+        <div class="cainixihuaninfo2">
+            <div class="hongbao">
+                <img src="../Imgs/cainixihaun/hongbao1.webp" alt="">
+            </div>
+            <div class="goods2">
+                <div class="goods-img">
+                    <img src="../Imgs/cainixihaun/shangpin4.webp" alt="">
+                </div>
+                <span>哈布兔</span>
+                <span class="span2">秋裤春秋两条宝宝儿童女童保暖裤线裤棉毛裤装纯棉男童单条打底裤</span>
+
+                <span class="span4">￥49.34</span>
+                <a href="">看相似</a>
+            </div>
+
+
+        </div>
+        <div class="cainixihuaninfo1">
+
+            <div class="goods1">
+
+                <div class="goods-img">
+                    <img src="../Imgs/cainixihaun/shangpin4.webp" alt="">
+                </div>
+                <span>哈布兔</span>
+                <span class="span2">秋裤春秋两条宝宝儿童女童保暖裤线裤棉毛裤装纯棉男童单条打底裤</span>
+
+                <span class="span4">￥49.34</span>
+                <a href="">看相似</a>
+
+            </div>
+            <div class="hongbao">
+                <img src="../Imgs/cainixihaun/honhbao2.webp" alt="">
+            </div>
+
+        </div>
+        <div class="cainixihuaninfo">
+            <img src="../Imgs/cainixihaun/beijing.webp" alt="">
+            <div class="goods1">
+                <div class="goods-img">
+                    <img src="../Imgs/cainixihaun/shangpin6.webp" alt="">
+                </div>
+                <span>chame/卿妹</span>
+                <span class="span2">TASK意大利Italy男装翻领Polo衫民族国家队服夏装短袖t恤足球纯棉</span>
+
+                <span class="span4">￥19.9</span>
+                <a href="">看相似</a>
+            </div>
+            <div class="goods2">
+                <div class="goods-img">
+                    <img src="../Imgs/cainixihaun/shangpin5.webp" alt="">
+                </div>
+                <span>妞例</span>
+                <span class="span2">七分袖白衬衫女职业2019新款新款半袖工作服正装修身中袖衬衣韩版</span>
+                <span class="span3">10元券</span>
+                <span class="span4">￥69</span>
+                <a href="">看相似</a>
+            </div>
+        </div>
+        <div class="cainixihuaninfo3">
+            <div class="goods3">
+                <a href="">
+                    <div class="goods3-img">
+                        <img src="../Imgs/cainixihaun/shangpin1.webp" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="span1">
+                        <img src="../Imgs/cainixihaun/DK.png" alt="">
+                        <span>selected/思莱德</span>
+                    </div>
+                </a>
+                <a href=""><span class="goods3-content">selected女新宽松c通勤天丝阔腿裤</span></a>
+                <a href=""><span class="goods3-quan"></span></a>
+                <span class="span3">￥499</span>
+                <div class="goods-xs">
+                    <a href="">找相似</a>
+                </div>
+            </div>
+            <div class="goods4">
+                <a href="">
+                    <div class="goods4-img">
+                        <img src="../Imgs/cainixihaun/shangpin1.webp" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="span1">
+                        <img src="../Imgs/cainixihaun/DK.png" alt="">
+                        <span>selected/思莱德</span>
+                    </div>
+                </a>
+                <a href=""><span class="goods4-content">selected女新宽松c通勤天丝阔腿裤</span></a>
+                <a href=""><span class="goods4-quan"></span></a>
+                <span class="span3">￥499</span>
+                <div class="goods-xs">
+                    <a href="">找相似</a>
+                </div>
+            </div>
+        </div>
+
+</div>
+    <!--   天猫榜单  &猜你喜欢 -->
+</body>
+</html>

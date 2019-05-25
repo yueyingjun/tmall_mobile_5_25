@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+window.onload=function () {
+   document.write("<table>");
+    for(var x=0;x<10;x++){
+        document.write("<tr>");
+        for(var y=0;y<8;y++){
+            document.write("<td>"+y+"</td>");
+        }
+        document.write("</tr>");
+    }
+    document.write("</table>");
+    for(var i=200;i>=100;i--){
+        if(i%3==1 && i%4==2 && i%5==3){
+            document.write(i);
+            break
+        }
+    }
+    var ji=36
+    for(var tu=0;tu<=36;tu++){
+        if((4*tu+2*ji)==94){
+            document.write("鸡有"+ji+"只,兔有"+tu+"只");
+        }
+        ji--;
+        if(ji<0){
+            break;
+        }
+    }
+}
+
+    </script>
+</head>
+<body>
+<!--操场上有100-200人  3人一排 1  4人一排多两个 5人多出3个 最多有多少人
+鸡2兔4同笼36头 94脚 三种方法
+输出指定个数的斐波那契数列并且最少用三种方法实现
+然后后面的数等于前面的两个数的和
+1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233，377，610，987，1597，2584，4181，6765，10946，17711，28657，46368........
+写一个循环能够写出n行m列的表格
+写一个函数功能是去除数组里面的重复元素
+对数组来进行排序(三种方法)冒泡 快速 选择 希尔
+ecmascript  flash
+-->
+
+</body>
+</html>

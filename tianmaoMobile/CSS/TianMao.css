@@ -1,0 +1,892 @@
+html{
+    font-size: 26.66666vw;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 0.16rem;
+}
+h1,h2,h3,h4,h5,h6,ul,li,strong,p,em,a,span,b{
+    pading:0;
+    margin:0;
+    font-size: 0.16rem;
+    font-weight: normal;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+}
+header{
+    width: 3.75rem;
+    height: 0.9rem;
+    background: red;
+
+
+}
+header  .top{
+    width: 100%;
+    height: 0.44rem;
+    /*要是排列的两边有空隙*/
+    justify-content: space-around;
+    /*设置水平居中*/
+    align-items: center;
+    display: flex;
+
+
+}
+.top-left{
+    width: 0.3rem;
+    height: 0.205rem;
+}
+.top-center{
+    width: 1.185rem;
+    height: 0.205rem;
+}
+.top-center img{
+    width: 100%;
+    height: 100%;
+}
+.top-right{
+    width: 0.35rem;
+    height: 0.205rem;
+}
+header  .search{
+    width: 3.55rem;
+    height: 0.36rem;
+    border-radius: 0.1rem;
+    background: white;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+}
+.search-icon{
+    width: 0.30rem;
+    height: 0.32rem;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin-left:0.1rem;
+}
+.search-info{
+    width: 1.5rem;
+    height: 0.32rem;
+    margin-left:0.1rem;
+    line-height: 0.30rem;
+}
+.tip{
+    width: 3.75rem;
+    height: 0.766rem;
+    display: flex;
+    justify-content: space-around;
+}
+.tip-style{
+    width: 0.7rem;
+    height: 100%;
+    align-items: center;
+}
+.tip-style-top{
+    width: 0.50rem;
+    height: 0.50rem;
+    border-radius: 0.5rem;
+    margin: auto;
+    margin-top: 0.03rem;
+}
+.tip-style-top img{
+    width: 0.48rem;
+    height: 0.48rem;
+}
+.tip-style-btommon{
+    width: 0.6rem;
+    height: 0.20rem;
+    margin: auto;
+    font-size: 0.13rem;
+    text-align: center;
+}
+.lunbo{
+    width: 3.75rem;
+    height: 1.3225rem;
+    margin: auto;
+    position: relative;
+
+}
+.lunbo-img{
+    display: block;
+    width: 3.51rem;
+    height: 1.3225rem;
+    margin: auto;
+}
+.lunbo-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.lunbo-btn{
+    width: 1.65rem;
+    height: 0.05rem;
+    position: absolute;
+    left: 1.0rem;
+    bottom:0.1rem;
+    z-index: 2;
+    display: flex;
+}
+.lunbo-btn-style{
+    width: 0.25rem;
+    height: 100%;
+    margin-right: 0.1rem;
+    background: rgba(63, 63, 63,0.59);
+}
+.redbox{
+    width: 3.75rem;
+    height: 1.80rem;
+    margin: auto;
+}
+.redbox img{
+    width: 3.75rem;
+    height: 1.80rem;
+    margin: auto;
+}
+.model{
+    width: 3.75rem;
+    height: 2.73rem;
+}
+.model-row{
+    float: bottom;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.model-style{
+    width: 1.725rem;
+    height: 1.285rem;
+    background: url("../Imgs/xianshi/beijing.png") no-repeat;
+    background-size: cover;
+}
+.model-style-top{
+    float: left;
+    width: 1.57rem;
+    height: 0.16rem;
+    display: flex;
+    justify-content: space-around;
+    margin-top:0.175rem ;
+    line-height: 0.16rem;
+}
+.model-style-btmmon{
+    float: left;
+    width: 1.72rem;
+    height: 0.775rem;
+    display: flex;
+    justify-content: space-around;
+    margin-top:0.05rem ;
+    margin-bottom:0.125rem ;
+
+}
+.clothes{
+    width: 0.775rem;
+    height: 0.775rem;
+
+    position: relative;
+    align-items: center;
+}
+.clothes img{
+    width: 0.775rem;
+    height: 0.775rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.clothes span{
+    display: block;
+    border: 0.005rem solid red;
+    box-sizing: border-box;
+    color: red;
+    text-align: center;
+    width: 0.67rem;
+    height: 0.15rem;
+    position: absolute;
+    bottom:-0.15rem;
+    left: 0.09rem;
+    right: 0;
+    font-size: 0.10rem;
+}
+.bangdan{
+    width: 3.75rem;
+    height: 4.576rem;
+    margin-top: 0.1rem;
+}
+.bangdan .tittle{
+     width: 3.51rem;
+     height: 0.296rem;
+     margin: auto;
+ }
+.bangdan .content{
+    width: 3.57rem;
+    height: 1.495rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.content-1{
+    width: 1.13rem;
+    height: 1.365rem;
+    margin-top: 0.130rem;
+    position: relative;
+    background: url("../Imgs/bangdan/beijing.webp") no-repeat center;
+    background-size: cover;
+}
+.content-1 img{
+    width: 0.315rem;
+    height: 0.255rem;
+    position: absolute;
+    left: 0.05rem;
+    top: 0;
+}
+.content-1 .pho{
+    width: 0.73rem;
+    height: 0.73rem;
+    position: absolute;
+    left: 0.18rem;
+    top: 0.18rem;
+    background: rgba(0, 0, 0, 0.03);
+}
+.content-1 .pho img{
+    display: block;
+    width: 0.73rem;
+    height: 0.73rem;
+    margin: auto;
+}
+.content-1 .names{
+    width: 1.04rem;
+    height: 0.18rem;
+    background: url("../Imgs/bangdan/di.webp") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    left: 0.05rem;
+    bottom: 0.25rem;
+    font-size: 0.10rem;
+    color: white;
+    text-align: center;
+}
+.content-1 span{
+    width: 0.7979rem;
+    height: 0.176rem;
+    position: absolute;
+    left: 0.15rem;
+    bottom: 0.08rem;
+    font-size: 0.10rem;
+    color: black;
+}
+.content-2{
+    width: 1.13rem;
+    height: 1.495rem;
+    background: url("../Imgs/bangdan/beijing.webp") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+.content-2 img{
+    width: 0.315rem;
+    height: 0.255rem;
+    position: absolute;
+    left: 0.05rem;
+    top: 0;
+}
+.content-2 .pho{
+    width: 0.73rem;
+    height: 0.73rem;
+    position: absolute;
+    left: 0.18rem;
+    top: 0.18rem;
+    background: rgba(0, 0, 0, 0.03);
+}
+.content-2 .pho img{
+    display: block;
+    width: 0.73rem;
+    height: 0.73rem;
+    margin: auto;
+}
+.content-2 .names{
+    width: 1.04rem;
+    height: 0.18rem;
+    background: url("../Imgs/bangdan/di.webp") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    left: 0.05rem;
+    bottom: 0.25rem;
+    font-size: 0.10rem;
+    color: white;
+    text-align: center;
+}
+.content-2 span{
+    width: 0.7979rem;
+    height: 0.176rem;
+    position: absolute;
+    left: 0.15rem;
+    bottom: 0.08rem;
+    font-size: 0.10rem;
+    color: black;
+}
+.renqibang{
+    width: 3.51rem;
+    height: 0.845rem;
+    margin-top: 0.07rem;
+    margin-left: 0.12rem;
+    margin-right: 0.12rem;
+    background-color: rgb(248, 248, 248);
+
+    display: flex;
+    position: relative;
+
+}
+.renqibang-left{
+    float: left;
+    width: 0.90rem;
+    height: 0.845rem;
+    margin-left: 0.13rem;
+    position: relative;
+
+}
+.left-tittle{
+    width: 0.46rem;
+    height: 0.215rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("../Imgs/renqibang/bejing1.webp") no-repeat center;
+    background-size: cover;
+    color: white;
+    font-size: 0.12rem;
+    text-align: center;
+}
+
+.left-info-1{
+    width: 100%;
+    height: 0.315rem;
+    position: absolute;
+    left: 0rem;
+    top: 0.25rem;
+    font-size: 0.12rem;
+    line-height: 0.19rem;
+    color: rgb(49, 49, 49);
+    font-weight: 600;
+
+}
+.left-info-2{
+    width: 100%;
+    height: 0.315rem;
+    position: absolute;
+    left: 0rem;
+    top: 0.45rem;
+    font-size: 0.12rem;
+    line-height: 0.19rem;
+    color: rgb(153, 153, 153);
+    font-weight: 600;
+}
+.renqibang-right{
+    width: 2.11rem;
+    height: 0.65rem;
+    margin: auto;
+    position: absolute;
+    right: 0rem;
+    top: 0.0975rem;
+}
+.right-imglunbo{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position:absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.right-imgstyle{
+    float: left;
+    width: 0.65rem;
+    height: 0.65rem;
+    position: relative;
+}
+
+.right-imgstyle-img1{
+    width: 0.215rem;
+    height: 0.215rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.right-imgstyle-img2{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.renqibang-info{
+    width: 3.51rem;
+    height: 0.845rem;
+    margin-top: 0.07rem;
+    margin-left: 0.12rem;
+    margin-right: 0.12rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+.renqibang-info-style{
+    width: 1.72rem;
+    height: 0.845rem;
+    background-color: rgb(248, 248, 248);
+    display: flex;
+
+}
+.renqibang-info-style-left{
+        width: 0.96rem;
+        height: 0.663rem;
+
+        margin:auto 0 auto 0.12rem;
+    position: relative;
+}
+.info-tittle{
+    width: 0.4rem;
+    height: 0.32rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0.12rem;
+    color: rgb(200, 157, 107);
+}
+.xiahuaxian{
+    width: 0.15rem;
+    height: 0.02rem;
+    background: rgb(227, 227, 227);
+    position: absolute;
+    left: 0;
+    top: 0.23rem;
+}
+.info-center{
+    width: 100%;
+    height: 0.32rem;
+    position: absolute;
+    left: 0rem;
+    top: 0.30rem;
+    font-size: 0.13rem;
+    color: rgb(49, 49, 49);
+    font-weight: 600;
+}
+.info-btoomn{
+    width: 100%;
+    height: 0.32rem;
+    position: absolute;
+    left: 0rem;
+    top: 0.50rem;
+    font-size: 0.13rem;
+    color: rgb(153, 153, 153);
+
+}
+.renqibang-info-style-right{
+    width: 0.55rem;
+    height: 0.55rem;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.renqibang-info-style-right img{
+    width: 0.55rem;
+    height: 0.55rem;
+}
+.cainixihuantittle{
+    width:3.752rem;
+    height: 0.396rem;
+    margin: auto;
+}
+.cainixihuantittle span{
+    display: block;
+    width:3.51rem;
+    height: 0.396rem;
+    margin-left: 0.18rem;
+    font-size: 0.20rem;
+    text-align: left;
+    line-height: 0.45rem;
+    font-weight: 600;
+}
+.cainixihuaninfo{
+    width: 100%;
+    height: 2.90rem;
+    margin: 0.05rem auto auto auto;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.cainixihuaninfo img{
+    width: 3.75rem;
+    height: 1.47rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.goods1{
+    width: 1.70rem;
+    height: 2.80rem;
+    position: absolute;
+    left: 0.12rem;
+    top: 0.07rem;
+    border: 0.01rem solid rgb(237, 237, 237);
+    box-sizing: border-box;
+}
+.goods-img{
+    width: 1.68rem;
+    height: 1.68rem;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.03);
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+.goods-img img{
+    width: 1.38rem;
+    height: 1.38rem;
+    display: block;
+    margin:0.15rem 0.15rem 0.15rem  0.15rem;
+}
+.goods1 span{
+    width:0.4rem;
+    height: 0.18rem;
+    position: absolute;
+    left: 0.14rem;
+    top: 1.60rem;
+    background: rgb(205, 163, 177);
+    font-size: 0.12rem;
+    text-align: center;
+    color: white;
+}
+.goods1 .span2{
+    width:1.48rem;
+    height: 0.36rem;
+    position: absolute;
+    left: 0.14rem;
+    top: 1.80rem;
+    font-size: 0.14rem;
+    text-align:left;
+    color: black;
+    background: white;
+    overflow: hidden;
+}
+.goods1 .span3{
+    width:0.42rem;
+    height: 0.20rem;
+    position: absolute;
+    left: 0.14rem;
+    top: 2.25rem;
+    background:white;
+    font-size: 0.12rem;
+    text-align: center;
+    color: red;
+    border: 0.01rem solid red;
+    box-sizing: border-box;
+}
+.goods1 .span4{
+    width:0.40rem;
+    height: 0.20rem;
+    position: absolute;
+    left: 0.14rem;
+    top: 2.5rem;
+    background:white;
+    font-size: 0.14rem;
+    text-align: center;
+    color: red;
+   font-weight: 600;
+}
+.goods1 a{
+    width:0.5rem;
+    height: 0.20rem;
+    position: absolute;
+    right: 0.14rem;
+    bottom: 0.05rem;
+    background: rgb(255, 230, 235);
+    border-radius:20%;
+    font-size: 0.14rem;
+    text-align: center;
+    color: red;
+
+
+}
+.goods2{
+    width: 1.70rem;
+    height: 2.8rem;
+    position: absolute;
+    right: 0.1rem;
+    top: 0.07rem;
+    border: 0.01rem solid rgb(237, 237, 237);
+}
+.goods2 span{
+    width:0.4rem;
+    height: 0.18rem;
+    position: absolute;
+    left: 0.14rem;
+    top: 1.60rem;
+    background: rgb(205, 163, 177);
+    font-size: 0.12rem;
+    text-align: center;
+    color: white;
+}
+.goods2 .span2{
+    width:1.48rem;
+    height: 0.36rem;
+    position: absolute;
+    left: 0.14rem;
+    top: 1.80rem;
+    font-size: 0.14rem;
+    text-align:left;
+    color: black;
+    background: white;
+    overflow: hidden;
+}
+.goods2 .span3{
+    width:0.42rem;
+    height: 0.20rem;
+    position: absolute;
+    left: 0.14rem;
+    top: 2.25rem;
+    background:white;
+    font-size: 0.12rem;
+    text-align: center;
+    color: red;
+    border: 0.01rem solid red;
+    box-sizing: border-box;
+}
+.goods2 .span4{
+    width:0.40rem;
+    height: 0.20rem;
+    position: absolute;
+    left: 0.14rem;
+    top: 2.5rem;
+    background:white;
+    font-size: 0.14rem;
+    text-align: center;
+    color: red;
+    font-weight: 600;
+}
+.goods2 a{
+    width:0.5rem;
+    height: 0.20rem;
+    position: absolute;
+    right: 0.14rem;
+    bottom: 0.05rem;
+    background: rgb(255, 230, 235);
+    border-radius:20%;
+    font-size: 0.14rem;
+    text-align: center;
+    color: red;
+
+
+}
+.cainixihuaninfo1{
+    width: 100%;
+    height: 3.16rem;
+    margin: 0.05rem auto auto auto;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.hongbao{
+    width: 1.70rem;
+    height: 100%;
+    position: absolute;
+    right: 0.1rem;
+    top: 0.07rem;
+
+}
+.hongbao img{
+    width: 1.70rem;
+    height: 100%;
+
+}
+.cainixihuaninfo2{
+    width: 100%;
+    height: 3.16rem;
+    margin: 0.05rem auto auto auto;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.cainixihuaninfo2 .hongbao{
+    width: 1.70rem;
+    height: 100%;
+    position: absolute;
+    left: 0.1rem;
+    top: 0.07rem;
+
+}
+.cainixihuaninfo3{
+    width: 100%;
+    height: 2.67rem;
+    margin: 0.05rem auto auto auto;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
+}
+.goods3{
+    width: 1.70rem;
+    height: 2.55rem;
+    position: absolute;
+    left: 0.12rem;
+    top: 0.07rem;
+    border: 0.01rem solid rgb(237, 237, 237);
+    box-sizing: border-box;
+}
+.goods3-img{
+    width: 1.68rem;
+    height:1.680rem;
+    position: absolute;
+    left: 0.01rem;
+    top: 0rem;
+
+    box-sizing: border-box;
+}
+.goods3-img img{
+    width: 1.38rem;
+    height:1.38rem;
+    display: block;
+    margin: 0.15rem 0.17rem 0.15rem 0.13rem;
+
+}
+.goods3 .span1{
+    width: 1.16rem;
+    height: 0.18rem;
+    position: absolute;
+    left: 0.17rem;
+    top: 1.55rem;
+    background: rgb(205, 163, 177);
+}
+.goods3 .span1 img{
+    float: left;
+    display: block;
+    width: 0.1823rem;
+    height: 0.1281rem;
+    margin-left:0.05rem;
+    margin-top: 0.05rem;
+}
+.goods3 .span1 span{
+    display: block;
+    float: left;
+    font-size: 0.12rem;
+    width: 0.89rem;
+    height: 0.18rem;
+}
+.goods3-content{
+    width: 1.4801rem;
+    height: 0.3601rem;
+    position: absolute;
+    left: 0.17rem;
+    top: 1.70rem;
+    overflow: hidden;
+    font-size: 0.14rem;
+}
+.goods3 .span3{
+    width:0.42rem;
+    height: 0.20rem;
+    position: absolute;
+    left: 0.14rem;
+    top: 2.25rem;
+    background:white;
+    font-size: 0.12rem;
+    text-align: center;
+    color: red;
+    border: 0.01rem solid red;
+    box-sizing: border-box;
+}
+.goods3 .goods-xs a{
+    width:0.5rem;
+    height: 0.20rem;
+    position: absolute;
+    right: 0.14rem;
+    bottom: 0.05rem;
+    background: rgb(255, 230, 235);
+    border-radius:20%;
+    font-size: 0.14rem;
+    text-align: center;
+    color: red;
+}
+.goods4{
+    width: 1.70rem;
+    height: 2.55rem;
+    position: absolute;
+    right: 0.12rem;
+    top: 0.07rem;
+    border: 0.01rem solid rgb(237, 237, 237);
+    box-sizing: border-box;
+}
+.goods4-img{
+    width: 1.68rem;
+    height:1.680rem;
+    position: absolute;
+    left: 0.01rem;
+    top: 0rem;
+
+    box-sizing: border-box;
+}
+.goods4-img img{
+    width: 1.38rem;
+    height:1.38rem;
+    display: block;
+    margin: 0.15rem 0.17rem 0.15rem 0.13rem;
+
+}
+.goods4 .span1{
+    width: 1.16rem;
+    height: 0.18rem;
+    position: absolute;
+    left: 0.17rem;
+    top: 1.55rem;
+    background: rgb(205, 163, 177);
+}
+.goods4 .span1 img{
+    float: left;
+    display: block;
+    width: 0.1823rem;
+    height: 0.1281rem;
+    margin-left:0.05rem;
+    margin-top: 0.05rem;
+}
+.goods4 .span1 span{
+    display: block;
+    float: left;
+    font-size: 0.12rem;
+    width: 0.89rem;
+    height: 0.18rem;
+}
+.goods4-content{
+    width: 1.4801rem;
+    height: 0.3601rem;
+    position: absolute;
+    left: 0.17rem;
+    top: 1.70rem;
+    overflow: hidden;
+    font-size: 0.14rem;
+}
+.goods4 .span3{
+    width:0.42rem;
+    height: 0.20rem;
+    position: absolute;
+    left: 0.14rem;
+    top: 2.25rem;
+    background:white;
+    font-size: 0.12rem;
+    text-align: center;
+    color: red;
+    border: 0.01rem solid red;
+    box-sizing: border-box;
+}
+.goods4 .goods-xs a{
+    width:0.5rem;
+    height: 0.20rem;
+    position: absolute;
+    right: 0.14rem;
+    bottom: 0.05rem;
+    background: rgb(255, 230, 235);
+    border-radius:20%;
+    font-size: 0.14rem;
+    text-align: center;
+    color: red;
+}
