@@ -1,0 +1,65 @@
+html {
+    font-size: 26.666666666666vw;
+}
+
+
+body, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: .9rem;
+    background-color: rgb(255, 0, 54);
+}
+
+
+header .up {
+    height: .44rem;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+
+}
+
+header .up .pad {
+    height: .30rem;
+    border: 2px solid;
+    display: flex;
+    justify-content: space-around;
+}
+
+header .up .pad .left {
+    height: 100%;
+    width: .3rem;
+    border: 2px solid;
+    position: relative;
+    overflow: hidden;
+}
+
+header .up .pad .left img {
+    height: 100%;
+    display: block;
+}
+
+header .up .pad .middle{
+    height: 100%;
+}
+
+header .up .pad .middle img{
+    height: 100%;
+}
+
+
+header .down {
+    height: .46rem;
+    border: 2px solid;
+
+}
+
+
+
+
+

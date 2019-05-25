@@ -1,0 +1,691 @@
+html {
+    font-size: 26.6666666666666vw;
+}
+
+
+body, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: .14rem;
+}
+
+header {
+    width: 100%;
+    height: .9rem;
+    background-color: rgb(255, 0, 54);
+}
+
+
+header .up {
+    height: .44rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+header .up .left {
+    height: .3rem;
+    width: .3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+header .up .left img {
+    height: 100%;
+    display: block;
+}
+
+header .up .middle {
+    height: .205rem;
+    width: 2rem;
+    display: flex;
+}
+
+header .up .middle img {
+    height: 100%;
+    width: 1.185rem;
+    margin: auto;
+}
+
+header .up .right {
+    color: white;
+    font-size: .14rem;
+}
+
+header .down {
+    height: .46rem;
+    width: 100%;
+}
+
+header .down .search {
+    width: 3.55rem;
+    height: .36rem;
+    margin: 0 auto;
+    background: white;
+    border-radius: .04rem;
+    display: flex;
+    align-items: center;
+}
+
+
+header .down .search .icon {
+    width: .36rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .down .search .icon img {
+    width: .16rem;
+    height: .16rem;
+
+}
+
+header .down .search .text {
+    font-size: .14rem;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.most-out {
+    width: 3.51rem;
+    margin: auto;
+}
+
+
+/*顶部第二行*/
+.top-2 {
+    width: 100%;
+    height: .766rem;
+}
+
+.top-2 .out {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-2 .label {
+    width: .70rem;
+    height: 100%;
+}
+
+
+.top-2 .label .icon {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-2 .label .icon img {
+    width: .48rem;
+    height: .48rem;
+}
+
+.top-2 .label .text {
+    width: 100%;
+    font-size: .13rem;
+    text-align: center;
+}
+
+
+.banner {
+    width: 3.51rem;
+    height: 1.3225rem;
+    display: flex;
+    padding-top: .1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .out {
+    display: flex;
+    width: 50rem;
+    height: 100%;
+    position: absolute;
+    left: -3rem;
+    animation: ten 20s ease infinite;
+}
+
+@keyframes ten {
+    0% {
+        left: 0;
+    }
+    7% {
+        left: 0rem;
+    }
+    10% {
+        left: -3.61rem;
+    }
+    17% {
+        left: -3.61rem;
+    }
+    20% {
+        left: -7.22rem;
+    }
+    27% {
+        left: -7.22rem;
+    }
+    30% {
+        left: -10.83rem;
+    }
+    37% {
+        left: -10.83rem;
+    }
+    40% {
+        left: -14.44rem;
+    }
+    47% {
+        left: -14.44rem;
+    }
+    50% {
+        left: -18.05rem;
+    }
+    57% {
+        left: -18.05rem;
+    }
+    60% {
+        left: -21.66rem;
+    }
+    67% {
+        left: -21.66rem;
+    }
+    70% {
+        left: -25.27rem;
+    }
+    77% {
+        left: -25.27rem;
+    }
+    80% {
+        left: -28.88rem;
+    }
+    87% {
+        left: -28.88rem;
+    }
+    90% {
+        left: -32.49rem;
+    }
+    97% {
+        left: -32.49rem;
+    }
+    100% {
+        left: -36.1rem;
+    }
+
+
+}
+
+.banner .out .one {
+    width: 3.51rem;
+    height: 1.3225rem;
+    margin-right: .1rem;
+}
+
+.banner .out img {
+    width: 3.51rem;
+    height: 1.3225rem;
+
+}
+
+.space {
+    height: .145rem;
+}
+
+.picture-top-2 {
+    height: 1.80rem;
+
+}
+
+.picture-top-2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.picture-four {
+    height: 2.73rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.picture-four img {
+    width: 1.725rem;
+    height: 1.285rem;
+}
+
+.sky-cat-example {
+    white-space: pre-wrap;
+    border: 0px solid black;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: 0;
+    font-size: .18rem;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+}
+
+.picture-three {
+    height: 1.495rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 .06rem;
+}
+
+.picture-three .p-b {
+    width: 1.13rem;
+    height: 1.365rem;
+    margin-top: .13rem;
+    background-color: rgb(248, 248, 248);
+}
+
+.picture-three .p-b .picture {
+    height: 70%;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.picture-three .p-b .picture .up {
+    width: .315rem;
+    height: .255rem;
+    display: flex;
+
+}
+
+.picture-three .p-b .picture img {
+    width: 100%;
+    height: 100%;
+}
+
+.picture-three .p-b .picture .down {
+    width: .73rem;
+    height: .73rem;
+    display: flex;
+    position: absolute;
+    left: .15rem;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.picture-three .p-b .text {
+    height: 30%;
+}
+
+
+.picture-three .p-b .text .up {
+    width: 90%;
+    height: 50%;
+    background: url("../imgs/downloadhfdhdfgfxb.png") no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    font-size: .11rem;
+    text-align: center;
+    line-height: .20rem;
+    margin: auto;
+
+}
+
+
+.picture-three .p-b .text .down {
+    height: 50%;
+    font-size: .12rem;
+    text-align: center;
+
+}
+
+.popularity-ranking {
+    height: 2.685rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.popularity-ranking .up {
+    width: 3.51rem;
+    height: .845rem;
+}
+
+.popularity-ranking .up .in {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popularity-ranking .up .in .left {
+    width: .96rem;
+    height: 100%;
+    margin-left: .13rem;
+}
+
+.popularity-ranking .up .in .left .text-1 {
+    width: .46rem;
+    height: .215rem;
+    background: url("../imgs/TB1CxpTsVzqK1RjSZFCXXbbxVXa-92-43.png") no-repeat;
+    background-size: 100% 100%;
+    font-size: .11rem;
+    color: white;
+    text-align: center;
+}
+
+.popularity-ranking .up .in .left .text-2 {
+    font-size: .12rem;
+}
+
+.popularity-ranking .up .in .left .text-3 {
+    font-size: .12rem;
+    color: rgb(153, 153, 153);
+}
+
+.popularity-ranking .up .in .right {
+    width: 2.11rem;
+    height: .65rem;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.popularity-ranking .up .in .right .alternate {
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    animation: slide 3s ease infinite;
+}
+
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+    33.33% {
+        left: 0;
+    }
+    66.66% {
+        left: -2.11rem;
+    }
+    100% {
+        left: -2.11rem;
+    }
+}
+
+
+.popularity-ranking .up .in .right .alternate .alternate-in {
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.popularity-ranking .up .in .right .alternate .alternate-in img {
+    width: .65rem;
+    height: 100%;
+    background-color: gray;
+}
+
+.popularity-ranking .down {
+    width: 1.725rem;
+    height: .845rem;
+    background-color: rgb(248, 248, 248);
+    display: flex;
+}
+
+.popularity-ranking .down .left {
+    width: 60%;
+    height: 100%;
+    padding-left: .13rem;
+}
+
+.popularity-ranking .down .left .text-1 {
+    font-size: .11rem;
+    color: rgb(200, 157, 107);
+}
+
+.popularity-ranking .down .left .text-2 {
+    margin-top: .02rem;
+    margin-bottom: .06rem;
+    width: .11rem;
+    height: .015rem;
+    background-color: rgb(227, 227, 227);
+}
+
+.popularity-ranking .down .left .text-3 {
+    font-size: .12rem;
+}
+
+.popularity-ranking .down .left .text-4 {
+    font-size: .12rem;
+    color: rgb(153, 153, 153);
+}
+
+.popularity-ranking .down .right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.popularity-ranking .down .right .picture {
+    width: .55rem;
+    height: .55rem;
+}
+
+.popularity-ranking .down .right .picture img {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.like {
+    font-size: 18px;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+}
+
+.guess-you {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+/*猜你喜欢*/
+.guess-you .one-like {
+    width: 1.7rem;
+    height: 2.67rem;
+    position: relative;
+    margin-top: .05rem;
+    border: .01rem solid rgb(237, 237, 237);
+    box-sizing: border-box;
+}
+
+.guess-you .one-like .picture {
+    width: 1.70rem;
+    height: 1.68rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.guess-you .one-like .picture img {
+    width: 1.38rem;
+    height: 1.38rem;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.guess-you .one-like .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(205, 163, 177);
+    /*width: 1.1015rem;*/
+    height: .18rem;
+    font-size: .1rem;
+    position: absolute;
+    top: 1.59rem;
+    margin-left: .1rem;
+    padding: 0 .05rem;
+}
+
+.guess-you .one-like .brand img {
+    width: .1823rem;
+    height: .1281rem;
+}
+
+.guess-you .one-like .name {
+    width: 1.70rem;
+    height: .6rem;
+    padding: .1rem .1rem 0;
+}
+
+.guess-you .one-like .name .text {
+    font-size: .14rem;
+}
+
+.guess-you .one-like .name .ticket {
+    font-size: .11rem;
+    border: .005rem solid rgb(255, 0, 54);
+    box-sizing: border-box;
+    color: rgb(255, 0, 54);
+    display: inline;
+}
+
+.guess-you .one-like .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .08rem 0 .1rem;
+
+}
+
+.guess-you .one-like .price .left {
+    color: red;
+    font-size: .16rem;
+    font-weight: 600;
+
+}
+
+.guess-you .one-like .price .right {
+    color: rgb(255, 0, 54);
+    font-size: .11rem;
+    background-color: rgb(255, 230, 235);
+    padding: 0 0.09rem;
+    height: .23rem;
+    border-radius: .1175rem;
+    line-height: .23rem;
+}
+
+
+/*#######猜你喜欢*/
+.guess-you .like-picture {
+    width: 1.7rem;
+    height: 3.11rem;
+    margin-top: .05rem;
+}
+
+.guess-you .like-picture img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
