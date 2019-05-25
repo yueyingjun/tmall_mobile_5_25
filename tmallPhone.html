@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>天猫网站--移动端</title>
+    <link rel="stylesheet" href="css4/tmallPhone.css">
+    <script>
+        window.onload=function(ev){
+            var banner = document.querySelectorAll(".wheel-box>a");
+            var btn = document.querySelectorAll(".btn>div");
+            var num = 0;
+
+            setInterval(function () {
+                num++
+                if(num==5){
+                    num=0
+                }
+                for(var i=0;i<banner.length;i++){
+                    banner[i].style.display="none";
+                    btn[i].style.background="#555";
+                }
+                banner[num].style.display="block";
+                btn[num].style.background="#fff";
+            },2000)
+        }
+    </script>
+</head>
+<body>
+<!--头部-->
+<div class="header-up">
+    <div class="header-opt">
+        <div class="header-opt-top"><a href="">三</a></div>
+        <div class="header-opt-top"><img src="images4/header.jpg" alt=""></div>
+        <div class="header-opt-top"><a href="">登录</a></div>
+    </div>
+</div>
+
+<div class="header-down">
+    <div class="header-search">
+        <div class="search-box">
+            <div class="search-box-icon"><a href=""><img src="images4/search.jpg" alt=""></a></div>
+            <div class="search-box-desc">搜索商品、品牌</div>
+        </div>
+    </div>
+</div>
+
+<!--列表-->
+<div class="list">
+    <div class="list-items">
+        <div class="list-item1">
+            <div class="list-item1-icon"><img src="images4/list-item1.jpg" alt=""></div>
+            <div class="list-item1-desc">苏宁易购</div>
+        </div>
+        <div class="list-item1">
+            <div class="list-item1-icon"><img src="images4/list-item2.png" alt=""></div>
+            <div class="list-item1-desc">天猫超市</div>
+        </div>
+        <div class="list-item1">
+            <div class="list-item1-icon"><img src="images4/list-item3.png" alt=""></div>
+            <div class="list-item1-desc">天猫国际</div>
+        </div>
+        <div class="list-item1">
+            <div class="list-item1-icon"><img src="images4/list-item4.jpg" alt=""></div>
+            <div class="list-item1-desc">聚划算</div>
+        </div>
+        <div class="list-item1">
+            <div class="list-item1-icon"><img src="images4/list-item5.jpg" alt=""></div>
+            <div class="list-item1-desc">分类</div>
+        </div>
+    </div>
+</div>
+
+<!--轮播图-->
+<div class="wheel-box">
+    <a href=""><img src="images4/lunbo1.jpg" class="lunbo1"></a>
+    <a href=""><img src="images4/lunbo2.jpg" class="lunbo2"></a>
+    <a href=""><img src="images4/lunbo3.jpg" class="lunbo3"></a>
+    <a href=""><img src="images4/lunbo4.jpg" class="lunbo4"></a>
+    <a href=""><img src="images4/lunbo5.jpg" class="lunbo5"></a>
+
+    <div class="btn">
+        <div class="btn1" style="background: #ffffff"></div>
+        <div class="btn1"></div>
+        <div class="btn1"></div>
+        <div class="btn1"></div>
+        <div class="btn1"></div>
+    </div>
+</div>
+
+<!--背景1-->
+<div class="beijing1">
+    <a href=""><img src="images4/bj1.jpg" alt=""></a>
+</div>
+
+<!--限时抢购-->
+<div class="qianggou">
+    <div class="qianggou1">
+        <div class="qianggou1-left">
+            <div class="qianggou1-left-up"><span>限时抢购</span></div>
+            <div class="qianggou1-left-down"><img src="images4/01.jpg" alt=""></div>
+            <div class="qianggou1-left-end"><span>实惠好货</span></div>
+        </div>
+        <div class="qianggou1-right">
+            <div class="qianggou1-left-up"><span>00:00:00</span></div>
+            <div class="qianggou1-left-down"><img src="images4/02.jpg" alt=""></div>
+            <div class="qianggou1-left-end"><span>爆款直降</span></div>
+        </div>
+    </div>
+
+    <div class="qianggou1">
+        <div class="qianggou1-left">
+            <div class="qianggou1-left-up"><span>天猫好物</span></div>
+            <div class="qianggou1-left-down"><img src="images4/03.jpg" alt=""></div>
+            <div class="qianggou1-left-end"><span>小个子穿搭</span></div>
+        </div>
+        <div class="qianggou1-right">
+            <div class="qianggou1-left-up"></div>
+            <div class="qianggou1-left-down"><img src="images4/04.jpg" alt=""></div>
+            <div class="qianggou1-left-end"><span>时髦设计</span></div>
+        </div>
+    </div>
+
+    <div class="qianggou1">
+        <div class="qianggou1-left">
+            <div class="qianggou1-left-up"><span>聚划算</span></div>
+            <div class="qianggou1-left-down"><img src="images4/05.jpg" alt=""></div>
+            <div class="qianggou1-left-end"><span>10点抢神卷</span></div>
+        </div>
+        <div class="qianggou1-right">
+            <div class="qianggou1-left-up"></div>
+            <div class="qianggou1-left-down"><img src="images4/06.jpg" alt=""></div>
+            <div class="qianggou1-left-end"><span>满138-10</span></div>
+        </div>
+    </div>
+
+    <div class="qianggou1">
+        <div class="qianggou1-left">
+            <div class="qianggou1-left-up"><span>天猫闪降</span></div>
+            <div class="qianggou1-left-down"><img src="images4/07.jpg" alt=""></div>
+            <div class="qianggou1-left-end"><span>已降790元</span></div>
+        </div>
+        <div class="qianggou1-right">
+            <div class="qianggou1-left-up"></div>
+            <div class="qianggou1-left-down"><img src="images4/08.jpg" alt=""></div>
+            <div class="qianggou1-left-end"><span>已降1300元</span></div>
+        </div>
+    </div>
+</div>
+
+<!--天猫榜单-->
+<div class="tmall-top">
+    <div class="tmall-top-title"><span>天猫榜单</span></div>
+</div>
+
+<!--天猫趋势榜-->
+<div class="qushibang">
+    <div class="qushibang-1">
+        <div class="qushibang-1-dec"><img src="images4/qushi.jpg" alt=""></div>
+        <div class="qushibang-1-top"><img src="images4/tmall-top-1.jpg" alt=""></div>
+        <div class="qushibang-1-mid"><span>时尚简约领针</span></div>
+        <div class="qushibang-1-bottom"><span>人气上升679%</span></div>
+    </div>
+    <div class="qushibang-1">
+        <div class="qushibang-1-dec"><img src="images4/qushi.jpg" alt=""></div>
+        <div class="qushibang-1-top"><img src="images4/tmall-top-2.jpg" alt=""></div>
+        <div class="qushibang-1-mid"><span>魅力网眼内衣</span></div>
+        <div class="qushibang-1-bottom"><span>人气上升469%</span></div>
+    </div>
+    <div class="qushibang-1">
+        <div class="qushibang-1-dec"><img src="images4/qushi.jpg" alt=""></div>
+        <div class="qushibang-1-top"><img src="images4/tmall-top-3.jpg" alt=""></div>
+        <div class="qushibang-1-mid"><span>精品帅气帆布</span></div>
+        <div class="qushibang-1-bottom"><span>人气上升324%</span></div>
+    </div>
+</div>
+
+<!--人气榜-->
+<div class="people-top">
+    <div class="people-top-left">
+        <div class="people-top-left-1"><span>人气榜</span></div>
+        <div class="people-top-left-2"><span>—</span></div>
+        <div class="people-top-left-3"><span>质感家居睡裙榜</span></div>
+        <div class="people-top-left-4"><span>月销143件</span></div>
+    </div>
+    <div class="people-top-right">
+        <div class="people-top-right-1"><img src="images4/shuiqun1.jpg" alt=""></div>
+        <div class="people-top-right-1"><img src="images4/shuiqun2.jpg" alt=""></div>
+        <div class="people-top-right-1"><img src="images4/shuiqun3.jpg" alt=""></div>
+    </div>
+</div>
+
+<!--4个人气榜-->
+<div class="people-top-four">
+    <div class="people-top-four-1">
+        <div class="people-top-four-1-left">
+            <div class="people-top-left-1"><span>人气榜</span></div>
+            <div class="people-top-left-2"><span>—</span></div>
+            <div class="people-top-left-3"><span>高街绣花连衣裙榜</span></div>
+            <div class="people-top-left-4"><span>月销127件</span></div>
+        </div>
+        <div class="people-top-four-1-right"><img src="images4/people-top.jpg" alt=""></div>
+    </div>
+    <div class="people-top-four-1">
+        <div class="people-top-four-1-left">
+            <div class="people-top-left-1"><span>人气榜</span></div>
+            <div class="people-top-left-2"><span>—</span></div>
+            <div class="people-top-left-3"><span>品质牛皮鞋子榜</span></div>
+            <div class="people-top-left-4"><span>月销452件</span></div>
+        </div>
+        <div class="people-top-four-1-right"><img src="images4/people-top.jpg" alt=""></div>
+    </div>
+    <div class="people-top-four-1">
+        <div class="people-top-four-1-left">
+            <div class="people-top-left-1"><span>人气榜</span></div>
+            <div class="people-top-left-2"><span>—</span></div>
+            <div class="people-top-left-3"><span>专业防泼水外套榜</span></div>
+            <div class="people-top-left-4"><span>火爆热销中</span></div>
+        </div>
+        <div class="people-top-four-1-right"><img src="images4/people-top.jpg" alt=""></div>
+    </div>
+    <div class="people-top-four-1">
+        <div class="people-top-four-1-left">
+            <div class="people-top-left-1"><span>人气榜</span></div>
+            <div class="people-top-left-2"><span>—</span></div>
+            <div class="people-top-left-3"><span>轻奢牛皮包包榜</span></div>
+            <div class="people-top-left-4"><span>月销123件</span></div>
+        </div>
+        <div class="people-top-four-1-right"><img src="images4/people-top.jpg" alt=""></div>
+    </div>
+</div>
+
+<!--猜你喜欢-->
+<div class="your-love">
+    <div class="your-love-title"><span>猜你喜欢</span></div>
+</div>
+
+<!--猜你喜欢列表-->
+<div class="love-list">
+    <div class="love-list-item">
+        <div class="item-cont"><img src="images4/like1.jpg" alt=""></div>
+        <div class="item-desc">
+            <div class="item-prand"><span>qunlong</span></div>
+            <div class="item-detail"><span>迷你世界儿童玩具,男孩子钟爱的。。。</span></div>
+            <div class="item-price"><span>￥170</span><div class="item-same"><a href="">看相似</a></div></div>
+        </div>
+    </div>
+    <div class="love-list-item">
+        <div class="item-cont"><img src="images4/like2.jpg" alt=""></div>
+        <div class="item-desc">
+            <div class="item-prand"><span>ZARA</span></div>
+            <div class="item-detail"><span>网纱连衣裙女 2019新款韩版收腰显瘦气质蕾丝裙子</span></div>
+            <div class="item-price"><span>￥239</span><div class="item-same"><a href="">看相似</a></div></div>
+        </div>
+    </div>
+    <div class="love-list-item">
+        <div class="item-cont"><img src="images4/like3.jpg" alt=""></div>
+        <div class="item-desc">
+            <div class="item-prand"><span>七波辉</span></div>
+            <div class="item-detail"><span>七波辉男童新款夏中大童韩版沙滩鞋</span></div>
+            <div class="item-price"><span>￥156</span><div class="item-same"><a href="">看相似</a></div></div>
+        </div>
+    </div>
+    <div class="love-list-item">
+        <div class="item-cont"><img src="images4/like5.jpg" alt=""></div>
+        <div class="item-desc">
+            <div class="item-prand"><span>红赛</span></div>
+            <div class="item-detail"><span>2019春秋季休闲长款过膝宽松风衣外套</span></div>
+            <div class="item-price"><span>￥198</span><div class="item-same"><a href="">看相似</a></div></div>
+        </div>
+    </div>
+    <div class="love-list-item">
+        <img src="images4/like4.jpg" alt="">
+    </div>
+    <div class="love-list-item">
+        <div class="item-cont"><img src="images4/like6.jpg" alt=""></div>
+        <div class="item-desc">
+            <div class="item-prand"><span>Bershka</span></div>
+            <div class="item-detail"><span>bershka男士春季连帽迷彩棉质夹克</span></div>
+            <div class="item-price"><span>￥199</span><div class="item-same"><a href="">看相似</a></div></div>
+        </div>
+    </div>
+    <div class="love-list-item">
+        <div class="item-cont"><img src="images4/like7.jpg" alt=""></div>
+        <div class="item-desc">
+            <div class="item-prand"><span>qiunrua</span></div>
+            <div class="item-detail"><span>大码夏装2019新款两件套装大码洋气牛仔半身裙子</span></div>
+            <div class="item-price"><span>￥58</span><div class="item-same"><a href="">看相似</a></div></div>
+        </div>
+    </div>
+    <div class="love-list-item">
+        <div class="item-cont"><img src="images4/like8.jpg" alt=""></div>
+        <div class="item-desc">
+            <div class="item-prand"><span>潘琦梅</span></div>
+            <div class="item-detail"><span>睡衣女春夏天七分裤休闲时尚新款家居服两件套装薄款</span></div>
+            <div class="item-price"><span>￥79</span><div class="item-same"><a href="">看相似</a></div></div>
+        </div>
+    </div>
+    <div class="love-list-item">
+        <div class="item-cont"><img src="images4/like9.jpg" alt=""></div>
+        <div class="item-desc">
+            <div class="item-prand"><span>一诺</span></div>
+            <div class="item-detail"><span>哆啦a梦华为mate20 mate20pro mate20x手机壳</span></div>
+            <div class="item-price"><span>￥26.8</span><div class="item-same"><a href="">看相似</a></div></div>
+        </div>
+    </div>
+    <div class="love-list-item">
+        <img src="images4/like10.jpg" alt="">
+    </div>
+</div>
+</body>
+</html>
