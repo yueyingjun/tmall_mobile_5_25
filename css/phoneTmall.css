@@ -1,0 +1,406 @@
+html{
+    font-size: 26.666666vw;
+}
+body{
+    margin: 0; padding: 0;
+    overflow-x: hidden;
+}
+ul,li,h1,h2,p{
+    margin: 0; padding: 0; list-style: none;
+}
+.redhead{
+    width: 100vw; height: 0.9rem;
+    background-color: red;
+}
+.top{
+    display: flex;
+    width: 100vw; height:.44rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.list{
+    background: url("../imgs/list.webp") no-repeat;
+    background-size: 3rem .3rem;
+    width: .3rem; height: .3rem;
+}
+.top img{
+    width: 1.185rem;
+    height: .205rem;
+}
+.top a{
+    width: .3rem; height: .3rem;
+    font-size: .14rem;
+    text-decoration: none;
+    color: white;
+}
+.select{
+    width: 100vw; height: .46rem;
+    display: flex;
+
+}
+.input{
+    width: 3.55rem; height: .36rem;
+    border-radius: .05rem;
+    background-color: #fff;
+    margin: auto;
+    display: flex;
+
+}
+.input-icon{
+    width: .15rem; height: .16rem;
+    background: url("../imgs/select.webp") no-repeat ;
+    background-size: 100% 100%;
+    margin: .1rem .1rem 0;
+}
+.input-info{
+     font-size: .16rem;
+    line-height: .36rem;
+    color: grey;
+}
+
+.logo-icon-box{
+    width: 3.75rem; height: .766rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo-opt{
+    width: .7rem; height: .76rem;
+    margin: auto;
+
+}
+.logo-opt a{
+    width: .48rem; height: .48rem;
+    margin:0  auto;
+}
+.logo-icon{
+    width: .48rem; height: .48rem;
+    margin: auto;
+}
+.logo-info{
+    width: .7rem; height: .144rem;
+    font-size: .14rem;
+    text-align: center;
+}
+
+.banner {
+    width: 3.51rem;
+    height: 1.3225rem;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.imgBox{
+    width: 3.51rem;
+    height: 1.3225rem;
+    display: inline-block;
+}
+.imgBox >li{
+    width: 3.51rem;
+    height:  1.3225rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1.2s;
+}
+
+.imgBox > li.active {
+    z-index: 1;
+}
+
+.imgBox >li >a {
+    display: inline-block;
+    width: 3.51rem;
+    height: 1.3225rem;
+}
+
+.imgBox >li >a >img {
+    width: 3.51rem;
+    height:  1.3225rem;
+}
+
+.pagerBox {
+    width: 1.1rem;
+    height: 0.02rem;
+    position: absolute;
+    left: 35%;
+    bottom: 0.1rem;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagerBox li {
+    width: .16rem;
+    height: .02rem;
+    background: rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.pagerBox > li.active {
+    background: #ccc;
+}
+
+.slides {
+    /*width: 40px;*/
+    height: 69px;
+    margin: auto;
+    z-index: 99999;
+}
+
+/*.prev {*/
+/*    left: 234px;*/
+/*    background-position: -83px 0;*/
+/*}*/
+
+.prev:hover {
+    background-position: 0 0;
+}
+
+.redbao{
+    width:3.75rem; height: 1.8rem;
+}
+
+.qingshop{
+
+    width: 3.51rem; height: 2.63rem;
+    margin: .1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.qingshop-opt{
+    width: 1.725rem; height: 1.285rem;
+    background: url("../imgs/biejing.png") no-repeat ;
+    background-size: 100% 100%;
+    position: relative;
+}
+.qingshop-a{
+    width: 1.57rem; height: .16rem;
+    font-size: .16rem;
+    position: absolute;
+    margin-left: .2rem; margin-top: .1rem;
+    text-decoration: none;
+    color: black;  font-weight: bold;
+}
+
+.biaoqian{
+
+}
+.shoptitle{
+    justify-content: space-around;
+    font-size: .1rem;
+    display: flex;
+    color: red;
+    border: 1px solid red;
+
+}
+.shopimgs{
+    width: 1.72rem; height: .7755rem;
+    display: flex;
+    position: absolute;
+    margin-top: .34rem;
+    justify-content: space-around;
+
+}
+.shop1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.title{
+    width: 3.51rem; height: .296rem;
+    font-size: .18rem;
+    margin: auto;
+    font-weight: bold;
+}
+
+.topshop{
+    width: 3.57rem; height: 1.495rem;
+    margin: auto;
+    display: flex;
+    padding-bottom: 0rem;
+    justify-content: space-around;
+
+}
+
+.top2{
+    width: 1.13rem; height: 1.365rem;
+    background-color: rgb(242,232,232);
+    position: relative;
+    margin-top: .13rem;
+    text-decoration: none;
+    color: black;
+}
+.top1{
+    width: 1.13rem; height: 1.495rem;
+    background-color: rgb(242,232,232);
+    position: relative;
+    margin-top: 0rem;
+    text-decoration: none;
+    color: black;
+}
+.topshopimg{
+     width: .73rem; height: .73rem;
+      position: absolute;
+      margin-top: .2rem; margin-left: .2rem;
+      display: flex;
+
+}
+.qushi{
+    position: absolute; left: .1rem; top: 0;
+}
+.blueimg{
+      width: 1.04rem; height: .18rem;
+    background: url("../imgs/bluebox.webp") no-repeat ;
+    background-size:  100% 100%;
+     color: white;   font-size: .11rem;
+    position: absolute; left: .03rem; bottom: .2rem;
+    text-align: center;
+}
+.topshop span{
+    font-size: .12rem;
+    text-decoration: none;
+     position: absolute; left: .18rem; bottom:0rem;
+}
+
+.renqitop{
+    width: 3.51rem; height: .845rem;
+    margin: .1rem .12rem 0;
+    background-color: #f8f8f8;
+    position: relative;
+}
+.renqitopimg{
+ width: .46rem; height: .215rem;
+    position: absolute; left: .1rem; top: 0;
+    background: url("../imgs/toprenqi.webp");
+    background-size: 100% 100%;
+    font-size: .12rem; color: white; text-align: center;
+
+}
+.textblack{
+    font-size: .12rem;
+    position: absolute;top: .26rem;
+    font-weight: bold;
+}
+.textgray{
+    position: absolute;top: .4rem;
+    font-size: .12rem;
+    color: #999999;
+}
+.renqititle{
+    width: .84rem; height: .845rem;
+    margin: 0 0 0 .13rem;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.renqimore{
+   width: 3.75rem; height: 1.8rem;
+    margin: .1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.renqimore-opt{
+    width: 1.725rem; height: .845rem;
+    background-color: #f8f8f8;
+    display: flex;
+}
+.renqitopimg-more{
+    width: .46rem; height: .215rem;
+    position: absolute; left: .1rem; top: 0;
+    font-size: .12rem; color: #c89d6b; text-align: center;
+
+}
+
+.renqimore-opt-img{
+    width: .55rem; height: .55rem;
+    background: url("../imgs/renqimore-img.webp") no-repeat;
+    background-size:  100% 100%;
+    margin-top: .15rem;
+}
+
+.youlovebox{
+    width: 3.532rem; height: 2.77rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.youlove-opt{
+width: 1.7rem; height: 2.67rem;
+    border: 1px solid #f8f8f8;
+    position: relative;
+}
+.youlovebiejing{
+     width: 1.68rem; height: 1.68rem;
+    display: flex;
+    justify-content: space-around;
+     margin: auto;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+.youlove-img{
+    width: 1.38rem; height: 1.38rem;
+    margin: auto;
+}
+
+.youlove-biaoqian{
+width: .3rem; height: .18rem;
+  background-color: rgb(205, 163, 177);
+    font-size: .1rem;
+    margin-top: -.1rem;
+    margin-left: .07rem;
+
+}
+.youlove-name{
+width: 1.48rem; height: .36rem;
+    font-size: .14rem;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+}
+
+.youlove-youhui{
+
+    margin-bottom: .1rem;
+
+ }
+.youlove-youhui span{
+    margin-left: .1rem;
+      width: .3491rem; height: .13rem;
+        font-size: .1rem;
+         display: flex;
+ }
+.textyouhui{
+    border: 1px solid red;
+    display: flex;
+
+}
+
+.youlove-price{
+    width:  1.7rem; height:  .3rem;
+      display: flex;
+      justify-content: space-around;
+       font-size: .12rem;
+      color: red;
+}
+.youlove-price span{
+     font-size: .16rem;
+    font-weight: bold;
+}
+.youlove-price .likeshop{
+     width: .51rem; height: .23rem;
+    background-color: rgb(255, 230, 235);
+    border-radius: .1175rem;
+    text-align: center;
+    line-height: .23rem;
+
+
+}
