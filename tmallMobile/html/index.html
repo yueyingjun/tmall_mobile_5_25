@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/index.css" >
+    <title>Document</title>
+</head>
+<body>
+<!--顶部-->
+<div class="top-out">
+    <div class="top-inner">
+        <div class="top-inner-up">
+            <div class="top-inner-up-left">
+            </div>
+            <div class="top-inner-up-middle">
+                <img src="../imgs/顶部tmall.png" width="100%">
+            </div>
+            <div class="top-inner-up-right">
+                <a href="">登陆</a>
+            </div>
+        </div>
+        <div class="top-inner-down">
+            <input type="url">
+        </div>
+    </div>
+</div>
+<!--导航-->
+<div class="daohang-out">
+<div class="daohang-inner">
+<div class="daohang-inner-demo">
+<div class="daohang-inner-demo-up">
+    <img src="../imgs/导航1.png" width="100%" height="100%">
+</div>
+    <div class="daohang-inner-demo-down">
+        <strong>苏宁易购</strong>
+    </div>
+</div>
+    <div class="daohang-inner-demo">
+        <div class="daohang-inner-demo-up">
+            <img src="../imgs/导航2.png" width="100%" height="100%">
+        </div>
+        <div class="daohang-inner-demo-down">
+            <strong>天猫超市</strong>
+        </div>
+    </div>
+    <div class="daohang-inner-demo">
+        <div class="daohang-inner-demo-up">
+            <img src="../imgs/导航3.png" width="100%" height="100%">
+        </div>
+        <div class="daohang-inner-demo-down">
+            <strong>天猫国际</strong>
+        </div>
+    </div>
+    <div class="daohang-inner-demo">
+        <div class="daohang-inner-demo-up">
+            <img src="../imgs/导航4.png" width="100%" height="100%">
+        </div>
+        <div class="daohang-inner-demo-down">
+            <strong>聚划算</strong>
+        </div>
+    </div>
+    <div class="daohang-inner-demo">
+        <div class="daohang-inner-demo-up">
+            <img src="../imgs/导航5.png" width="100%" height="100%">
+        </div>
+        <div class="daohang-inner-demo-down">
+            <strong>分类</strong>
+        </div>
+    </div>
+</div>
+</div>
+<!--轮播-->
+<div id="banner">
+    <ul id="imageBox">
+        <li class="active"><a href=""><img src="../imgs/lun3.jpg_.webp" alt=""></a></li>
+        <li><a href=""><img src="../imgs/lun1.jpg_.webp" alt=""></a></li>
+        <li><a href=""><img src="../imgs/lun2.jpg_.webp" alt=""></a></li>
+        <li><a href=""><img src="../imgs/lun3.jpg_.webp" alt=""></a></li>
+        <li><a href=""><img src="../imgs/lun1.jpg_.webp" alt=""></a></li>
+    </ul>
+    <ul id="pagerBox">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div id="prev" class="slides"></div>
+    <div id="next" class="slides"></div>
+</div>
+<script>
+    {
+        let pagers = document.querySelectorAll("#pagerBox>li");
+        let images = document.querySelectorAll("#imageBox>li");
+        let len = pagers.length;
+        let flag = false;
+        pagers.forEach(function (ele, index) {
+            ele.onclick = function () {
+                flag = true;
+                now = index;
+                for (let i = 0; i < len; i++) {
+                    pagers[i].classList.remove("active");
+                    images[i].classList.remove("active");
+                }
+                this.classList.add("active");
+                images[index].classList.add("active");
+            }
+        });
+        let now = 0;
+
+        function move() {
+            now++;
+            if (now === len) {
+                now = 0;
+            }
+            if (now === -1) {
+                now = len - 1;
+            }
+            for (let i = 0; i < len; i++) {
+                pagers[i].classList.remove("active");
+                images[i].classList.remove("active");
+            }
+            pagers[now].classList.add("active");
+            images[now].classList.add("active");
+        }
+
+        let st = setInterval(move, 3000);
+        let banner = document.querySelector("#banner");
+        banner.onmouseenter = function () {
+            clearInterval(st);
+        };
+        banner.onmouseleave = function () {
+            if (flag) {
+                return;
+            }
+            st = setInterval(move, 3000);
+        };
+        let next = document.querySelector("#next");
+        let prev = document.querySelector("#prev");
+        let flag2 = true;
+        next.onclick = function () {
+            if (flag2) {
+                flag2 = false;
+                flag = true;
+                move();
+            }
+        };
+        prev.onclick = function () {
+            if (flag2) {
+                flag2 = false;
+                now -= 2;
+                flag = true;
+                move();
+            }
+        };
+        // banner.addEventListener("click",function(){
+        //     alert(1);
+        // });
+        images.forEach(function (ele, index) {
+            ele.addEventListener("transitionend", function () {
+                flag2 = true;
+            })
+        })
+    }
+</script>
+<!--一张插图-->
+<div class="chatu">
+<img src="../imgs/红包.webp" width="100%" height="100%">
+</div>
+<!--活动-->
+<div class="huodong-out">
+<div class="huodong-inner">
+<div class="huodong-inner-demo">
+    <div class="huodong-inner-demo-demo">
+        <div class="huodong-inner-demo-demo-up">
+            <strong>限时抢购</strong>
+        </div>
+        <div class="huodong-inner-demo-demo-middle">
+        <img src="../imgs/c2.jpg_.webp" width="100%" height="100%" >
+        </div>
+        <div class="huodong-inner-demo-demo-down">
+            <span>为你精选</span>
+        </div>
+    </div>
+    <div class="huodong-inner-demo-demo">
+        <div class="huodong-inner-demo-demo-up">
+            <strong>00:00:00</strong>
+        </div>
+        <div class="huodong-inner-demo-demo-middle">
+            <img src="../imgs/c1.jpg_.webp" width="100%" height="100%" >
+        </div>
+        <div class="huodong-inner-demo-demo-down">
+            <span>限时特价</span>
+        </div>
+    </div>
+</div>
+    <div class="huodong-inner-demo">
+        <div class="huodong-inner-demo-demo">
+            <div class="huodong-inner-demo-demo-up">
+                <strong>天猫好物</strong>
+            </div>
+            <div class="huodong-inner-demo-demo-middle">
+                <img src="../imgs/c3.jpg_.webp" width="100%" height="100%" >
+            </div>
+            <div class="huodong-inner-demo-demo-down">
+                <span>小个子穿搭</span>
+            </div>
+        </div>
+        <div class="huodong-inner-demo-demo">
+            <div class="huodong-inner-demo-demo-up">
+                <strong></strong>
+            </div>
+            <div class="huodong-inner-demo-demo-middle">
+                <img src="../imgs/c4.jpg_.webp" width="100%" height="100%" >
+            </div>
+            <div class="huodong-inner-demo-demo-down">
+                <span>半身裙</span>s
+            </div>
+        </div>
+    </div>
+    <div class="huodong-inner-demo">
+        <div class="huodong-inner-demo-demo"s>
+            <div class="huodong-inner-demo-demo-up">
+                <strong>聚划算</strong>
+            </div>
+            <div class="huodong-inner-demo-demo-middle">
+                <img src="../imgs/c5.jpg_.webp" width="100%" height="100%" >
+            </div>
+            <div class="huodong-inner-demo-demo-down">
+                <span>满31减30</span>
+            </div>
+        </div>
+        <div class="huodong-inner-demo-demo">
+            <div class="huodong-inner-demo-demo-up">
+                <strong></strong>
+            </div>
+            <div class="huodong-inner-demo-demo-middle">
+                <img src="../imgs/c6.jpg_.webp" width="100%" height="100%" >
+            </div>
+            <div class="huodong-inner-demo-demo-down">
+                <span>满99减</span>
+            </div>
+        </div>
+    </div>
+    <div class="huodong-inner-demo">
+        <div class="huodong-inner-demo-demo">
+            <div class="huodong-inner-demo-demo-up">
+                <strong>天猫闪降</strong>
+            </div>
+            <div class="huodong-inner-demo-demo-middle">
+                <img src="../imgs/c7.jpg_.webp" width="100%" height="100%" >
+            </div>
+            <div class="huodong-inner-demo-demo-down">
+                <span>已降50元</span>
+            </div>
+        </div>
+        <div class="huodong-inner-demo-demo">
+            <div class="huodong-inner-demo-demo-up">
+                <strong></strong>
+            </div>
+            <div class="huodong-inner-demo-demo-middle">
+                <img src="../imgs/c8.jpg_.webp" width="100%" height="100%" >
+            </div>
+            <div class="huodong-inner-demo-demo-down">
+                <span>已降790</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+<!--天猫榜单-->
+<div class="bangdan-out">
+<div class="bangdan-inner">
+    <div class="bangdan-inner-top">
+        <strong>天猫榜单</strong>
+    </div>
+    <div class="bangdan-inner-down">
+<div class="bangdan-inner-demo">
+    <div class="bangdan-inner-demo-top">
+    <img src="../imgs/趋势榜.png" width="20%" height="20%" class="bangdan-img1">
+    <img src="../imgs/s1.jpg_.webp" height="80%" width="80%">
+    </div>
+    <div class="bangdan-inner-demo-down">
+        <span>品质简单木吉他版</span>
+        <br>
+        <span>人气上升315%</span>
+    </div>
+</div>
+        <div class="bangdan-inner-demo">
+            <div class="bangdan-inner-demo-top">
+                <img src="../imgs/趋势榜.png" width="20%" height="20%" class="bangdan-img1">
+                <img src="../imgs/s1.jpg_.webp" height="100%" width="100%">
+            </div>
+            <div class="bangdan-inner-demo-down">
+                <span>品质简单木吉他版</span>
+                <br>
+                <span>人气上升315%</span>
+            </div>
+        </div>
+        <div class="bangdan-inner-demo">
+            <div class="bangdan-inner-demo-top">
+                <img src="../imgs/趋势榜.png" width="20%" height="20%" class="bangdan-img1">
+                <img src="../imgs/s1.jpg_.webp" height="100%" width="100%">
+            </div>
+            <div class="bangdan-inner-demo-down">
+                <span>品质简单木吉他版</span>
+                <br>
+                <span>人气上升315%</span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--人气榜-->
+<div class="renqi-out">
+    <div class="renqi-inner">
+    <div class="renqi-inner-left">
+        <strong>时尚轻奢</strong>
+    </div>
+        <div class="renqi-inner-right">
+            <img src="../imgs/x.jpg_.webp" width="70%" height="100%">
+        </div>
+    </div>
+</div>
+<!--人气榜下-->
+<div class="renqib-out">
+<div class="renqib-inner">
+<div class="renqib-inner-demo">
+    <div class="renqib-inner-demo-left">
+        <strong>品质榜</strong>
+        <span>品质专业</span>
+        <span>月销3685件</span>
+    </div>
+    <div class="renqib-inner-demo-right">
+        <img src="../imgs/榜1.png" height="100%" width="100%">
+    </div>
+</div>
+    <div class="renqib-inner-demo">
+        <div class="renqib-inner-demo-left">
+            <strong>品质榜</strong>
+            <span>品质专业</span>
+            <span>月销3685件</span>
+        </div>
+        <div class="renqib-inner-demo-right">
+            <img src="../imgs/榜1.png" height="100%" width="100%">
+        </div>
+    </div>
+    <div class="renqib-inner-demo">
+        <div class="renqib-inner-demo-left">
+            <strong>品质榜</strong>
+            <span>品质专业</span>
+            <span>月销3685件</span>
+        </div>
+        <div class="renqib-inner-demo-right">
+            <img src="../imgs/榜1.png" height="100%" width="100%">
+        </div>
+    </div>
+    <div class="renqib-inner-demo">
+        <div class="renqib-inner-demo-left">
+            <strong>品质榜</strong>
+            <span>品质专业</span>
+            <span>月销3685件</span>
+        </div>
+        <div class="renqib-inner-demo-right">
+            <img src="../imgs/榜1.png" height="100%" width="100%">
+        </div>
+    </div>
+
+</div>
+</div>
+<!--踩你喜欢-->
+<div class="like-out">
+    <div class="like-inner">
+        <div class="like-inner-top">
+            <strong>猜你喜欢</strong>
+        </div>
+        <div class="like-inner-down">
+    <div class="like-inner-demo">
+        <div class="like-inner-demo-top">
+            <img src="../imgs/c3.jpg_.webp">
+        </div>
+        <div class="like-inner-demo-down">
+            <div class="like-text1">高街修身  2019西服新款名媛</div>
+            <div class="like-text2">5元券</div>
+            <div class="like-text3">找相似</div>
+        </div>
+    </div>
+            <div class="like-inner-demo">
+                <div class="like-inner-demo-top">
+                    <img src="../imgs/j.JPG" width="100%" height="144%">
+                </div>
+
+            </div>
+         <a href="">   <div class="like-inner-demo">
+                <div class="like-inner-demo-top">
+                    <img src="../imgs/j.JPG" width="100%" height="144%">
+                </div>
+
+         </div></a>
+            <div class="like-inner-demo">
+                <div class="like-inner-demo-top">
+                    <img src="../imgs/c3.jpg_.webp">
+                </div>
+                <div class="like-inner-demo-down">
+                    <div class="like-text1">高街修身  2019西服新款名媛</div>
+                    <div class="like-text2">5元券</div>
+                    <div class="like-text3">找相似</div>
+                </div>
+            </div>
+
+            <div class="like-inner-demo">
+                <div class="like-inner-demo-top">
+                    <img src="../imgs/c3.jpg_.webp">
+                </div>
+                <div class="like-inner-demo-down">
+                    <div class="like-text1">高街修身  2019西服新款名媛</div>
+                    <div class="like-text2">5元券</div>
+                    <div class="like-text3">找相似</div>
+                </div>
+            </div>
+         <a href="">   <div class="like-inner-demo">
+                <div class="like-inner-demo-top">
+                    <img src="../imgs/j.JPG" width="100%" height="144%">
+                </div>
+
+         </div></a>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
