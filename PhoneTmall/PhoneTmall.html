@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>天猫TMALL</title>
+    <link rel="stylesheet" href="CSS/PhoneTmall.css">
+    <script>
+        window.onload=function(ev){
+            var banner = document.querySelectorAll(".banner")
+            var btns = document.querySelectorAll(".btn")
+            var num=0
+            setInterval(function () {
+                if (num == 10) {
+                    num = 0;
+                }
+                for (var i = 0; i < banner.length; i++) {
+                    banner[i].style.display = "none"
+                    btns[i].style.background="#000"
+                }
+                banner[num].style.display = "block";
+                btns[num].style.background="white"
+                num++
+            },3000)
+            var renqitop6 = document.querySelectorAll(".tmalltop-renqi-top6lunbo-right0")
+            var count=0
+            setInterval(function () {
+                if (count == 2) {
+                    count = 0;
+                }
+                for (var i = 0; i < renqitop6.length; i++) {
+                    renqitop6[i].style.display = "none";
+                }
+                renqitop6[count].style.display = "flex";
+                count++
+            },2000)
+        }
+    </script>
+</head>
+<body>
+    <div class="direct">
+        <div class="direct-logo">
+            <i class="iconfont">&#xe63f;</i>
+            <img src="./Image/directlogo.jpg" alt="">
+        </div>
+        <div class="direct-text">登录</div>
+    </div>
+    <div class="search">
+        <div class="search-white">
+            <div class="search-white-logo"></div>
+            <span class="span-one">搜索商品、品牌</span>
+        </div>
+    </div>
+    <div class="kinds">
+        <div class="kinds-one">
+            <div class="kinds-one-logo"></div>
+            <div class="kinds-one-text">苏宁易购</div>
+        </div>
+        <div class="kinds-two">
+            <div class="kinds-two-logo"></div>
+            <div class="kinds-two-text">天猫超市</div>
+        </div>
+        <div class="kinds-three">
+            <div class="kinds-three-logo"></div>
+            <div class="kinds-three-text">天猫国际</div>
+        </div>
+        <div class="kinds-four">
+            <div class="kinds-four-logo"></div>
+            <div class="kinds-four-text">聚划算</div>
+        </div>
+        <div class="kinds-five">
+            <div class="kinds-five-logo"></div>
+            <div class="kinds-five-text">分类</div>
+        </div>
+    </div>
+    <div class="lunbo">
+        <div class="lunbo-img">
+            <div class="banner lunbo-img-banner1"></div>
+            <div class="banner lunbo-img-banner2"></div>
+            <div class="banner lunbo-img-banner3"></div>
+            <div class="banner lunbo-img-banner4"></div>
+            <div class="banner lunbo-img-banner5"></div>
+            <div class="banner lunbo-img-banner6"></div>
+            <div class="banner lunbo-img-banner7"></div>
+            <div class="banner lunbo-img-banner8"></div>
+            <div class="banner lunbo-img-banner9"></div>
+            <div class="banner lunbo-img-banner10"></div>
+            <div class="lunbo-img-bots">
+                <div class="btn lunbo-img-bots-btn1 lunbo-img-bots-btn1-select"></div>
+                <div class="btn lunbo-img-bots-btn2"></div>
+                <div class="btn lunbo-img-bots-btn3"></div>
+                <div class="btn lunbo-img-bots-btn4"></div>
+                <div class="btn lunbo-img-bots-btn5"></div>
+                <div class="btn lunbo-img-bots-btn6"></div>
+                <div class="btn lunbo-img-bots-btn7"></div>
+                <div class="btn lunbo-img-bots-btn8"></div>
+                <div class="btn lunbo-img-bots-btn9"></div>
+                <div class="btn lunbo-img-bots-btn10"></div>
+            </div>
+        </div>
+    </div>
+    <div class="hengjpg"></div>
+    <div class="newpeoplejpg"></div>
+    <div class="fourblock">
+        <div class="fourblocks">
+            <div class="fourblocks-one">
+                <div class="fourblocks-one-type"><b>限时抢购</b></div>
+                <div class="fourblocks-one-imageandtext1 fourblocks-one-image1">
+                    <div class="fourblocks-one-text1">实惠好货</div>
+                </div>
+                <div class="fourblocks-one-imageandtext2 fourblocks-one-image2">
+                    <div class="fourblocks-one-text2">爆款直降</div>
+                </div>
+            </div>
+            <div class="fourblocks-two">
+                <div class="fourblocks-one-type"><b>天猫好物</b></div>
+                <div class="fourblocks-one-imageandtext1 fourblocks-two-image1">
+                    <div class="fourblocks-one-text1">拼接设计</div>
+                </div>
+                <div class="fourblocks-one-imageandtext2 fourblocks-two-image2">
+                    <div class="fourblocks-one-text2">品质消费</div>
+                </div>
+            </div>
+            <div class="fourblocks-three">
+                <div class="fourblocks-one-type"><b>聚划算</b></div>
+                <div class="fourblocks-one-imageandtext1 fourblocks-three-image1">
+                    <div class="fourblocks-one-text1">大牌3折</div>
+                </div>
+                <div class="fourblocks-one-imageandtext2 fourblocks-three-image2">
+                    <div class="fourblocks-one-text2">20点抢券</div>
+                </div>
+            </div>
+            <div class="fourblocks-four">
+                <div class="fourblocks-one-type"><b>天猫闪降</b></div>
+                <div class="fourblocks-one-imageandtext1 fourblocks-four-image1">
+                    <div class="fourblocks-one-text1">已降40元</div>
+                </div>
+                <div class="fourblocks-one-imageandtext2 fourblocks-four-image2">
+                    <div class="fourblocks-one-text2">已降50元</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tmalltop">
+        <div class="tmalltop-title">
+            <span><b>天猫榜单</b></span>
+        </div>
+        <div class="tmalltop-qushi">
+            <div class="tmalltop-qushi-part1">
+                <div class="tmalltop-qushi-part-tu">
+                    <img src="./Image/bangtu1.jpg" alt="" style="width:0.75rem;height:0.75rem;">
+                </div>
+                <div class="tmalltop-qushi-part-info">时尚别致半身裙榜</div>
+                <div class="tmalltop-qushi-part-text">人气上升358%</div>
+                <div class="tmalltop-qushi-part-top"></div>
+            </div>
+            <div class="tmalltop-qushi-part2">
+                <div class="tmalltop-qushi-part-tu">
+                    <img src="./Image/bangtu2.jpg" alt="" style="width:0.75rem;height:0.75rem;">
+                </div>
+                <div class="tmalltop-qushi-part-info">品质钢化书橱榜</div>
+                <div class="tmalltop-qushi-part-text">人气上升538%</div>
+                <div class="tmalltop-qushi-part-top"></div>
+            </div>
+            <div class="tmalltop-qushi-part1">
+                <div class="tmalltop-qushi-part-tu">
+                    <img src="./Image/bangtu3.jpg" alt="" style="width:0.75rem;height:0.75rem;">
+                </div>
+                <div class="tmalltop-qushi-part-info">时尚内衬衬衫榜</div>
+                <div class="tmalltop-qushi-part-text">人气上升240%</div>
+                <div class="tmalltop-qushi-part-top"></div>
+            </div>
+        </div>
+        <div class="tmalltop-renqi-top6lunbo">
+            <div class="tmalltop-renqi-top6lunbo-left">
+                <div class="tmalltop-renqi-top6lunbo-left-top">人气榜</div>
+                <div class="tmalltop-renqi-top6lunbo-left-info">高街修身雪纺衫榜</div>
+                <div class="tmalltop-renqi-top6lunbo-left-text">月销251件</div>
+            </div>
+            <div class="tmalltop-renqi-top6lunbo-right">
+                <div class="tmalltop-renqi-top6lunbo-right0 tmalltop-renqi-top6lunbo-right1">
+                    <div class="tmalltop-renqi-top6lunbo-right-1">
+                        <img src="./Image/bang1.jpg" alt="" style="width:0.65rem;height:0.65rem;">
+                        <div class="tmalltop-renqi-top6lunbo-right-1-top">
+                            <img src="./Image/bang1logo.jpg" alt="" style="width:0.215rem;height:0.215rem;">
+                        </div>
+                    </div>
+                    <div class="tmalltop-renqi-top6lunbo-right-1">
+                        <img src="./Image/bang2.jpg" alt="" style="width:0.65rem;height:0.65rem;">
+                        <div class="tmalltop-renqi-top6lunbo-right-1-top">
+                            <img src="./Image/bang2logo.jpg" alt="" style="width:0.215rem;height:0.215rem;">
+                        </div>
+                    </div>
+                    <div class="tmalltop-renqi-top6lunbo-right-1">
+                        <img src="./Image/bang3.jpg" alt="" style="width:0.65rem;height:0.65rem;">
+                        <div class="tmalltop-renqi-top6lunbo-right-1-top">
+                            <img src="./Image/bang3logo.jpg" alt="" style="width:0.215rem;height:0.215rem;">
+                        </div>
+                    </div>
+                </div>
+                <div class="tmalltop-renqi-top6lunbo-right0 tmalltop-renqi-top6lunbo-right2">
+                    <div class="tmalltop-renqi-top6lunbo-right-1">
+                        <img src="./Image/bang4.jpg" alt="" style="width:0.65rem;height:0.65rem;">
+                        <div class="tmalltop-renqi-top6lunbo-right-1-top">
+                            <img src="./Image/bang4logo.jpg" alt="" style="width:0.215rem;height:0.215rem;">
+                        </div>
+                    </div>
+                    <div class="tmalltop-renqi-top6lunbo-right-1">
+                        <img src="./Image/bang5.jpg" alt="" style="width:0.65rem;height:0.65rem;">
+                        <div class="tmalltop-renqi-top6lunbo-right-1-top">
+                            <img src="./Image/bang5logo.jpg" alt="" style="width:0.215rem;height:0.215rem;">
+                        </div>
+                    </div>
+                    <div class="tmalltop-renqi-top6lunbo-right-1">
+                        <img src="./Image/bang6.jpg" alt="" style="width:0.65rem;height:0.65rem;">
+                        <div class="tmalltop-renqi-top6lunbo-right-1-top">
+                            <img src="./Image/bang6logo.jpg" alt="" style="width:0.215rem;height:0.215rem;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tmalltop-renqi-kinds">
+            <div class="tmalltop-renqi-kinds-part">
+                <div class="tmalltop-renqi-kinds-part-left">
+                    <div class="tmalltop-renqi-kinds-part-top">人气榜</div>
+                    <div class="tmalltop-renqi-kinds-part-box"></div>
+                    <div class="tmalltop-renqi-kinds-part-info">高街领口T恤榜</div>
+                    <div class="tmalltop-renqi-kinds-part-text">月销335件</div>
+                </div>
+                <div class="tmalltop-renqi-kinds-part-right">
+                    <img src="./Image/lingkou.jpg" alt="" style="width:0.55rem;height:0.55rem;">
+                </div>
+            </div>
+            <div class="tmalltop-renqi-kinds-part">
+                <div class="tmalltop-renqi-kinds-part-left">
+                    <div class="tmalltop-renqi-kinds-part-top">人气榜</div>
+                    <div class="tmalltop-renqi-kinds-part-box"></div>
+                    <div class="tmalltop-renqi-kinds-part-info">性价套脚休闲鞋榜</div>
+                    <div class="tmalltop-renqi-kinds-part-text">月销1897件</div>
+                </div>
+                <div class="tmalltop-renqi-kinds-part-right">
+                    <img src="./Image/pixie.jpg" alt="" style="width:0.55rem;height:0.55rem;">
+                </div>
+            </div>
+            <div class="tmalltop-renqi-kinds-part">
+                <div class="tmalltop-renqi-kinds-part-left">
+                    <div class="tmalltop-renqi-kinds-part-top">人气榜</div>
+                    <div class="tmalltop-renqi-kinds-part-box"></div>
+                    <div class="tmalltop-renqi-kinds-part-info">高街复古礼服榜</div>
+                    <div class="tmalltop-renqi-kinds-part-text">月销224件</div>
+                </div>
+                <div class="tmalltop-renqi-kinds-part-right">
+                    <img src="./Image/lifu.jpg" alt="" style="width:0.55rem;height:0.55rem;">
+                </div>
+            </div>
+            <div class="tmalltop-renqi-kinds-part">
+                <div class="tmalltop-renqi-kinds-part-left">
+                    <div class="tmalltop-renqi-kinds-part-top">人气榜</div>
+                    <div class="tmalltop-renqi-kinds-part-box"></div>
+                    <div class="tmalltop-renqi-kinds-part-info">超值亲肤三角裤榜</div>
+                    <div class="tmalltop-renqi-kinds-part-text">月销33万件</div>
+                </div>
+                <div class="tmalltop-renqi-kinds-part-right">
+                    <img src="./Image/sanjiaoku.jpg" alt="" style="width:0.55rem;height:0.55rem;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="guess">
+        <div class="guess-title">
+            <span><b>猜你喜欢</b></span>
+        </div>
+        <img src="./Image/guessbeijing.jpg" alt="" style="width:3.75rem;height:1.47rem;"></img>
+        <div class="guess-goods">
+            <div class="guess-goods-one">
+                <div class="guess-goods-one-left">
+                    <div class="guess-goods-one-left-pic"></div>
+                    <div class="guess-goods-one-left-text">
+                        <div class="guess-goods-one-left-text-top">正版包邮 金庸作品集<br>金庸武侠小说金庸全集</div>
+                        <div class="guess-goods-one-left-text-bottom">10元券</div>
+                    </div>
+                    <div class="guess-goods-one-left-price">
+                        <div class="guess-goods-one-left-price-left"><b>￥89</b></div>
+                        <div class="guess-goods-one-left-price-right">
+                            <div class="guess-goods-one-left-price-right-font">看相似</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="guess-goods-one-left">
+                    <div class="guess-goods-one-right-pic"></div>
+                    <div class="guess-goods-one-left-text">
+                        <div class="guess-goods-one-left-text-top">百事可乐450ml瓶梅子味海水蓝可乐汽水</div>
+                        <div class="guess-goods-one-left-text-bottom">10元券</div>
+                    </div>
+                    <div class="guess-goods-one-left-price">
+                        <div class="guess-goods-one-left-price-left"><b>￥59</b></div>
+                        <div class="guess-goods-one-left-price-right">
+                            <div class="guess-goods-one-left-price-right-font">看相似</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="guess-goods-two">
+                <div class="guess-goods-one-left">
+                    <div class="guess-goods-two-left-pic"></div>
+                    <div class="guess-goods-one-left-text">
+                        <div class="guess-goods-one-left-text-top">日本进口奶茶皇家奶香优质奶茶</div>
+                    </div>
+                    <div class="guess-goods-one-left-price">
+                        <div class="guess-goods-one-left-price-left"><b>￥29.9</b></div>
+                        <div class="guess-goods-one-left-price-right">
+                            <div class="guess-goods-one-left-price-right-font">看相似</div>
+                        </div>
+                    </div>
+                </div>
+                <img src="./Image/tworight.jpg" alt="" style="width: 1.7rem;height: 3.11rem;margin-top: 0.05rem">
+            </div>
+            <div class="guess-goods-three">
+                <img src="./Image/threeleft.jpg" alt="" style="width: 1.7rem;height: 3.11rem;margin-top: 0.05rem">
+                <div class="guess-goods-one-left">
+                    <div class="guess-goods-three-right-pic"></div>
+                    <div class="guess-goods-one-left-text">
+                        <div class="guess-goods-one-left-text-top">H&M HOME家居用品床上用品 床垫套 柔软舒适</div>
+                        <div class="guess-goods-one-left-text-bottom">20元券</div>
+                    </div>
+                    <div class="guess-goods-one-left-price">
+                        <div class="guess-goods-one-left-price-left"><b>￥139</b></div>
+                        <div class="guess-goods-one-left-price-right">
+                            <div class="guess-goods-one-left-price-right-font">看相似</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="guess-goods-four">
+                <div class="guess-goods-one-left">
+                    <div class="guess-goods-four-left-pic"></div>
+                    <div class="guess-goods-one-left-text">
+                        <div class="guess-goods-one-left-text-top">阿迪达斯女鞋<br>粉色运动鞋增加舒适休闲鞋</div>
+                        <div class="guess-goods-one-left-text-bottom">30元券</div>
+                    </div>
+                    <div class="guess-goods-one-left-price">
+                        <div class="guess-goods-one-left-price-left"><b>￥449</b></div>
+                        <div class="guess-goods-one-left-price-right">
+                            <div class="guess-goods-one-left-price-right-font">看相似</div>
+                        </div>
+                    </div>
+                </div>
+                <img src="./Image/fourright.jpg" alt="" style="width: 1.7rem;height: 3.11rem;margin-top: 0.05rem">
+            </div>
+            <div class="guess-goods-five">
+                <div class="guess-goods-one-left">
+                    <div class="guess-goods-five-left-pic"></div>
+                    <div class="guess-goods-one-left-text">
+                        <div class="guess-goods-one-left-text-top">敬酒服新娘2019春款夏季结婚订婚衣服女大红婚礼服</div>
+                        <div class="guess-goods-one-left-text-bottom">15元券</div>
+                    </div>
+                    <div class="guess-goods-one-left-price">
+                        <div class="guess-goods-one-left-price-left"><b>￥188</b></div>
+                        <div class="guess-goods-one-left-price-right">
+                            <div class="guess-goods-one-left-price-right-font">看相似</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="guess-goods-one-left">
+                    <div class="guess-goods-five-right-pic"></div>
+                    <div class="guess-goods-one-left-text">
+                        <div class="guess-goods-one-left-text-top">伊芙丽【商场同款】宽松纯棉短外套</div>
+                        <div class="guess-goods-one-left-text-bottom">50元券</div>
+                    </div>
+                    <div class="guess-goods-one-left-price">
+                        <div class="guess-goods-one-left-price-left"><b>￥980</b></div>
+                        <div class="guess-goods-one-left-price-right">
+                            <div class="guess-goods-one-left-price-right-font">看相似</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
