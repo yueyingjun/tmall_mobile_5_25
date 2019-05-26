@@ -1,0 +1,125 @@
+
+html{
+    font-size: 26.666667vw;  /*100px*/
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: .9rem;
+    background-color: rgb(255,0,54);
+}
+.top{
+    width: 3.55rem;
+    height: .36rem;
+    margin: auto;
+    justify-content: space-around;
+    display: flex;
+    /*border: 1px solid black;*/
+    box-sizing: border-box;
+
+}
+nav {
+    width: .3rem;
+    height: .3rem;
+    background: url("../image/1.webp") no-repeat -0 -0;
+    background-size: cover;
+}
+.logo{
+    width: 1.185rem;
+    height: .205rem;
+    background: url("../image/logo.webp") no-repeat;
+    background-size: cover;
+
+}
+.top a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: .35rem;
+}
+.search-box{
+    width: 3.55rem;
+    height: .36rem;
+   /* border: 1px solid black;*/
+    box-sizing: border-box;
+    margin: auto;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+}
+.search-box-left{
+    width: .35rem;
+    height: 100%;
+  /*  border: 1px solid green;*/
+    box-sizing: border-box;
+}
+.search-box-left-img{
+    width: .15rem;
+    height: .16rem;
+    background: url("../image/fdj.webp") no-repeat;
+    background-size: cover;
+    margin: 10px auto 10px auto;
+}
+.search-box-right{
+    width: 3.2rem;
+    height: .36rem;
+   /* border: 1px solid blue;*/
+    box-sizing: border-box;
+    display: inline-block;
+}
+.search-box-right form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+.search-box-right input{
+    width: 100%;
+    height: .31rem;
+
+}
+/*五个分类图标*/
+.daohang-box{
+    width: 3.5rem;
+    height: .766rem;
+ /*   border: 1px solid black;*/
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+}
+.daohang-content{
+    width: .7rem;
+    height: 100%;
+/*    border: 1px solid red;*/
+    box-sizing: border-box;
+    position: relative;
+}
+.daohang-content-img{
+    width: .49rem;
+    height: .49rem;
+    margin: auto;
+    display: flex;
+}
+.daohang-content-img img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.daohang-content-text{
+    width: 100%;
+    height: fit-content;
+   /* border: 1px solid black;*/
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 13px;
+    position: absolute;
+    bottom: 0;
+
+}
+
+
+
+

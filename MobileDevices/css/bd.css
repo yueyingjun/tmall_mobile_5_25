@@ -1,0 +1,287 @@
+
+.bdTitlebox{
+    width: 3.51rem;
+    height: .296rem;
+    /*border: 1px solid black;*/
+    margin: .1rem auto auto auto;
+    text-align: left;
+    font-size: 16px;
+    line-height: .296rem;
+}
+.bdbox{
+    width: 3.51rem;
+    height: 1.495rem;
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+}
+.left-item{
+    width: 1.13rem;
+    height: 1.365rem;
+    /*border: 1px solid green;*/
+    box-sizing: border-box;
+    float: left;
+    margin-top: .13rem;
+    position: relative;
+    background-image: url("//gw.alicdn.com/tfs/TB1edAyzAvoK1RjSZFwXXciCFXa-226-273.png_230x10000.jpg_.webp");
+}
+.middle-item{
+    width: 1.13rem;
+    height: 100%;
+    /*border: 1px solid green;*/
+    box-sizing: border-box;
+    float: left;
+    margin-left: .06rem;
+    margin-right: .06rem;
+    position: relative;
+    background-image: url("//gw.alicdn.com/tfs/TB1edAyzAvoK1RjSZFwXXciCFXa-226-273.png_230x10000.jpg_.webp");
+
+}
+
+
+
+
+    /*人气榜*/
+.renqi-box{
+    width: 3.51rem;
+    height: .845rem;
+    /*border: 1px solid black;*/
+    box-sizing: border-box;
+    margin: .1rem auto;
+    background-color: rgb(248, 248, 248);
+}
+.renqi-left{
+    width: .96rem;
+    height: 100%;
+    margin-left: .1rem;
+   /* border: 1px solid red;*/
+    box-sizing: border-box;
+}
+.renqi-left{
+    width: .96rem;
+    height: 100%;
+    margin-left: .1rem;
+   /* border: 1px solid red;*/
+    box-sizing: border-box;
+    float: left;
+}
+.renqi-right{
+    width: 2.17rem;
+    height: 100%;
+   /* border: 1px solid red;*/
+    box-sizing: border-box;
+    float: right;
+}
+.renqi-right-startitem{
+    width: .65rem;
+    height: .65rem;
+    float: left;
+    margin-top: .0975rem;
+   /* border: 1px solid black;*/
+    box-sizing: border-box;
+}
+.renqi-right-item{
+    width: .65rem;
+    height: .65rem;
+    float: left;
+    margin-left: .1rem;
+    margin-top: .0975rem;
+/*    border: 1px solid black;*/
+    box-sizing: border-box;
+}
+
+.renqi-right-startitem img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+}
+
+
+.renqi-right-item img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+}
+
+
+
+
+
+
+
+    /*下面四个人气榜*/
+.bottom-renqi{
+    margin-top: .1rem;
+    width: 3.51rem;
+    height: 1.89rem;
+/*    border: 1px solid black;*/
+    box-sizing: border-box;
+    margin: auto;
+}
+.bottom-renqi-item{
+    margin-top: .05rem;
+    width: 1.725rem;
+    height: .845rem;
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    background-color: rgb(248, 248, 248);
+
+}
+.bottom-renqi-item2{
+    margin-top: .05rem;
+    width: 1.725rem;
+    height: .845rem;
+    margin-left: .03rem;
+   /* border: 1px solid red;*/
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    background-color: rgb(248, 248, 248);
+}
+.item-img{
+    width: .55rem;
+    height: .55rem;
+    float: right;
+   /* border: 1px solid green;*/
+    box-sizing: border-box;
+    margin: 0.1475rem 0 .1475rem auto;
+    display: flex;
+}
+.item-img img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.wenzi{
+    width: .336rem;
+    height: .2rem;
+    color: rgb(200,157,107);
+    font-size: 11px;
+    text-align: center;
+    float: left;
+    margin: .1rem auto auto .1rem;
+}
+
+
+.t1{
+    width: fit-content;
+    height: .184rem;
+   /* border: 1px solid green;*/
+    box-sizing: border-box;
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    top: .3rem;
+}
+.t2{
+    width: fit-content;
+    height: .184rem;
+    /*border: 1px solid green;*/
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #ccc;
+    position: absolute;
+    left: 0;
+    top: .5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.qusi{
+    width: .315rem;
+    height: .255rem;
+    background: url("../image/qs.webp") no-repeat;
+    background-size: cover;
+    float: left;
+}
+.bdimgbox{
+    width: .73rem;
+    height: .73rem;
+/*    border: 1px solid black;*/
+    box-sizing: border-box;
+    position: absolute;
+    left: .2rem;
+    top: .1rem;
+    display: flex;
+
+}
+.bdimgbox img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.bg{
+     width: 1.04rem;
+     height: .18rem;
+     background: url("../image/bg.webp") no-repeat;
+     background-size: cover;
+     color: white;
+     text-align: center;
+     line-height: .18rem;
+     margin: .86rem auto auto auto;
+     font-size: 11px;
+ }
+.middle-bg{
+    width: 1.04rem;
+    height: .18rem;
+    background: url("../image/bg.webp") no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    line-height: .18rem;
+    margin: 1rem auto auto auto;
+    font-size: 11px;
+}
+.desc{
+    width: .8rem;
+    height: .176rem;
+    margin: .05rem auto auto auto;
+/*    border: 1px solid black;*/
+    box-sizing: border-box;
+    font-size: 11px;
+}
+
+.cbg{
+    width: .46rem;
+    height: .215rem;
+    background: url("../image/cbg.webp") no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: 11px;
+}
+.rq-text1{
+    width: fit-content;
+    height: .184rem;
+   /* border: 1px solid green;*/
+    box-sizing: border-box;
+    font-size: 12px;
+}
+.rq-text2{
+    width: fit-content;
+    height: .184rem;
+   /* border: 1px solid green;*/
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #ccc;
+}

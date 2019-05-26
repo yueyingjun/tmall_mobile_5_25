@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天猫移动端</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/lunbo.css">
+    <link rel="stylesheet" href="../css/gg.css">
+    <link rel="stylesheet" href="../css/sxk.css">
+    <link rel="stylesheet" href="../css/bd.css">
+    <link rel="stylesheet" href="../css/cnxh.css">
+    <script>
+        window.onload=function () {
+            var banner = document.querySelectorAll(".banner");
+            var btns = document.querySelectorAll(".btn");
+            var num = 0;
+            setInterval(function () {
+                if (num == 6) {
+                    num = 0
+                } else {
+                    for (var i = 0; i < banner.length; i++) {
+                        banner[i].style.display = "none"
+                        btns[i].style.backgroundColor = "#000000"
+                    }
+                    banner[num].style.display = "block"
+                    btns[num].style.backgroundColor = "#FFA500"
+                    num++
+                }
+            }, 3000)
+        }
+    </script>
+</head>
+<body>
+   <header>
+       <div class="top">
+           <nav>
+               <a href=""><div class="img"></div></a>
+           </nav>
+           <div class="logo"></div>
+           <a href="">登录</a>
+
+
+
+       </div>
+       <div class="search-box">
+        <div class="search-box-left">
+            <div class="search-box-left-img"></div>
+        </div>
+           <div class="search-box-right">
+               <form action="">
+                   <input type="text" placeholder="  搜索商品， 品牌">
+               </form>
+           </div>
+
+       </div>
+   </header>
+    <!--五个图标导航-->
+    <div class="daohang-box">
+        <div class="daohang-content">
+            <div class="daohang-content-img">
+                <img src="../image/dh1.webp" alt="">
+            </div>
+            <div class="daohang-content-text">苏宁易购</div>
+        </div>
+        <div class="daohang-content">
+            <div class="daohang-content-img">
+                <img src="../image/dh2.png" alt="">
+            </div>
+            <div class="daohang-content-text">天猫超市</div>
+        </div>
+        <div class="daohang-content">
+            <div class="daohang-content-img">
+                <img src="../image/dh3.webp" alt="">
+            </div>
+            <div class="daohang-content-text">天猫国际</div>
+        </div>
+        <div class="daohang-content">
+            <div class="daohang-content-img">
+                <img src="../image/dh4.webp" alt="">
+            </div>
+            <div class="daohang-content-text">聚划算</div>
+        </div>
+        <div class="daohang-content">
+            <div class="daohang-content-img">
+                <img src="../image/dh5.webp" alt="">
+            </div>
+            <div class="daohang-content-text">分类</div>
+        </div>
+    </div>
+    <!-- 轮播图-->
+    <div class="lunbo-box">
+        <div class="banner lunbo-imgbox1"></div>
+        <div class="banner lunbo-imgbox2"></div>
+        <div class="banner lunbo-imgbox3"></div>
+        <div class="banner lunbo-imgbox4"></div>
+        <div class="btns">
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+        </div>
+    </div>
+    <!--广告-->
+    <div class="ggbox">
+        <img src="../image/gg/gg1.webp" alt="">
+    </div>
+    <!--四小块-->
+    <div class="sxk-box">
+        <div class="item1">
+            <div class="content-text1"><b>限时抢购</b></div>
+            <div class="content-img">
+                <img src="../image/zs/1.webp" alt="">
+            </div>
+            <div class="content-img">
+                <img src="../image/zs/2.webp" alt="">
+            </div>
+        </div>
+        <div class="item1">
+            <div class="content-text1"><b>天猫好物</b></div>
+            <div class="content-img">
+                <img src="../image/zs/3.webp" alt="">
+            </div>
+            <div class="content-img">
+                <img src="../image/zs/4.webp" alt="">
+            </div>
+        </div>
+        <div class="item1">
+            <div class="content-text1"><b>聚划算</b></div>
+            <div class="content-img">
+                <img src="../image/zs/5.webp" alt="">
+            </div>
+            <div class="content-img">
+                <img src="../image/zs/6.webp" alt="">
+            </div>
+        </div>
+        <div class="item1">
+            <div class="content-text1"><b>天猫闪降</b></div>
+            <div class="content-img">
+                <img src="../image/zs/7.webp" alt="">
+            </div>
+            <div class="content-img">
+                <img src="../image/zs/8.webp" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 天猫榜单-->
+    <div class="bdTitlebox">
+        <b>天猫榜单</b>
+    </div>
+   <div class="bdbox">
+       <div class="left-item">
+           <div class="qusi"></div>
+           <div class="bdimgbox">
+               <img src="../image/bd/bd1.webp" alt="">
+           </div>
+           <div class="bg">品质硅胶牛奶杯榜</div>
+           <div class="desc">人气上升372%</div>
+       </div>
+       <div class="middle-item">
+           <div class="qusi"></div>
+           <div class="bdimgbox">
+               <img src="../image/bd/bd2.webp" alt="">
+           </div>
+           <div class="middle-bg">超值复古收音机榜</div>
+           <div class="desc">人气上升140%</div>
+       </div>
+       <div class="left-item">
+           <div class="qusi"></div>
+           <div class="bdimgbox">
+               <img src="../image/bd/bd3.webp" alt="">
+           </div>
+           <div class="bg">流行活力衫榜</div>
+           <div class="desc">人气上升893%</div>
+       </div>
+   </div>
+   <!--人气榜-->
+   <div class="renqi-box">
+       <div class="renqi-left">
+           <div class="cbg">人气榜</div>
+           <div class="rq-text1"><b>高街轻薄开衫榜</b></div>
+           <div class="rq-text2">月销451件</div>
+       </div>
+       <div class="renqi-right">
+           <div class="renqi-right-startitem">
+               <img src="../image/smalllunbo/01.webp" alt="">
+           </div>
+           <div class="renqi-right-item">
+               <img src="../image/smalllunbo/02.webp" alt="">
+           </div>
+           <div class="renqi-right-item">
+               <img src="../image/smalllunbo/03.webp" alt="">
+           </div>
+       </div>
+   </div>
+   <!--下面四个人气榜-->
+   <div class="bottom-renqi">
+        <div class="bottom-renqi-item">
+            <div class="wenzi">人气榜</div>
+            <div class="t1"><b>高街修身旗袍裙榜</b></div>
+            <div class="t2">火爆热卖中</div>
+            <div class="item-img">
+                <img src="//gw.alicdn.com/bao/uploaded/TB1U1RNhXzqK1RjSZFvwu3B7VXa.png_140x10000.jpg_.webp" alt="">
+            </div>
+        </div>
+       <div class="bottom-renqi-item2">
+           <div class="wenzi">人气榜</div>
+           <div class="t1"><b>高街领口连衣裙榜</b></div>
+           <div class="t2">月销258件</div>
+           <div class="item-img">
+               <img src="//gw.alicdn.com/bao/uploaded/O1CN01vcV0yL1wU1gZcPYOQ_!!2-item_pic.png_140x10000.jpg_.webp" alt="">
+           </div>
+       </div>
+       <div class="bottom-renqi-item">
+           <div class="wenzi">人气榜</div>
+           <div class="t1"><b>舒适透气户外鞋榜</b></div>
+           <div class="t2">月销3493件</div>
+           <div class="item-img">
+               <img src="//gw.alicdn.com/bao/uploaded/TB1HM6od4jaK1RjSZKzwu0VwXXa.png_140x10000.jpg_.webp" alt="">
+           </div>
+       </div>
+       <div class="bottom-renqi-item2">
+           <div class="wenzi">人气榜</div>
+           <div class="t1"><b>品质专业跑鞋榜</b></div>
+           <div class="t2">月销1606件</div>
+           <div class="item-img">
+               <img src="//gw.alicdn.com/bao/uploaded/TB1d9FQWkPoK1RjSZKbXXX1IXXa.png_140x10000.jpg_.webp" alt="">
+           </div>
+       </div>
+   </div>
+   <!--猜你喜欢-->
+   <div class="bdTitlebox">
+       <b>猜你喜欢</b>
+   </div>
+   <div class="cnxh-box">
+       <div class="cnxh-item">
+           <div class="cnxh-img">
+               <img src="../image/xh/xh1.webp" alt="">
+           </div>
+           <div class="brandlogo">
+               <div class="gjlogo">
+                   <img src="../image/gj.png" alt="">
+               </div>
+               <div class="gjText">日本红茶</div>
+           </div>
+           <div class="text">日本进口ROYAL日东 红茶皇家北海道奶茶速溶白桃网红饮料下午茶</div>
+           <div class="baotui">破损包退</div>
+           <div class="price"><b>￥ 14.8</b> </div>
+           <div class="xaingsi">看相似</div>
+       </div>
+       <div class="cnxh-item2">
+           <div class="cnxh-img">
+               <img src="../image/xh/xh2.webp" alt="">
+           </div>
+           <div class="brandlogo">
+               <div class="gjlogo">
+                   <img src="../image/gj2.png" alt="">
+               </div>
+               <div class="gjText">Sunny baby/阳光宝贝</div>
+           </div>
+           <div class="text">转转圈单腿跳套脚上转的球蹦蹦球</div>
+           <div class="quan">3元券</div>
+           <div class="price"><b>￥ 12.8</b> </div>
+           <div class="xaingsi">看相似</div>
+       </div>
+       <div class="cnxh-item">
+           <div class="cnxh-img">
+               <img src="../image/xh/xh3.webp" alt="">
+           </div>
+           <div class="brandlogo">
+              <!-- <div class="gjlogo">
+                   <img src="../image/gj2.png" alt="">
+               </div>-->
+               <div class="gjText">婴尚</div>
+           </div>
+           <div class="text">婴儿裤子防蚊裤男童夏季薄款1一3岁韩版宽松女童夏装小童宝宝长裤</div>
+           <div class="quan">5元券</div>
+           <div class="price"><b>￥ 38</b> </div>
+           <div class="xaingsi">看相似</div>
+
+       </div>
+       <div class="cnxh-item2">
+           <img src="../image/xh/xhgg.webp" alt="">
+       </div>
+
+       <div class="cnxh-item">
+           <div class="cnxh-img">
+               <img src="../image/xh/xh1.webp" alt="">
+           </div>
+           <div class="brandlogo">
+               <div class="gjlogo">
+                   <img src="../image/gj.png" alt="">
+               </div>
+               <div class="gjText">日本红茶</div>
+           </div>
+           <div class="text">日本进口ROYAL日东 红茶皇家北海道奶茶速溶白桃网红饮料下午茶</div>
+           <div class="baotui">破损包退</div>
+           <div class="price"><b>￥ 14.8</b> </div>
+           <div class="xaingsi">看相似</div>
+       </div>
+       <div class="cnxh-item2">
+           <div class="cnxh-img">
+               <img src="../image/xh/xh2.webp" alt="">
+           </div>
+           <div class="brandlogo">
+               <div class="gjlogo">
+                   <img src="../image/gj2.png" alt="">
+               </div>
+               <div class="gjText">Sunny baby/阳光宝贝</div>
+           </div>
+           <div class="text">转转圈单腿跳套脚上转的球蹦蹦球</div>
+           <div class="quan">3元券</div>
+           <div class="price"><b>￥ 12.8</b> </div>
+           <div class="xaingsi">看相似</div>
+       </div>
+       <div class="cnxh-item">
+           <div class="cnxh-img">
+               <img src="../image/xh/xh3.webp" alt="">
+           </div>
+           <div class="brandlogo">
+               <!-- <div class="gjlogo">
+                    <img src="../image/gj2.png" alt="">
+                </div>-->
+               <div class="gjText">婴尚</div>
+           </div>
+           <div class="text">婴儿裤子防蚊裤男童夏季薄款1一3岁韩版宽松女童夏装小童宝宝长裤</div>
+           <div class="quan">5元券</div>
+           <div class="price"><b>￥ 38</b> </div>
+           <div class="xaingsi">看相似</div>
+
+       </div>
+       <div class="cnxh-item2">
+           <img src="../image/xh/xhgg.webp" alt="">
+       </div>
+
+       <div class="cnxh-item">
+           <div class="cnxh-img">
+               <img src="../image/xh/xh1.webp" alt="">
+           </div>
+           <div class="brandlogo">
+               <div class="gjlogo">
+                   <img src="../image/gj.png" alt="">
+               </div>
+               <div class="gjText">日本红茶</div>
+           </div>
+           <div class="text">日本进口ROYAL日东 红茶皇家北海道奶茶速溶白桃网红饮料下午茶</div>
+           <div class="baotui">破损包退</div>
+           <div class="price"><b>￥ 14.8</b> </div>
+           <div class="xaingsi">看相似</div>
+       </div>
+       <div class="cnxh-item2">
+           <div class="cnxh-img">
+               <img src="../image/xh/xh2.webp" alt="">
+           </div>
+           <div class="brandlogo">
+               <div class="gjlogo">
+                   <img src="../image/gj2.png" alt="">
+               </div>
+               <div class="gjText">Sunny baby/阳光宝贝</div>
+           </div>
+           <div class="text">转转圈单腿跳套脚上转的球蹦蹦球</div>
+           <div class="quan">3元券</div>
+           <div class="price"><b>￥ 12.8</b> </div>
+           <div class="xaingsi">看相似</div>
+       </div>
+       <div class="cnxh-item">
+           <div class="cnxh-img">
+               <img src="../image/xh/xh3.webp" alt="">
+           </div>
+           <div class="brandlogo">
+               <!-- <div class="gjlogo">
+                    <img src="../image/gj2.png" alt="">
+                </div>-->
+               <div class="gjText">婴尚</div>
+           </div>
+           <div class="text">婴儿裤子防蚊裤男童夏季薄款1一3岁韩版宽松女童夏装小童宝宝长裤</div>
+           <div class="quan">5元券</div>
+           <div class="price"><b>￥ 38</b> </div>
+           <div class="xaingsi">看相似</div>
+
+       </div>
+       <div class="cnxh-item2">
+           <img src="../image/xh/xhgg.webp" alt="">
+       </div>
+
+       <div class="cnxh-item">
+           <div class="cnxh-img">
+               <img src="../image/xh/xh1.webp" alt="">
+           </div>
+           <div class="brandlogo">
+               <div class="gjlogo">
+                   <img src="../image/gj.png" alt="">
+               </div>
+               <div class="gjText">日本红茶</div>
+           </div>
+           <div class="text">日本进口ROYAL日东 红茶皇家北海道奶茶速溶白桃网红饮料下午茶</div>
+           <div class="baotui">破损包退</div>
+           <div class="price"><b>￥ 14.8</b> </div>
+           <div class="xaingsi">看相似</div>
+       </div>
+       <div class="cnxh-item2">
+           <div class="cnxh-img">
+               <img src="../image/xh/xh2.webp" alt="">
+           </div>
+           <div class="brandlogo">
+               <div class="gjlogo">
+                   <img src="../image/gj2.png" alt="">
+               </div>
+               <div class="gjText">Sunny baby/阳光宝贝</div>
+           </div>
+           <div class="text">转转圈单腿跳套脚上转的球蹦蹦球</div>
+           <div class="quan">3元券</div>
+           <div class="price"><b>￥ 12.8</b> </div>
+           <div class="xaingsi">看相似</div>
+       </div>
+       <div class="cnxh-item">
+           <div class="cnxh-img">
+               <img src="../image/xh/xh3.webp" alt="">
+           </div>
+           <div class="brandlogo">
+               <!-- <div class="gjlogo">
+                    <img src="../image/gj2.png" alt="">
+                </div>-->
+               <div class="gjText">婴尚</div>
+           </div>
+           <div class="text">婴儿裤子防蚊裤男童夏季薄款1一3岁韩版宽松女童夏装小童宝宝长裤</div>
+           <div class="quan">5元券</div>
+           <div class="price"><b>￥ 38</b> </div>
+           <div class="xaingsi">看相似</div>
+
+       </div>
+       <div class="cnxh-item2">
+           <img src="../image/xh/xhgg.webp" alt="">
+       </div>
+
+       <div class="cnxh-item">
+           <div class="cnxh-img">
+               <img src="../image/xh/xh1.webp" alt="">
+           </div>
+           <div class="brandlogo">
+               <div class="gjlogo">
+                   <img src="../image/gj.png" alt="">
+               </div>
+               <div class="gjText">日本红茶</div>
+           </div>
+           <div class="text">日本进口ROYAL日东 红茶皇家北海道奶茶速溶白桃网红饮料下午茶</div>
+           <div class="baotui">破损包退</div>
+           <div class="price"><b>￥ 14.8</b> </div>
+           <div class="xaingsi">看相似</div>
+       </div>
+       <div class="cnxh-item2">
+           <div class="cnxh-img">
+               <img src="../image/xh/xh2.webp" alt="">
+           </div>
+           <div class="brandlogo">
+               <div class="gjlogo">
+                   <img src="../image/gj2.png" alt="">
+               </div>
+               <div class="gjText">Sunny baby/阳光宝贝</div>
+           </div>
+           <div class="text">转转圈单腿跳套脚上转的球蹦蹦球</div>
+           <div class="quan">3元券</div>
+           <div class="price"><b>￥ 12.8</b> </div>
+           <div class="xaingsi">看相似</div>
+       </div>
+       <div class="cnxh-item">
+           <div class="cnxh-img">
+               <img src="../image/xh/xh3.webp" alt="">
+           </div>
+           <div class="brandlogo">
+               <!-- <div class="gjlogo">
+                    <img src="../image/gj2.png" alt="">
+                </div>-->
+               <div class="gjText">婴尚</div>
+           </div>
+           <div class="text">婴儿裤子防蚊裤男童夏季薄款1一3岁韩版宽松女童夏装小童宝宝长裤</div>
+           <div class="quan">5元券</div>
+           <div class="price"><b>￥ 38</b> </div>
+           <div class="xaingsi">看相似</div>
+
+       </div>
+       <div class="cnxh-item2">
+           <img src="../image/xh/xhgg.webp" alt="">
+       </div>
+
+       <div class="cnxh-item">
+           <div class="cnxh-img">
+               <img src="../image/xh/xh1.webp" alt="">
+           </div>
+           <div class="brandlogo">
+               <div class="gjlogo">
+                   <img src="../image/gj.png" alt="">
+               </div>
+               <div class="gjText">日本红茶</div>
+           </div>
+           <div class="text">日本进口ROYAL日东 红茶皇家北海道奶茶速溶白桃网红饮料下午茶</div>
+           <div class="baotui">破损包退</div>
+           <div class="price"><b>￥ 14.8</b> </div>
+           <div class="xaingsi">看相似</div>
+       </div>
+       <div class="cnxh-item2">
+           <div class="cnxh-img">
+               <img src="../image/xh/xh2.webp" alt="">
+           </div>
+           <div class="brandlogo">
+               <div class="gjlogo">
+                   <img src="../image/gj2.png" alt="">
+               </div>
+               <div class="gjText">Sunny baby/阳光宝贝</div>
+           </div>
+           <div class="text">转转圈单腿跳套脚上转的球蹦蹦球</div>
+           <div class="quan">3元券</div>
+           <div class="price"><b>￥ 12.8</b> </div>
+           <div class="xaingsi">看相似</div>
+       </div>
+       <div class="cnxh-item">
+           <div class="cnxh-img">
+               <img src="../image/xh/xh3.webp" alt="">
+           </div>
+           <div class="brandlogo">
+               <!-- <div class="gjlogo">
+                    <img src="../image/gj2.png" alt="">
+                </div>-->
+               <div class="gjText">婴尚</div>
+           </div>
+           <div class="text">婴儿裤子防蚊裤男童夏季薄款1一3岁韩版宽松女童夏装小童宝宝长裤</div>
+           <div class="quan">5元券</div>
+           <div class="price"><b>￥ 38</b> </div>
+           <div class="xaingsi">看相似</div>
+
+       </div>
+       <div class="cnxh-item2">
+           <img src="../image/xh/xhgg.webp" alt="">
+       </div>
+
+   </div>
+
+
+   <br>
+</body>
+</html>
