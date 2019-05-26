@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/tm.css">
+
+<!--
+    align-items:center:flex提供的垂直居中的方法
+-->
+
+
+<script>
+    window.onload=function (ev) {
+        var banners=document.querySelectorAll(".banner");
+        var banners_opts1=document.querySelectorAll(".banners_opts_img1 img");
+        var banners_opts2=document.querySelectorAll(".banners_opts_img2 img");
+        for(var i=0;i<banners.length;i++){
+             if(i==0){
+                 banners[i].style.display="block";
+                 banners_opts1[i].style.display="block";
+                 continue;
+             }
+             banners[i].style.display="none";
+             banners_opts1[i].style.display="none";
+        }
+        var a=0;
+        setInterval(function () {
+            if(a==banners.length){
+                a=0;
+            }
+            for (var i=0;i<banners.length;i++){
+                if(i==a){
+                    banners[i].style.display="block";
+                    banners_opts1[i].style.display="block";
+                    continue;
+                }
+                banners[i].style.display="none";
+                banners_opts1[i].style.display="none";
+            }
+            a++;
+        },3000)
+
+        var hotlists=document.querySelectorAll(".hotlist_right img")
+        for(var i=0;i<hotlists.length;i++){
+            if(i<3){
+                hotlists[i].style.display="block"
+            }else{
+                hotlists[i].style.display="none"
+            }
+        }
+        var x=0;
+        setInterval(function (ev1) {
+            if(x==hotlists.length){
+                x=0;
+            }
+                if(x==hotlists.length-1){
+                    hotlists[x].style.display="block";
+                    hotlists[x].style.zIndex="1";
+                    hotlists[0].style.display="block";
+                    hotlists[1].style.display="block";
+                    for(var i=2;i<x;i++){
+                        hotlists[i].style.display="none";
+                    }
+                }else if((x+2)==hotlists.length){
+                hotlists[x].style.display="block";
+                hotlists[x].style.zIndex="1";
+                hotlists[x+1].style.display="block";
+                hotlists[x+1].style.zIndex="2";
+                hotlists[0].style.display="block";
+                for(var i=1;i<x;i++){
+                    hotlists[i].style.display="none";
+                }
+            }else{
+                hotlists[x].style.display="block";
+                hotlists[x+1].style.display="block";
+                hotlists[x+2].style.display="block";
+                for(var i=0;i<hotlists.length;i++){
+                    if(i!=x && i!=(x+1) && i!=(x+2)){
+                        hotlists[i].style.display="none";
+                    }
+                }
+            }
+            x++;
+        },3000)
+    }
+</script>
+<body>
+<!--顶部导航-->
+    <div class="top">
+        <div class="top_left">
+            <div class="top_left_left">
+                <!--<img src="image/top_left1.webp" alt="">-->
+            </div>
+            <div class="top_left_right">
+                <div class="top_left_right_img">
+                    <img src="image/top_left2.webp" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="top_right">登录</div>
+    </div>
+
+<!--搜索框-->
+    <div class="search">
+        <div class="search_card">
+            <div class="search_img">
+                <img src="image/search1.webp" alt="">
+            </div>
+            <span>搜索商品、品牌</span>
+        </div>
+    </div>
+
+
+<!--分类-->
+    <div class="catlog_out">
+        <div class="catlog">
+            <div class="catlog_pic">
+                <img src="image/catlog1.webp" alt="">
+            </div>
+            <span>苏宁易购</span>
+        </div>
+        <div class="catlog">
+            <div class="catlog_pic">
+                <img src="image/catlog2.png" alt="">
+            </div>
+            <span>天猫超市</span>
+        </div>
+        <div class="catlog">
+            <div class="catlog_pic">
+                <img src="image/catlog3.webp" alt="">
+            </div>
+            <span>天猫国际</span>
+        </div>
+        <div class="catlog">
+            <div class="catlog_pic">
+                <img src="image/catlog4.webp" alt="">
+            </div>
+            <span>聚划算</span>
+        </div>
+        <div class="catlog">
+            <div class="catlog_pic">
+                <img src="image/catlog5.webp" alt="">
+            </div>
+            <span>分类</span>
+        </div>
+    </div>
+
+<!--轮播图-->
+    <div class="banner_out">
+    <div class="banners">
+        <div class="banner">
+            <img src="image/banner1.webp" alt="">
+        </div>
+        <div class="banner">
+            <img src="image/banner2.webp" alt="">
+        </div>
+        <div class="banner">
+            <img src="image/banner3.webp" alt="">
+        </div>
+        <div class="banners_opts_out">
+            <div class="banners_opts">
+                <div class="banners_opts_img">
+                    <div class="banners_opts_img1">
+                        <img src="image/banner_opt.webp" alt="">
+                    </div>
+                    <div class="banners_opts_img2">
+                        <img src="image/banners_opts2.webp" alt="">
+                    </div>
+                </div>
+                <div class="banners_opts_img">
+                    <div class="banners_opts_img1">
+                        <img src="image/banner_opt.webp" alt="">
+                    </div>
+                    <div class="banners_opts_img2">
+                        <img src="image/banners_opts2.webp" alt="">
+                    </div>
+                </div>
+                <div class="banners_opts_img">
+                    <div class="banners_opts_img1">
+                        <img src="image/banner_opt.webp" alt="">
+                    </div>
+                    <div class="banners_opts_img2">
+                        <img src="image/banners_opts2.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--新人福利-->
+    <div class="news">
+        <img src="image/news.webp" alt="" style="width: 7.5rem">
+    </div>
+
+
+<!--限时抢购-->
+    <div class="buy_out">
+        <div class="buy">
+            <div class="buy_cards">
+                <div class="buy_cards_txt">
+                    限时抢购
+                </div>
+                <div class="buy_cards_bottom">
+                    <div class="buy_cards_bottom_cards">
+                        <img src="image/buy_cards_pic1.webp" alt="">
+                        <div class="buy_cards_bottom_cards_info">
+                            <span>为你精选</span>
+                        </div>
+                    </div>
+                    <div class="buy_cards_bottom_cards">
+                        <img src="image/buy_cards_pic2.webp" alt="">
+                        <div class="buy_cards_bottom_cards_info">
+                            <span>实惠好货</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="buy_time">
+                    <div class="buy_time_cards">
+                        <span>0</span>
+                        <span>0</span>
+                    </div>
+                    <span>:</span>
+                    <div class="buy_time_cards">
+                        <span>0</span>
+                        <span>0</span>
+                    </div>
+                    <span>:</span>
+                    <div class="buy_time_cards">
+                        <span>0</span>
+                        <span>0</span>
+                    </div>
+                    <span>:</span>
+                </div>
+            </div>
+            <div class="buy_cards">
+                <div class="buy_cards_txt">
+                    天猫好物
+                </div>
+                <div class="buy_cards_bottom">
+                    <div class="buy_cards_bottom_cards">
+                        <img src="image/buy_cards_pic3.webp" alt="">
+                        <div class="buy_cards_bottom_cards_info">
+                            <span>小个子穿搭</span>
+                        </div>
+                    </div>
+                    <div class="buy_cards_bottom_cards">
+                        <img src="image/buy_cards_pic4.webp" alt="">
+                        <div class="buy_cards_bottom_cards_info">
+                            <span>时髦设计</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buy_cards">
+                <div class="buy_cards_txt">
+                    聚划算
+                </div>
+                <div class="buy_cards_bottom">
+                    <div class="buy_cards_bottom_cards">
+                        <img src="image/buy_cards_pic5.webp" alt="">
+                        <div class="buy_cards_bottom_cards_info">
+                            <span>10点抢神券</span>
+                        </div>
+                    </div>
+                    <div class="buy_cards_bottom_cards">
+                        <img src="image/buy_cards_pic6.webp" alt="">
+                        <div class="buy_cards_bottom_cards_info">
+                            <span>满138元减10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buy_cards">
+                <div class="buy_cards_txt">
+                    天猫闪降
+                </div>
+                <div class="buy_cards_bottom">
+                    <div class="buy_cards_bottom_cards">
+                        <img src="image/buy_cards_pic7.webp" alt="">
+                        <div class="buy_cards_bottom_cards_info">
+                            <span>已降790元</span>
+                        </div>
+                    </div>
+                    <div class="buy_cards_bottom_cards">
+                        <img src="image/buy_cards_pic8.webp" alt="">
+                        <div class="buy_cards_bottom_cards_info">
+                            <span>已降1300元</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--天猫榜单-->
+    <div class="list">
+        <div class="list_title">
+            <span>天猫榜单</span>
+        </div>
+        <div class="delist">
+            <div class="delist_cards">
+                <img src="image/delist_pic1.webp" alt="">
+                <div class="delist_cards_info">性价居家一字拖榜</div>
+                <span>人气上升305%</span>
+                <div class="delist_cards_pic"></div>
+            </div>
+            <div class="delist_cards">
+                <img src="image/delist_pic2.webp" alt="">
+                <div class="delist_cards_info">时尚斜纹上衣榜</div>
+                <span>人气上升436%</span>
+                <div class="delist_cards_pic"></div>
+            </div>
+            <div class="delist_cards">
+                <img src="image/delist_pic3.webp" alt="">
+                <div class="delist_cards_info">时尚超长焖烧壶榜</div>
+                <span>人气上升951%</span>
+                <div class="delist_cards_pic"></div>
+            </div>
+        </div>
+        <div class="hotlist">
+            <div class="hotlist_left">
+                <div class="hotlist_left_t">
+                    <span>人气榜</span>
+                </div>
+                <span>轻奢优雅高跟鞋榜</span>
+                <br>
+                <span style="color: #999999;font-weight: lighter">月销120件</span>
+            </div>
+            <div class="hotlist_right">
+                <img src="image/hotlist_r1.webp" alt="" style="float: left;width: 1.3rem;">
+                <img src="image/hotlist_r2.webp" alt="" style="float: left;width: 1.3rem;">
+                <img src="image/hotlist_r3.webp" alt="" style="float: left;width: 1.3rem;">
+                <img src="image/hotlist_r4.webp" alt="" style="float: left;width: 1.3rem;">
+                <img src="image/hotlist_r5.webp" alt="" style="float: left;width: 1.3rem;">
+                <img src="image/hotlist_r6.webp" alt="" style="float: left;width: 1.3rem;">
+            </div>
+        </div>
+        <div class="hotlist_cards">
+            <div class="hotlist_cards_left">
+                <span style="color: #C89D6B;font-weight: bold;font-size: 0.22rem">人气榜</span>
+                <div class="hotlist_cards_line"></div>
+                <span style="color: #313131;font-weight: bold">品质女子短裤榜</span>
+                <span style="color: #999999;">月销2904件</span>
+            </div>
+            <div class="hotlist_cards_right">
+                <img src="image/hotlist_cards1.webp" alt="" style="width: 1.1rem;">
+            </div>
+        </div>
+        <div class="hotlist_cards">
+            <div class="hotlist_cards_left">
+                <span style="color: #C89D6B;font-weight: bold;font-size: 0.22rem">人气榜</span>
+                <div class="hotlist_cards_line"></div>
+                <span style="color: #313131;font-weight: bold">品质女子短裤榜</span>
+                <span style="color: #999999;">月销2904件</span>
+            </div>
+            <div class="hotlist_cards_right">
+                <img src="image/hotlist_cards1.webp" alt="" style="width: 1.1rem;">
+            </div>
+        </div>
+        <div class="hotlist_cards">
+            <div class="hotlist_cards_left">
+                <span style="color: #C89D6B;font-weight: bold;font-size: 0.22rem">人气榜</span>
+                <div class="hotlist_cards_line"></div>
+                <span style="color: #313131;font-weight: bold">品质女子短裤榜</span>
+                <span style="color: #999999;">月销2904件</span>
+            </div>
+            <div class="hotlist_cards_right">
+                <img src="image/hotlist_cards1.webp" alt="" style="width: 1.1rem;">
+            </div>
+        </div>
+        <div class="hotlist_cards">
+            <div class="hotlist_cards_left">
+                <span style="color: #C89D6B;font-weight: bold;font-size: 0.22rem">人气榜</span>
+                <div class="hotlist_cards_line"></div>
+                <span style="color: #313131;font-weight: bold">品质女子短裤榜</span>
+                <span style="color: #999999;">月销2904件</span>
+            </div>
+            <div class="hotlist_cards_right">
+                <img src="image/hotlist_cards1.webp" alt="" style="width: 1.1rem;">
+            </div>
+        </div>
+    </div>
+
+<!--猜你喜欢-->
+    <div class="like">
+        <span>猜你喜欢</span>
+    </div>
+
+    <div class="likecards_out">
+        <div class="likecards">
+            <div class="likecards_pic">
+                <img src="image/likepic1.webp" alt="" style="width: 100%;">
+            </div>
+            <div class="brand">
+                <span>派米菲</span>
+            </div>
+            <div class="likecards_info">
+                <span>大码法式连衣裙洋气胖MM2019春装新款气....</span>
+                <br>
+                <span style="font-size: 0.22rem;color: #FF0036;border: 0.01rem solid #FF0036;">5元券</span>
+            </div>
+            <div class="likecards_price">
+                <span style="margin: 0 0 0 0.2rem;">￥39</span>
+            </div>
+            <div class="likecards_a">
+                <span>看相似</span>
+            </div>
+        </div>
+        <div class="likecards">
+            <div class="likecards_pic">
+                <img src="image/likepic2.webp" alt="" style="width: 100%;">
+            </div>
+            <div class="brand" style="width: 1.1rem;display: flex;justify-content: space-between;align-items: center">
+                <img src="image/brandpic1.png" alt="" style="width: 0.3rem;height: 0.24rem;margin: 0rem 0.1rem 0 0;">
+                <span>派米菲</span>
+            </div>
+            <div class="likecards_info">
+                <span>大码法式连衣裙洋气胖MM2019春装新款气....</span>
+                <br>
+                <span style="font-size: 0.22rem;color: #FF0036;border: 0.01rem solid #FF0036;">5元券</span>
+            </div>
+            <div class="likecards_price">
+                <span style="margin: 0 0 0 0.2rem;">￥39</span>
+            </div>
+            <div class="likecards_a">
+                <span>看相似</span>
+            </div>
+        </div>
+    </div>
+    <div class="likecards1_out">
+        <div class="likecards1">
+            <div class="likecards">
+                <div class="likecards_pic">
+                    <img src="image/likepic1.webp" alt="" style="width: 100%;">
+                </div>
+                <div class="brand">
+                    <span>派米菲</span>
+                </div>
+                <div class="likecards_info">
+                    <span>大码法式连衣裙洋气胖MM2019春装新款气....</span>
+                    <br>
+                    <span style="font-size: 0.22rem;color: #FF0036;border: 0.01rem solid #FF0036;">5元券</span>
+                </div>
+                <div class="likecards_price">
+                    <span style="margin: 0 0 0 0.2rem;">￥39</span>
+                </div>
+                <div class="likecards_a">
+                    <span>看相似</span>
+                </div>
+            </div>
+            <div class="likecards1_pic">
+                <img src="image/likecards1.webp" alt="" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+    <div class="likecards1_out">
+    <div class="likecards1">
+        <div class="likecards1_pic">
+            <img src="image/likecards1pic2.webp" alt="" style="width: 3.4rem;height: 6.22rem;float: left;">
+        </div>
+        <div class="likecards">
+            <div class="likecards_pic">
+                <img src="image/likepic1.webp" alt="" style="width: 100%;">
+            </div>
+            <div class="brand">
+                <span>派米菲</span>
+            </div>
+            <div class="likecards_info">
+                <span>大码法式连衣裙洋气胖MM2019春装新款气....</span>
+                <br>
+                <span style="font-size: 0.22rem;color: #FF0036;border: 0.01rem solid #FF0036;">5元券</span>
+            </div>
+            <div class="likecards_price">
+                <span style="margin: 0 0 0 0.2rem;">￥39</span>
+            </div>
+            <div class="likecards_a">
+                <span>看相似</span>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="likecards_out">
+    <div class="likecards">
+        <div class="likecards_pic">
+            <img src="image/likepic1.webp" alt="" style="width: 100%;">
+        </div>
+        <div class="brand">
+            <span>派米菲</span>
+        </div>
+        <div class="likecards_info">
+            <span>大码法式连衣裙洋气胖MM2019春装新款气....</span>
+            <br>
+            <span style="font-size: 0.22rem;color: #FF0036;border: 0.01rem solid #FF0036;">5元券</span>
+        </div>
+        <div class="likecards_price">
+            <span style="margin: 0 0 0 0.2rem;">￥39</span>
+        </div>
+        <div class="likecards_a">
+            <span>看相似</span>
+        </div>
+    </div>
+    <div class="likecards">
+        <div class="likecards_pic">
+            <img src="image/likepic2.webp" alt="" style="width: 100%;">
+        </div>
+        <div class="brand" style="width: 1.1rem;display: flex;justify-content: space-between;align-items: center">
+            <img src="image/brandpic1.png" alt="" style="width: 0.3rem;height: 0.24rem;margin: 0rem 0.1rem 0 0;">
+            <span>派米菲</span>
+        </div>
+        <div class="likecards_info">
+            <span>大码法式连衣裙洋气胖MM2019春装新款气....</span>
+            <br>
+            <span style="font-size: 0.22rem;color: #FF0036;border: 0.01rem solid #FF0036;">5元券</span>
+        </div>
+        <div class="likecards_price">
+            <span style="margin: 0 0 0 0.2rem;">￥39</span>
+        </div>
+        <div class="likecards_a">
+            <span>看相似</span>
+        </div>
+    </div>
+</div>
+
+
+<!--    <div class="gettop">
+        <img src="image/gettop.webp" alt="">
+    </div>-->
+</body>
+</html>
