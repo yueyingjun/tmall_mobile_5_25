@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天猫TMALL</title>
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width,initial-scale=1.0"/>
+    <style>
+        html{
+            font-size:62.5%;
+       }
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .left{
+            width: 100%;
+            height: 4.4rem;
+            background-color: rgb(255 0 54);
+            justify-content:center;
+
+        }
+        .one{
+            width: 100%;
+            height: 4.6rem;
+            background-color: rgb(255 0 54);
+            justify-content:center;
+        }
+        .left1{
+            float: left;
+            width: 10%;
+            height: 100%;
+            background-image: url("./shoujiImgs/头1.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .left2{
+            position: relative;
+            top: 30%;
+            left: 18%;
+            float: left;
+            width: 40%;
+            height: 60%;
+            background-image: url("./shoujiImgs/头2.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .left3{
+            position: relative;
+            top: 30%;
+           right: 5%;
+            font-size: 1.6rem;
+            float: right;
+        }
+        .left3 a{
+            color: white;
+            text-decoration: none;
+        }
+        .one1{
+            position: relative;
+            left: 2.5%;
+            width: 95%;
+            height: 90%;
+            background-image: url("./shoujiImgs/头3.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .tow{
+            width: 100%;
+            height: 9rem;
+            display: flex;
+            justify-content: center;
+
+        }
+        .tow1{
+            position: relative;
+            right: 6%;
+           top: 4%;
+            width: 15%;
+            height: 100%;
+            background-image: url("./shoujiImgs/苏宁易购.png_110x10000.jpg_.webp");
+            background-size: 80% 50%;
+            background-repeat: no-repeat;
+        }
+        .tow2{
+            position: relative;
+            right: 3%;
+            top: 4%;
+            width: 15%;
+            height: 100%;
+            background-image: url("./shoujiImgs/苏宁2.png");
+            background-size: 80% 50%;
+            background-repeat: no-repeat;
+        }
+
+        .tow3{
+            position: relative;
+            top: 4%;
+            width: 15%;
+            height: 100%;
+            background-image: url("./shoujiImgs/苏宁3.png_110x10000.jpg_.webp");
+            background-size: 80% 50%;
+            background-repeat: no-repeat;
+        }
+        .tow4{
+            position: relative;
+            left: 3%;
+            top: 4%;
+            width: 15%;
+            height: 100%;
+            background-image: url("./shoujiImgs/苏宁4.png_110x10000.jpg_.webp");
+            background-size: 80% 50%;
+            background-repeat: no-repeat;
+        }
+        .tow5{
+            position: relative;
+            left: 6%;
+            top: 4%;
+            width: 15%;
+            height: 100%;
+            background-image: url("./shoujiImgs/苏宁5.png_110x10000.jpg_.webp");
+            background-size: 80% 50%;
+            background-repeat: no-repeat;
+        }
+        .tow11{
+            position: relative;
+            top: 60%;
+            right: 10%;
+            width: 100%;
+            height: 20%;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+        .three{
+            position: relative;
+            width: 100%;
+            height: 14rem;
+            display: flex;
+            justify-content: center;
+
+        }
+        .three1{
+            position: absolute;
+            width: 95%;
+            height:100%;
+            justify-content: center;
+            background-image: url("./shoujiImgs/轮播图.png_790x10000.jpg_.webp");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .three2{
+            position: absolute;
+            top: 90%;
+            left: 40%;
+            width: 5%;
+            height:2%;
+            background-color: white;
+            z-index: 1;
+        }
+        .three2:nth-child(4){
+            background-color: black;
+            left: 55%;
+        }
+        .si{
+              width: 100%;
+              height: 18rem;
+              display: flex;
+              justify-content: center;
+          }
+        .si1{
+            position: relative;
+            width: 95%;
+            height:100%;
+            display: flex;
+            justify-content: center;
+            background-image: url("./shoujiImgs/新人大礼包.png_790x10000.jpg_.webp");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .wu{
+            width: 100%;
+            height: 12rem;
+            display: flex;
+            justify-content: center;
+        }
+        .wu1{
+            position: relative;
+            left: 10%;
+            width: 45%;
+            height:90%;
+            display: flex;
+            justify-content: center;
+
+           background-image: url("./shoujiImgs/限时抢购背景.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .wu1:nth-child(1){
+            left: -2.5%;
+        }
+        .wu1:nth-child(2){
+            left: 2.5%;
+        }
+        .wu11{
+            position: relative;
+            top: 30%;
+            width: 45%;
+            height:60%;
+            display: flex;
+            justify-content: center;
+
+            background-image: url("./shoujiImgs/限时抢购物品.png_170x10000.jpg_.webp");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .wu11:nth-child(1){
+            left: -1.25%;
+        }
+        .wu11:nth-child(2){
+            left: 1.25%;
+            background-image: url("./shoujiImgs/限时抢购物品2.png_170x10000.jpg_.webp");
+        }
+        .wu2{
+            font-size: 1.5rem;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 45%;
+            height: 20%;
+        }
+
+
+
+        .liu{
+            width: 100%;
+            height: 18rem;
+            display: flex;
+            justify-content: center;
+        }
+        .liu1{
+            position: relative;
+            left: 1%;
+            width: 95%;
+            height: 100%;
+           background-image: url("./shoujiImgs/天猫榜单.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .ba,.qi,.jiu{
+            width: 100%;
+            height: 10rem;
+            display: flex;
+            justify-content: center;
+        }
+        .qi1{
+            position: relative;
+            top: 5%;
+            width: 95%;
+            height: 95%;
+            background-color: rgb(244 244 244);
+        }
+        .qi12{
+            font-size: 1.2rem;
+            position: relative;
+            left: 3%;
+            top: 30%;
+            float: left;
+            height: 70%;
+            width: 30%;
+        }
+        .qi11{
+            position: relative;
+            top: 10%;
+            float: right;
+            height: 75%;
+            width: 60%;
+        }
+        .qi111{
+            float: left;
+            height: 100%;
+            width: 33.3333%;
+            background-image: url("./shoujiImgs/鞋子热销1.png_140x10000.jpg_.webp");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .qi121{
+            color: #999999;
+        }
+
+        .jiu1{
+            position: relative;
+            top:10%;
+            left: 10%;
+            width: 45%;
+            height:90%;
+            display: flex;
+            justify-content: center;
+
+            background-image: url("./shoujiImgs/限时抢购背景.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .jiu1:nth-child(1){
+            left: -2.5%;
+        }
+        .jiu1:nth-child(2){
+            left: 2.5%;
+        }
+        .jiu11{
+            float: left;
+            position :absolute;
+            left: 5%;
+            top: 10%;
+            color: rgb(250 167 122);
+            height: 40%;
+            width: 60%;
+            font-size: 1.2rem;
+            text-align: left;
+        }
+        .jiu12{
+            float: left;
+            position :absolute;
+            left: 5%;
+            top: 50%;
+            color: black;
+            height: 40%;
+            width: 60%;
+            font-size: 1.2rem;
+            text-align: left;
+        }
+        .jiu13{
+            float: right;
+            position :absolute;
+            right: 5%;
+            top: 20%;
+            background-image: url("./shoujiImgs/衣服1.png_140x10000.jpg_.webp");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            height: 60%;
+            width: 30%;
+        }
+        .jiu132{
+            background-image: url("./shoujiImgs/衣服2.png_140x10000.jpg_.webp");
+        }
+        .jiu133{
+            background-image: url("./shoujiImgs/衣服3.png_140x10000.jpg_.webp");
+        }
+        .jiu134{
+            background-image: url("./shoujiImgs/衣服4.png_140x10000.jpg_.webp");
+        }
+        .shi{
+            width: 100%;
+            height: 4rem;
+            display: flex;
+            justify-content: center;
+        }
+        .shi1{
+            position: relative;
+            left: 2%;
+            top: 20%;
+            width: 95%;
+            height:80%;
+            display: flex;
+            font-size: 2rem;
+        }
+        .shiyi{
+            display: flex;
+            position: relative;
+            width: 100%;
+            height: 25rem;
+            justify-content: center;
+        }
+        .shiyi1{
+            position: relative;
+            top:2.5%;
+            left: 10%;
+            width: 45%;
+            height:95%;
+            display: flex;
+            justify-content: center;
+
+            background-image: url("./shoujiImgs/商品1.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .shiyi1:nth-child(1){
+            left: -2.5%;
+        }
+        .shiyi1:nth-child(2){
+            left: 2.5%;
+        }
+        .shiyi12{
+            background-image: url("./shoujiImgs/商品2.png");
+        }
+    </style>
+</head>
+<body>
+<div class="left">
+    <div class="left1"></div>
+    <div class="left2"></div>
+    <div class="left3"><a href="">登录</a></div>
+</div>
+<div class="one">
+    <div class="one1"></div>
+</div>
+
+<div class="tow">
+    <div class="tow1"><div class="tow11">苏宁易购</div></div>
+    <div class="tow2"><div class="tow11">天猫超市</div></div>
+    <div class="tow3"><div class="tow11">天猫国际</div></div>
+    <div class="tow4"><div class="tow11">聚划算</div></div>
+    <div class="tow5"><div class="tow11">分类</div></div>
+</div>
+<div class="three">
+    <div class="three1"></div>
+    <div class="three1"></div>
+    <div class="three2"></div>
+    <div class="three2"></div>
+
+</div>
+<div class="si">
+    <div class="si1"></div>
+</div>
+<div class="wu">
+
+    <div class="wu1">
+        <div class="wu2"><b>限时抢购</b></div>
+        <div class="wu11"></div>
+        <div class="wu11"></div>
+    </div>
+    <div class="wu1">
+        <div class="wu2"><b>天猫好物</b></div>
+        <div class="wu11"></div>
+        <div class="wu11"></div>
+    </div>
+</div>
+<div class="wu">
+
+    <div class="wu1">
+        <div class="wu2"><b>聚划算</b></div>
+        <div class="wu11"></div>
+        <div class="wu11"></div>
+    </div>
+    <div class="wu1">
+        <div class="wu2"><b>天猫闪降</b></div>
+        <div class="wu11"></div>
+        <div class="wu11"></div>
+    </div>
+</div>
+
+<div class="liu">
+    <div class="liu1"></div>
+</div>
+
+<div class="qi">
+    <div class="qi1">
+        <div class="qi12"><b>品质优雅高黑鞋榜</b>
+        <div class="qi121" >月销6549</div>
+        </div>
+        <div class="qi11">
+            <div class="qi111"></div>
+            <div class="qi111"></div>
+            <div class="qi111"></div>
+        </div>
+    </div>
+</div>
+
+<div class="ba">
+<div class="ba1">
+    <div class="ba11"></div>
+    <div class="ba12"></div>
+    <div class="ba13"></div>
+</div>
+
+    <div class="jiu">
+        <div class="jiu1">
+            <div class="jiu11">人气榜</div>
+            <div class="jiu12"><b>品质优雅衣服榜</b>
+            <div class="qi121" >月销6196件</div></div>
+            <div class="jiu13"></div>
+        </div>
+        <div class="jiu1">
+            <div class="jiu11">人气榜</div>
+            <div class="jiu12"><b>品质优雅公主裙榜</b>
+                <div class="qi121" >月销6196件</div></div>
+            <div class="jiu13 jiu132"></div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jiu">
+    <div class="jiu1">
+        <div class="jiu11">人气榜</div>
+        <div class="jiu12"><b>品质优雅黑天鹅榜</b>
+            <div class="qi121" >月销6196件</div></div>
+        <div class="jiu13 jiu133"></div>
+    </div>
+    <div class="jiu1">
+        <div class="jiu11">人气榜</div>
+        <div class="jiu12"><b>品质优雅男衣榜</b>
+            <div class="qi121" >月销6196件</div></div>
+        <div class="jiu13 jiu134"></div>
+    </div>
+</div>
+
+</div>
+
+<div class="shi">
+    <div class="shi1"><b>猜你喜欢</b></div>
+</div>
+<div class="shiyi">
+    <div class="shiyi1"></div>
+    <div class="shiyi1 shiyi12"></div>
+</div>
+<div class="shiyi">
+    <div class="shiyi1"></div>
+    <div class="shiyi1 shiyi12"></div>
+</div>
+<!--<div class="ba">
+
+
+</div>-->
+</body>
+</html>
+<!--
+nav:导航使用
+justify-content
+align-items center;使得属性垂直居中
+-->
