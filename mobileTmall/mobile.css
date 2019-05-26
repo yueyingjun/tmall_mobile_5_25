@@ -1,0 +1,572 @@
+html{
+    font-size:13.33333vw;
+}
+body{
+    margin: 0;
+    padding:0;
+}
+
+.top{
+    width: 100vw;
+    height: 1.8rem;
+    background: red;
+
+
+}
+.top-to{
+    width: 100vw;
+    height: .7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.tapic{
+    width:1rem;
+    height: .6rem;
+    background: url("image/top.png") no-repeat .15rem 0;
+   background-size:6rem .6rem;
+
+}
+.top-logc{
+    width:5rem;
+    height: .5rem;
+    background: url("image/top2.png") no-repeat 1.2rem 0;
+    background-size:2.3rem .4rem;
+}
+
+.top-log{
+    font-size: 0.3rem;
+    width:1rem;
+    color: white;
+    height: .5rem;
+    display: flex;
+}
+.top-log  a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.top-mid{
+
+    width:100vm;
+    height: .6rem;
+    background: white;
+    margin: 0 .2rem .2rem .2rem;
+    border-radius: .1rem;
+
+    display: flex;
+    align-items: center;
+
+}
+.p1{
+    width: .6rem;
+    height: .51rem;
+    background: url("image/top.png") no-repeat  -.35rem 0;
+    background-size:2rem .6rem;
+}
+.p2{
+    width: 2rem;
+    height: .3rem;
+    color: rgb(85,85,85);
+    font-size: 0.3rem;
+}
+.top-middle{
+    width:100vw;
+    height:1.3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.top-middle div{
+    width: 1.1rem;
+    height: 100%;
+    font-size: .2rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+.top-middle div span{
+    display: block;
+}
+.lunbo{
+    width: 7em;
+    height: 3em;
+    margin: auto;
+    position: relative;
+
+}
+.pic1{
+    width: 100%;
+    height: 100%;
+    background: url("image/pic1.jpg") no-repeat;
+    background-size:7rem 3rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.pic2{
+    width: 100%;
+    height: 100%;
+    background: url("image/pic2.jpg") no-repeat;
+    background-size:7rem 3rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+   
+}
+.pic3{
+    width: 100%;
+    height: 100%;
+    background: url("image/pic3.jpg") no-repeat;
+    background-size:7rem 3rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+.pic4{
+    width: 100%;
+    height: 100%;
+    background: url("image/pic4.jpg") no-repeat;
+    background-size:7rem 3rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+.pic5{
+    width: 100%;
+    height: 100%;
+    background: url("image/pic5.jpg") no-repeat;
+    background-size:7rem 3rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+
+.points{
+    width: 2rem;
+    height: .1rem;
+    position:absolute;
+    left: 1.6rem;
+    top: 2.7rem;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+}
+.point{
+    width: .3rem;
+    height: .06rem;
+    float: left;
+    background:rgb(142,142,142);
+}
+.popic{
+    width: 7rem;
+    height: 3rem;
+    margin: .3rem auto 0 auto;
+    background: url("image/web.jpg") no-repeat;
+    background-size:7rem 3rem;
+    position: relative;
+
+}
+
+.container1{
+    width: 100vm;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+.container1  .con--1{
+    width: 3rem;
+    height: 2.3rem;
+    background: rgb(247,247,247);
+}
+.con-top{
+    width: 90%;
+    height:25%;
+    padding-left: .2rem;
+    padding-top: .2rem;
+    font-size: .3rem;
+}
+.con-bottom{
+    width: 100%;
+    height:70%;
+    display: flex;
+}
+.con-pic1{
+    width:50%;
+    height: 100%;
+    background: url("image/conpic1.jpg") no-repeat;
+    background-size:1.4rem  1.3rem;
+    position: relative;
+}
+.con-pic2{
+    width:50%;
+    height: 100%;
+    background: url("image/conpic2.jpg") no-repeat;
+    background-size:1.4rem  1.3rem;
+    position: relative;
+}
+.afa{
+    width:60% ;
+    height:15% ;
+    position: absolute;
+    left:25% ;
+    top: 65%;
+    border: 1px solid red;
+    color: red;
+    font-size: .2rem;
+}
+
+/*天猫榜单*/
+.bangdaninf{
+    width:6.8rem;
+    height: .4rem;
+    font-size: .3rem;
+    margin:auto;
+}
+.bangdan{
+    width:100%;
+    height: 2.9rem;
+}
+.bang2{
+    width: 2.2rem;
+    height: 2.6rem;
+    background: rgb(242,232,232);
+
+    position: relative;
+    float: left;
+    margin-top: .3rem;
+    margin-left: .3rem;
+}
+.bang1{
+    width: 2.2rem;
+    height: 2.9rem;
+    background: rgb(242,232,232);
+    position: relative;
+    float: left;
+    margin-left: .1rem;
+}
+/*bpic{
+    width: ;
+}*/
+.bang3{
+    width: 2.2rem;
+    margin-top: .3rem;
+    height: 2.6rem;
+    background: rgb(242,232,232);
+    position: relative;
+    float: left;
+    margin-top: .3rem;
+    margin-left: .1rem;
+}
+.bpic{
+    width:.6rem;
+    height: .5rem;
+    background: url("image/bang.png") no-repeat;
+    background-size:.6rem  .5rem;
+    position: absolute;
+    left:.12rem ;
+    top: 0;
+}
+.ba2{
+    width: 1.54rem;
+    height:1.5rem ;
+    background:rgb(225,225,225);
+    margin:.3rem  0 0  .3rem;
+}
+.ba3{
+    width: 1.54rem;
+    height:1.5rem ;
+    background:rgb(225,225,225);
+    margin:.6rem  0 0  .3rem;
+}
+.b2pic{
+    width: 1.3rem;
+    height:1.3rem ;
+    background: url("image/bang2.png") no-repeat;
+    background-size: 1.3rem 1.3rem;
+    margin:.1rem;
+}
+.b3pic{
+    width: 1.3rem;
+    height:1.3rem ;
+    background: url("image/bang3.png") no-repeat;
+    background-size: 1.3rem 1.3rem;
+    margin:.1rem;
+}
+.b1pic{
+    width: 1.3rem;
+    height:1.3rem ;
+    background: url("image/bang1.png") no-repeat;
+    background-size: 1.3rem 1.3rem;
+    margin:.1rem;
+}
+.bacblue{
+    width: 2.0rem;
+    height: .34rem;
+    margin-top: .05rem;
+    margin-left: .1rem;
+    background: url("image/blue.png") no-repeat;
+    background-size:2rem .34rem;
+    font-size: .18rem;
+    text-align: center;
+
+}
+.toptext{
+    font-size: .18rem;
+    text-align: center;
+
+}
+.renqi{
+    width: 6.85rem;
+    height: 2rem;
+    background: rgb(248,248,248);
+    margin: .2rem auto 0 auto;
+    overflow:hidden;
+}
+
+.renqi .left{
+    width: 2.5rem;
+    height: 100%;
+    float: left;
+}
+.renqi-right{
+    width: 4.35rem;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+
+}
+.left{
+    width: 2.5rem;
+    height: 100%;
+    float: left;
+}
+.lefttop{
+     width: 2rem;
+     height: .3rem;
+     font-size: .24rem;
+
+     margin-left: .2rem;
+
+ }
+.lefttop3{
+    width: 2rem;
+    height: .3rem;
+    font-size: .24rem;
+    background: url("image/ye.png") no-repeat;
+    background-size:.8rem .3rem;
+    margin-left: .2rem;
+}
+.leftmid{
+    width: 2rem;
+    height: .3rem;
+    font-size: .24rem;
+    margin:.34rem   0  0 .2rem
+}
+.leftbot{
+    width: 2rem;
+    height: .3rem;
+    font-size: .24rem;
+    margin: .1rem 0 0 .2rem;
+    color: rgb(195,195,195);
+    justify-content: space-between;
+}
+.itemp1{
+    width: 33% ;
+    height: 80%;
+    background:url(image/itemp1.png) no-repeat;
+    background-size: 1.5rem 1.4rem;
+    float: left;
+    margin-top: .3rem;
+}
+.itemp2{
+    width: 30% ;
+    height: 80%;
+    background:url(image/itemp2.png) no-repeat;
+    background-size: 1.5rem 1.4rem;
+    float: left;
+    margin-top: .3rem;
+}
+.itemp3{
+    width: 30% ;
+    height: 80%;
+    background:url(image/itemp3.png) no-repeat;
+    background-size: 1.5rem 1.4rem;
+    float: left;
+    margin-top: .3rem;
+}
+.itemp4{
+    width: 30% ;
+    height: 80%;
+    background:url(image/item4.jpg) no-repeat;
+    background-size: 1.5rem 1.4rem;
+    float: left; margin-top: .3rem;
+}
+.itemp5{
+    width: 30% ;
+    height: 80%;
+    background:url(image/item5.jpg) no-repeat;
+    background-size: 1.5rem 1.4rem;
+    float: left; margin-top: .3rem;
+}
+.itemp6{
+    width: 30% ;
+    height: 80%;
+    background:url(image/item6.jpg) no-repeat;
+    background-size: 1.5rem 1.3rem;
+    float: left; margin-top: .3rem;
+}
+.renqib{
+    width: 6.85rem;
+    height: 3.7rem;
+
+    margin: .2rem auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.renqib  .item{
+    width: 3.38rem;
+    height: 1.7rem;
+    background: rgb(248,248,248);
+
+}
+.renqib .left{
+    width:2rem;
+    height: 100%;
+    float: left;
+}
+.renqib .lefttop{
+    width: 2rem;
+    height: .3rem;
+    font-size: .24rem;
+    margin-left: .2rem;
+    margin-top: .2rem;
+    color: rgb(223,200,175);
+}
+.renqib .leftmid{
+    width: 1.7rem;
+    height: .3rem;
+    font-size: .24rem;
+    margin:.1rem   0  0 .2rem;
+    overflow: hidden;
+}
+.renqib .leftbot{
+    width: 2rem;
+    height: .3rem;
+    font-size: .24rem;
+    margin: .1rem 0 0 .2rem;
+    color: rgb(195,195,195);
+    justify-content: space-between;
+}
+.kj{
+    width: .34rem;
+    height: .02rem;
+    background: rgb(233,233,233);
+    margin: .1rem 0 0 .2rem;
+}
+.renqib .right{
+    width: 1.1rem;
+    height: 80%;
+    margin-top: .3rem;
+    background: url("image/itemp1.png") no-repeat;
+    float: left;
+    background-size:1.2rem  1.2rem;
+}
+.renqiv{
+    width: 100%;
+    height: 19rem;
+    background: rgb(255,247,241);
+    margin: .2rem auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    padding-top: .1rem;
+}
+.renqiv  .item{
+    width: 3.38rem;
+    height:5.2rem;
+    border: 1px solid rgb(240,240,240);
+    box-sizing: border-box;
+    background:white;
+    position: relative;
+}
+.item2{
+    width: 3.38rem;
+    height:6rem;
+    background:url("image/hongbao.png") no-repeat;
+    background-size:3.38rem  6rem;
+}
+.renqiv .top{
+    width: 3.38rem;
+    height: 3.2rem;
+    background: rgb(247,247,247);
+    display: flex;
+    align-items: center;
+}
+.renqiv .pic{
+    width: 2.8rem;
+    height: 2.8rem;
+    background: url("image/lov1.png") no-repeat;
+    background-size: 2.8em 2.8rem;
+}
+.info{
+    width: 1.6rem;
+    height: .3rem;
+    background: rgb(205, 163 ,199);
+    color: white;
+    font-size: .2rem;
+    position: absolute;
+    left:.2rem;
+    top:3.1rem ;
+}
+.model{
+    width: 90%;
+    height: .7rem;
+    font-size: .28rem;
+    overflow: hidden;
+    margin-left: .2rem;
+    margin-top: .2rem;
+}
+.quan{
+    width: .6rem;
+    height: .3rem;
+    color: rgb(255,16,64);
+    font-size: .2rem;
+    margin-top: .15rem;  margin-left: .2rem;
+    border: 1px solid red;
+}
+.renqiv .bottom{
+    width: 100%;
+    height: .3rem;
+    margin-top: .1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.price{
+    width: .6rem;
+    height: .3rem;
+    color: red;
+    margin-left: .2rem;
+    font-size: .3rem;
+    display: inline-block;
+}
+.xiangsi{
+    width: .8rem;
+    height: .3rem;
+    color: rgb(255,16,64);
+    font-size: .2rem;
+    background: rgb(255,230,235);
+    border: 1px solid rgb(255,230,235);
+    border-radius:.1rem ;
+    margin-right: .1rem;
+    display: inline-block;
+    text-align: center;
+
+}
