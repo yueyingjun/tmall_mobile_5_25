@@ -24,8 +24,20 @@
                 btns[num].style.background="rgb(255,255,255)"
                 num++
             },1000)
+            var banner1 = document.querySelectorAll(".bang-renqi-0-right0")
+            var num1=0
+            setInterval(function () {
+                if (num1 == 2) {
+                    num1 = 0;
+                }
+                for (var i = 0; i < banner1.length; i++) {
+                    banner1[i].style.display = "none";
+                }
+                banner1[num1].style.display = "flex";
+                num1++
+            },1000)
         }
-        window.onload=function(ev){
+        /*window.onload=function(en){
             var banner = document.querySelectorAll(".bang-renqi-0-right0")
             var num=0
             setInterval(function () {
@@ -38,7 +50,7 @@
                 banner[num].style.display = "flex";
                 num++
             },1000)
-        }
+        }*/
     </script>
 </head>
 <body>
