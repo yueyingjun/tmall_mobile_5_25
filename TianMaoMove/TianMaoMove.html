@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="CSS/TianMaoMove.css">
+    <script>
+        window.onload=function(ev){
+            var banner = document.querySelectorAll(".banner")
+            var btns = document.querySelectorAll(".btn")
+            var num=0
+            banner[0].style.zIndex=2
+            setInterval(function () {
+                if (num == 6) {
+                    num = 0;
+                }
+                for (var i = 0; i < banner.length; i++) {
+                    banner[i].style.display = "none"
+                    btns[i].style.background="#797979"
+                }
+                banner[num].style.display = "block";
+                btns[num].style.background="white"
+                num++
+            },3000)
+
+            var list_tupian = document.querySelectorAll(".list_tupian_right111");
+            var n=0
+            /*list_tupian[0].style.zIndex=2*/
+            setInterval(function () {
+                if (n== 2) {
+                    n= 0;
+                }
+                for (var k = 0; k <list_tupian.length; k++) {
+                    list_tupian[k].style.display = "none"
+                }
+                list_tupian[n].style.display = "flex";
+                n++
+            },3000)
+        }
+
+
+    </script>
+</head>
+
+<body>
+<!--head-->
+<div class="head">
+    <div class="head_left">
+        <a href=""><div class="head_left_one"></div></a>
+        <img src="images/logo.png" alt="" >
+    </div>
+    <div class="head_right"><a href="">登录</a></div>
+</div>
+<a href="" class="serach_box">
+    <div class="search">
+        <div class="search_left"></div>
+        <div class="search_right">搜索商品、品牌</div>
+    </div>
+</a>
+
+<!--分类-->
+<div class="clazz">
+        <a href=""><div class="clazz_one">
+            <div class="clazz_one_img"><img src="images/img1.png" alt=""></div>
+            <div class="clazz_one_info">苏宁易购</div>
+        </div></a>
+        <a href=""><div class="clazz_one">
+            <div class="clazz_one_img"><img src="images/img2.png" alt=""></div>
+            <div class="clazz_one_info">天猫超市</div>
+        </div></a>
+        <a href=""><div class="clazz_one">
+            <div class="clazz_one_img"><img src="images/img3.png" alt=""></div>
+            <div class="clazz_one_info">天猫国际</div>
+        </div></a>
+        <a href=""><div class="clazz_one">
+            <div class="clazz_one_img"><img src="images/img4.png" alt=""></div>
+            <div class="clazz_one_info">聚划算</div>
+        </div></a>
+        <a href=""><div class="clazz_one">
+            <div class="clazz_one_img"><img src="images/img5.png" alt=""></div>
+            <div class="clazz_one_info">分类</div>
+        </div></a>
+</div>
+
+<!--轮播图-->
+<div class="banners">
+    <div class="wheel-box">
+        <div class="banner banner1"></div>
+        <div class="banner banner2"></div>
+        <div class="banner banner3"></div>
+        <div class="banner banner4"></div>
+        <div class="banner banner5"></div>
+        <div class="banner banner6"></div>
+        <div class="bots">
+            <div class="btn btn1 select"></div>
+            <div class="btn btn2"></div>
+            <div class="btn btn3"></div>
+            <div class="btn btn4"></div>
+            <div class="btn btn5"></div>
+            <div class="btn btn6"></div>
+        </div>
+    </div>
+</div>
+
+<div style="width: 100%;height: 0.145rem"></div>
+<div class="lumbo_bottom">
+    <img src="images/banners/lunbo_bottom.png" alt=""  style="display: block">
+</div>
+
+<!--buy-->
+<div class="buy">
+    <a href=""><div class="buy_part">
+        <div class="buy_part_one">
+            <div class="buy_part_one_up">限时抢购</div>
+            <div class="buy_part_one_down">
+                <div class="buy_part_one_down_info"><span>实惠好货</span></div>
+            </div>
+        </div>
+        <div class="buy_part_one">
+            <div class="buy_part_one_up"></div>
+            <div class="buy_part_one_down buy_part_one_down1 buy_part_one_down_tu2">
+                <div class="buy_part_one_down_info"><span>爆款直降</span></div>
+            </div>
+        </div>
+    </div></a>
+    <a href=""><div class="buy_part">
+        <div class="buy_part_one">
+            <div class="buy_part_one_up">天猫好物</div>
+            <div class="buy_part_one_down buy_part_one_down_tu3">
+                <div class="buy_part_one_down_info"><span>扮靓秘籍</span></div>
+            </div>
+        </div>
+        <div class="buy_part_one">
+            <div class="buy_part_one_up"></div>
+            <div class="buy_part_one_down buy_part_one_down1 buy_part_one_down_tu4">
+                <div class="buy_part_one_down_info"><span>垂感显瘦</span></div>
+            </div>
+        </div>
+    </div></a>
+    <a href=""><div class="buy_part">
+        <div class="buy_part_one">
+            <div class="buy_part_one_up">聚划算</div>
+            <div class="buy_part_one_down buy_part_one_down_tu5">
+                <div class="buy_part_one_down_info"><span>满300元减30</span></div>
+            </div>
+        </div>
+        <div class="buy_part_one">
+            <div class="buy_part_one_up"></div>
+            <div class="buy_part_one_down buy_part_one_down1 buy_part_one_down_tu6">
+                <div class="buy_part_one_down_info"><span>满99元减10</span></div>
+            </div>
+        </div>
+    </div></a>
+    <a href=""><div class="buy_part">
+        <div class="buy_part_one">
+            <div class="buy_part_one_up">天猫闪降</div>
+            <div class="buy_part_one_down buy_part_one_down_tu7">
+                <div class="buy_part_one_down_info"><span>已降20元</span></div>
+            </div>
+        </div>
+        <div class="buy_part_one">
+            <div class="buy_part_one_up"></div>
+            <div class="buy_part_one_down buy_part_one_down1 buy_part_one_down_tu8">
+                <div class="buy_part_one_down_info"><span>已降30元</span></div>
+            </div>
+        </div>
+    </div></a>
+</div>
+
+
+<!--天猫榜单-->
+<div class="list">
+    <div class="list_top">
+        天猫榜单
+    </div>
+    <div class="list_center">
+        <a href=""><div class="list_center_one">
+            <div class="list_center_one_one"></div>
+            <div class="list_center_one_two"></div>
+            <div class="list_center_one_three">时尚别致半身裙榜</div>
+            <div class="list_center_one_four">人气上升358%</div>
+        </div></a>
+        <a href=""><div class="list_center_two">
+            <div class="list_center_one_one"></div>
+            <div class="list_center_one_two list_center_one_two2"></div>
+            <div class="list_center_one_three">品质钢化输出榜</div>
+            <div class="list_center_one_four">人气上升538%</div>
+        </div></a>
+        <a href=""><div class="list_center_three">
+            <div class="list_center_one_one"></div>
+            <div class="list_center_one_two list_center_one_two3"></div>
+            <div class="list_center_one_three">时尚内衬衬衫榜</div>
+            <div class="list_center_one_four">人气上升240%</div>
+        </div></a>
+    </div>
+    <div class="list_tupian">
+        <div class="list_tupian_left">
+            <div class="list_tupian_left_top">人气榜</div>
+            <div class="list_tupian_left_center">高街修身雪纺杉榜</div>
+            <div class="list_tupian_left_bottom">月销241件</div>
+        </div>
+        <div class="list_tupian_right" onclick="function f1() {
+
+        }">
+            <div class="list_tupian_right1 list_tupian_right111">
+                <div class="xiaotubiao xiao1"></div><img src="images/renqi/renqi1.webp" alt="">
+                <div class="xiaotubiao2 xiao2"></div><img src="images/renqi/renqi2.webp" alt="">
+                <div class="xiaotubiao3 xiao3"></div><img src="images/renqi/renqi3.webp" alt="">
+            </div>
+            <div class="list_tupian_right2 list_tupian_right111">
+                <div class="xiaotubiao xiao4"></div><img src="images/renqi/renqi4.webp" alt="">
+                <div class="xiaotubiao2 xiao5"></div><img src="images/renqi/renqi5.webp" alt="">
+                <div class="xiaotubiao3 xiao6"></div><img src="images/renqi/renqi6.webp" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="list_bottom">
+        <div class="list_bottom_one">
+            <div class="list_bottom_left">
+                <div class="list_bottom_left_top">人气榜</div>
+                <div class="list_bottom_left_center">高街修身雪纺杉榜</div>
+                <div class="list_bottom_left_bottom">月销241件</div>
+            </div>
+            <img src="images/renqi/tu1.webp" alt="">
+        </div>
+        <div class="list_bottom_one">
+            <div class="list_bottom_left">
+                <div class="list_bottom_left_top">人气榜</div>
+                <div class="list_bottom_left_center">高街修身雪纺杉榜</div>
+                <div class="list_bottom_left_bottom">月销241件</div>
+            </div>
+            <img src="images/renqi/tu2.webp" alt="">
+        </div>
+        <div class="list_bottom_one">
+            <div class="list_bottom_left">
+                <div class="list_bottom_left_top">人气榜</div>
+                <div class="list_bottom_left_center">高街修身雪纺杉榜</div>
+                <div class="list_bottom_left_bottom">月销241件</div>
+            </div>
+            <img src="images/renqi/tu3.webp" alt="">
+        </div>
+        <div class="list_bottom_one">
+            <div class="list_bottom_left">
+                <div class="list_bottom_left_top">人气榜</div>
+                <div class="list_bottom_left_center">高街修身雪纺杉榜</div>
+                <div class="list_bottom_left_bottom">月销241件</div>
+            </div>
+            <img src="images/renqi/tu4.webp" alt="">
+        </div>
+    </div>
+</div>
+
+<!--猜你喜欢-->
+<div class="like_head"><div class="like_head_info">猜你喜欢</div></div>
+<div class="like_foot">
+    <a href=""><div class="like_foot_one">
+        <div class="like_foot_one_one"><img src="images/like/11.webp" alt=""></div>
+        <div class="like_foot_one_two">
+                <span><img src="images/like/12.png" alt="">日本红茶</span>
+        </div>
+        <div class="like_foot_one_three">日本进口ROYAI日东红茶皇家北海道奶茶</div>
+        <div class="like_foot_one_four"><span>破损包退</span></div>
+        <div class="like_foot_one_five">￥14.8</div>
+        <div class="like_foot_one_six">看相似</div>
+    </div></a>
+    <a href=""><div class="like_foot_one">
+        <div class="like_foot_one_one"><img src="images/like/21.webp" alt=""></div>
+        <div class="like_foot_one_two">
+            <span><img src="images/like/22.png" alt="">日本红茶</span>
+        </div>
+        <div class="like_foot_one_three">日本进口ROYAI日东红茶皇家北海道奶茶</div>
+        <div class="like_foot_one_four"><span class="jiyuanjuan">3元劵</span></div>
+        <div class="like_foot_one_five">￥14.8</div>
+        <div class="like_foot_one_six">看相似</div>
+    </div></a>
+    <a href=""><div class="like_foot_two">
+        <div class="like_foot_one_one"><img src="images/like/31.webp" alt=""></div>
+        <div class="like_foot_one_two">
+            <span>日本红茶</span>
+        </div>
+        <div class="like_foot_one_three">日本进口ROYAI日东红茶皇家北海道奶茶</div>
+        <div class="like_foot_one_four"><span class="jiyuanjuan">3元劵</span></div>
+        <div class="like_foot_one_five">￥14.8</div>
+        <div class="like_foot_one_six">看相似</div>
+    </div></a>
+    <a href=""><div class="like_foot_two">
+        <img class="datupian" src="images/like/41.webp" alt="">
+    </div></a>
+</div>
+</body>
+</html>
