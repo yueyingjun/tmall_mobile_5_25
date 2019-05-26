@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>天猫移动端</title>
+    <link rel="stylesheet" href="css/tmallphone1.css">
+    <script>
+        window.onload=function () {
+            var banners=document.querySelectorAll(".tmallphone-lunbo-banner")
+            var buttons=document.querySelectorAll(".tmallphone-lunbo-button")
+            var num=0
+            setInterval(function () {
+                if(num==banners.length){
+                    num=0
+                }
+                for (var i=0;i<banners.length;i++){
+                    banners[i].style.display="none"
+                    buttons[i].style.background="rgba(255,255,255,0.3)"
+                }
+                banners[num].style.display="block"
+                buttons[num].style.background="white"
+                num++
+            },3000)
+            var hotpersons=document.querySelectorAll(".tmallphone-hotperson-right-inner")
+            var count=0
+            setInterval(function () {
+                if(count==hotpersons.length){
+                    count=0
+                }
+                for (var k=0;k<hotpersons.length;k++){
+                    hotpersons[k].style.display="none"
+                }
+                hotpersons[count].style.display="flex"
+                count++;
+            },2000)
+        }
+    </script>
+</head>
+<body>
+    <!--天猫顶部-->
+    <header>
+        <div class="header-top">
+            <div class="header-top-left">
+                <a href=""></a>
+            </div>
+            <div class="header-top-center">
+                <img src="./images/TB-top-center.jpg_.webp">
+            </div>
+            <div class="header-top-right"><a href="">登录</a></div>
+        </div>
+        <div class="header-bottom">
+            <div class="header-bottom-serach">
+                <div class="header-bottom-serach-icon"></div>
+                <div class="header-bottom-serach-content">搜索商品、品牌</div>
+            </div>
+        </div>
+    </header>
+    <!--天猫菜单-->
+    <div class="tmall-list">
+        <div class="tmall-list-inner">
+            <div class="tmall-list-opt">
+                <img src="./images/TB-top-suning.jpg">
+                <div class="tmall-list-opt-title">苏宁易购</div>
+            </div>
+            <div class="tmall-list-opt">
+                <img src="./images/TB-tmallmarket.png">
+                <div class="tmall-list-opt-title">天猫超市</div>
+            </div>
+            <div class="tmall-list-opt">
+                <img src="./images/TB-tmallguoji.jpg">
+                <div class="tmall-list-opt-title">天猫国际</div>
+            </div>
+            <div class="tmall-list-opt">
+                <img src="./images/TB-juhuasuan.jpg">
+                <div class="tmall-list-opt-title">聚划算</div>
+            </div>
+            <div class="tmall-list-opt">
+                <img src="./images/TB-top-fenlei.jpg">
+                <div class="tmall-list-opt-title">分类</div>
+            </div>
+        </div>
+    </div>
+    <!--天猫轮播图-->
+    <div class="tmallphone-lunbo">
+        <div class="tmallphone-lunbo-inner">
+            <div class="tmallphone-lunbo-banner tmallphone-banner1"></div>
+            <div class="tmallphone-lunbo-banner tmallphone-banner2"></div>
+            <div class="tmallphone-lunbo-banner tmallphone-banner3"></div>
+            <div class="tmallphone-lunbo-banner tmallphone-banner4"></div>
+            <div class="tmallphone-lunbo-buttons">
+                <div class="tmallphone-lunbo-button tmall-button1 select-buuton"></div>
+                <div class="tmallphone-lunbo-button tmall-button1"></div>
+                <div class="tmallphone-lunbo-button tmall-button1"></div>
+                <div class="tmallphone-lunbo-button tmall-button1"></div>
+
+            </div>
+        </div>
+
+    </div>
+    <!--天猫优惠劵顶部-->
+    <div class="tmallphone-allowance-top"></div>
+    <!--天猫优惠劵-->
+    <div class="tmallphone-allowance">
+        <img src="./images/tmallphone-allowance.webp" alt="">
+    </div>
+    <!--限时抢购-->
+    <div class="tmall-limittime">
+            <div class="tmall-limittime-list1">
+                <div class="tmall-limittime-list1-title">限时抢购</div>
+                <div class="tmall-limittime-list1-time"><span>00</span>:<span>00</span>:<span>00</span></div>
+                <div class="tmall-limittime-list1-left-image">
+                    <div class="tmall-limittime-list1-left-image-tag">限时特价</div>
+                </div>
+                <div class="tmall-limittime-list1-right-image">
+                    <div class="tmall-limittime-list1-right-image-tag">为你精选</div>
+                </div>
+            </div>
+            <div class="tmall-limittime-list2">
+                <div class="tmall-limittime-list1-title">天猫好物</div>
+                <div class="tmall-limittime-list1-time tmall-limittime-list1-timeno"><span>00</span>:<span>00</span>:<span>00</span></div>
+                <div class="tmall-limittime-list1-left-image tmall-limittime-list2-left-image">
+                    <div class="tmall-limittime-list1-left-image-tag tmall-limittime-list2-left-image-tag">复古喇叭袖</div>
+                </div>
+                <div class="tmall-limittime-list1-right-image tmall-limittime-list2-right-image">
+                    <div class="tmall-limittime-list1-right-image-tag">简约风情</div>
+                </div>
+            </div>
+            <div class="tmall-limittime-list3">
+                <div class="tmall-limittime-list1-title">聚划算</div>
+                <div class="tmall-limittime-list1-time tmall-limittime-list1-timeno"><span>00</span>:<span>00</span>:<span>00</span></div>
+                <div class="tmall-limittime-list1-left-image tmall-limittime-list3-left-image">
+                    <div class="tmall-limittime-list1-left-image-tag tmall-limittime-list3-left-image-tag">满188元减10</div>
+                </div>
+                <div class="tmall-limittime-list1-right-image tmall-limittime-list3-right-image">
+                    <div class="tmall-limittime-list1-right-image-tag tmall-limittime-list3-right-image-tag">抢100元劵</div>
+                </div>
+            </div>
+            <div class="tmall-limittime-list4">
+                <div class="tmall-limittime-list1-title">天猫闪降</div>
+                <div class="tmall-limittime-list1-time tmall-limittime-list1-timeno"><span>00</span>:<span>00</span>:<span>00</span></div>
+                <div class="tmall-limittime-list1-left-image tmall-limittime-list4-left-image">
+                    <div class="tmall-limittime-list1-left-image-tag tmall-limittime-list4-left-image-tag">已降50元</div>
+                </div>
+                <div class="tmall-limittime-list1-right-image tmall-limittime-list4-right-image">
+                    <div class="tmall-limittime-list1-right-image-tag tmall-limittime-list4-right-image-tag">已降400元</div>
+                </div>
+            </div>
+    </div>
+    <!--天猫榜单-->
+    <div class="tmallphone-sort">
+        <div class="tmallphone-sort-title">天猫榜单</div>
+        <div class="tmallphone-sort-tend">
+            <div class="tmallphone-sort-tend-list1">
+                <div class="tmallphone-sort-tend-list-logo"></div>
+                <div class="tmallphone-sort-tend-list1-image">
+                    <img src="./images/tmallphone-sort-good1.webp" alt="">
+                </div>
+                <div class="tmallphone-sort-tend-list1-name">魅力棉质女内衣榜</div>
+                <div class="tmallphone-sort-tend-list1-likedegree">人气上升804%</div>
+            </div>
+            <div class="tmallphone-sort-tend-list2">
+                <div class="tmallphone-sort-tend-list-logo"></div>
+                <div class="tmallphone-sort-tend-list2-image">
+                    <img src="./images/tmallphone-sort-good2.webp" alt="">
+                </div>
+                <div class="tmallphone-sort-tend-list1-name">潮流四面弹长裤榜</div>
+                <div class="tmallphone-sort-tend-list1-likedegree">人气上升983%</div>
+            </div>
+            <div class="tmallphone-sort-tend-list3">
+                <div class="tmallphone-sort-tend-list-logo"></div>
+                <div class="tmallphone-sort-tend-list1-image">
+                    <img src="./images/tmallphone-sort-good3.webp" alt="">
+                </div>
+                <div class="tmallphone-sort-tend-list1-name">潮流花纹外套榜</div>
+                <div class="tmallphone-sort-tend-list1-likedegree">人气上升644%</div>
+            </div>
+        </div>
+        <div class="tmallphone-hotperson">
+            <div class="tmallphone-hotperson-left">
+                <div class="tmallphone-hotperson-left-image"></div>
+                <div class="tmallphone-hotperson-left-title">时尚棉麻外套榜</div>
+                <div class="tmallphone-hotperson-left-content">月销3039件</div>
+            </div>
+            <div class="tmallphone-hotperson-right">
+                <div class="tmallphone-hotperson-right-inner tmallphone-hotperson-right-inner1">
+                    <div class="tmallphone-hotperson-right-pai1">
+                        <div class="tmallphone-hotperson-right-pai1-image"></div>
+                    </div>
+                    <div class="tmallphone-hotperson-right-pai2">
+                        <div class="tmallphone-hotperson-right-pai2-image"></div>
+                    </div>
+                    <div class="tmallphone-hotperson-right-pai3">
+                        <div class="tmallphone-hotperson-right-pai3-image"></div>
+                    </div>
+                </div>
+                <div class="tmallphone-hotperson-right-inner tmallphone-hotperson-right-inner2">
+                    <div class="tmallphone-hotperson-right-pai1">
+                        <div class="tmallphone-hotperson-right-pai1-image"></div>
+                    </div>
+                    <div class="tmallphone-hotperson-right-pai2">
+                        <div class="tmallphone-hotperson-right-pai2-image"></div>
+                    </div>
+                    <div class="tmallphone-hotperson-right-pai3">
+                        <div class="tmallphone-hotperson-right-pai3-image"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tmallphone-hotperson-list">
+            <div class="tmallphone-hotperson-list1">
+                <div class="tmallphone-hotperson-list1-left">
+                    <div class="tmallphone-hotperson-list1-left-name">人气榜</div>
+                    <div class="tmallphone-hotperson-list1-left-line"></div>
+                    <div class="tmallphone-hotperson-list1-left-title">轻奢舒适小白鞋榜</div>
+                    <div class="tmallphone-hotperson-list1-left-content">月销282件</div>
+                </div>
+                <div class="tmallphone-hotperson-list1-right"></div>
+            </div>
+            <div class="tmallphone-hotperson-list1">
+                <div class="tmallphone-hotperson-list1-left">
+                    <div class="tmallphone-hotperson-list1-left-name">人气榜</div>
+                    <div class="tmallphone-hotperson-list1-left-line"></div>
+                    <div class="tmallphone-hotperson-list1-left-title">时尚小户型地柜榜</div>
+                    <div class="tmallphone-hotperson-list1-left-content">月销1.5万件</div>
+                </div>
+                <div class="tmallphone-hotperson-list2-right"></div>
+            </div>
+            <div class="tmallphone-hotperson-list1">
+                <div class="tmallphone-hotperson-list1-left">
+                    <div class="tmallphone-hotperson-list1-left-name">人气榜</div>
+                    <div class="tmallphone-hotperson-list1-left-line"></div>
+                    <div class="tmallphone-hotperson-list1-left-title">品质牛皮婚鞋榜</div>
+                    <div class="tmallphone-hotperson-list1-left-content">月销974件</div>
+                </div>
+                <div class="tmallphone-hotperson-list3-right"></div>
+            </div>
+            <div class="tmallphone-hotperson-list1">
+                <div class="tmallphone-hotperson-list1-left">
+                    <div class="tmallphone-hotperson-list1-left-name">人气榜</div>
+                    <div class="tmallphone-hotperson-list1-left-line"></div>
+                    <div class="tmallphone-hotperson-list1-left-title">轻奢时尚手拿包榜</div>
+                    <div class="tmallphone-hotperson-list1-left-content">火爆热卖中</div>
+                </div>
+                <div class="tmallphone-hotperson-list4-right"></div>
+            </div>
+        </div>
+    </div>
+    <!--猜你喜欢-->
+    <div class="tmallphone-like">
+        <div class="tmallphone-like-inner">猜你喜欢</div>
+    </div>
+    <div class="tmallphone-like-list">
+        <div class="tmallphone-like-list-good1">
+            <div class="tmallphone-like-list-good1-top"></div>
+            <div class="tmallphone-like-list-good1-logo">Sunny baby/阳光宝贝</div>
+            <div class="tmallphone-like-list-good1-title">
+                转转圈单腿跳套脚上转的球蹦蹦球
+            </div>
+            <div class="tmallphone-like-list-good1-allowance"><span>3元劵</span></div>
+            <div class="tmallphone-like-list-good1-bottom">
+                <div class="tmallphone-like-list-good1-bottom-price">￥12.8</div>
+                <div class="tmallphone-like-list-good1-bottom-like"><span>看相似</span></div>
+            </div>
+        </div>
+        <div class="tmallphone-like-list-good1">
+            <div class="tmallphone-like-list-good1-top"></div>
+            <div class="tmallphone-like-list-good1-logo">钓王李震</div>
+            <div class="tmallphone-like-list-good1-title">
+                转转圈单腿跳套脚上转的球蹦蹦球
+            </div>
+            <div class="tmallphone-like-list-good1-allowance"><span>3元劵</span></div>
+            <div class="tmallphone-like-list-good1-bottom">
+                <div class="tmallphone-like-list-good1-bottom-price">￥16</div>
+                <div class="tmallphone-like-list-good1-bottom-like"><span>看相似</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="tmallphone-like-list">
+        <div class="tmallphone-like-list-good1">
+            <div class="tmallphone-like-list-good1-top"></div>
+            <div class="tmallphone-like-list-good1-logo">Sunny baby/阳光宝贝</div>
+            <div class="tmallphone-like-list-good1-title">
+                转转圈单腿跳套脚上转的球蹦蹦球
+            </div>
+            <div class="tmallphone-like-list-good1-allowance"><span>3元劵</span></div>
+            <div class="tmallphone-like-list-good1-bottom">
+                <div class="tmallphone-like-list-good1-bottom-price">￥12.8</div>
+                <div class="tmallphone-like-list-good1-bottom-like"><span>看相似</span></div>
+            </div>
+        </div>
+        <div class="tmallphone-like-list-good1 tmallphone-like-list-good-allowance1">
+
+        </div>
+    </div>
+    <div class="tmallphone-like-list">
+        <div class="tmallphone-like-list-good1 tmallphone-like-list-good-allowance2">
+
+        </div>
+        <div class="tmallphone-like-list-good1">
+            <div class="tmallphone-like-list-good1-top"></div>
+            <div class="tmallphone-like-list-good1-logo">Sunny baby/阳光宝贝</div>
+            <div class="tmallphone-like-list-good1-title">
+                转转圈单腿跳套脚上转的球蹦蹦球
+            </div>
+            <div class="tmallphone-like-list-good1-allowance"><span>3元劵</span></div>
+            <div class="tmallphone-like-list-good1-bottom">
+                <div class="tmallphone-like-list-good1-bottom-price">￥12.8</div>
+                <div class="tmallphone-like-list-good1-bottom-like"><span>看相似</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="tmallphone-like-list">
+        <div class="tmallphone-like-list-good1">
+            <div class="tmallphone-like-list-good1-top"></div>
+            <div class="tmallphone-like-list-good1-logo">Sunny baby/阳光宝贝</div>
+            <div class="tmallphone-like-list-good1-title">
+                转转圈单腿跳套脚上转的球蹦蹦球
+            </div>
+            <div class="tmallphone-like-list-good1-allowance"><span>3元劵</span></div>
+            <div class="tmallphone-like-list-good1-bottom">
+                <div class="tmallphone-like-list-good1-bottom-price">￥12.8</div>
+                <div class="tmallphone-like-list-good1-bottom-like"><span>看相似</span></div>
+            </div>
+        </div>
+        <div class="tmallphone-like-list-good1 tmallphone-like-list-good-allowance3">
+
+        </div>
+    </div>
+    <div class="tmallphone-like-list">
+        <div class="tmallphone-like-list-good1">
+            <div class="tmallphone-like-list-good1-top"></div>
+            <div class="tmallphone-like-list-good1-logo">Sunny baby/阳光宝贝</div>
+            <div class="tmallphone-like-list-good1-title">
+                转转圈单腿跳套脚上转的球蹦蹦球
+            </div>
+            <div class="tmallphone-like-list-good1-allowance"><span>3元劵</span></div>
+            <div class="tmallphone-like-list-good1-bottom">
+                <div class="tmallphone-like-list-good1-bottom-price">￥12.8</div>
+                <div class="tmallphone-like-list-good1-bottom-like"><span>看相似</span></div>
+            </div>
+        </div>
+        <div class="tmallphone-like-list-good1">
+            <div class="tmallphone-like-list-good1-top"></div>
+            <div class="tmallphone-like-list-good1-logo">Sunny baby/阳光宝贝</div>
+            <div class="tmallphone-like-list-good1-title">
+                转转圈单腿跳套脚上转的球蹦蹦球
+            </div>
+            <div class="tmallphone-like-list-good1-allowance"><span>3元劵</span></div>
+            <div class="tmallphone-like-list-good1-bottom">
+                <div class="tmallphone-like-list-good1-bottom-price">￥12.8</div>
+                <div class="tmallphone-like-list-good1-bottom-like"><span>看相似</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
