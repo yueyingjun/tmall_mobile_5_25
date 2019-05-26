@@ -1,0 +1,950 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>天猫移动端</title>
+    <style>
+        html{
+            font-size: 26.6666666vw;
+        }
+        body{
+            margin: 0;padding: 0;
+            font-size: .16rem;
+        }
+        ul,li,p,a,h1,h2,h3,h4,h5,h6,span{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        .top{
+            width: 100vw;height: 0.44rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: red;
+        }
+        .header>.top>.left{
+            width: .3rem;
+            height: .3rem;
+            background: url("https://gw.alicdn.com/tfs/TB17oY3qbGYBuNjy0FoXXciBFXa-564-62.png_620x10000.jpg_.webp");
+            background-size: 3rem .3rem;
+            margin-left: .1rem;
+        }
+        .header>.top>.middle{
+            width: 1.185rem;
+            height: .205rem;
+            background: url("https://gw.alicdn.com/tfs/TB1wQw8qamWBuNjy1XaXXXCbXXa-237-41.png_240x10000.jpg_.webp") no-repeat;
+            background-size: 1.185rem .205rem;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header>.top>.right{
+            width: .28rem;width: .29rem;
+            font-size: .14rem;
+            color: white;
+            margin-right: .1rem;
+        }
+        .search{
+            width: 100vw;height: 0.44rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: red;
+        }
+        .search>.kuang{
+            width: 3.55rem;height: .36rem;
+            background: white;
+            margin: auto;
+            border-radius:.05rem;
+            display: flex;
+            align-items: center;
+        }
+        .search>.kuang>.icon{
+            width: .18rem;
+            height: .18rem;
+            background: url("https://gw.alicdn.com/tfs/TB1rIFEqCBYBeNjy0FeXXbnmFXa-60-64.png_110x10000.jpg_.webp") no-repeat;
+            background-size: .18rem .18rem;
+            margin-left: .1rem;
+        }
+        .search>.kuang>.text{
+            font-size: .14rem;
+            color: rgba(0, 0, 0, 0.3);
+            margin-left: .1rem;
+        }
+
+        .daohang {
+            margin-top: .05rem;
+            width: 100vw;
+            height: .76rem;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .daohang a{
+
+        }
+
+        .daohang .icon {
+            width: .48rem;
+            height: .48rem;
+            border-radius: 50%;
+            margin: auto;
+
+        }
+
+        .icon img {
+            width: .48rem;
+            height: .48rem;
+        }
+
+        .icon-text {
+            width: .48rem;
+            height: .2rem;
+            color: black;
+            font-size: .12rem;
+        }
+
+        .lunbo {
+            width: 100%;
+            height: 1.32rem;
+            margin-top: .2rem;
+
+            position: relative;
+            justify-content: space-around;
+        }
+
+        .lunbo .lb-img {
+            width: 90%;
+            height: 100%;
+            margin-left: .1rem;
+            position: absolute;
+            justify-content: space-around;
+        }
+
+        .lb-img img {
+            width: 3.51rem;
+            height: 1.25rem;
+            margin: auto;
+            align-items: center;
+        }
+
+        .lunbo .lb_btns {
+            position: absolute;
+            left: 0.37rem;
+            bottom: 0;
+            width: 3rem;
+            height: .19rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 10;
+            margin-bottom: .05rem;
+        }
+
+        .lb_btns .lb_btns_1 {
+            width: 0.2rem;
+            height: .03rem;
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+        .gg {
+            justify-content: space-around;
+        }
+
+        .gg img {
+            width: 100%;
+            height: 1.8rem;
+        }
+
+        .xsqg {
+            width: 100%;
+            height: 2.73rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .xsqg-box {
+            width: 1.72rem;
+            height: 1.28rem;
+            /*background: red;*/
+            flex-wrap: wrap;
+            display: flex;
+
+        }
+
+        .xsqg-box .xsqg-top {
+            width: 100%;
+            height: .25rem;
+            margin-top: .1rem;
+            justify-content: space-around;
+            display: flex;
+            align-items: center;
+        }
+
+        .xsqg-box .xsqg-top2 {
+            width: 100%;
+            height: .25rem;
+            margin-top: .1rem;
+            /*justify-content: space-around;*/
+            display: flex;
+            align-items: center;
+        }
+
+        .xsqg-box .xsqg-top-left {
+            width: .64rem;
+            height: .2rem;
+            text-align: center;
+            align-items: center;
+
+        }
+
+        .xsqg-box .xsqg-top-left span {
+            margin-top: .2rem;
+        }
+
+        .xsqg-box .xsqg-top-right {
+            width: .68rem;
+            height: .21rem;
+        }
+
+        .xsqg-btm {
+            width: 1.72rem;
+            height: .8rem;
+            margin-top: .1rem;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .time-box {
+            border: 0px solid black;
+            box-sizing: border-box;
+            display: flex;
+            /*-webkit-box-orient: vertical;*/
+            flex-direction: column;
+            align-content: flex-start;
+            flex-shrink: 0;
+            right: 13px;
+            top: 14px;
+            height: 21px;
+            line-height: 21px;
+        }
+
+        .time {
+            border: 0px solid black;
+            position: relative;
+            box-sizing: border-box;
+            display: flex;
+            /*-webkit-box-orient: horizontal;*/
+            flex-direction: row;
+            place-content: flex-start;
+            flex-shrink: 0;
+            /*-webkit-box-pack: start;*/
+            /*-webkit-box-align: center;*/
+            align-items: center;
+        }
+
+        .time1 {
+            border: 0px solid black;
+            position: relative;
+            box-sizing: border-box;
+            display: flex;
+            /*-webkit-box-orient: horizontal;*/
+            flex-direction: row;
+            place-content: flex-start center;
+            flex-shrink: 0;
+            border-radius: 3px;
+            width: 20px;
+            height: 20px;
+            background-color: rgb(0, 0, 0);
+            /*-webkit-box-align: center;*/
+            align-items: center;
+            /*-webkit-box-pack: center;*/
+        }
+
+        .time1 span {
+            white-space: pre-wrap;
+            border: 0px solid black;
+            position: relative;
+            box-sizing: border-box;
+            display: block;
+            /*-webkit-box-orient: vertical;*/
+            flex-direction: column;
+            align-content: flex-start;
+            flex-shrink: 0;
+            font-size: 13px;
+            color: rgb(255, 255, 255);
+        }
+
+        .time-span {
+            white-space: pre-wrap;
+            border: 0px solid black;
+            position: relative;
+            box-sizing: border-box;
+            display: block;
+            /*-webkit-box-orient: vertical;*/
+            flex-direction: column;
+            align-content: flex-start;
+            flex-shrink: 0;
+            font-size: 16px;
+        }
+
+        .xsqg-btm-left {
+            width: .77rem;
+            height: .65rem;
+        }
+
+        .xsqg-btm-left-img {
+            width: .77rem;
+            height: .65rem;
+        }
+
+        .xsqg-btm-left-img img {
+            width: .77rem;
+            height: .77rem;
+        }
+        .xsqg-btm-right {
+            width: .80rem;
+            height: .80rem;
+        }
+        .tmbd{
+            width: 3.7rem;
+            height: 4.5rem;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .tmbd>.tmdh-top{
+            width: 3.5rem;
+            height: .29rem;
+            color: black;font-size: 0.18rem;
+        }
+
+        .tmbd .bd1{
+            width:3.38rem;
+            height:2rem;
+            margin:auto;
+            display: flex;
+            justify-content: space-around;
+        }
+        .bd1 .bd1_one{
+            width:1.1rem;
+            height:1.8rem;
+            background-color: #f1e7e7;
+            margin-top:.2rem;
+        }
+        .bd1 .bd1_center{
+            height:2rem;
+            margin-top:0;
+        }
+        .bd1_one .bd1_one_leftTop{
+            display: block;
+            width:.3rem;
+            height:.25rem;
+            background: url("https://gw.alicdn.com/tfs/TB1MlAtzAPoK1RjSZKbXXX1IXXa-63-50.png_110x10000.jpg_.webp") no-repeat;
+            background-size: 100% 100%;
+            margin-left: .05rem;
+        }
+        .bd1_one .bd1_one_center{
+            display: block;
+            width:.9rem;
+            height:.9rem;
+            margin:auto;
+            background: url("https://gw.alicdn.com/bao/uploaded/O1CN01iBzt232ArkpgzddaF_!!2-item_pic.png_150x10000.jpg_.webp") no-repeat;
+            background-size: 100% 100%;
+        }
+        .bd1_one .bd1_one_bottom1{
+            display: block;
+            width:1.1rem;
+            height:.2rem;
+            line-height: .2rem;
+            font-size:.06rem;
+            background: url("https://gw.alicdn.com/tfs/TB1luRbtMHqK1RjSZFkXXX.WFXa-208-36.png_220x10000.jpg_.webp") no-repeat;
+            background-size: 100% 100%;
+            color:#ffffff;
+            text-align: center;
+        }
+        .bd1_one .bd1_one_bottom2{
+            display: block;
+            width:1.1rem;
+            height:.4rem;
+            line-height: .4rem;
+            font-size:.125rem;
+            text-align: center;
+        }
+        .bd1_one .bd1_one_center_picture2{
+            width:.9rem;
+            height:1.1rem;
+            background: url("https://gw.alicdn.com/bao/uploaded/TB1C3eamHPpK1RjSZFFXXa5PpXa.png_150x10000.jpg_.webp") no-repeat;
+            background-size: 100% 100%;
+        }
+        .bd1_one .bd1_one_center_picture3{
+            background: url("https://gw.alicdn.com/bao/uploaded/O1CN01umA8Pv1cA468nkvjd_!!2-item_pic.png_150x10000.jpg_.webp") no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .tmbd .bd2{
+            width:3.4rem;
+            height:1.17rem;
+            background-color: #f7f7f7;
+            margin:.1rem auto;
+            display: flex;
+        }
+        .bd2 .bd2_left{
+            width:1.2rem;
+            height:1.17rem;
+        }
+
+        .bd2_left .bd2_left_top{
+            display: block;
+            width:.5rem;
+            height:0.3rem;
+            background: url("https://angelwwwwww.github.io/tmall_mobile_5_25/TMALL_Phone/image/nyrqb.webp") no-repeat;
+            background-size: 100% 100%;
+            font-size:.15rem;
+            color:#ffffff;
+            margin-left:.05rem;
+        }
+        .bd2_left .bd2_left_center{
+            display: block;
+            width:1.15rem;
+            height:.4rem;
+            font-size:.175rem;
+            color:black;
+            font-weight: bolder;
+            margin:.05rem;
+        }
+        .bd2_left .bd2_left_bottom{
+            display: block;
+            width:.9rem;
+            height:.15rem;
+            font-size:.15rem;
+            color: #d0d0d0;
+            margin:.1rem .05rem;
+        }
+        .bd2 .bd2_right{
+            width:2.2rem;
+            height:1.17rem;
+            position:relative;
+        }
+        .bd2_right .bd2_right_lb{
+            width:2.2rem;
+            height:1.17rem;
+            position:absolute;
+            left:0;
+            top:0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .bd2_right_lb .bd2_right_lb_1{
+            width:.85rem;
+            height:.85rem;
+            background: url("https://gw.alicdn.com/bao/uploaded/i1/bao/upload/TB13IPCMMDqK1RjSZSyXXaxEVXa.png_140x10000.jpg_.webp") no-repeat;
+            background-size: 100% 100%;
+        }
+        .bd2_right_lb_1 img {
+            width: .25rem;
+            height:.25rem;
+            position:absolute;
+            top:.2rem;
+            left:.05rem;
+
+        }
+        .bd2_right_lb .bd2_right_lb_2{
+            width:.85rem;
+            height:.85rem;
+            background: url("https://gw.alicdn.com/bao/uploaded/i1/i1/692195348/O1CN01gcrBQO1pNQfcBqTXM_!!2-item_pic.png_140x10000.jpg_.webp") no-repeat;
+            background-size: 100% 100%;
+        }
+        .bd2_right_lb_2 img {
+            width: .25rem;
+            height:.25rem;
+            position:absolute;
+            top:.2rem;
+            left:.75rem;
+
+        }
+        .bd2_right_lb .bd2_right_lb_3{
+            width:.85rem;
+            height:.85rem;
+            background: url("https://gw.alicdn.com/bao/uploaded/i1/bao/upload/TB1IMBPJxTpK1RjSZFKXXa2wXXa.png_140x10000.jpg_.webp") no-repeat;
+            background-size: 100% 100%;
+        }
+        .bd2_right_lb_3 img {
+            width: .25rem;
+            height:.25rem;
+            position:absolute;
+            top:.2rem;
+            left:1.475rem;
+
+        }
+
+        .tmbd .bd3{
+            width:3.45rem;
+            height:2.17rem;
+            margin:.1rem auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .bd3 .bd3_1{
+            width:1.65rem;
+            height:1rem;
+            background-color: #f7f7f7;
+            display: flex;
+            align-items: center;
+        }
+        .bd3_1 .bd3_1_left{
+            width:1.12rem;
+            height:1rem;
+        }
+        .bd3_1_left .bd3_1_left_top{
+            width:.7rem;
+            height:.21rem;
+            color: #e0cbb2;
+            font-size:.125rem;
+            margin:.1rem .05rem
+        }
+        .bd3_1_left .bd3_1_left_line{
+            width:.15rem;
+            height:.01rem;
+            background-color: #e3e3e3;
+            margin:.05rem;
+        }
+        .bd3_1_left .bd3_1_left_desc{
+            width:1.1rem;
+            height:.21rem;
+            color:black;
+            font-size:.115rem;
+            margin:.05rem;
+            font-weight: bolder;
+        }
+        .bd3_1_left .bd3_1_left_intro{
+            width:.85rem;
+            height:.15rem;
+            color:#919191;
+            font-size:.1rem;
+            margin:.05rem;
+        }
+        .bd3_1 .bd3_1_right{
+            width:.53rem;
+            height:.65rem;
+            background: url("https://gw.alicdn.com/bao/uploaded/O1CN010RWRqu1jJPVzHXZZG_!!2-item_pic.png_140x10000.jpg_.webp") no-repeat;
+            background-size: 100% 100%;
+        }
+        .bd3_1 .bd3_1_right_picture2{
+            width:.53rem;
+            height:.65rem;
+            background: url("https://gw.alicdn.com/bao/uploaded/O1CN010RWRqu1jJPVzHXZZG_!!2-item_pic.png_140x10000.jpg_.webp") no-repeat;
+            background-size: 100% 100%;
+        }
+        .bd3_1 .bd3_1_right_picture3{
+            width:.53rem;
+            height:.65rem;
+            background: url("https://gw.alicdn.com/bao/uploaded/O1CN010RWRqu1jJPVzHXZZG_!!2-item_pic.png_140x10000.jpg_.webp") no-repeat;
+            background-size: 100% 100%;
+        }
+        .bd3_1 .bd3_1_right_picture4{
+            width:.53rem;
+            height:.65rem;
+            background: url("https://gw.alicdn.com/bao/uploaded/O1CN010RWRqu1jJPVzHXZZG_!!2-item_pic.png_140x10000.jpg_.webp") no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .cnxh{
+            width:100vw;
+            height:100%;
+            margin-top:1.5rem;
+        }
+        .cnxh h3{
+            margin-left:.15rem;
+            margin-bottom: .1rem;
+        }
+        .cnxh sapn{
+
+        }
+        .cnxh .cnxh_first{
+            width:3.425rem;
+            height:3rem;
+            margin:auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .cnxh_first .cnxh_first_one{
+            width:1.65rem;
+            height:3rem;
+            position:relative;
+        }
+        .cnxh_first_one .cnxh_first_one_picture{
+            width:1.65rem;
+            height:1.75rem;
+            background-image: url("https://gw.alicdn.com/bao/uploaded/bao/upload/TB1Lk8yPsfpK1RjSZFOXXa6nFXa.png_290x10000.jpg_.webp");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-color: #d0d0d0;
+
+        }
+        .cnxh_first_one .cnxh_first_one_store{
+            height:.15rem;
+            display:inline-block;
+            display:inline;
+            zoom:1;
+            color:#ffffff;
+            font-size:.06rem;
+            background: #cca2b0;
+            position:absolute;
+            left:.05rem;
+            top:1.6rem;
+        }
+        .cnxh_first_one .cnxh_first_one_desc{
+            width:1.5rem;
+            height:.6rem;
+            color:black;
+            font-size:.15rem;
+            overflow: hidden;
+            margin:auto;
+        }
+        .cnxh_first_one .cnxh_first_one_prices{
+            width:100%;
+            height:.5rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .cnxh_first_one_prices .cnxh_first_one_prices_price{
+            width:.5rem;
+            height:100%;
+            line-height: .5rem;
+            font-size:.225rem;
+            color:red;
+        }
+        .cnxh_first_one_prices .cnxh_first_one_prices_same{
+            width:.5rem;
+            height:0.3rem;
+            line-height: .3rem;
+            font-size:.12rem;
+            background-color: #fde5ea;
+            text-align: center;
+            color:red;
+            border-radius: .075rem;
+        }
+        .cnxh_first_one img{
+            width: 1.7rem;
+            height: 2.7rem;
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+   <div class="header">
+       <!--头部顶部-->
+       <div class="top">
+            <div class="left">
+
+            </div>
+           <div class="middle">
+
+           </div>
+           <div class="right">
+               登录
+           </div>
+       </div>
+       <!--头部搜索框-->
+       <div class="search">
+            <div class="kuang">
+                <div class="icon">
+
+                </div>
+                <div class="text">
+                    搜索商品、品牌
+                </div>
+            </div>
+       </div>
+   </div>
+<!--头部导航-->
+    <div class="daohang">
+        <div class="icon">
+            <a href="">
+                <img src="https://gw.alicdn.com/tfs/TB1ISdWSFXXXXbFXXXXXXXXXXXX-146-147.png_110x10000.jpg_.webp" alt="">
+                <div class="icon-text">苏宁易购</div>
+            </a>
+        </div>
+        <div class="icon">
+            <a href="">
+                <img src="https://gw.alicdn.com/tfs/TB1wSoFa5qAXuNjy1XdXXaYcVXa-196-196.png?avatar=1_110x10000.jpg_.webp" alt="">
+                <div class="icon-text">天猫超市</div>
+            </a>
+        </div>
+        <div class="icon">
+            <a href="">
+                <img src="https://gw.alicdn.com/tfs/TB1Jc0fSFXXXXXTapXXXXXXXXXX-146-147.png_110x10000.jpg_.webp" alt="">
+                <div class="icon-text">天猫国际</div>
+            </a>
+        </div>
+        <div class="icon">
+            <a href="">
+                <img src="https://gw.alicdn.com/tfs/TB15lhOSFXXXXaKXpXXXXXXXXXX-147-147.png_110x10000.jpg_.webp" alt="">
+                <div class="icon-text">聚划算</div>
+            </a>
+        </div>
+        <div class="icon">
+            <a href="">
+                <img src="https://gw.alicdn.com/tfs/TB12CFXSFXXXXcpapXXXXXXXXXX-146-147.png_110x10000.jpg_.webp" alt="">
+                <div class="icon-text">分类</div>
+            </a>
+        </div>
+    </div>
+<!--轮播图-->
+    <div class="lunbo">
+        <div class="lb-img"><img src="https://gw.alicdn.com/imgextra/i3/152/O1CN0170HEFJ1CzejWt35f5_!!152-0-lubanu.jpg_790x10000Q75.jpg_.webp" alt=""></div>
+        <div class="lb-img"><img src="https://gw.alicdn.com/imgextra/i3/99/O1CN010iv6vy1CbNjxeNPfa_!!99-0-lubanu.jpg_790x10000Q75.jpg_.webp" alt=""></div>
+        <div class="lb-img"><img src="https://gw.alicdn.com/tps/i4/TB1Dw_IVrvpK1RjSZFqSuwXUVXa.jpg_790x10000Q75.jpg_.webp" alt=""></div>
+        <div class="lb-img"><img src="https://gw.alicdn.com/imgextra/i3/169/O1CN01SMsmB41D7RSrMEpP0_!!169-0-lubanu.jpg_790x10000Q75.jpg_.webp" alt=""></div>
+        <div class="lb-img"><img src="https://gw.alicdn.com/imgextra/i3/152/O1CN0170HEFJ1CzejWt35f5_!!152-0-lubanu.jpg_790x10000Q75.jpg_.webp" alt=""></div>
+        <div class="lb-img"><img src="https://gw.alicdn.com/imgextra/i3/99/O1CN010iv6vy1CbNjxeNPfa_!!99-0-lubanu.jpg_790x10000Q75.jpg_.webp" alt=""></div>
+        <div class="lb-img"><img src="https://gw.alicdn.com/tps/i4/TB1Dw_IVrvpK1RjSZFqSuwXUVXa.jpg_790x10000Q75.jpg_.webp" alt=""></div>
+        <div class="lb-img"><img src="https://gw.alicdn.com/imgextra/i3/169/O1CN01SMsmB41D7RSrMEpP0_!!169-0-lubanu.jpg_790x10000Q75.jpg_.webp" alt=""></div>
+        <div class="lb-img"><img src="https://gw.alicdn.com/imgextra/i3/152/O1CN0170HEFJ1CzejWt35f5_!!152-0-lubanu.jpg_790x10000Q75.jpg_.webp" alt=""></div>
+        <div class="lb-img"><img src="https://gw.alicdn.com/imgextra/i3/99/O1CN010iv6vy1CbNjxeNPfa_!!99-0-lubanu.jpg_790x10000Q75.jpg_.webp" alt=""></div>
+        <div class="lb_btns">
+            <div class="lb_btns_1"></div>
+            <div class="lb_btns_1"></div>
+            <div class="lb_btns_1"></div>
+            <div class="lb_btns_1"></div>
+            <div class="lb_btns_1"></div>
+            <div class="lb_btns_1"></div>
+            <div class="lb_btns_1"></div>
+            <div class="lb_btns_1"></div>
+            <div class="lb_btns_1"></div>
+            <div class="lb_btns_1"></div>
+        </div>
+    </div>
+<!--广告图-->
+    <div class="gg"><img src="https://gw.alicdn.com/tfs/TB1TwtpNxTpK1RjSZR0XXbEwXXa-750-386.png_790x10000.jpg_.webp" alt="">
+    </div>
+<!--四块-->
+    <div class="xsqg">
+        <div class="xsqg-box">
+            <div class="xsqg-top">
+                <div class="xsqg-top-left"><span>限时抢购</span></div>
+                <div class="xsqg-top-right">
+                    <div class="time">
+                        <div class="time-box">
+                            <div class="time" style="">
+                                <span class="time-span" style=""></span>
+                                <div class="time1">
+                                    <span>0</span><span>0</span>
+                                </div>
+                                <span class="time-span">:</span>
+                                <div class="time1">
+                                    <span>0</span>
+                                    <span>0</span>
+                                </div>
+                                <span class="time-span">:</span>
+                                <div class="time1">
+                                    <span>0</span>
+                                    <span>0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="xsqg-btm">
+                <div class="xsqg-btm-left">
+                    <div class="xsqg-btm-left-img">
+                        <img src="https://gw.alicdn.com/i4/1916097525/O1CN01fm8XKg25SUu5qOVQe_!!2-item_pic.png_170x10000.jpg_.webp" alt="">
+                    </div>
+                </div>
+                <div class="xsqg-btm-right">
+                    <div class="xsqg-btm-left-img">
+                        <img src="https://gw.alicdn.com/bao/upload/TB1je2jlHvpK1RjSZPiXXbmwXXa.png_170x10000.jpg_.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="xsqg-box">
+            <div class="xsqg-top2">
+                <div class="xsqg-top-left"><span>天猫好物</span></div>
+            </div>
+            <div class="xsqg-btm">
+                <div class="xsqg-btm-left">
+                    <div class="xsqg-btm-left-img">
+                        <img src="https://gw.alicdn.com/tps/bao/upload/TB1d6_YvMHqK1RjSZFEXXcGMXXa.png_170x10000.jpg_.webp" alt="">
+                    </div>
+                </div>
+                <div class="xsqg-btm-right">
+                    <div class="xsqg-btm-left-img">
+                        <img src="https://gw.alicdn.com/tps/bao/upload/TB1CHTOjBjTBKNjSZFNwu1sFXXa.png_170x10000.jpg_.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="xsqg-box">
+            <div class="xsqg-top2">
+                <div class="xsqg-top-left"><span>聚划算</span></div>
+            </div>
+            <div class="xsqg-btm">
+                <div class="xsqg-btm-left">
+                    <div class="xsqg-btm-left-img">
+                        <img src="https://gw.alicdn.com/tps/O1CN01xKXsbR1DHWB3nDJFq_!!191-2-lubanu.png_170x10000.jpg_.webp" alt="">
+                    </div>
+                </div>
+                <div class="xsqg-btm-right">
+                    <div class="xsqg-btm-left-img">
+                        <img src="https://gw.alicdn.com/tps/O1CN01BPiwfl1DItMgWGXth_!!194-2-lubanu.png_170x10000.jpg_.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="xsqg-box">
+            <div class="xsqg-top2">
+                <div class="xsqg-top-left"><span>天猫闪降</span></div>
+            </div>
+            <div class="xsqg-btm">
+                <div class="xsqg-btm-left">
+                    <div class="xsqg-btm-left-img">
+                        <img src="https://gw.alicdn.com/tps/bao/upload/TB1GY6sMHrpK1RjSZTEXXcWAVXa.png_170x10000.jpg_.webp" alt="">
+                    </div>
+                </div>
+                <div class="xsqg-btm-right">
+                    <div class="xsqg-btm-left-img">
+                        <img src="https://gw.alicdn.com/tps/i1/2951960676/O1CN01Jibpvo1GreGQeBNHH_!!2-item_pic.png_170x10000.jpg_.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<!--天猫榜单-->
+    <div class="tmbd">
+        <div class="tmdh-top">
+            <span>天猫榜单</span>
+        </div>
+        <div class="bd1">
+            <div class="bd1_one">
+                <span class="bd1_one_leftTop"></span>
+                <span class="bd1_one_center"></span>
+                <span class="bd1_one_bottom1">性价居家一字拖榜</span>
+                <span class="bd1_one_bottom2">人气上升305%</span>
+            </div>
+            <div class="bd1_one bd1_center">
+                <span class="bd1_one_leftTop"></span>
+                <span class="bd1_one_center bd1_one_center_picture2"></span>
+                <span class="bd1_one_bottom1">时尚斜纹上衣榜</span>
+                <span class="bd1_one_bottom2">人气上升436%</span>
+            </div>
+            <div class="bd1_one">
+                <span class="bd1_one_leftTop"></span>
+                <span class="bd1_one_center bd1_one_center_picture3"></span>
+                <span class="bd1_one_bottom1">时尚超长焖烧壶榜</span>
+                <span class="bd1_one_bottom2">人气上升951%</span>
+            </div>
+        </div>
+        <div class="bd2">
+            <div class="bd2_left">
+                <span class="bd2_left_top">人气榜</span>
+                <span class="bd2_left_center">优选薄款三角裤榜</span>
+                <span class="bd2_left_bottom">月销924件</span>
+            </div>
+            <div class="bd2_right">
+                <div class="bd2_right_lb">
+                    <div class="bd2_right_lb_1">
+                        <img src="https://gw.alicdn.com/tfs/TB1oGXNJr9YBuNjy0FgXXcxcXXa-86-86.png_110x10000.jpg_.webp" alt=""/>
+                    </div>
+                    <div class="bd2_right_lb_2">
+                        <img src="https://gw.alicdn.com/tfs/TB1e.b7JkyWBuNjy0FpXXassXXa-86-86.png_110x10000.jpg_.webp" alt=""/>
+                    </div>
+                    <div class="bd2_right_lb_3">
+                        <img src="https://gw.alicdn.com/tfs/TB1CBBWcjrguuRjy0FeXXXcbFXa-86-86.png_110x10000.jpg_.webp" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bd3">
+            <div class="bd3_1">
+                <div class="bd3_1_left">
+                    <div class="bd3_1_left_top">人气榜</div>
+                    <div class="bd3_1_left_line"></div>
+                    <div class="bd3_1_left_desc">高街简约短外套榜</div>
+                    <div class="bd3_1_left_intro">火爆热卖中</div>
+                </div>
+                <div class="bd3_1_right"></div>
+            </div>
+            <div class="bd3_1">
+                <div class="bd3_1_left">
+                    <div class="bd3_1_left_top">人气榜</div>
+                    <div class="bd3_1_left_line"></div>
+                    <div class="bd3_1_left_desc">时尚收腰风衣榜</div>
+                    <div class="bd3_1_left_intro">月销794件</div>
+                </div>
+                <div class="bd3_1_right bd3_1_right_picture2"></div>
+            </div>
+            <div class="bd3_1">
+                <div class="bd3_1_left">
+                    <div class="bd3_1_left_top">人气榜</div>
+                    <div class="bd3_1_left_line"></div>
+                    <div class="bd3_1_left_desc">高街v领礼服裙榜</div>
+                    <div class="bd3_1_left_intro">火爆热卖中</div>
+                </div>
+                <div class="bd3_1_right bd3_1_right_picture3"></div>
+            </div>
+            <div class="bd3_1">
+                <div class="bd3_1_left">
+                    <div class="bd3_1_left_top">人气榜</div>
+                    <div class="bd3_1_left_line"></div>
+                    <div class="bd3_1_left_desc">品质厚底皮鞋榜</div>
+                    <div class="bd3_1_left_intro">火爆热卖中</div>
+                </div>
+                <div class="bd3_1_right bd3_1_right_picture4"></div>
+            </div>
+        </div>
+    </div>
+<!--猜你喜欢-->
+<div class="cnxh">
+    <h3>猜你喜欢</h3>
+    <div class="cnxh-box">
+        <div class="cnxh_first">
+            <div class="cnxh_first_one">
+                <div class="cnxh_first_one_picture"></div>
+                <span class="cnxh_first_one_store">D-7 GONGSHE/第七公社</span>
+                <div class="cnxh_first_one_desc">第七公主社 亲子装夏装2019新款潮全家装一...</div>
+                <div class="cnxh_first_one_prices">
+                    <div class="cnxh_first_one_prices_price">￥99</div>
+                    <div class="cnxh_first_one_prices_same">看相似</div>
+                </div>
+            </div>
+            <div class="cnxh_first_one">
+                <img src="https://gw.alicdn.com/tfs/TB1Hga4O4TpK1RjSZFKXXa2wXXa-344-622.png_360x10000.jpg_.webp" alt="">
+            </div>
+        </div>
+        <div class="cnxh_first">
+            <div class="cnxh_first_one">
+                <div class="cnxh_first_one_picture"></div>
+                <span class="cnxh_first_one_store">D-7 GONGSHE/第七公社</span>
+                <div class="cnxh_first_one_desc">第七公主社 亲子装夏装2019新款潮全家装一...</div>
+                <div class="cnxh_first_one_prices">
+                    <div class="cnxh_first_one_prices_price">￥99</div>
+                    <div class="cnxh_first_one_prices_same">看相似</div>
+                </div>
+            </div>
+            <div class="cnxh_first_one">
+                <img src="https://gw.alicdn.com/tfs/TB1Hga4O4TpK1RjSZFKXXa2wXXa-344-622.png_360x10000.jpg_.webp" alt="">
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+</body>
+</html>
