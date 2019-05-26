@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        for (var i=100;i<=200;i++){
+            if(i%3==1){
+                if(i%4==2){
+                    if(i%5==3){
+                        console.log(i)
+                    }
+                }
+            }
+        }
+        console.log("________________________")
+
+        for (var j=0;j<=36;j++){
+            var n=j*2+(36-j)*4
+            if(n==94){
+                console.log("鸡有"+j)
+                console.log("兔有"+(36-j))
+            }
+        }
+
+       var n=10
+       var m= 8
+        document.write("<table>");
+        for(var i=1;i<=n;i++){
+            document.write("<tr>");
+            for(var j=1;j<=m;j++){
+                document.write("<td>");
+                document.write(j);
+                document.write("</td>");
+            }
+            document.write("</tr>");
+        }
+
+        document.write("</table>");
+
+    </script>
+</head>
+<body>
+
+
+</body>
+</html>
