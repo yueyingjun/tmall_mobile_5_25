@@ -1,0 +1,425 @@
+html{
+    font-size:26.66666667vw;
+}
+body{
+    margin:0px;padding:0px;
+}
+input{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border:none;
+}
+
+/*------头部-----*/
+.head{
+    width:3.75rem;height:0.9rem;
+    background: red;
+}
+.head-up{
+    width:3.75rem;height:0.44rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:0 0.14rem 0 0.14rem;
+    box-sizing: border-box;
+}
+.head-up-list{
+    width:0.3rem;height:0.3rem;
+    background: url("../imgs/imgs-phone-TMALL/head/tubiao.jpg") no-repeat;
+    background-size:3rem 0.3rem ;
+}
+.head-up-logo{
+    width:1.185rem;height:0.205rem;
+    background: url("../imgs/imgs-phone-TMALL/head/tianmao.jpg")no-repeat;
+    background-size:1.185rem 0.205rem;
+}
+.head-up-login{
+    width:0.3rem;height:0.3rem;
+    font-size: 0.14rem;
+    line-height: 0.3rem;
+    color:white;
+}
+
+.head-down{
+    width:3.75rem;height:0.46rem;
+}
+.head-down-search{
+    width:3.55rem;height:0.36rem;
+    border:1px white solid;
+    border-radius: 0.05rem;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    background: white;
+    color: #999999;
+}
+.head-down input{
+    width:100%;height:100%;
+    margin: auto;
+    margin-left: 0.1rem;
+}
+
+/*-------导航-------*/
+.daohang{
+    width:3.75rem;height:0.8rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 0.125rem 0 0.125rem;
+    box-sizing: border-box;
+}
+.daohang-part0{
+    padding-top: 0.1rem;box-sizing: border-box;
+    width:0.7rem;height:0.8rem;
+}
+.daohang-part-tu{
+    width:0.48rem;height:0.48rem;
+    margin:auto;
+}
+.daohang{
+    font-size: 0.13rem;
+    text-align: center;
+    line-height: 0.28rem;
+}
+
+/*-------轮播--------*/
+.wheel{
+    width: 3.51rem;height: 1.3225rem;
+    position: relative;
+    margin: auto;
+    margin-top:0.1rem;
+}
+.wheel .banner1{
+    width: 100%;height: 100%;
+    position: absolute;left: 0;top:0px;
+    background: url("../imgs/imgs-phone-TMALL/wheel/tu1.webp") no-repeat left;
+    background-size:3.51rem 1.3225rem;
+}
+.wheel .banner2{
+    width: 100%;height: 100%;
+    position: absolute;left: 0;top:0px;
+    background: url("../imgs/imgs-phone-TMALL/wheel/tu1.webp") no-repeat left;
+    background-size:3.51rem 1.3225rem;
+}
+.wheel .banner3{
+    width: 100%;height: 100%;
+    position: absolute;left: 0;top:0px;
+    background: url("../imgs/imgs-phone-TMALL/wheel/tu3.webp") no-repeat left;
+    background-size:3.51rem 1.3225rem;
+}
+.wheel .bots{
+    position: absolute;right: 1.3rem;bottom: 0.15rem;
+    width: 1rem;height: 0.03rem;
+    z-index: 10;
+    display: flex;
+    justify-content:space-around;
+}
+.wheel .bots .btn{
+    width: 0.2rem;height: 0.03rem;
+    background-color: rgba(255,255,255,0.5);
+}
+.wheel-box .bots .btn1.select{
+    background-color: rgb(255,255,255);
+}
+
+/*--------横图1-----*/
+.hengtu1{
+    width:100%;height:1.8rem;
+}
+
+/*----------活动--------*/
+.active{
+    width:3.75rem;height:2.7rem;
+    padding:0 0.1rem 0 0.1rem;box-sizing: border-box;
+    display: flex;flex-wrap: wrap;
+    align-items: center;
+}
+.active-part{
+    width:1.72rem;height:1.28rem;
+    margin:auto;
+    background: rgba(0,0,0,0.05);
+}
+.active-part-top{
+    margin:0.11rem 0 0.1rem 0;margin-left: 0.15rem;
+    width:0.64rem;height:0.16rem;
+    font-size: 0.16rem;font-weight: bold;
+}
+.active-part-down{
+    margin-top:0.05rem;
+    width:1.72rem;height:0.775rem;
+    display: flex;justify-content: space-around;
+}
+.active-part-down-tu{
+    width:0.775rem;height:0.775rem;
+    display: flex;
+    margin:auto;align-items: center;
+    position: relative;
+}
+.active-part-down-text{
+    z-index: 2;
+    width:0.775rem;height:0.12rem;
+    position: absolute;bottom: 0;right: 0;
+    display: flex;
+}
+.active-part-down-text span{
+    border:0.01rem red solid;
+    padding:0 0.02rem;
+    box-sizing: border-box;
+    height:0.12rem;
+    font-size: 12px;line-height: 0.12rem;
+    margin:auto;
+    background: rgba(255,255,255,0.8);
+    color:red;
+}
+
+/*----------天猫榜单--------*/
+.bang{
+    width:3.75rem;height:4.62rem;
+    margin-top: 0.1rem;
+}
+.bang-top{
+    width:3.51rem;height:0.296rem;
+    margin:auto;
+    font-size: 0.18rem;line-height: 0.296rem;
+    font-weight: bold;
+}
+.bang-qushi{
+    width:3.57rem;height:1.495rem;
+    margin:auto;
+    display: flex;justify-content: space-between;
+}
+.bang-qushi-part1{
+    width:1.13rem;height:1.365rem;
+    margin-top: 0.135rem;
+    background: rgba(0,0,0,0.05);
+    position:relative;
+}
+.bang-qushi-part2{
+    width:1.13rem;height:1.495rem;
+    background: rgba(0,0,0,0.05);
+    position:relative;
+}
+.bang-qushi-part-tu{
+    width:0.75rem;height:0.75rem;
+    margin:0.1rem auto 0.05rem;
+    display: flex;
+    background: rgba(0,0,0,0.06);
+}
+.bang-qushi-part2 .bang-qushi-part-tu{
+    margin:0.18rem auto 0.1rem;
+}
+.bang-qushi-part-info{
+    width:1.04rem;height:0.18rem;
+    background: url("../imgs/imgs-phone-TMALL/bang/qushi/beijing.webp")no-repeat;
+    background-size: 1.04rem 0.18rem;
+    margin:auto;text-align: center;
+    font-size: 0.12rem;color: white;
+}
+.bang-qushi-part-text{
+    width:1rem;height:0.2rem;
+    font-size: 0.11rem;
+    margin:auto;text-align: center;line-height: 0.2rem;
+}
+.bang-qushi-part-top{
+    width:0.315rem;height:0.255rem;
+    position:absolute;top:0;left:0.05rem;
+    background: url("../imgs/imgs-phone-TMALL/bang/qushi/qushibang.webp");
+    background-size: 0.315rem 0.255rem;
+}
+.bang-renqi-0{
+    width:3.51rem;height:0.845rem;
+    background: rgba(0,0,0,0.05);
+    margin:0.1rem auto 0.05rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bang-renqi-0-left{
+    width:0.84rem;height:0.845rem;
+    margin-left: 0.15rem;
+}
+.bang-renqi-0-left-top{
+    width:0.46rem;height:0.215rem;
+    font-size: 0.13rem;color:white;
+    line-height: 0.18rem;
+    text-align: center;
+    background: url("../imgs/imgs-phone-TMALL/bang/renqi/renqi.webp");
+    background-size: 0.46rem 0.215rem;
+}
+.bang-renqi-0-left-info{
+    width:0.84rem;height:0.2rem;
+    margin-top:0.03rem;
+    font-size: 0.13rem;
+    font-weight: bold;
+    line-height: 0.2rem;
+}
+.bang-renqi-0-left-text{
+    width:0.84rem;height:0.2rem;
+    font-size: 0.13rem;
+    color: #999999;
+    line-height: 0.2rem;
+}
+.bang-renqi-0-right{
+    width:1.95rem;height:0.65rem;
+    position: relative;
+}
+.bang-renqi-0-right0{
+    width:1.95rem;height:0.65rem;
+    position: absolute;left:0;top:0;
+    display: flex;
+}
+.bang-renqi-0-right-1{
+    width:0.65rem;height:0.65rem;
+    display: flex;
+    position: relative;
+}
+.bang-renqi-0-right-1-top{
+    width:0.215rem;height:0.215rem;
+    position: absolute;left:0;top:0;
+    display: flex;
+}
+.bang-renqi-1{
+    width:3.51rem;height:1.82rem;
+    margin:auto;
+    display: flex;flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.bang-renqi-1-part{
+    width:1.725rem;height:0.845rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background: rgba(0,0,0,0.05);
+}
+.bang-renqi-1-part-left{
+    height:0.663rem;
+    margin-left: 0.1rem;
+}
+.bang-renqi-1-part-top{
+    height:0.2rem;
+    font-size: 0.11rem;
+    line-height: 0.2rem;
+    color:#C89B6D;
+}
+.bang-renqi-1-part-box{
+    width:0.1rem;height:0;
+    border-top:0.015rem #999999 solid;
+}
+.bang-renqi-1-part-info{
+    height:0.184rem;
+    font-size: 0.12rem;
+    line-height:0.184rem;
+    margin-top: 0.05rem;
+    font-weight: bold;
+}
+.bang-renqi-1-part-text{
+    height:0.184rem;
+    font-size: 0.12rem;
+    line-height:0.184rem;
+    color: #999999;
+}
+.bang-renqi-1-part-right{
+    width:0.55rem;height:0.55rem;
+    display: flex;
+    background: rgba(0,0,0,0.06);
+}
+
+/*-----------猜你喜欢-------------*/
+.like{
+    width:3.532rem;
+    margin:auto;
+    /*background: #cccccc;*/
+    display: flex;flex-wrap: wrap;
+    justify-content: space-around;
+}
+.like-top{
+    width:3.51rem;height:0.296rem;
+    font-size: 0.18rem;font-weight: bold;
+    line-height:0.296rem;
+}
+.like-part1{
+    width:1.68rem;height:2.65rem;
+    background: rgba(0,0,0,0.01);
+    /*border:0.001rem #cccccc solid;*/
+    /*display: flex;*/
+    margin-bottom: 0.1rem;
+}
+.like-part2{
+    width:1.68rem;height:3rem;
+    /*border:0.001rem #cccccc solid;*/
+    background: rgba(0,0,0,0.01);
+    display: flex;
+    margin-bottom: 0.1rem;
+}
+.like-part2 .like-part1{
+    border:none;
+}
+.like-part3{
+    width:1.68rem;height:3rem;
+    /*border:0.001rem #cccccc solid;*/
+    background: rgba(0,0,0,0.01);
+    display: flex;
+    margin-bottom: 0.1rem;
+}
+.like-part1-tu{
+    width:1.68rem;height:1.68rem;
+    background: rgba(0,0,0,0.03);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.like-part1-tu-name{
+    height:0.18rem;
+    padding:0rem 0.05rem 0;box-sizing: border-box;
+    background: #f99191;
+    font-size: 0.1rem;color:white;
+    line-height: 0.18rem;
+    position: absolute;left:0.09rem;bottom:-0.09rem;
+}
+.like-part1-info{
+    width:1.48rem;height:0.36rem;
+    font-size: 0.14rem;
+    margin:0.1rem auto 0;
+}
+.like-part1-juan{
+    width:1.48rem;height:0.14rem;
+    margin:0.05rem auto 0;
+    display: flex;
+}
+.like-part1-juan-box{
+    height:0.14rem;
+    border:0.01rem red solid;
+    color:red;line-height: 0.14rem;
+    font-size: 0.11rem;
+    padding:0 0.02rem 0;box-sizing: border-box;
+}
+.like-part1-bottom{
+    width:1.68rem;height:0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.like-part1-bottom-money{
+    font-size: 0.16rem;
+    color:red;
+    font-weight: bold;
+    margin-left:0.1rem;
+}
+.like-part1-bottom-look{
+    width:0.51rem;height:0.23rem;
+    color:red;line-height: 0.23rem;
+    font-size: 0.11rem;
+    border-radius: 0.1rem;
+    background: #f9919d;
+    text-align: center;
+    margin-right:0.1rem;
+}
+
+/*-----------totop------------*/
+.totop{
+    z-index: 10;
+    width:0.44rem;height:0.44rem;
+    display: flex;
+    position: fixed;right: 0.1rem;bottom:0.5rem;
+}

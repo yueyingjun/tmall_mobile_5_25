@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>移动端天猫</title>
+    <link rel="stylesheet" href="../css/phone-TMALL.css">
+    <script>
+        window.onload=function(ev){
+            var banner = document.querySelectorAll(".banner")
+            var btns = document.querySelectorAll(".btn")
+            var num=0
+            setInterval(function () {
+                if (num == 3) {
+                    num = 0;
+                }
+                for (var i = 0; i < banner.length; i++) {
+                    banner[i].style.display = "none"
+                    btns[i].style.background="rgba(255,255,255,0.5)"
+                }
+                banner[num].style.display = "block";
+                btns[num].style.background="rgb(255,255,255)"
+                num++
+            },1000)
+            var banner1 = document.querySelectorAll(".bang-renqi-0-right0")
+            var num1=0
+            setInterval(function () {
+                if (num1 == 2) {
+                    num1 = 0;
+                }
+                for (var i = 0; i < banner1.length; i++) {
+                    banner1[i].style.display = "none";
+                }
+                banner1[num1].style.display = "flex";
+                num1++
+            },1000)
+        }
+        /*window.onload=function(en){
+            var banner = document.querySelectorAll(".bang-renqi-0-right0")
+            var num=0
+            setInterval(function () {
+                if (num == 2) {
+                    num = 0;
+                }
+                for (var i = 0; i < banner.length; i++) {
+                    banner[i].style.display = "none";
+                }
+                banner[num].style.display = "flex";
+                num++
+            },1000)
+        }*/
+    </script>
+</head>
+<body>
+<!-----------头部-------------->
+    <div class="head">
+        <div class="head-up">
+            <div class="head-up-list"></div>
+            <div class="head-up-logo"></div>
+            <div class="head-up-login">登录</div>
+        </div>
+        <div class="head-down">
+            <div class="head-down-search">
+                <img src="../imgs/imgs-phone-TMALL/head/search.webp" alt="" style="width:0.2rem;height:0.2rem;margin-left:0.1rem;z-index: 2">
+                <input type="search" placeholder="搜索商品、品牌"/>
+            </div>
+
+        </div>
+    </div>
+<!-----------导航-------------->
+    <div class="daohang">
+        <div class="daohang-part0 daohang-part1">
+            <div class="daohang-part-tu"><img src="../imgs/imgs-phone-TMALL/daohang/tu1.webp" alt="" style="width:0.48rem;height:0.48rem;"></div>
+            <div class="daohang-part-text">苏宁易购</div>
+        </div>
+        <div class="daohang-part0 daohang-part2">
+            <div class="daohang-part-tu"><img src="../imgs/imgs-phone-TMALL/daohang/tu2.png" alt="" style="width:0.48rem;height:0.48rem;"></div>
+            <div class="daohang-part-text">天猫超市</div>
+        </div>
+        <div class="daohang-part0 daohang-part3">
+            <div class="daohang-part-tu"><img src="../imgs/imgs-phone-TMALL/daohang/tu3.webp" alt=""style="width:0.48rem;height:0.48rem;"></div>
+            <div class="daohang-part-text">天猫国际</div>
+        </div>
+        <div class="daohang-part0 daohang-part4">
+            <div class="daohang-part-tu"><img src="../imgs/imgs-phone-TMALL/daohang/tu4.webp" alt="" style="width:0.48rem;height:0.48rem;"></div>
+            <div class="daohang-part-text">聚划算</div>
+        </div>
+        <div class="daohang-part0 daohang-part5">
+            <div class="daohang-part-tu"><img src="../imgs/imgs-phone-TMALL/daohang/tu5.webp" alt="" style="width:0.48rem;height:0.48rem;"></div>
+            <div class="daohang-part-text">分类</div>
+        </div>
+    </div>
+<!----------轮播--------------->
+    <div class="wheel">
+        <div class="banner banner1"></div>
+        <div class="banner banner2"></div>
+        <div class="banner banner3"></div>
+        <div class="bots">
+            <div class="btn btn1 select"></div>
+            <div class="btn btn2"></div>
+            <div class="btn btn3"></div>
+        </div>
+    </div>
+<!-----------横图1------------->
+    <div class="hengtu1">
+        <img src="../imgs/imgs-phone-TMALL/wheel/hengtu1.webp" alt="" style="width:3.75rem;height:1.8rem;">
+    </div>
+<!------------活动------------->
+    <div class="active">
+        <div class="active-part">
+            <div class="active-part-top">
+                <div class="active-part-info">限时抢购</div>
+            </div>
+            <div class="active-part-down">
+                <div class="active-part-down-tu">
+                    <img src="../imgs/imgs-phone-TMALL/active/tu1.webp" alt="" style="width:0.775rem;height:0.775rem;">
+                    <div class="active-part-down-text"><span>爆款直降</span></div>
+                </div>
+                <div class="active-part-down-tu">
+                    <img src="../imgs/imgs-phone-TMALL/active/tu2.webp" alt="" style="width:0.775rem;height:0.775rem;">
+                    <div class="active-part-down-text"><span>为你精选</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="active-part">
+            <div class="active-part-top">
+                <div class="active-part-info">天猫好物</div>
+            </div>
+            <div class="active-part-down">
+                <div class="active-part-down-tu">
+                    <img src="../imgs/imgs-phone-TMALL/active/tu3.webp" alt="" style="width:0.775rem;height:0.775rem;">
+                    <div class="active-part-down-text"><span>设计感</span></div>
+                </div>
+                <div class="active-part-down-tu">
+                    <img src="../imgs/imgs-phone-TMALL/active/tu4.webp" alt="" style="width:0.775rem;height:0.775rem;">
+                    <div class="active-part-down-text"><span>萌趣童装</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="active-part active-part3">
+            <div class="active-part-top">
+                <div class="active-part-info">聚划算</div>
+            </div>
+            <div class="active-part-down">
+                <div class="active-part-down-tu">
+                    <img src="../imgs/imgs-phone-TMALL/active/tu5.webp" alt="" style="width:0.775rem;height:0.775rem;">
+                    <div class="active-part-down-text"><span>满299减10</span></div>
+                </div>
+                <div class="active-part-down-tu">
+                    <img src="../imgs/imgs-phone-TMALL/active/tu6.webp" alt="" style="width:0.775rem;height:0.775rem;">
+                    <div class="active-part-down-text"><span>抢5折劵</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="active-part active-part4">
+            <div class="active-part-top">
+                <div class="active-part-info">天猫闪降</div>
+            </div>
+            <div class="active-part-down">
+                <div class="active-part-down-tu">
+                    <img src="../imgs/imgs-phone-TMALL/active/tu7.webp" alt="" style="width:0.775rem;height:0.775rem;">
+                    <div class="active-part-down-text"><span>已降70元</span></div>
+                </div>
+                <div class="active-part-down-tu">
+                    <img src="../imgs/imgs-phone-TMALL/active/tu8.webp" alt="" style="width:0.775rem;height:0.775rem;">
+                    <div class="active-part-down-text"><span>已降10元</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-----------天猫榜单---------->
+    <div class="bang">
+        <div class="bang-top">天猫榜单</div>
+        <div class="bang-qushi">
+            <div class="bang-qushi-part1">
+                <div class="bang-qushi-part-tu">
+                    <img src="../imgs/imgs-phone-TMALL/bang/qushi/tu1.webp" alt="" style="width:0.75rem;height:0.75rem;">
+                </div>
+                <div class="bang-qushi-part-info">时尚简约领针榜</div>
+                <div class="bang-qushi-part-text">人气上升679%</div>
+                <div class="bang-qushi-part-top"></div>
+            </div>
+            <div class="bang-qushi-part2">
+                <div class="bang-qushi-part-tu">
+                    <img src="../imgs/imgs-phone-TMALL/bang/qushi/tu2.webp" alt="" style="width:0.75rem;height:0.75rem;">
+                </div>
+                <div class="bang-qushi-part-info">精品水杯榜</div>
+                <div class="bang-qushi-part-text">人气上升496%</div>
+                <div class="bang-qushi-part-top"></div>
+            </div>
+            <div class="bang-qushi-part1">
+                <div class="bang-qushi-part-tu">
+                    <img src="../imgs/imgs-phone-TMALL/bang/qushi/tu3.webp" alt="" style="width:0.75rem;height:0.75rem;">
+                </div>
+                <div class="bang-qushi-part-info">精品帅气拖鞋榜</div>
+                <div class="bang-qushi-part-text">人气上升313%</div>
+                <div class="bang-qushi-part-top"></div>
+            </div>
+        </div>
+        <div class="bang-renqi-0">
+            <div class="bang-renqi-0-left">
+                <div class="bang-renqi-0-left-top">人气榜</div>
+                <div class="bang-renqi-0-left-info">时尚棉麻外套</div>
+                <div class="bang-renqi-0-left-text">月销2524件</div>
+            </div>
+            <div class="bang-renqi-0-right">
+                <div class="bang-renqi-0-right0 bang-renqi-0-right1">
+                    <div class="bang-renqi-0-right-1">
+                        <img src="../imgs/imgs-phone-TMALL/bang/renqi/renqi1.webp" alt="" style="width:0.65rem;height:0.65rem;">
+                        <div class="bang-renqi-0-right-1-top">
+                            <img src="../imgs/imgs-phone-TMALL/bang/renqi/1.webp" alt="" style="width:0.215rem;height:0.215rem;">
+                        </div>
+                    </div>
+                    <div class="bang-renqi-0-right-1">
+                        <img src="../imgs/imgs-phone-TMALL/bang/renqi/renqi2.webp" alt="" style="width:0.65rem;height:0.65rem;">
+                        <div class="bang-renqi-0-right-1-top">
+                            <img src="../imgs/imgs-phone-TMALL/bang/renqi/2.webp" alt="" style="width:0.215rem;height:0.215rem;">
+                        </div>
+                    </div>
+                    <div class="bang-renqi-0-right-1">
+                        <img src="../imgs/imgs-phone-TMALL/bang/renqi/renqi3.webp" alt="" style="width:0.65rem;height:0.65rem;">
+                        <div class="bang-renqi-0-right-1-top">
+                            <img src="../imgs/imgs-phone-TMALL/bang/renqi/3.webp" alt="" style="width:0.215rem;height:0.215rem;">
+                        </div>
+                    </div>
+                </div>
+                <div class="bang-renqi-0-right0 bang-renqi-0-right2">
+                    <div class="bang-renqi-0-right-1">
+                        <img src="../imgs/imgs-phone-TMALL/bang/renqi/renqi4.webp" alt="" style="width:0.65rem;height:0.65rem;">
+                        <div class="bang-renqi-0-right-1-top">
+                            <img src="../imgs/imgs-phone-TMALL/bang/renqi/4.webp" alt="" style="width:0.215rem;height:0.215rem;">
+                        </div>
+                    </div>
+                    <div class="bang-renqi-0-right-1">
+                        <img src="../imgs/imgs-phone-TMALL/bang/renqi/renqi5.webp" alt="" style="width:0.65rem;height:0.65rem;">
+                        <div class="bang-renqi-0-right-1-top">
+                            <img src="../imgs/imgs-phone-TMALL/bang/renqi/5.webp" alt="" style="width:0.215rem;height:0.215rem;">
+                        </div>
+                    </div>
+                    <div class="bang-renqi-0-right-1">
+                        <img src="../imgs/imgs-phone-TMALL/bang/renqi/renqi6.webp" alt="" style="width:0.65rem;height:0.65rem;">
+                        <div class="bang-renqi-0-right-1-top">
+                            <img src="../imgs/imgs-phone-TMALL/bang/renqi/6.webp" alt="" style="width:0.215rem;height:0.215rem;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bang-renqi-1">
+            <div class="bang-renqi-1-part">
+                <div class="bang-renqi-1-part-left">
+                    <div class="bang-renqi-1-part-top">人气榜</div>
+                    <div class="bang-renqi-1-part-box"></div>
+                    <div class="bang-renqi-1-part-info">高街绣花连衣裙榜</div>
+                    <div class="bang-renqi-1-part-text">月销120件</div>
+                </div>
+                <div class="bang-renqi-1-part-right">
+                    <img src="../imgs/imgs-phone-TMALL/bang/renqi/tu1.webp" alt="" style="width:0.55rem;height:0.55rem;">
+                </div>
+            </div>
+            <div class="bang-renqi-1-part">
+                <div class="bang-renqi-1-part-left">
+                    <div class="bang-renqi-1-part-top">人气榜</div>
+                    <div class="bang-renqi-1-part-box"></div>
+                    <div class="bang-renqi-1-part-info">品质休闲餐椅榜</div>
+                    <div class="bang-renqi-1-part-text">月销508件</div>
+                </div>
+                <div class="bang-renqi-1-part-right">
+                    <img src="../imgs/imgs-phone-TMALL/bang/renqi/tu2.webp" alt="" style="width:0.55rem;height:0.55rem;">
+                </div>
+            </div>
+            <div class="bang-renqi-1-part">
+                <div class="bang-renqi-1-part-left">
+                    <div class="bang-renqi-1-part-top">人气榜</div>
+                    <div class="bang-renqi-1-part-box"></div>
+                    <div class="bang-renqi-1-part-info">专业防泼水外套榜</div>
+                    <div class="bang-renqi-1-part-text">火爆热卖中</div>
+                </div>
+                <div class="bang-renqi-1-part-right">
+                    <img src="../imgs/imgs-phone-TMALL/bang/renqi/tu3.webp" alt="" style="width:0.55rem;height:0.55rem;">
+                </div>
+            </div>
+            <div class="bang-renqi-1-part">
+                <div class="bang-renqi-1-part-left">
+                    <div class="bang-renqi-1-part-top">人气榜</div>
+                    <div class="bang-renqi-1-part-box"></div>
+                    <div class="bang-renqi-1-part-info">轻奢牛皮包包榜</div>
+                    <div class="bang-renqi-1-part-text">月销120件</div>
+                </div>
+                <div class="bang-renqi-1-part-right">
+                    <img src="../imgs/imgs-phone-TMALL/bang/renqi/tu4.webp" alt="" style="width:0.55rem;height:0.55rem;">
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------猜你喜欢------------->
+    <div class="like">
+        <div class="like-top">猜你喜欢</div>
+        <div class="like-part1">
+            <div class="like-part1-tu">
+                <img src="../imgs/imgs-phone-TMALL/like/tu1.webp" alt="" style="width:1.38rem;height:1.38rem;margin-left: 0.15rem;">
+                <div class="like-part1-tu-name">COROU/可心柔</div>
+            </div>
+            <div class="like-part1-info">可心柔V9宝宝抽纸婴幼儿柔纸巾新生儿纸巾4...</div>
+            <div class="like-part1-juan">
+                <div class="like-part1-juan-box">5元劵</div>
+            </div>
+            <div class="like-part1-bottom">
+                <div class="like-part1-bottom-money">￥19.9</div>
+                <div class="like-part1-bottom-look">看相似</div>
+            </div>
+        </div>
+        <div class="like-part1">
+            <div class="like-part1-tu">
+                <img src="../imgs/imgs-phone-TMALL/like/tu1.webp" alt="" style="width:1.38rem;height:1.38rem;margin-left: 0.15rem;">
+                <div class="like-part1-tu-name">COROU/可心柔</div>
+            </div>
+            <div class="like-part1-info">可心柔V9宝宝抽纸婴幼儿柔纸巾新生儿纸巾4...</div>
+            <div class="like-part1-juan">
+                <div class="like-part1-juan-box">5元劵</div>
+            </div>
+            <div class="like-part1-bottom">
+                <div class="like-part1-bottom-money">￥19.9</div>
+                <div class="like-part1-bottom-look">看相似</div>
+            </div>
+        </div>
+        <div class="like-part2">
+            <div class="like-part1">
+                <div class="like-part1-tu">
+                    <img src="../imgs/imgs-phone-TMALL/like/tu1.webp" alt="" style="width:1.38rem;height:1.38rem;margin-left: 0.15rem;">
+                    <div class="like-part1-tu-name">COROU/可心柔</div>
+                </div>
+                <div class="like-part1-info">可心柔V9宝宝抽纸婴幼儿柔纸巾新生儿纸巾4...</div>
+                <div class="like-part1-juan">
+                    <div class="like-part1-juan-box">5元劵</div>
+                </div>
+                <div class="like-part1-bottom">
+                    <div class="like-part1-bottom-money">￥19.9</div>
+                    <div class="like-part1-bottom-look">看相似</div>
+                </div>
+            </div>
+        </div>
+        <div class="like-part3">
+            <img src="../imgs/imgs-phone-TMALL/like/12.webp" alt="" style="width:1.68rem;height:3rem;">
+        </div>
+        <div class="like-part3">
+            <img src="../imgs/imgs-phone-TMALL/like/5.webp" alt="" style="width:1.68rem;height:3rem;">
+        </div>
+        <div class="like-part2">
+            <div class="like-part1">
+                <div class="like-part1-tu">
+                    <img src="../imgs/imgs-phone-TMALL/like/tu1.webp" alt="" style="width:1.38rem;height:1.38rem;margin-left: 0.15rem;">
+                    <div class="like-part1-tu-name">COROU/可心柔</div>
+                </div>
+                <div class="like-part1-info">可心柔V9宝宝抽纸婴幼儿柔纸巾新生儿纸巾4...</div>
+                <div class="like-part1-juan">
+                    <div class="like-part1-juan-box">5元劵</div>
+                </div>
+                <div class="like-part1-bottom">
+                    <div class="like-part1-bottom-money">￥19.9</div>
+                    <div class="like-part1-bottom-look">看相似</div>
+                </div>
+            </div>
+        </div>
+        <div class="like-part2">
+            <div class="like-part1">
+                <div class="like-part1-tu">
+                    <img src="../imgs/imgs-phone-TMALL/like/tu1.webp" alt="" style="width:1.38rem;height:1.38rem;margin-left: 0.15rem;">
+                    <div class="like-part1-tu-name">COROU/可心柔</div>
+                </div>
+                <div class="like-part1-info">可心柔V9宝宝抽纸婴幼儿柔纸巾新生儿纸巾4...</div>
+                <div class="like-part1-juan">
+                    <div class="like-part1-juan-box">5元劵</div>
+                </div>
+                <div class="like-part1-bottom">
+                    <div class="like-part1-bottom-money">￥19.9</div>
+                    <div class="like-part1-bottom-look">看相似</div>
+                </div>
+            </div>
+        </div>
+        <div class="like-part3">
+            <img src="../imgs/imgs-phone-TMALL/like/388.png" alt="" style="width:1.68rem;height:3rem;">
+        </div>
+        <div class="like-part1">
+            <div class="like-part1-tu">
+                <img src="../imgs/imgs-phone-TMALL/like/tu1.webp" alt="" style="width:1.38rem;height:1.38rem;margin-left: 0.15rem;">
+                <div class="like-part1-tu-name">COROU/可心柔</div>
+            </div>
+            <div class="like-part1-info">可心柔V9宝宝抽纸婴幼儿柔纸巾新生儿纸巾4...</div>
+            <div class="like-part1-juan">
+                <div class="like-part1-juan-box">5元劵</div>
+            </div>
+            <div class="like-part1-bottom">
+                <div class="like-part1-bottom-money">￥19.9</div>
+                <div class="like-part1-bottom-look">看相似</div>
+            </div>
+        </div>
+        <div class="like-part1">
+            <div class="like-part1-tu">
+                <img src="../imgs/imgs-phone-TMALL/like/tu1.webp" alt="" style="width:1.38rem;height:1.38rem;margin-left: 0.15rem;">
+                <div class="like-part1-tu-name">COROU/可心柔</div>
+            </div>
+            <div class="like-part1-info">可心柔V9宝宝抽纸婴幼儿柔纸巾新生儿纸巾4...</div>
+            <div class="like-part1-juan">
+                <div class="like-part1-juan-box">5元劵</div>
+            </div>
+            <div class="like-part1-bottom">
+                <div class="like-part1-bottom-money">￥19.9</div>
+                <div class="like-part1-bottom-look">看相似</div>
+            </div>
+        </div>
+    </div>
+<!-----------totop------------->
+    <div class="totop">
+        <img src="../imgs/imgs-phone-TMALL/head/totop.webp" alt="" style="width:0.44rem;height:0.44rem;">
+    </div>
+</body>
+</html>
