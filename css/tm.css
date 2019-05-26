@@ -1,0 +1,509 @@
+html{
+    font-size:13.33333333vw;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*顶部导航*/
+.top{
+    width: 100vw;
+    height: 0.6rem;
+    background-color: rgb(255,0,54);
+    display: flex;
+    padding: 0.14rem 0rem;
+    justify-content: space-around;
+}
+.top_left{
+    width:6rem;
+    height: 0.6rem;
+    box-sizing: border-box;
+}
+.top_left_left{
+    width: 0.6rem;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    background-image: url("../image/top_left1.webp");
+    background-repeat: no-repeat;
+    background-size: 5.68rem 0.66rem;
+}
+.top_left_right{
+    width: 5.4rem;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.top_left_right_img{
+     width: 2.37rem;
+     height: 0.41rem;
+     margin: auto;
+ }
+.top_left_right_img img{
+    width: 2.37rem;
+    float: left;
+}
+.top_right{
+    width: 0.56rem;
+    height:0.6rem;
+    box-sizing: border-box;
+    font-size: 0.28rem;
+    line-height: 0.6rem;
+    color: white;
+}
+
+/*搜索框*/
+.search{
+    width: 7.1rem;
+    height:0.72rem;
+    background-color: rgb(255,0,54);
+    padding: 0 0.2rem 0.2rem 0.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.search_card{
+    width: 7.1rem;
+    height: 0.72rem;
+    background-color: white;
+    border-radius: 0.1rem;
+}
+.search_img{
+    width: 0.3rem;
+    height: 0.32rem;
+    float: left;
+    margin: 0.2rem 0.2rem 0;
+}
+.search_img img{
+    transform-origin: 0 0;
+    transform: scale(0.25);
+}
+.search_card span{
+    width: 1.96rem;
+    height: 100%;
+    font-size: 0.28rem;
+    line-height: 0.72rem;
+    float:left;
+    list-style:none;
+}
+
+/*分类*/
+.catlog_out{
+    width: 7.1rem;
+    height: 1.56rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.2rem;
+}
+.catlog{
+    width: 1.4rem;
+    height: 100%;
+}
+.catlog img{
+    width: 0.96rem;
+    height: 0.96rem;
+    float: left;
+    margin: 0.1rem 0.22rem 0.04rem;
+}
+.catlog span{
+    width: 1.4rem;
+    height: 0.3rem;
+    font-size: 0.26rem;
+    text-align: center;
+    line-height: 0.3rem;
+    float: left;
+}
+
+
+/*轮播图*/
+.banner_out{
+    width: 7.5rem;
+    height: 2.65rem;
+}
+.banners{
+    width: 7.02rem;
+    height: 2.65rem;
+    margin: auto;
+    position: relative;
+}
+.banners img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.banners_opts_out{
+    width: 7.02rem;
+    height: 0.04rem;
+    position: absolute;
+    top: 2.405rem;
+    left: 0;
+    background-color: rgba(0,0,0,0);
+}
+.banners_opts{
+    width: 1.26rem;
+    height: 0.04rem;
+    margin: auto;
+    background-color: rgba(0,0,0,0);
+}
+.banners_opts_img{
+    width: 0.42rem;
+    height: 0.04rem;
+    float: left;
+    position: relative;
+}
+.banners_opts_img1{
+    width: 0.42rem;
+    height: 0.04rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.banners_opts_img2{
+    width: 0.42rem;
+    height: 0.04rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.banners_opts_img img{
+    list-style: none;
+    width: 0.32rem;
+    height: 0.04rem;
+    margin: 0 0.05rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+/*新人福利*/
+.news{
+    width: 7.5rem;
+    height: 3.6rem;
+    overflow: hidden;
+}
+
+/*限时抢购*/
+.buy_out{
+    width: 7.5rem;
+    height: 5.46rem;
+}
+.buy{
+    width: 7.02rem;
+    height: 5.26rem;
+    margin: 0.2rem 0.2rem 0 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.buy_cards{
+    width: 3.44rem;
+    height: 2.57rem;
+    background-size: 3.44rem 2.57rem;
+    position: relative;
+}
+.buy_cards:nth-child(1){
+    background-image: url("../image/buycard1.png");
+}
+.buy_cards:nth-child(2){
+    background-image: url("../image/buycard2.png");
+}
+.buy_cards:nth-child(3){
+    background-image: url("../image/buycard3.png");
+}
+.buy_cards:nth-child(4){
+    background-image: url("../image/buycard4.png");
+}
+.buy_cards_txt{
+    width: 3.14rem;
+    height: 0.32rem;
+    float:left;
+    margin: 0.3rem 0 0 0.3rem;
+    font-size: 0.32rem;
+    font-weight: bold;
+}
+.buy_cards_bottom{
+    width: 3.44rem;
+    height: 1.55rem;
+    margin: 0.15rem 0 0 0;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+.buy_cards_bottom_cards{
+    width: 1.55rem;
+    height: 1.55rem;
+    margin: 0.12rem 0 0;
+    float: left;
+    position: relative;
+}
+.buy_cards_bottom_cards img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.55rem;
+}
+.buy_cards_bottom_cards_info{
+    width: 1.55rem;
+    height: 0.24rem;
+    position: absolute;
+    left: 0;
+    top: 1.3rem;
+    display: flex;
+    justify-content: space-around;
+}
+.buy_cards_bottom_cards_info span{
+    /*width: 0.88rem;*/
+    height: 0.24rem;
+    padding: 0 0.04rem;
+    border: 0.01rem solid #FF0036;
+    font-size: 0.22rem;
+    color: #FF0036;
+}
+.buy_time{
+    position: absolute;
+    left: 1.82rem;
+    top: 0.28rem;
+    width: 1.36rem;
+    height: 0.42rem;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 0.26rem;
+}
+.buy_time_cards{
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: black;
+    border-radius: 0.05rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*天猫榜单*/
+.list{
+    width: 7.5rem;
+    height: 9.16rem;
+    margin:0.2rem 0 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.list_title{
+    width: 7.02rem;
+    height: 0.6rem;
+    margin:0 0.24rem;
+    color: #000;
+    font-size: 0.36rem;
+    line-height: 0.6rem;
+    font-weight: bold;
+}
+.delist{
+    width: 7.14rem;
+    height: 3rem;
+    margin: 0 0 0.12rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+.delist_cards{
+    width: 2.26rem;
+    height: 2.53rem;
+    margin: 0.27rem 0.06rem 0;
+    background-color: rgb(242,232,232);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 0.2rem;
+    position: relative;
+}
+.delist_cards_pic{
+    position: absolute;
+    left: 0.12rem;
+    top: 0;
+    width: 0.63rem;
+    height: 0.51rem;
+    background-image: url("../image/delist.webp");
+    background-size: 0.63rem 0.52rem;
+    overflow: hidden;
+}
+.delist_cards img{
+    width: 1.46rem;
+    height: 1.46rem;
+}
+.delist_cards_info{
+    width: 2.08rem;
+    height: 0.36rem;
+    margin: 0.08rem 0 0 0;
+    background-image: url("../image/delist_info.webp");
+    background-size: 2.08rem;
+    text-align: center;
+    color: white;
+    font-size: 0.22rem;
+    line-height: 0.36rem;
+}
+.delist_cards span{
+    width: 1.6rem;
+    height: 0.36rem;
+    margin: 0.04rem 0 0 0;
+    font-size: 0.24rem;
+    line-height: 0.36rem;
+    text-align: center;
+}
+.delist_cards:nth-child(2){
+    height: 2.7rem;
+    margin: 0 0.06rem;
+    padding-top: 0.3rem;
+}
+.hotlist{
+    width: 7.02rem;
+    height: 1.69rem;
+    margin: 0.14rem 0.24rem;
+    background-color: rgb(248,248,248);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hotlist_left{
+    width:1.92rem;
+    height: 1.69rem;
+    margin-left: 0.26rem;
+    font-size: 0.24rem;
+    color: #313131;
+    font-weight: bold;
+}
+.hotlist_left_t{
+    width: 0.92rem;
+    height: 0.43rem;
+    background-image: url("../image/hotlist.webp");
+    background-size: 0.92rem;
+    font-size: 0.22rem;
+    line-height: 0.43rem;
+    text-align: center;
+    color: white;
+}
+.hotlist_right{
+    width: 4.22rem;
+    height: 1.3rem;
+    overflow: hidden;
+}
+.hotlist_cards{
+    width: 3.45rem;
+    height: 1.69rem;
+    margin: 0.12rem 0.06rem 0;
+    background-color: rgb(248,248,248);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hotlist_cards_left{
+    width: 1.68rem;
+    height: 1.35rem;
+    font-size: 0.24rem;
+}
+.hotlist_cards_line{
+    width: 0.22rem;
+    height: 0.03rem;
+    margin: 0.04rem 0 0.12rem 0;
+    background-color: rgb(227,227,227);
+}
+.hotlist_cards_right{
+    width: 1.1rem;
+    height: 1.1rem;
+    background-color: rgba(0,0,0,0.03);
+}
+
+
+/*猜你喜欢*/
+.like{
+    width: 7.02rem;
+    height: 0.6rem;
+    margin: 0.2rem 0 0 0.24rem;
+    font-size: 0.36rem;
+    line-height: 0.6rem;
+    color: #333333;
+    font-weight: bold;
+}
+.likecards_out{
+    width: 7.06rem;
+    height: 5.54rem;
+    margin:0 0.2rem 0 0.24rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.likecards{
+    width: 3.4rem;
+    height: 5.34rem;
+    position: relative;
+}
+.likecards_pic{
+    width: 2.76rem;
+    height: 2.76rem;
+    background-color: rgba(0,0,0,0.03);
+    padding: 0.3rem;
+}
+.brand{
+    width: 0.66rem;
+    height: 0.36rem;
+    padding: 0 0.1rem;
+    margin: 0 0 0 0.2rem;
+    position: absolute;
+    top: 3.18rem;
+    left: 0;
+    color: white;
+    background-color: #CDA3B1;
+    font-size: 0.22rem;
+    line-height: 0.36rem;
+}
+.likecards_info{
+    width:2.96rem;
+    height: 1.14rem;
+    padding: 0.2rem 0.2rem 0 0.2rem;
+    color: #3E3E3E;
+    font-size: 0.28rem;
+    cursor: pointer;
+}
+.likecards_price{
+    width: 3.4rem;
+    height: 0.6rem;
+    color: #FF0000;
+    font-size: 0.32rem;
+    line-height: 0.6rem;
+    font-weight: bold;
+}
+.likecards_a{
+    position: absolute;
+    left: 2.22rem;
+    top: 4.8rem;
+    width: 0.66rem;
+    height: 0.46rem;
+    padding: 0 0.18rem;
+    background-color: #FFE6EB;
+    color: #FF0036;
+    line-height: 0.46rem;
+    font-size: 0.22rem;
+}
+.likecards1_out{
+    width: 7.5rem;
+    height: 6.32rem;
+}
+.likecards1_pic{
+    width: 3.4rem;
+    height: 6.32rem;
+    margin:0.1rem 0.1rem 0 0rem;
+}
+.likecards1{
+    width: 7.06rem;
+    height: 6.32rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0.2rem 0 0.24rem;
+}
+
