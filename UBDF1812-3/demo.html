@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>天猫商城-移动端</title>
+    <link rel="stylesheet" href="css/demo.css">
+    <script>
+        window.onload = function () {
+            var pic = document.querySelectorAll(".pic");
+            var btn = document.querySelectorAll(".btn");
+            var num=0;
+            setInterval(function () {
+
+                if(num == 5){
+                    num = 0;
+                }
+                for(var i=0;i<pic.length;i++){
+                    pic[i].style.display="none";
+                    btn[i].style.background="rgba(255,255,255,.5)";
+                }
+                pic[num].style.display="block";
+                btn[num].style.background="#fff";
+                num++;
+            },2000)
+            var picc = document.querySelectorAll(".picc");
+            var a=0;
+            setInterval(function () {
+
+                if(a == 2){
+                    a = 0;
+                }
+                for(var j=0;j<picc.length;j++){
+                    picc[j].style.display="none";
+                }
+                picc[a].style.display="block";
+                a++;
+            },2000)
+        }
+
+    </script>
+</head>
+<body>
+<!--导航-->
+<div class="nav">
+    <div class="nav-box">
+        <div class="caidan1">
+            <img src="./imgs/header/1.jpg" alt="" class="caidan">
+        </div>
+        <img src="./imgs/header/logo.jpg" alt="" class="logo">
+        <span class="login">登录</span>
+    </div>
+</div>
+<!--搜索-->
+<div class="search">
+    <div class="search-box">
+        <img src="./imgs/header/sousuo.jpg" alt="" class="glass">
+        <span class="search-text">搜索商品、品牌</span>
+    </div>
+</div>
+<!--分类-->
+<div class="classify">
+    <div class="classify-box">
+        <a href="">
+            <img src="./imgs/header/logo-1.jpg" alt="" class="classify-img">
+            <span class="classify-text">苏宁易购</span>
+        </a>
+        <a href="">
+            <img src="./imgs/header/logo-2.jpg" alt="" class="classify-img">
+            <span class="classify-text">天猫超市</span>
+        </a>
+        <a href="">
+            <img src="./imgs/header/logo-3.jpg" alt="" class="classify-img">
+            <span class="classify-text">天猫国际</span>
+        </a>
+        <a href="">
+            <img src="./imgs/header/logo-4.jpg" alt="" class="classify-img">
+            <span class="classify-text">聚划算</span>
+        </a>
+        <a href="">
+            <img src="./imgs/header/logo-5.jpg" alt="" class="classify-img">
+            <span class="classify-text">分类</span>
+        </a>
+    </div>
+</div>
+<!--轮播图-->
+<div class="carousel">
+    <a href="">
+        <div class="whole-pictures">
+            <div class="pic pic1"></div>
+            <div class="pic pic2"></div>
+            <div class="pic pic3"></div>
+            <div class="pic pic4"></div>
+            <div class="pic pic5"></div>
+            <div class="but">
+                <div class="but1 btn"></div>
+                <div class="but2 btn" ></div>
+                <div class="but3 btn" ></div>
+                <div class="but4 btn" ></div>
+                <div class="but5 btn" ></div>
+            </div>
+        </div>
+    </a>
+</div>
+<!--新人福利-->
+<div class="new">
+    <a href="">
+        <img src="./imgs/lunbo/bj1.jpg" alt="" class="new-img">
+    </a>
+</div>
+<!--限时抢购-->
+<div class="time">
+    <div class="time-box">
+        <div class="time-box1">
+            <a href="">
+            <span class="time-box1-top">
+                限时抢购
+            </span>
+            </a>
+            <div class="time-box1-bottom">
+                <a href="" class="time-box1-bottom-left">
+                    <img src="./imgs/time/time1.jpg" alt="" class="time-box1-bottom-left-img">
+                    <span class="time-box1-bottom-left-text">为你精选</span>
+                </a>
+                <a href="" class="time-box1-bottom-left">
+                    <img src="./imgs/time/time2.jpg" alt="" class="time-box1-bottom-left-img">
+                    <span class="time-box1-bottom-left-text">爆款直降</span>
+                </a>
+            </div>
+        </div>
+        <div class="time-box1">
+            <a href="">
+            <span class="time-box1-top">
+                天猫好物
+            </span>
+            </a>
+            <div class="time-box1-bottom">
+                <a href="" class="time-box1-bottom-left">
+                    <img src="./imgs/time/time3.jpg" alt="" class="time-box1-bottom-left-img">
+                    <span class="time-box1-bottom-left-text">拼接设计</span>
+                </a>
+                <a href="" class="time-box1-bottom-left">
+                    <img src="./imgs/time/time4.jpg" alt="" class="time-box1-bottom-left-img">
+                    <span class="time-box1-bottom-left-text">品牌消费</span>
+                </a>
+            </div>
+        </div>
+        <div class="time-box1">
+            <a href="">
+            <span class="time-box1-top">
+                聚划算
+            </span>
+            </a>
+            <div class="time-box1-bottom">
+                <a href="" class="time-box1-bottom-left">
+                    <img src="./imgs/time/time5.jpg" alt="" class="time-box1-bottom-left-img">
+                    <span class="time-box1-bottom-left-text" style="width: 0.5rem;">大牌3折起</span>
+                </a>
+                <a href="" class="time-box1-bottom-left">
+                    <img src="./imgs/time/time6.jpg" alt="" class="time-box1-bottom-left-img">
+                    <span class="time-box1-bottom-left-text" style="width: 0.56rem;">20点抢神券</span>
+                </a>
+            </div>
+        </div>
+        <div class="time-box1">
+            <a href="">
+            <span class="time-box1-top">
+                天猫闪降
+            </span>
+            </a>
+            <div class="time-box1-bottom">
+                <a href="" class="time-box1-bottom-left">
+                    <img src="./imgs/time/time7.jpg" alt="" class="time-box1-bottom-left-img">
+                    <span class="time-box1-bottom-left-text">已降40元</span>
+                </a>
+                <a href="" class="time-box1-bottom-left">
+                    <img src="./imgs/time/time8.jpg" alt="" class="time-box1-bottom-left-img">
+                    <span class="time-box1-bottom-left-text">已降50元</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--天猫榜单-->
+<div class="list">
+    <span class="list-title">
+        天猫榜单
+    </span>
+    <div class="list-trend">
+        <a href="">
+            <div class="list-trend-box1">
+                <img src="./imgs/list/list1.jpg" alt="" class="list-trend-box1-logo">
+                <img src="./imgs/list/list6.jpg" alt="" class="list-trend-box1-clothes">
+                <a href="">
+                    <div class="list-trend-box1-name">
+                        <span class="list-trend-box1-name-text">潮流花纹外套榜</span>
+                    </div>
+                </a>
+                <span class="hot">人气上升520%</span>
+            </div>
+        </a>
+        <a href="">
+            <div class="list-trend-box2">
+                <img src="./imgs/list/list1.jpg" alt="" class="list-trend-box1-logo">
+                <img src="./imgs/list/list7.jpg" alt="" class="list-trend-box2-clothes">
+                <a href="">
+                    <div class="list-trend-box2-name">
+                        <span class="list-trend-box1-name-text">时尚短皮裙榜</span>
+                    </div>
+                </a>
+                <span class="hot">人气上升644%</span>
+            </div>
+        </a>
+        <a href="">
+            <div class="list-trend-box1">
+                <img src="./imgs/list/list1.jpg" alt="" class="list-trend-box1-logo">
+                <img src="./imgs/list/list3.jpg" alt="" class="list-trend-box1-clothes">
+                <a href="">
+                    <div class="list-trend-box1-name">
+                        <span class="list-trend-box1-name-text">时尚衣服</span>
+                    </div>
+                </a>
+                <span class="hot">人气上升453%</span>
+            </div>
+        </a>
+    </div>
+    <!--人气榜单-->
+    <div class="list-popular">
+        <a href="">
+            <div class="list-popular-logo">
+                <span class="list-popular-logo-text">人气榜</span>
+            </div>
+        </a>
+        <a href="">
+            <div class="list-popular-description">
+                <span class="list-popular-description-top">品质优雅高跟鞋榜</span>
+                <span class="list-popular-description-bottom">月销6549件</span>
+            </div>
+        </a>
+        <a href="">
+            <div class="list-popular-carousel">
+                <a href="">
+                    <div class="whole-pictures">
+                        <div class="picc picc1">
+                            <div class="lunbo1">
+                                <img src="./imgs/lunbo2/lunbo2-1.jpg" alt="" class="lunbo1-cloths">
+                                <img src="./imgs/lunbo2/lunbo2-1logo.jpg" alt="" class="lunbo1-logo">
+                            </div>
+                            <div class="lunbo1">
+                                <img src="./imgs/lunbo2/lunbo2-2.jpg" alt="" class="lunbo1-cloths">
+                                <img src="./imgs/lunbo2/lunbo2-2logo.jpg" alt="" class="lunbo1-logo">
+                            </div>
+                            <div class="lunbo1">
+                                <img src="./imgs/lunbo2/lunbo2-3.jpg" alt="" class="lunbo1-cloths">
+                                <img src="./imgs/lunbo2/lunbo2-3logo.jpg" alt="" class="lunbo1-logo">
+                            </div>
+                        </div>
+
+                        <div class="picc picc2">
+                            <div class="lunbo1">
+                                <img src="./imgs/lunbo2/lunbo2-4.jpg" alt="" class="lunbo1-cloths">
+                                <img src="./imgs/lunbo2/lunbo2-4logo.jpg" alt="" class="lunbo1-logo">
+                            </div>
+                            <div class="lunbo1">
+                                <img src="./imgs/lunbo2/lunbo2-5.jpg" alt="" class="lunbo1-cloths">
+                                <img src="./imgs/lunbo2/lunbo2-5logo.jpg" alt="" class="lunbo1-logo">
+                            </div>
+                            <div class="lunbo1">
+                                <img src="./imgs/lunbo2/lunbo2-6.jpg" alt="" class="lunbo1-cloths">
+                                <img src="./imgs/lunbo2/lunbo2-6logo.jpg" alt="" class="lunbo1-logo">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </a>
+
+    </div>
+    <div class="list-popular-list">
+        <a href="" class="list-popular-list-box">
+            <div class="list-popular-list-box-left">
+                <span class="renqi">人气榜</span>
+                <div class="hengxian"></div>
+                <span class="list-popular-list-box-left-name">高街绣花连衣裙榜</span>
+                <span class="list-popular-list-box-left-sell">月销120件</span>
+            </div>
+            <img src="./imgs/renqi/renqi1.jpg" alt="" class="list-popular-list-box-right">
+        </a>
+        <a href="" class="list-popular-list-box">
+            <div class="list-popular-list-box-left">
+                <span class="renqi">人气榜</span>
+                <div class="hengxian"></div>
+                <span class="list-popular-list-box-left-name">品质休闲餐椅榜</span>
+                <span class="list-popular-list-box-left-sell">月销508件</span>
+            </div>
+            <img src="./imgs/renqi/renqi2.jpg" alt="" class="list-popular-list-box-right">
+        </a>
+        <a href="" class="list-popular-list-box">
+            <div class="list-popular-list-box-left">
+                <span class="renqi">人气榜</span>
+                <div class="hengxian"></div>
+                <span class="list-popular-list-box-left-name">专业防泼水外套榜</span>
+                <span class="list-popular-list-box-left-sell">火爆热卖中</span>
+            </div>
+            <img src="./imgs/renqi/renqi3.jpg" alt="" class="list-popular-list-box-right">
+        </a>
+        <a href="" class="list-popular-list-box">
+            <div class="list-popular-list-box-left">
+                <span class="renqi">人气榜</span>
+                <div class="hengxian"></div>
+                <span class="list-popular-list-box-left-name">轻奢牛皮</span>
+                <span class="list-popular-list-box-left-sell">月销120件</span>
+            </div>
+            <img src="./imgs/renqi/renqi4.jpg" alt="" class="list-popular-list-box-right">
+        </a>
+    </div>
+</div>
+<!--猜你喜欢-->
+<div class="like-text">
+    <span>猜你喜欢</span>
+</div>
+<div class="list-img">
+
+</div>
+<div class="like-list">
+    <div class="like-list-1">
+        <a href="">
+            <div class="like-list-box">
+                <div class="like-list-1-beijing">
+                    <img src="./imgs/like/like1.jpg" alt="" class="like-list-1-clothes">
+                </div>
+                <div class="like-list-1-brand">
+                    <span>贵人鸟</span>
+                </div>
+                <div class="like-list-1-name">
+                    <span >贵人鸟男装夏季运动潮圆领短袖t恤</span>
+                </div>
+                <div class="like-list-1-youhui">
+                    <span>5元券</span>
+                </div>
+                <div class="like-list-1-price">
+                    <span>￥ 39</span>
+                </div>
+                <a href="" class="xiangsi">
+                    <span>看相似</span>
+                </a>
+            </div>
+        </a>
+        <div class="like-list-box" style="height:3.16rem;">
+            <img src="./imgs/like/like2.jpg" alt="" class="like-list-1-tu">
+        </div>
+    </div>
+    <div class="like-list-1">
+        <div class="like-list-box" style="height:3.16rem;">
+            <img src="./imgs/like/like3.jpg" alt="" class="like-list-1-tu">
+        </div>
+        <a href="">
+            <div class="like-list-box">
+                <div class="like-list-1-beijing">
+                    <img src="./imgs/like/like4.jpg" alt="" class="like-list-1-clothes">
+                </div>
+                <div class="like-list-1-brand">
+                    <span>Green Lip</span>
+                </div>
+                <div class="like-list-1-name">
+                    <span >杰茜孕妇吊带宽松背带裤连体装</span>
+                </div>
+                <div class="like-list-1-youhui" style="width: 0.4rem;">
+                    <span>10元券</span>
+                </div>
+                <div class="like-list-1-price">
+                    <span>￥ 199</span>
+                </div>
+                <a href="" class="xiangsi">
+                    <span>看相似</span>
+                </a>
+            </div>
+        </a>
+    </div>
+    <div class="like-list-1">
+        <a href="">
+            <div class="like-list-box">
+                <div class="like-list-1-beijing">
+                    <img src="./imgs/like/like5.jpg" alt="" class="like-list-1-clothes">
+                </div>
+                <div class="like-list-1-brand" style="background-color: #ceafa3">
+                    <span>政竹</span>
+                </div>
+                <div class="like-list-1-name">
+                    <span >黑胡桃木料原木板材定制实木桌面板材料茶几台面板吧台板木板餐桌</span>
+                </div>
+                <div class="like-list-1-youhui">
+                    <span>3元券</span>
+                </div>
+                <div class="like-list-1-price">
+                    <span>￥ 80</span>
+                </div>
+                <a href="" class="xiangsi">
+                    <span>看相似</span>
+                </a>
+            </div>
+        </a>
+        <div class="like-list-box" style="height:3.16rem;">
+            <img src="./imgs/like/like6.jpg" alt="" class="like-list-1-tu">
+        </div>
+    </div>
+    <div class="like-list-1">
+        <a href="">
+            <div class="like-list-box">
+                <div class="like-list-1-beijing">
+                    <img src="./imgs/like/like7.jpg" alt="" class="like-list-1-clothes">
+                </div>
+                <div class="like-list-1-brand">
+                    <span>舒姿菲</span>
+                </div>
+                <div class="like-list-1-name">
+                    <span >2019春夏新款女装豹纹中长款半身裙子真丝缎面高腰桑蚕丝印花半裙</span>
+                </div>
+                <div class="like-list-1-youhui" style="width: 0.4rem;">
+                    <span>10元券</span>
+                </div>
+                <div class="like-list-1-price">
+                    <span>￥ 358</span>
+                </div>
+                <a href="" class="xiangsi">
+                    <span>看相似</span>
+                </a>
+            </div>
+        </a>
+        <a href="">
+            <div class="like-list-box">
+                <div class="like-list-1-beijing">
+                    <img src="./imgs/like/like8.jpg" alt="" class="like-list-1-clothes">
+                </div>
+                <div class="like-list-1-brand">
+                    <span>Y·Fan/羽舧</span>
+                </div>
+                <div class="like-list-1-name">
+                    <span >格子衬衫女长袖春装新品文艺刺绣宽松学生春秋外套纯棉打底衫开衫</span>
+                </div>
+                <div class="like-list-1-youhui">
+                    <span>5元券</span>
+                </div>
+                <div class="like-list-1-price">
+                    <span>￥ 125</span>
+                </div>
+                <a href="" class="xiangsi">
+                    <span>看相似</span>
+                </a>
+            </div>
+        </a>
+    </div>
+    <div class="like-list-1">
+        <a href="">
+            <div class="like-list-box">
+                <div class="like-list-1-beijing">
+                    <img src="./imgs/like/like9.jpg" alt="" class="like-list-1-clothes">
+                </div>
+                <div class="like-list-1-brand" style="background-color: #ceafa3">
+                    <span>易简尚语</span>
+                </div>
+                <div class="like-list-1-name">
+                    <span >儿童房间卧室墙头贴画墙头贴纸</span>
+                </div>
+                <div class="like-list-1-youhui">
+                    <span>3元券</span>
+                </div>
+                <div class="like-list-1-price">
+                    <span>￥ 81.42</span>
+                </div>
+                <a href="" class="xiangsi">
+                    <span>看相似</span>
+                </a>
+            </div>
+        </a>
+        <a href="">
+            <div class="like-list-box">
+                <div class="like-list-1-beijing">
+                    <img src="./imgs/like/like10.jpg" alt="" class="like-list-1-clothes">
+                </div>
+                <div class="like-list-1-brand" style="background-color: #ceafa3">
+                    <span>Lee</span>
+                </div>
+                <div class="like-list-1-name">
+                    <span >破洞牛仔裤女白色九分裤2019新款宽松显瘦</span>
+                </div>
+                <div class="like-list-1-youhui">
+                    <span>3元券</span>
+                </div>
+                <div class="like-list-1-price">
+                    <span>￥ 79</span>
+                </div>
+                <a href="" class="xiangsi">
+                    <span>看相似</span>
+                </a>
+            </div>
+        </a>
+</div>
+</div>
+</body>
+</html>
