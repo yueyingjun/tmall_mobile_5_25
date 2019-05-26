@@ -1,0 +1,1317 @@
+html{
+    font-size: 26.66666vw;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+ul,li,a{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+header{
+    width:100%;
+    height: 0.9rem;
+    background: rgb(255,0,54);
+}
+.top-header{
+    width: 3.75rem;
+    height: .44rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-shrink: 0;
+    place-content: flex-start center;
+    position: relative;
+
+}
+.menu-logo{
+    width: .3rem;
+    height: .44rem;
+    background: url("../imgs/head1.webp") no-repeat;
+    background-size: cover;
+    justify-content: space-around;
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    overflow: hidden;
+    left: .12rem;
+    top: 0;
+    padding: 0.07rem 0;
+}
+.menu-logo a{
+    width: 0.3rem;
+    height: 0.3rem;
+}
+.menu{
+     background: url("../imgs/head1.webp") no-repeat;
+     background-size: cover;
+ }
+.logo{
+    width: 1.185rem;
+    height: .205rem;
+    display: flex;
+    background: url("../imgs/head2.webp") no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+.enter{
+    width: 0.3rem;
+    height: 0.44rem;
+    position: absolute;
+    box-sizing: border-box;
+    flex-direction: column;/*排列方向 */
+    align-content: flex-start;
+    flex-shrink: 0;
+    overflow: hidden;
+    right: .12rem;
+    top: 0;
+    line-height: 0.3rem;
+    padding: 0.07rem 0;
+    font-size: 0.14rem;
+    color: white;
+}
+.search{
+    width: 3.55rem;
+    height: 0.36rem;
+    background: white;
+    align-items: center;
+    margin: auto;
+    border-radius: 0.05rem;
+    display: flex;
+}
+.search-img{
+    display: flex;
+    width: 0.15rem;
+    height: 0.16rem;
+    position: relative;
+    margin: 0.1rem;
+    background: url("../imgs/search.webp") no-repeat;
+    background-size: cover;
+}
+.search span{
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    align-content: flex-start;
+    font-size: 0.14rem;
+    background-color: transparent;
+    align-self: center;
+    line-height: .38rem;
+    color: rgba(0,0,0,0.3);
+    margin-left: 0.05rem;
+}
+.brand{
+    width: 100%;
+    height: 0.77rem;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+   /* place-content: flex-start center;*/
+    flex-shrink: 0;
+    float: left;
+    align-items: center;
+    justify-content:space-around;
+}
+.brand-top{
+    width: 100%;
+    height: 0.17rem;
+    display: flex;
+}
+.brand-one{
+    width: 0.7rem;
+    height: 0.77rem;
+    display: flex;
+}
+.brand a {
+    width: 0.7rem;
+    height: 0.77rem;
+    text-align: center;
+
+}
+.brand-img1{
+    width: 0.48rem;
+    height: 0.48rem;
+
+    margin: auto;
+    background: url("../imgs/logo1.webp") no-repeat;
+    background-size: cover;
+}
+.brand-img2{
+    width: 0.48rem;
+    height: 0.48rem;
+    margin: auto;
+    background: url("../imgs/logo2.png") no-repeat;
+    background-size: cover;
+}
+.brand-img3{
+    width: 0.48rem;
+    height: 0.48rem;
+    margin: auto;
+    background: url("../imgs/logo3.webp") no-repeat;
+    background-size: cover;
+}
+.brand-img4{
+    width: 0.48rem;
+    height: 0.48rem;
+    margin: auto;
+    background: url("../imgs/logo4.webp") no-repeat;
+    background-size: cover;
+}.brand-img5{
+     width: 0.48rem;
+     height: 0.48rem;
+     margin: auto;
+     background: url("../imgs/logo5.webp") no-repeat;
+     background-size: cover;
+ }
+
+.brand span{
+    width: 0.7rem;
+    height: 0.15rem;
+    white-space: pre-wrap;
+    border: 0 solid black;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: 0;
+    font-size: 0.13rem;
+    text-align: center;
+    line-height: 0.15rem;
+    align-self: center;
+    color: rgb(0,0,0);
+}
+/*轮播*/
+.carousel-box{
+    width: 3.51rem;
+    height: 1.33rem;
+    justify-content: space-around;
+    display: flex;
+    margin: auto;
+    align-content: flex-start;
+    position: relative;
+}
+.carousel-box a{
+    width: 3.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-1{
+    display: block;
+    width: 3.51rem;
+    height: 1.32rem;
+    background: url("../imgs/lunbo1.webp") no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+.carousel-2{
+    display: block;
+    width: 3.51rem;
+    height: 1.32rem;
+    background: url("../imgs/lunbo2.webp") no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+.carousel-3{
+    display: block;
+     width: 3.51rem;
+     height: 1.32rem;
+     background: url("../imgs/lunbo3.webp") no-repeat;
+     background-size: cover;
+    z-index: 3;
+ }
+.carousel-4{
+    display: block;
+    width: 3.51rem;
+    height: 1.32rem;
+    background: url("../imgs/lunbo4.webp") no-repeat;
+    background-size: cover;
+    z-index: 4;
+}
+.carousel-5{
+    display: block;
+    width: 3.51rem;
+    height: 1.32rem;
+    background: url("../imgs/lunbo5.webp") no-repeat;
+    background-size: cover;
+    z-index: 5;
+}
+.carousel-6{
+    display: block;
+    width: 3.51rem;
+    height: 1.32rem;
+    background: url("../imgs/lunbo6.webp") no-repeat;
+    background-size: cover;
+    z-index: 6;
+}
+.carousel-7{
+    display: block;
+    width: 3.51rem;
+    height: 1.32rem;
+    background: url("../imgs/lunbo7.webp") no-repeat;
+    background-size: cover;
+    z-index: 7;
+}
+.carousel-8{
+    display: block;
+    width: 3.51rem;
+    height: 1.32rem;
+    background: url("../imgs/lunbo8.webp") no-repeat;
+    background-size: cover;
+    z-index: 8;
+}
+.carousel-9{
+    display: block;
+    width: 3.51rem;
+    height: 1.32rem;
+    background: url("../imgs/lunbo9.webp") no-repeat;
+    background-size: cover;
+    z-index: 9;
+}
+.carousel-10{
+    display: block;
+     width: 3.51rem;
+     height: 1.32rem;
+     background: url("../imgs/lunbo10.webp") no-repeat;
+     background-size: cover;
+    z-index: 10;
+ }
+.btns{
+    width: 3.75rem;
+    height: 0.02rem;
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    place-content: flex-start center;
+    flex-shrink: 0;
+    align-items: center;
+    bottom: 0.1rem;
+
+    z-index: 555;
+}
+.btn{
+    display: flex;
+    width: 0.16rem;
+    height: 0.02rem;
+    margin-left: 0.025rem;
+    margin-right: 0.025rem;
+   /* background-color: #b0b0b0;*/
+    background: url("../imgs/lunbo-flag2.webp") no-repeat;
+    background-size: cover;
+}
+
+/*福利*/
+.weal{
+    width: 3.75rem;
+    height: 1.80rem;
+    background: url("../imgs/weal.webp") no-repeat;
+    background-size: cover;
+    margin: auto;
+    align-items: center;
+}
+.recommend{
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    flex-shrink: 0;
+    width: 3.51rem;
+    /*margin-top: 0.1rem;*/
+    justify-content: space-around;
+    align-items: center;
+    margin: .1rem auto;
+}
+.recommend-items-1{
+    display: flex;
+    height: 1.29rem;
+    width: 1.72rem;
+  /*  background-color: rgb(247,247,247);*/
+    overflow: hidden;
+    position: relative;
+   margin-top: 0.02rem;
+}
+.recommend-img{
+    display: flex;
+    width: 1.73rem;
+    height: 1.29rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../imgs/ad-background.png") no-repeat;
+    background-size: cover;
+}
+.recommend-img2{
+    display: flex;
+    width: 1.73rem;
+    height: 1.29rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../imgs/ad-background2.png") no-repeat;
+    background-size: cover;
+}
+.recommend-img3{
+    display: flex;
+    width: 1.73rem;
+    height: 1.29rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../imgs/ad-background3.png") no-repeat;
+    background-size: cover;
+}
+.recommend-img4{
+     display: flex;
+     width: 1.73rem;
+     height: 1.29rem;
+     position: absolute;
+     top: 0;
+     right: 0;
+     background: url("../imgs/ad-background4.png") no-repeat;
+     background-size: cover;
+ }
+
+.recommend-img-a{
+    position: relative;
+    font-size: 0.16rem;
+    color: rgb(32,32,32);
+    font-weight: bold;
+    line-height: .16rem;
+    height: .16rem;
+    margin-top: .15rem;
+    margin-left: .15rem;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    width: 1.57rem;
+}
+.recommend-img span{
+    white-space: pre-wrap;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: 0;
+    text-align: left;
+    width: 0.64rem;
+    height: .16rem;
+}
+.article{
+    /*position: relative;*/
+    position: absolute;
+    left: 0.03rem;
+    top: 0.1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    flex-shrink: 0;
+    margin-top: 0.35rem;
+   /* border: 1px solid red;*/
+    width: 1.72rem;
+    height: 0.775rem;
+}
+.article a{
+    width: 0.775rem;
+    height: 0.775rem;
+    position: relative;
+    margin-left: 0.06rem;
+}
+.article-img{
+    display: flex;
+    width: 0.775rem;
+    height: 0.775rem;
+    background: url("../imgs/ad1.webp") no-repeat;
+    background-size: cover;
+    position: absolute;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: 0;
+    left: 0;
+    top: 0;
+}
+.article-img2{
+    display: flex;
+    width: 0.775rem;
+    height: 0.775rem;
+    background: url("../imgs/ad2.webp") no-repeat;
+    background-size: cover;
+    position: absolute;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: 0;
+    left: 0;
+    top: 0;
+}
+
+.article-img3{
+    display: flex;
+    width: 0.775rem;
+    height: 0.775rem;
+    background: url("../imgs/ad3.webp") no-repeat;
+    background-size: cover;
+    position: absolute;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: 0;
+    left: 0;
+    top: 0;
+}
+.article-img4{
+    display: flex;
+    width: 0.775rem;
+    height: 0.775rem;
+    background: url("../imgs/ad4.webp") no-repeat;
+    background-size: cover;
+    position: absolute;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: 0;
+    left: 0;
+    top: 0;
+}
+.article-img5{
+    display: flex;
+    width: 0.775rem;
+    height: 0.775rem;
+    background: url("../imgs/ad5.webp") no-repeat;
+    background-size: cover;
+    position: absolute;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: 0;
+    left: 0;
+    top: 0;
+}
+.article-img6{
+    display: flex;
+    width: 0.775rem;
+    height: 0.775rem;
+    background: url("../imgs/ad6.webp") no-repeat;
+    background-size: cover;
+    position: absolute;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: 0;
+    left: 0;
+    top: 0;
+}
+.article-img7{
+    display: flex;
+    width: 0.775rem;
+    height: 0.775rem;
+    background: url("../imgs/ad7.webp") no-repeat;
+    background-size: cover;
+    position: absolute;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: 0;
+    left: 0;
+    top: 0;
+}
+.article-img8{
+    display: flex;
+    width: 0.775rem;
+    height: 0.775rem;
+    background: url("../imgs/ad8.webp") no-repeat;
+    background-size: cover;
+    position: absolute;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: 0;
+    left: 0;
+    top: 0;
+}
+.article-title{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    place-content: flex-start center;
+    flex-shrink:  0;
+    width: 0.775rem;
+    height: 0.12rem;
+    left: 0;
+    bottom: 0;
+    align-items: center;
+}
+.article-title span{
+    width: 0.54rem;
+    height: .12rem;
+    white-space: nowrap;
+    border: .01rem solid rgb(255,0,54);
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    flex-direction: column;
+    align-content: flex-start;/*行间距对齐方式：左对齐 默认*/
+    flex-shrink: 0;/*收缩比例*/
+    font-size: .1rem;
+    max-width: 0.775rem;
+    text-overflow: ellipsis;/*文字溢出省略*/
+    background-color: rgb(255,237,241);
+    line-height: .11rem;
+    padding-left: .02rem;
+    padding-right: .02rem;
+    border-radius: .01rem;
+    color: rgb(255,0,54);
+    text-align: center;
+    overflow: hidden;
+}
+.time{
+    width: 0.68rem;
+    height: .21rem;
+    position: absolute;
+    display: flex;
+/*    display: inline-block;*/
+/*    flex-direction: column;*/
+    align-content: flex-start;
+    flex-shrink: 0;
+    right: .13rem;
+    top: .14rem;
+    line-height:.21rem;
+    /*border: 1px solid black;*/
+}
+.time-item{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    place-content: flex-start;
+    flex-shrink: 0;
+    align-items: center;
+   /* border: 1px solid black;*/
+}
+.time-item span {
+    white-space: pre-wrap;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: 0;
+    font-size: .16rem;
+}
+.time-model{
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    place-content: flex-start center;
+    flex-shrink:  0;
+    border-radius: 0.03rem;
+    width: .2rem;
+    height: .2rem;
+    background-color: rgb(0,0,0);
+    align-content: center;
+}
+.time-model span {
+    white-space: pre-wrap;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: 0;
+    font-size: .13rem;
+    color: rgb(255,255,255);
+    width: 0.07rem;
+    height: .21rem;
+}
+.time-maohao{
+    width: 0.04rem;
+    height: .21rem;
+    display: flex;
+}
+.maohao{
+    white-space: pre-wrap;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: 0;
+    font-size: .16rem;
+
+}
+.tmall-lists{
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    place-content: flex-start center;
+    flex-shrink: 0;
+    width: 3.75rem;
+    margin-top: .10rem;
+    align-items: center;
+    height: 4.58rem;
+}
+.tmall-list{
+    width: 3.51rem;
+    height: 0.3rem;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+.tmall-list span{
+    white-space: pre-wrap;
+    position: absolute;
+    left: 0.15rem;
+    top: 0;
+    display: block;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: 0;
+    font-size: .18rem;
+    color: rgb(51,51,51);
+    font-weight: bold;
+}
+.tmall-list-info{
+    width: 3.57rem;
+    height: 1.50rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-bottom: 0.06rem;
+}
+.tmall-list-one{
+    display: flex;
+    width: 1.13rem;
+    height: 1.37rem;
+    flex-direction: column;
+    margin-left: 0.03rem;
+    margin-right: 0.03rem;
+    margin-top: 0.1rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(248,248,248);
+    border-radius: .03rem;
+}
+.tmall-list-two{
+    display: flex;
+    width: 1.13rem;
+    height: 1.50rem;
+    flex-direction: column;
+    margin-left: 0.03rem;
+    margin-right: 0.03rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(248,248,248);
+    border-radius: .03rem;
+}
+.list-one{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: 0;
+    width: 1.13rem;
+    height: 1.37rem;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background: url("../imgs/list-back.webp") no-repeat;
+    background-size: cover;
+}
+.tmall-list-one-img{
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: 0;
+    width: 0.73rem;
+    height: .73rem;
+    margin-top: 0.08rem;
+    background: url("../imgs/list1.webp") no-repeat;
+    background-size: cover;
+}
+.tmall-list-one-img2{
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: 0;
+    width: 0.73rem;
+    height: .73rem;
+    margin-top: 0.08rem;
+    background: url("../imgs/list2.webp") no-repeat;
+    background-size: cover;
+}
+.tmall-list-one-img3{
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: 0;
+    width: 0.73rem;
+    height: .73rem;
+    margin-top: 0.08rem;
+    background: url("../imgs/list3.webp") no-repeat;
+    background-size: cover;
+}
+.tmall-list-qushi{
+    width: 0.32rem;
+    height: 0.26rem;
+    background: url("../imgs/qushi.webp") no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0.10rem;
+}
+.clothes-item{
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1.04rem;
+    height: 0.18rem;
+    margin-top: .04rem;
+    background: url("../imgs/list-background.webp") no-repeat;
+    background-size: cover;
+}
+.clothes-item span{
+    white-space: nowrap;
+    position: relative;
+    display: block;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: 0;
+    font-size: .11rem;
+    color: white;
+    line-height: .18rem;
+    overflow: hidden;
+}
+.moods{
+    position: relative;
+    display: block;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: 0;
+    font-size: .12rem;
+    color: black;
+    margin-top: .02rem;
+    line-height: .18rem;
+    overflow: hidden;
+}
+.hot-list{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    place-content: flex-start space-between;
+    flex-shrink: 0;
+    width: 3.51rem;
+    height: 0.85rem;
+    margin-top: 0.07rem;
+    margin-left: .12rem;
+    margin-right: .12rem;
+    background-color: rgb(248,248,248);
+    align-items: center;
+    border-radius: .03rem;
+}
+.hot-list-left{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 0.85rem;
+    width: 1.09rem;
+}
+.hot-img{
+    width: 0.46rem;
+    height: .22rem;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: .13rem;
+    background: url("../imgs/hot-img.webp") no-repeat;
+    background-size: cover;
+}
+.hot-img span{
+    display: block;
+    position: absolute;
+    align-content: flex-start;
+    font-size: .11rem;
+    top: 0;
+    left: .06rem;
+    color: white;
+    line-height: .18rem;
+    overflow: hidden;
+}
+.hot-list-item{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-left: .13rem;
+    width: .96rem;
+    height: .85rem;
+}
+.list-info1{
+    position: absolute;
+    top: 0.21rem;
+    left: 0;
+    width: .96rem;
+    height: .19rem;
+    display: block;
+    align-content: flex-start;
+    font-size: .12rem;
+    color: rgb(49,49,49);
+    line-height: .19rem;
+    font-weight: 600;
+    overflow: hidden;
+}
+.list-info2{
+    position: absolute;
+    top: 0.42rem;
+    left: 0;
+    width: .58rem;
+    height: .19rem;
+    display: block;
+    align-content: flex-start;
+    font-size: .12rem;
+    color: rgb(153,153,153);
+    line-height: .19rem;
+    overflow: hidden;
+}
+.hot-lunbo{
+    width: 2.11rem;
+    height: .65rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: row;
+    display: flex;
+}
+.hot-1{
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    width: .65rem;
+    height: .65rem;
+    margin-right: .065rem;
+    background: url("../imgs/hot-1.webp") no-repeat;
+    background-size: cover;
+}
+.hot-1-info{
+    display: flex;
+    width: .215rem;
+    height: .215rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../imgs/hot-0.webp") no-repeat;
+    background-size: cover;
+}
+.hot-2{
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    width: .65rem;
+    height: .65rem;
+    margin-right: .065rem;
+    background: url("../imgs/hot2.webp") no-repeat;
+    background-size: cover;
+}
+.hot-2-info{
+    display: flex;
+    width: .215rem;
+    height: .215rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../imgs/hot2-info.webp") no-repeat;
+    background-size: cover;
+}
+.hot-3{
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    width: .65rem;
+    height: .65rem;
+    margin-right: .065rem;
+    background: url("../imgs/hot3.webp") no-repeat;
+    background-size: cover;
+}
+.hot-3-info{
+    display: flex;
+    width: .215rem;
+    height: .215rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../imgs/hot3-info.webp") no-repeat;
+    background-size: cover;
+}
+.hot-list-popular{
+    display: flex;
+    align-items: center;
+    width: 1.73rem;
+    height: .85rem;
+    margin-left: .03rem;
+    margin-top: .06rem;
+    margin-right: .03rem;
+    background-color: rgb(248,248,248);
+    position: relative;
+    border-radius: .03rem;
+}
+.popular-img{
+    position: absolute;
+    display: flex;
+    align-content: flex-start;
+    width: .55rem;
+    height: .55rem;
+    top: .15rem;
+    right: .04rem;
+    background: url("../imgs/hot-1.webp") no-repeat;
+    background-size: cover;
+}
+.popular-left{
+    width: .84rem;
+    height: .67rem;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-left: .13rem;
+}
+.popular-one{
+    width: .33rem;
+    height: .2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-content: flex-start;
+    font-size: .11rem;
+    color: rgb(200,157,107);
+    line-height: .2rem;
+    overflow: hidden;
+}
+.popular-{
+    position: absolute;
+    top: .21rem;
+    left: 0;
+    display: flex;
+    align-content: flex-start;
+    width: .11rem;
+    height: .015rem;
+    background-color: rgb(227,227,227);
+    margin-top: .02rem;
+    margin-bottom: .06rem;
+}
+.popular-two{
+    position: absolute;
+    top: .26rem;
+    left: 0;
+    width: .84rem;
+    height: .19rem;
+    display: block;
+    align-content: flex-start;
+    font-size: .12rem;
+    color: rgb(49,49,49);
+    line-height: .19rem;
+    font-weight: 600;
+    overflow: hidden;
+}
+.popular-three{
+    position: absolute;
+    top: .46rem;
+    left: 0;
+    width: .65rem;
+    height: .19rem;
+    display: block;
+    align-content: flex-start;
+    font-size: .12rem;
+    color: rgb(153,153,153);
+    line-height: .19rem;
+    overflow: hidden;
+}
+/*猜你喜欢*/
+.like-you{
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    width: 3.51rem;
+    margin-top: .1rem;
+    margin-left: .12rem;
+    text-align: left;
+    height: .3rem;
+}
+.like-you span{
+    font-size: .18rem;
+    color: rgb(51,51,51);
+    font-weight: bold;
+}
+.youlike-info{
+    width: 100%;
+    height: 2.77rem;
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.like-background{
+    display: flex;
+    width: 3.75rem;
+    height: 1.47rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../imgs/like-background.webp") no-repeat;
+    background-size: cover;
+}
+.youlike-item{
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    flex-shrink: 0;
+    margin-left: .12rem;
+    margin-right: .1rem;
+    width: 3.54rem;
+    height: 2.77rem;
+}
+.youlike-one{
+     position: relative;
+     display: inline-flex;
+     width: 1.7rem;
+     height: 2.67rem;
+     margin-top: 0.05rem;
+     margin-bottom: .05rem;
+     color: black;
+     margin-right: .05rem;
+     background-color: white;
+     border: 0.01rem solid rgb(237,237,237);
+ }
+.youlike-info2{
+    width: 100%;
+    height: 3.16rem;
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.youlike-item2{
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    flex-shrink: 0;
+    margin-left: .12rem;
+    margin-right: .1rem;
+    width: 3.54rem;
+    height: 3.16rem;
+}
+.youlike-one2{
+    position: relative;
+    display: inline-flex;
+    width: 1.7rem;
+    height: 3.11rem;
+    margin-top: 0.05rem;
+    margin-bottom: .05rem;
+    color: black;
+    margin-right: .05rem;
+    background-color: white;
+    background: url("../imgs/red-packet1.webp") no-repeat;
+    background-size:cover;
+    border: 0.01rem solid rgb(237,237,237);
+}
+.youlike-one-item{
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    background-color: rgba(0,0,0,0.03);
+    padding: .15rem;
+    width: 1.68rem;
+    height: 1.68rem;
+}
+.youlike-one-img{
+    display: flex;
+    position: relative;
+    align-content: flex-start;
+    width: 1.38rem;
+    height: 1.38rem;
+    background: url("../imgs/like-one.webp") no-repeat;
+    background-size: cover;
+}
+.youlike-one-img2{
+    display: flex;
+    position: relative;
+    align-content: flex-start;
+    width: 1.38rem;
+    height: 1.38rem;
+    background: url("../imgs/like2.webp") no-repeat;
+    background-size: cover;
+}
+.youlike-one-img3{
+    display: flex;
+    position: relative;
+    align-content: flex-start;
+    width: 1.38rem;
+    height: 1.38rem;
+    background: url("../imgs/like3.webp") no-repeat;
+    background-size: cover;
+}
+.youlike-one-img4{
+    display: flex;
+    position: relative;
+    align-content: flex-start;
+    width: 1.38rem;
+    height: 1.38rem;
+    background: url("../imgs/like4.webp") no-repeat;
+    background-size: cover;
+}
+.youlike-m{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: center;
+    background-color: rgb(206,175,163);
+    top: 1.59rem;
+    left: .05rem;
+    margin-left: .1rem;
+    padding-left: .05rem;
+    padding-right: .05rem;
+    height: .18rem;
+    width: .5rem;
+}
+.youlike-m-img{
+    display: flex;
+    width: .18rem;
+    height: .13rem;
+    margin-right: .05rem;
+    background: url("../imgs/HK.png") no-repeat;
+    background-size: cover;
+}
+.youlike-m-item{
+    position: relative;
+    display: flex;
+    font-size: .1rem;
+    height: .18rem;
+    line-height: .18rem;
+    color: white;
+    align-items: center;
+}
+.youlike-title{
+    width: 1.68rem;
+    height: .67rem;
+    display: flex;
+    box-sizing: border-box;
+    align-content: flex-start;
+    flex-direction: column;
+    flex-shrink: 0;
+    padding: 0.1rem .1rem 0;
+    position: absolute;
+    bottom: .3rem;
+    left: .05rem;
+}
+.youlike-title-item{
+    white-space: pre-wrap;
+    position: relative;
+    display: flex;
+    -webkit-box-orient: vertical;
+    align-content: flex-start;
+    flex-shrink: 0;
+    font-size: .14rem;
+    text-align: left;
+    line-height: .18rem;
+    height: .36rem;
+    margin-top: .02rem;
+    margin-bottom: .02rem;
+    color: rgb(62,62,62);
+    overflow: hidden;
+}
+.youlike-ticket{
+    width: 1.48rem;
+    height: .14rem;
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    margin-top: 0.03rem;
+}
+.youlike-ticket-info{
+    border: 0.005rem solid rgb(255,0,54);
+    position: relative;
+    display: flex;
+    padding: 0.005rem 0.01rem;
+    height: .14rem;
+    align-items: center;
+    margin-right: .03rem;
+}
+.ticket-info-item{
+    position: relative;
+    display: block;
+    align-content: flex-start;
+    font-size: .11rem;
+    height: .13rem;
+    line-height: .13rem;
+    color: rgb(255,0,24);
+}
+.youlike-price{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-content: flex-start;
+    width: 1.7rem;
+    align-items: center;
+    height: .3rem;
+}
+.youlike-price-info{
+    position: relative;
+    display: block;
+    align-content: flex-start;
+    font-size: .16rem;
+    text-align: left;
+    font-weight: 600;
+    color: rgb(255,0,0);
+    line-height: .28rem;
+    margin-left: .1rem;
+}
+.similarity{
+    background-color: rgb(255,230,235);
+    display: flex;
+    align-items: center;
+    height: .23rem;
+    justify-content: center;
+    line-height: .23rem;
+    padding-left: .09rem;
+    padding-right: .09rem;
+    border-radius: .117rem;
+    position: absolute;
+    right: 0.08rem;
+    top: 2.4rem;
+}
+.similarity-info{
+    position: relative;
+    display: block;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: 0;
+    font-size: .11rem;
+    color: rgb(255,0,54);
+    height: .11rem;
+    line-height: .11rem;
+}
