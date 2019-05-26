@@ -1,0 +1,41 @@
+  /*四小块*/
+
+.sxk-box{
+    margin-top: .1rem;
+    width: 100%;
+    height: 2.73rem;
+  /*  border: 1px solid black;*/
+    box-sizing: border-box;
+}
+.item1{
+    width: 1.725rem;
+    height: 1.285rem;
+   /* border: 1px solid green;*/
+    box-sizing: border-box;
+    margin: .05rem auto auto .1rem;
+    float: left;
+    background-color: rgb(248, 248, 248);
+}
+.content-text1{
+    width:fit-content;
+    height: .16rem;
+    margin: .1rem auto auto .1rem;
+    /*border: 1px solid yellow;*/
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.content-img{
+    width: .775rem;
+    height: .75rem;
+    /*border: 1px solid blue;*/
+    box-sizing: border-box;
+    float: left;
+    margin: .1rem auto auto .05rem;
+    display: flex;
+
+}
+.content-img img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}

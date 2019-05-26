@@ -1,0 +1,126 @@
+
+.cnxh-box{
+    width: 3.51rem;
+    height: fit-content;
+   /* border: 1px solid red;*/
+   /* box-sizing: border-box;*/
+    margin: auto;
+}
+.cnxh-item{
+    width: 1.7rem;
+    height: 2.67rem;
+    /*border: 1px solid green;*/
+    box-sizing: border-box;
+    float: left;
+    margin-top: .05rem;
+    background-color: rgb(248, 248, 248);
+}
+.cnxh-item2{
+    width: 1.7rem;
+    height: 2.67rem;
+   /* border: 1px solid green;*/
+    box-sizing: border-box;
+    float: right;
+    margin-top: .05rem;
+    background-color: rgb(248, 248, 248);
+}
+.cnxh-item2 img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.cnxh-img{
+    width: 1.38rem;
+    height: 1.38rem;
+    margin: .1rem auto auto auto;
+   /* border: 1px solid red;*/
+    box-sizing: border-box;
+}
+.cnxh-img img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.brandlogo{
+    width: .7483rem;
+    height: .18rem;
+    /*border: 1px solid blue;*/
+    box-sizing: border-box;
+    margin: .05rem auto auto .1rem;
+    background-color: rgb(205, 163, 177);
+}
+.gjlogo{
+    width: .1823rem;
+    height: .1281rem;
+    float: left;
+    display: flex;
+}
+.gjlogo img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.gjText{
+    width: .666rem;
+    height: 100%;
+    color: white;
+    font-size: 10px;
+  /*  text-align: center;*/
+}
+.text{
+    width: 1.48rem;
+    height: .36rem;
+   /* border: 1px solid blue;*/
+    box-sizing: border-box;
+    margin: auto;
+    font-size: 14px;
+    line-height: .18rem;
+    overflow: hidden;
+}
+
+.baotui{
+    width: fit-content;
+    height: .13rem;
+    border: 1px solid rgb(74, 144, 226);
+    margin: auto auto auto .1rem;
+    color: rgb(74, 144, 226);
+    text-align: center;
+    font-size: 13px;
+    line-height: .13rem;
+}
+.quan{
+    width: fit-content;
+    height: .13rem;
+    border: 1px solid red;
+    margin: auto auto auto .1rem;
+    color: red;
+    text-align: center;
+    font-size: 13px;
+    line-height: .13rem;
+}
+.price{
+    width: fit-content;
+    height: .28rem;
+   /* border: 1px solid rgb(74, 144, 226);*/
+    margin: .05rem auto auto .1rem;
+    color: red;
+    font-size: 16px;
+    line-height: .28rem;
+}
+.xaingsi{
+    width: .5rem;
+    height: .2rem;
+    /*margin: .05rem .05rem auto auto;*/
+    float: right;
+    margin: -.25rem .1rem auto auto;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: rgb(255, 230, 235);
+    font-size: 11px;
+    color: red;
+    text-align: center;
+    line-height: .2rem;
+
+
+
+}
