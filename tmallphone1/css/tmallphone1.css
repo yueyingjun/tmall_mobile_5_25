@@ -1,0 +1,732 @@
+html{
+    font-size: 26.66666vw;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.16rem;
+}
+/*天猫顶部*/
+header{
+    width: 100%;
+    height: 0.9rem;
+    background-color: #ff0036;
+}
+.header-top{
+    width: 100%;
+    height: 0.44rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top-left{
+    width: 0.3rem;
+    height: 0.3rem;
+    margin-left:0.1rem;
+}
+.header-top-left a{
+    width: 0.3rem;
+    height: 0.3rem;
+    float: left;
+    background: url("../images/TB-top-left.jpg") no-repeat 0px 0px;
+    background-size: cover;
+}
+.header-top-center{
+    width: 1.185rem;
+    height: 0.205rem;
+}
+.header-top-center img{
+    width: 1.185rem;
+    float: left;
+}
+.header-top-right{
+    font-size: 0.16rem;
+    margin-right:0.1rem;
+}
+.header-top-right a{
+    text-decoration: none;
+    color: white;
+}
+.header-bottom{
+    width: 100%;
+    height: 0.46rem;
+}
+.header-bottom-serach{
+    width: 3.55rem;
+    height: 0.36rem;
+    background-color: white;
+    margin: auto;
+    border-radius: 0.1rem;
+    display: flex;
+    align-items: center;
+}
+.header-bottom-serach-icon{
+    width: 0.15rem;
+    height: 0.16rem;
+    margin: 0px 0.1rem;
+    background: url("../images/header-bottom-glass.jpg") no-repeat;
+    background-size: cover;
+}
+.header-bottom-serach-content{
+    color: #999999;
+}
+/*天猫菜单*/
+.tmall-list{
+    width: 100%;
+    height: 0.766rem;
+    justify-content: space-around;
+}
+.tmall-list-inner{
+    width: 3.51rem;
+    height: 0.766rem;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+.tmall-list-opt{
+    width: 0.7rem;
+    height: 0.766rem;
+}
+.tmall-list-opt img{
+    width: 0.48rem;
+    margin: 0.05rem 0.11rem 0.02rem;
+}
+.tmall-list-opt-title{
+    font-size: 0.12rem;
+    color: black;
+    text-align: center;
+}
+/*天猫菜单*/
+.tmallphone-lunbo{
+    width: 100%;
+    height: 1.4225rem;
+    border: 1px solid white;
+}
+.tmallphone-lunbo-inner{
+    width: 3.51rem;
+    height: 1.3225rem;
+    /*border: 1px solid red;*/
+    margin: 0.1rem auto 0;
+    position: relative;
+}
+.tmallphone-lunbo-banner{
+    width: 3.51rem;
+    height: 1.3225rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.tmallphone-banner1{
+    background: url("../images/tmallphone-banner1.webp");
+    background-size: cover;
+    z-index: 1;
+}
+.tmallphone-banner2{
+    background: url("../images/tmallphone-banner2.webp");
+    background-size: cover;
+}
+.tmallphone-banner3{
+    background: url("../images/tmallphone-banner3.webp");
+    background-size: cover;
+}
+.tmallphone-banner4{
+    background: url("../images/tmallphone-banner4.webp");
+    background-size: cover;
+}
+.tmallphone-lunbo-buttons{
+    width: 1rem;
+    height: 0.2rem;
+    position: absolute;
+    left:1.22rem;
+    display: flex;
+    bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.tmall-button1{
+    width: 0.16rem;
+    height: 0.02rem;
+    float: left;
+    background-color: rgba(255,255,255,0.3);
+}
+.select-buuton{
+    background-color: white;
+}
+/*天猫优惠卷顶部*/
+.tmallphone-allowance-top{
+    width: 100%;
+    height: 0.145rem;
+    background: url("../images/tmall-allowance-top.webp") no-repeat;
+    background-size: cover;
+}
+/*天猫优惠卷*/
+.tmallphone-allowance{
+    width: 100%;
+    height: 1.8rem;
+}
+.tmallphone-allowance img{
+    width: 100%;
+}
+/*限时抢购*/
+.tmall-limittime{
+    width: 100%;
+    height: 2.73rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 0.05rem 0 0.05rem;
+    box-sizing: border-box;
+    margin-top: 0.2rem;
+}
+.tmall-limittime-list1{
+     width: 1.725rem;
+     height: 1.285rem;
+     background: url("../images/tmall-limit-left1-background.png") no-repeat;
+     background-size: cover;
+    font-size: 0.16rem;
+    display: flex;
+    flex-wrap: wrap;
+ }
+/*.tmall-limittime-list1{
+    width: 0.64rem;
+    height: 0.16rem;
+
+}*/
+.tmall-limittime-list1-title{
+    width: 0.776rem;
+    height: 0.176rem;
+    font-size: 0.176rem;
+    font-weight: bold;
+    margin-top: 0.1rem;
+    margin-left:0.1rem;
+}
+
+.tmall-limittime-list1-time{
+    margin-top: 0.1rem;
+    margin-left: 0.05rem;
+
+}
+.tmall-limittime-list1-time span{
+    padding: 0.02rem 0.02rem;
+    background-color: black;
+    color: white;
+    font-size: 0.14235rem;
+    border-radius: 0.03rem;
+
+}
+.tmall-limittime-list1-left-image{
+    width: 0.8555rem;
+    height: 0.8rem;
+    background: url("../images/xianshitejia.webp") no-repeat;
+    background-size: 0.8555rem 0.8rem;
+    position: relative;
+}
+.tmall-limittime-list1-left-image-tag{
+    /*width: 0.4966rem;
+    height: 0.1324rem;*/
+    font-size: 0.1104rem;
+    color: #ff0036;
+    box-sizing: border-box;
+    text-align: center;
+    line-height:0.1324rem;
+    border: 1px solid #ff0036;
+    position: absolute;
+    left: 0.2rem;
+    background-color: white;
+    bottom: 0;
+}
+.tmall-limittime-list1-right-image{
+    width: 0.8555rem;
+    height: 0.8rem;
+    background: url("../images/weinijingxuan.webp") no-repeat;
+    background-size: 0.8555rem 0.8rem;
+    position: relative;
+}
+.tmall-limittime-list1-right-image-tag{
+    font-size: 0.1104rem;
+    color: #ff0036;
+    box-sizing: border-box;
+    text-align: center;
+    line-height:0.1324rem;
+    border: 1px solid #ff0036;
+    position: absolute;
+    left: 0.2rem;
+    background-color: white;
+    bottom: 0;
+}
+.tmall-limittime-list1-timeno{
+    display: none;
+}
+.tmall-limittime-list2{
+    width: 1.725rem;
+    height: 1.285rem;
+    background: url("../images/tmall-limit-right1.png") no-repeat;
+    background-size: cover;
+    font-size: 0.16rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tmall-limittime-list2-left-image-tag{
+    left: 0.15rem;
+}
+.tmall-limittime-list2-left-image{
+    background-image: url("../images/tianmaohaowu-left.webp");
+}
+.tmall-limittime-list2-right-image{
+    background-image: url("../images/tianmaohaowu-right.webp");
+}
+.tmall-limittime-list3{
+    width: 1.725rem;
+    height: 1.285rem;
+    background: url("../images/tmall-limit-left2.png") no-repeat;
+    background-size: cover;
+    font-size: 0.16rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tmall-limittime-list3-left-image-tag{
+    left: 0.09rem;
+}
+.tmall-limittime-list3-right-image-tag{
+    left: 0.15rem;
+}
+.tmall-limittime-list3-left-image{
+    background-image: url("../images/juhuasuan-left.webp");
+}
+.tmall-limittime-list3-right-image{
+    background-image: url("../images/juhuasuan-right.webp");
+}
+.tmall-limittime-list4{
+    width: 1.725rem;
+    height: 1.285rem;
+    background: url("../images/tmall-limit-right2.png") no-repeat;
+    background-size: cover;
+    font-size: 0.16rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tmall-limittime-list4-left-image-tag{
+    left: 0.17rem;
+}
+.tmall-limittime-list4-right-image-tag{
+    left: 0.15rem;
+}
+.tmall-limittime-list4-left-image{
+    background-image: url("../images/tianmaoshanjiang-left.webp");
+}
+.tmall-limittime-list4-right-image{
+    background-image: url("../images/tianmaoshanjiang-right.webp");
+}
+/*天猫榜单*/
+.tmallphone-sort{
+    width: 100%;
+    height: 5.1rem;
+}
+.tmallphone-sort-title{
+    width: 3.55rem;
+    height: 0.328rem;
+    font-size: 0.19872rem;
+    font-weight: bold;
+    line-height: 0.328rem;
+    color: #333333;
+    margin: 0.05rem auto 0;
+}
+.tmallphone-sort-tend{
+    width: 3.55rem;
+    height: 1.65rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.tmallphone-sort-tend-list1{
+    width: 1.10rem;
+    height: 1.45rem;
+    margin-top: 0.15rem;
+    background: url("../images/tmallphone-sort.webp") no-repeat;
+    background-size: cover;
+}
+.tmallphone-sort-tend-list-logo{
+    width: 0.34rem;
+    height: 0.28rem;
+    background: url("../images/tmallphone-sort-logo.webp") no-repeat;
+    background-size: cover;
+    margin-left: 0.07rem;
+}
+.tmallphone-sort-tend-list1-image{
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: -0.1rem auto 0;
+    background-color:rgba(255,255,255,0.2);
+
+}
+.tmallphone-sort-tend-list1-image img{
+    width: 0.8rem;
+    margin: auto;
+}
+.tmallphone-sort-tend-list1-name{
+    width: 0.95rem;
+    height: 0.16rem;
+    font-size: 0.1rem;
+    margin: auto;
+    color: white;
+    text-align: center;
+    background: url("../images/tmallphone-sort-title-back.webp") no-repeat;
+    background-size: cover;
+}
+.tmallphone-sort-tend-list1-likedegree{
+    text-align: center;
+    margin-top: 0.05rem;
+    font-size: 0.11rem;
+}
+.tmallphone-sort-tend-list2{
+    width: 1.10rem;
+    height: 1.6rem;
+    background: url("../images/tmallphone-sort.webp") no-repeat;
+    background-size: cover;
+}
+.tmallphone-sort-tend-list2-image{
+    width: 0.8rem;
+    height: 0.85rem;
+    margin: 0rem auto 0;
+    background-color:rgba(255,255,255,0.2);
+}
+.tmallphone-sort-tend-list2-image img{
+    width: 0.8rem;
+    margin: auto;
+}
+.tmallphone-sort-tend-list3{
+    width: 1.10rem;
+    height: 1.45rem;
+    background: url("../images/tmallphone-sort.webp") no-repeat;
+    background-size: cover;
+    margin-top: 0.15rem;
+}
+.tmallphone-hotperson{
+    width: 3.5rem;
+    height: 0.93rem;
+    margin: 0.1rem auto 0;
+    display: flex;
+    background-color: #f8f8f8;
+    justify-content: space-around;
+}
+.tmallphone-hotperson-left{
+    width: 1.02rem;
+    height: 0.93rem;
+}
+.tmallphone-hotperson-left-image{
+    width: 0.47rem;
+    height: 0.24rem;
+    margin-left: 0.1rem;
+    background: url("../images/tmallphone-hotperson.png") no-repeat;
+}
+.tmallphone-hotperson-left-title{
+    font-size: 0.12rem;
+    font-weight: bold;
+    margin-left: 0.1rem;
+}
+.tmallphone-hotperson-left-content{
+    font-size: 0.11rem;
+    color: #999999;
+    margin-top: 0.05rem;
+    margin-left: 0.1rem;
+}
+.tmallphone-hotperson-right{
+    width: 2.3rem;
+    height: 0.93rem;
+    position: relative;
+}
+.tmallphone-hotperson-right-inner{
+    width: 2.1rem;
+    height: 0.93rem;
+    position: absolute;
+    left: 0.2rem;
+    top:0;
+    display: flex;
+}
+.tmallphone-hotperson-right-inner1{
+    z-index: 1;
+    background-color: #f8f8f8;
+    display: flex;
+}
+.tmallphone-hotperson-right-pai1{
+    width: 33.3%;
+    height: 0.93rem;
+    background: url("../images/tmallphone-hotperson-pai1.webp") no-repeat center center;
+    background-size: 90% 0.7rem;
+    position: relative;
+}
+.tmallphone-hotperson-right-pai1-image{
+    width: 0.23rem;
+    height: 0.23rem;
+    background: url("../images/tmallphone-hotperson-jinpai.webp") no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0.05rem;
+    top: 0.05rem;
+}
+.tmallphone-hotperson-right-pai2{
+    width: 33.3%;
+    height: 0.93rem;
+    background: url("../images/tmallphone-hotperson-pai2.webp") no-repeat center center;
+    background-size: 90% 0.7rem;
+    position: relative;
+}
+.tmallphone-hotperson-right-pai2-image{
+    width: 0.23rem;
+    height: 0.23rem;
+    background: url("../images/tmallphone-hotperson-yinpai.webp") no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0.05rem;
+    top: 0.05rem;
+}
+.tmallphone-hotperson-right-pai3{
+    width: 33.3%;
+    height: 0.93rem;
+    background: url("../images/tmallphone-hotperson-pai3.webp") no-repeat center center;
+    background-size: 90% 0.7rem;
+    position: relative;
+}
+.tmallphone-hotperson-right-pai3-image{
+    width: 0.23rem;
+    height: 0.23rem;
+    background: url("../images/tmallphone-hotperson-tongpai.webp") no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0.05rem;
+    top: 0.05rem;
+}
+
+.tmallphone-hotperson-right-inner2{
+    background-color: #f8f8f8;
+    display: flex;
+}
+
+.tmallphone-hotperson-right-inner2 .tmallphone-hotperson-right-pai1{
+    width: 33.3%;
+    height: 0.93rem;
+    background: url("../images/tmallphone-hotperson-pai4.webp") no-repeat center center;
+    background-size: 90% 0.7rem;
+    position: relative;
+}
+.tmallphone-hotperson-right-inner2 .tmallphone-hotperson-right-pai1-image{
+    width: 0.23rem;
+    height: 0.23rem;
+    background: url("../images/tmallphone-hotperson-paiming4.webp") no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0.05rem;
+    top: 0.05rem;
+}
+.tmallphone-hotperson-right-inner2 .tmallphone-hotperson-right-pai2{
+    width: 33.3%;
+    height: 0.93rem;
+    background: url("../images/tmallphone-hotperson-pai5.webp") no-repeat center center;
+    background-size: 90% 0.7rem;
+    position: relative;
+}
+.tmallphone-hotperson-right-inner2 .tmallphone-hotperson-right-pai2-image{
+    width: 0.23rem;
+    height: 0.23rem;
+    background: url("../images/tmallphone-hotperson-paiming5.webp") no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0.05rem;
+    top: 0.05rem;
+}
+.tmallphone-hotperson-right-inner2 .tmallphone-hotperson-right-pai3{
+    width: 33.3%;
+    height: 0.93rem;
+    background: url("../images/tmallphone-hotperson-pai6.webp") no-repeat center center;
+    background-size: 90% 0.7rem;
+    position: relative;
+}
+.tmallphone-hotperson-right-inner2 .tmallphone-hotperson-right-pai3-image{
+    width: 0.23rem;
+    height: 0.23rem;
+    background: url("../images/tmallphone-hotperson-paiming6.webp") no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0.05rem;
+    top: 0.05rem;
+}
+.tmallphone-hotperson-list{
+    width:3.5rem;
+    height: 2rem;
+    display: flex;
+    margin: 0.05rem auto 0;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    align-items: center;
+}
+.tmallphone-hotperson-list1{
+    width: 1.7rem;
+    height: 0.93rem;
+    display: flex;
+    background-color: #f8f8f8;
+    align-items: center;
+}
+.tmallphone-hotperson-list1-left{
+    width:1.1rem;
+    height: 0.93rem;
+}
+
+.tmallphone-hotperson-list1-left-name{
+    font-size: 0.11rem;
+    color: #c99e6b;
+    font-weight: bold;
+    margin: 0.1rem 0 0.05rem 0.1rem;
+}
+.tmallphone-hotperson-list1-left-line{
+    width: 0.12rem;
+    height: 0.015rem;
+    background-color: #d7d7d7;
+    margin-left: 0.1rem;
+}
+.tmallphone-hotperson-list1-left-title{
+    font-size:0.11rem;
+    color: black;
+    margin-left: 0.1rem;
+    font-weight: bold;
+    margin-top: 0.06rem;
+}
+.tmallphone-hotperson-list1-left-content{
+    font-size: 0.11rem;
+    color: #a2a2a2;
+    margin-top: 0.05rem;
+    margin-left: 0.1rem;
+}
+.tmallphone-hotperson-list1-right{
+    width:0.6rem;
+    height: 0.6rem;
+    background: #f0f0f0 url("../images/tmallphone-hotperson-bottom1.webp") no-repeat;
+    background-size: cover;
+}
+.tmallphone-hotperson-list2-right{
+    width:0.6rem;
+    height: 0.6rem;
+    background: #f0f0f0 url("../images/tmallphone-hotperson-bottom2.webp") no-repeat;
+    background-size: cover;
+}
+.tmallphone-hotperson-list3-right{
+    width:0.6rem;
+    height: 0.6rem;
+    background: #f0f0f0 url("../images/tmallphone-hotperson-bottom3.webp") no-repeat;
+    background-size: cover;
+}
+.tmallphone-hotperson-list4-right{
+    width:0.6rem;
+    height: 0.6rem;
+    background: #f0f0f0 url("../images/tmallphone-hotperson-bottom4.webp") no-repeat;
+    background-size: cover;
+}
+.tmallphone-like{
+    width: 100%;
+    height: 0.32rem;
+}
+.tmallphone-like-inner{
+    width: 3.5rem;
+    height: 0.32rem;
+    margin: auto;
+    font-weight: bold;
+    line-height: 0.33rem;
+    font-size: 0.2rem;
+}
+.tmallphone-like-list{
+    width:100%;
+    height: 3.05rem;
+    background: url("../images/tmallphone-like-back.webp") no-repeat;
+    background-size: 3.75rem 1.47rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0.05rem;
+    box-sizing: border-box;
+    align-items: center;
+}
+.tmallphone-like-list-good1{
+    width: 1.7rem;
+    height: 2.9rem;
+    border: 1px solid #cccccc;
+}
+.tmallphone-like-list-good1-top{
+    width: 1.7rem;
+    height: 1.7rem;
+    background: #f8f8f8 url("../images/tmallphone-like-good1.webp") no-repeat center;
+    background-size: 1.5rem 1.5rem;
+}
+.tmallphone-like-list-good1-logo{
+    width: 1.1rem;
+    height: 0.2rem;
+    margin-left: 0.1rem;
+    margin-top: -0.1rem;
+    background: #cda4b2 url("../images/US.png") no-repeat 0.05rem center;
+    background-size: 0.2rem 0.14rem;
+    padding-left: 0.3rem;
+    font-size: 0.1rem;
+    line-height: 0.2rem;
+    color: white;
+}
+.tmallphone-like-list-good1-title{
+    width:1.5rem;
+    font-size: 0.14rem;
+    margin:0.05rem 0px 0px 0.1rem;
+}
+.tmallphone-like-list-good1-allowance span{
+    border: 1px solid #ff0036;
+    color: #ff0036;
+    font-size: 0.12rem;
+    margin-left: 0.1rem;
+}
+.tmallphone-like-list-good1-bottom{
+    width: 1.7rem;
+    height: 0.33rem;
+    display: flex;
+    margin-top: 0.05rem;
+    position: relative;
+}
+.tmallphone-like-list-good1-bottom-price{
+    margin-left: 0.1rem;
+    font-size: 0.16rem;
+    color: #ff0036;
+    font-weight: bold;
+    margin-top: 0.08rem;
+}
+.tmallphone-like-list-good1-bottom-like span{
+    padding: 0.05rem 0.08rem;
+    color: #ff0036;
+    font-size: 0.12rem;
+    background-color:#ffe6eb;
+    border-radius: 0.08rem;
+    position: absolute;
+    right: 0.1rem;
+    top: 0.05rem;
+}
+.tmallphone-like-list-good-allowance1{
+    height: 3.15rem;
+    background: url("../images/tmallphone-allowance1.webp") no-repeat;
+    background-size: cover;
+}
+.tmallphone-like-list-good-allowance2{
+    height: 3.15rem;
+    background: url("../images/tmallphone-allowance2.webp") no-repeat;
+    background-size: cover;
+}
+.tmallphone-like-list-good-allowance3{
+    height: 3.15rem;
+    background: url("../images/tmallphone-allowance3.webp") no-repeat;
+    background-size: cover;
+}
+.tmallphone-like-list2{
+    width:100%;
+    height: 3.25rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0.05rem;
+    box-sizing: border-box;
+}
+
+
