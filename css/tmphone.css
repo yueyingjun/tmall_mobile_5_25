@@ -1,0 +1,695 @@
+html{
+    font-size: 26.66666666vw;
+}
+
+*{
+    box-sizing:border-box;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: .16rem;
+    padding: 0rem;
+    margin: 0;
+    text-align: center;
+}
+body{
+    margin: 0;
+    padding:0;
+}
+/*顶部*/
+.ding{
+    width: 100vw;
+    height: .9rem;
+    background: rgb(255, 0, 54);
+}
+.ding-top{
+    font-size: .16rem;
+    position: relative;
+    width: 100%;
+    height: .44rem;
+    display: flex;
+    align-items: center;
+}
+.ding-top-left{
+    position: absolute;
+    left: .12rem;
+    height: .3rem;
+    width: .3rem;
+    overflow: hidden;
+}
+.ding-top-right{
+    position: absolute;
+
+    right: .12rem;
+    height: .3rem;
+    width: .4rem;
+}
+.ding-top div img{
+
+    height: 100%;
+}
+.ding-top-a{
+    height: .3rem;
+    width: .3rem;
+}
+.ding-top .logo{
+    margin: auto;
+    width: 1.185rem;
+    height: .205rem;
+}
+.ding-bottom{
+    width: 100%;
+    height: .46rem;
+
+    display: flex;
+    justify-content: space-around;
+}
+.ding-bottom .sousuo{
+    width: 3.55rem;
+    height: .36rem;
+    background: #FFFFFF;
+    border-radius: .05rem;
+    display: flex;
+}
+.sousuo img{
+
+    width: .15rem;
+    height: .15rem;
+    margin: .1rem .1rem 0;
+}
+.sousuo span{
+
+    font-size: .14rem;
+    background-color: transparent;
+    align-self: center;
+    line-height: .36rem;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/*列表*/
+.list{
+    width: 100%;
+    height: .78rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    place-content: flex-start center;
+
+}
+.list-opt{
+    width: .7rem;
+    height: 100%;
+    margin: 0rem;
+}
+.list-opt img{
+    display: flex;
+    height: .48rem;
+    width: .48rem;
+    margin-left: .11rem;
+    margin-top:.05rem;
+    margin-bottom:.02rem;
+
+}
+.list-opt span{
+    display: flex;
+    color: #000;
+    text-align: center;
+    font-size: .13rem;
+    padding-left: .11rem;
+}
+
+.lunbo{
+    width: 100%;
+    height: 1.32253rem;
+    margin-top: .1rem;
+
+    position: relative;
+}
+.lunbo img{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+.dinner1{
+    margin-left: .12rem;
+    height: 1.3225rem;
+    width: 3.51rem;
+    position: absolute;
+    z-index: 5;
+}
+.dinner2{
+    margin-left: .12rem;
+    height: 1.3225rem;
+    width: 3.51rem;
+    position: absolute;
+    z-index: 4;
+}
+.dinner3{
+    margin-left: .12rem;
+    height: 1.3225rem;
+    width: 3.51rem;
+    position: absolute;
+    z-index: 3;
+}
+.dinner4{
+    margin-left: .12rem;
+    height: 1.3225rem;
+    width: 3.51rem;
+    position: absolute;
+    z-index: 2;
+}
+.dinner5{
+    margin-left: .12rem;
+    height: 1.3225rem;
+    width: 3.51rem;
+    position: absolute;
+    z-index: 1;
+}
+.btns{
+
+    width: 1.5rem;
+
+    height: .04rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom:.1rem;
+    z-index: 7;
+
+
+
+}
+.btn1{
+    float: left;
+    width: .16rem;
+    height: .02rem;
+
+    background: #000000;
+    opacity: .4;
+}
+.btn2{
+    margin: 0 .05rem;
+    float: left;
+    width: .16rem;
+    height: .02rem;
+
+    background: #000000;
+    opacity: .4;
+}
+.btn3{
+    margin: 0 .05rem;
+    float: left;
+    width: .16rem;
+    height: .02rem;
+
+    background: #000000;
+    opacity: .4;
+}
+.btn4{
+    margin: 0 .05rem;
+    float: left;
+    width: .16rem;
+    height: .02rem;
+
+    background: #000000;
+    opacity: .4;
+}
+.btn5{
+    margin: 0 .05rem;
+    float: left;
+    width: .16rem;
+    height: .02rem;
+
+    background: #000000;
+    opacity: .4;
+}
+
+
+/*中间*/
+.hengfu{
+    margin-top:.145rem;
+    width: 100%;
+    height: 1.8rem;
+}
+.hengfu img{
+    width: 100%;
+    height: 100%;
+}
+
+/*四宫格*/
+.sigongge{
+    width: 100%;
+    height: 2.73rem;
+    margin-top: .1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.sigongge .opt{
+    height: 1.285rem;
+    width: 1.725rem;
+    background:url("../imgs/tmphonesigongge.png") no-repeat;
+    background-size:cover;
+    font-size: .16rem;
+    position: relative;
+
+}
+.sigongge .opt a{
+    position: absolute;
+    line-height: .16rem;
+    top: .15rem;
+    font-weight: bold;
+    left: .15rem;
+    color: rgb(32, 32, 32);
+}
+.sigongge .opt-bottom{
+    width: 100%;
+    height: .775rem;
+    margin-top: .40rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+.op-bottom-opt{
+    height: .775rem;
+    background: url("../imgs/opt-bottom.webp");
+
+    background-size: cover;
+    width: .775rem;
+}
+.opt-text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    place-content: flex-start center;
+    align-items: center;
+}
+
+.opt-text span{
+    border: .005rem solid rgb(255, 0, 54);
+    box-sizing: border-box;
+    font-size: .1rem;
+    max-width: .775rem;
+    color: rgb(255, 0, 54);
+    height: .12rem;
+    text-align: center;
+    line-height: .11rem;
+    background: rgb(255, 237, 241);
+
+}
+
+/*天猫榜单*/
+
+.tmbangdan{
+    font-size: .16rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 4.58rem;
+    margin-top:.1rem;
+}
+.tmbangdan-title{
+    font-size: .18rem;
+    width: 3.51rem;
+    height: .3rem;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+}
+.qushi{
+    width: 3.57rem;
+    height: 1.495rem;
+    margin-bottom: .06rem;
+    justify-content: space-around;
+    position: relative;
+    display: flex;
+
+}
+
+
+.qushi-left{
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    height: 1.365rem;
+    width: 1.13rem;
+    background:url("../imgs/qushiback.webp") no-repeat;
+}
+.zhezhao{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../imgs/qushizhezhao.webp") no-repeat;
+}
+.qushibang{
+    width: .315rem;
+    height: .255rem;
+    position: absolute;
+    top: 0;
+    left: .06rem;
+ }
+.qushi-left-top img{
+    width: .73rem;
+    height: .73rem;
+}
+
+.qushi-left-top{
+    width: .73rem;
+    height: .73rem;
+    background: rgba(0, 0, 0, 0.03);
+}
+.qushi span{
+    font-size: .12rem;
+    line-height: .18rem;
+    color: rgb(0, 0, 0);
+}
+.qushi-left-mid{
+    background: url("../imgs/qushimid.webp") no-repeat;
+    font-size: .11rem;
+    text-align: center;
+    line-height: .18rem;
+    color: #FFFFFF;
+    background-size: cover;
+    width: 1.04rem;
+    height: .18rem;
+    border-radius: .09rem;
+
+
+
+}
+.qushi-right{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    height: 1.365rem;
+    width: 1.13rem;
+    background:url("../imgs/qushiback.webp") no-repeat;
+}
+
+
+
+.qushi-mid{
+    position: relative;
+    height: 100%;
+    width: 1.13rem;
+    background:url("../imgs/qushiback.webp") no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.renqi{
+    width: 3.51rem;
+    height: .845rem;
+    margin-top: .07rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(248, 248, 248)
+}
+.renqi-left{
+    width: .97rem;
+    height: .845rem;
+}
+.renqi-left-text{
+    width: .84rem;
+    height: .845rem;
+    float:right;
+    display: flex;
+    flex-direction: column;
+}
+.renqi-left-text div{
+    text-align: center;
+    color: #FFFFFF;
+    width: .46rem;
+    height: .215rem;
+    font-size: .11rem;
+    background: url("../imgs/renqileft.webp") no-repeat;
+    background-size: cover;
+
+    line-height: .18rem;
+}
+.renqi-left-text span{
+    font-size: .12rem;
+    line-height: .19rem;
+    color: rgb(49, 49, 49);
+    font-weight: 600;
+
+}
+
+.renqi-left-text .two{
+    color: rgb(153, 153, 153);
+    font-weight: normal;
+}
+
+.renqi-right{
+    height: .65rem;
+    width: 2.11rem;
+    position: relative;
+}
+.sdinner1{
+    position: absolute;
+    z-index: 3;
+    height: .65rem;
+    width: 2.11rem;
+}
+.sdinner2{
+    height: .65rem;
+    width: 2.11rem;
+    position: absolute;
+    z-index: 4;
+}
+
+.sdin div{
+    position: relative;
+    height: 100%;
+    width: .65rem;
+    float: left;
+    background-color: rgb(248, 248, 248)
+}
+.renqi-right .one{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: .215rem;
+    height: .215rem;
+}
+.renqi-right img{
+    height: 100%;
+    width: .65rem;
+}
+
+.renqia{
+    height: .845rem;
+    width: 1.725rem;
+    margin-top: .06rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(248, 248, 248)
+}
+.renqia-left{
+    width: .96rem;
+    height: .675rem;
+    margin-left: .13rem;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+.left-one{
+    font-size:.11rem;
+    color:  rgb(200, 157, 107);
+    line-height: .2rem;
+}
+.left-two{
+    width: .11rem;
+    height: .015rem;
+    background: rgb(227, 227, 227);
+    margin-top: .02rem;
+    margin-bottom:.06rem;
+
+}
+.left-three{
+    font-size: .12rem;
+    color: rgb(49, 49, 49);
+    line-height: .19rem;
+    font-weight: 600;
+    overflow: hidden;
+}
+.left-four{
+    font-size: .12rem;
+    color: rgb(153, 153, 153);
+    line-height: .19rem;
+    overflow: hidden;
+}
+.renqia-right{
+    height: .55rem;
+    width: .55rem;
+    background: url("../imgs/renqia1.webp") no-repeat ;
+    background-size: cover ;
+}
+
+/*猜你喜欢*/
+.xihuan{
+    height: .4rem;
+    width: 100%;
+    position: relative;
+
+}
+.xihuan span{
+    font-size: .18rem;
+    line-height: .3rem;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: .3rem;
+    width: 3.51rem;
+}
+
+.xihuan-body{
+    display: flex;
+    flex-direction: column;
+}
+.xihuan-body-opt{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 3.53rem;
+    height: 3.16rem;
+}
+.xihuan-body-opt2{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 3.53rem;
+    height: 2.77rem;
+}
+.xihuan-body-opt-ll{
+    width: 1.7rem;
+    height: 3.11rem;
+}
+.xihuan-body-opt-left{
+    border: .01rem solid rgb(237, 237, 237);
+    box-sizing:border-box;
+    width: 1.7rem;
+    height: 2.67rem;
+    display: flex;
+    flex-direction: column;
+}
+.xihuan-icon{
+    position: relative;
+
+    width: 1.38rem;
+    height: 1.38rem;
+    margin: .15rem .15rem 0;
+}
+.xihuan-icon img{
+    width: 100%;
+    height: 100%;
+}
+.xihuan-brand{
+    position: relative;
+    width: .65656rem;
+    height:.18rem;
+    padding: 0 .05rem;
+    background: rgb(206, 175, 163);
+    margin-left:.1rem;
+}
+.xihuan-brand img   {
+    position: absolute;
+    top: .025rem;
+    display: flex;
+    align-items: center;
+    width: .18235rem;
+    height: .12815rem;
+    margin-right: .05rem;
+}
+.xihuan-brand span{
+    float: right;
+    display: flex;
+    font-size: .1rem;
+    height: .1rem;
+    color: rgb(255, 255, 255);
+    line-height: .18rem;
+}
+.xihuan-text span{
+    margin: .02rem .1rem;
+
+    float: left;
+    font-size: .14rem;
+    line-height: .18rem;
+    height: .36rem;
+
+    color: rgb(62, 62, 62);
+    overflow: hidden;
+}
+.youhuijuan{
+    height: .14rem;
+    width: .4108rem;
+    border: .005rem solid rgb(255, 0, 54);
+    text-align: center;
+    line-height: .14rem;
+    font-size: .11rem;
+    margin-left: .1rem;
+    color: rgb(255, 0, 54);
+
+}
+
+.xihuan-bottom{
+    width: 100%;
+    height: .3rem;
+    padding: 0rem .1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.xihuan-bottom .qian{
+    float: right;
+    font-size: .16rem;
+    text-align: left;
+    font-weight: 600;
+    color: rgb(255, 0, 0);
+    line-height: .28rem;
+}
+.xiangsi{
+    height: .23rem;
+    width: .54rem;
+    border-radius: .12rem;
+    background: rgb(255, 230, 235);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.xiangsi span{
+    font-size: .11rem;
+    color: rgb(255, 0, 54);
+    height: .11rem;
+    line-height: .11rem;
+
+}
+
+.right{
+    height: 3.11rem;
+    background: url("../imgs/hongbao.webp") no-repeat;
+    background-size: cover;
+}
