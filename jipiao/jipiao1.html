@@ -1,0 +1,2365 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/demo.css">
+
+    <script>
+        window.onload = function (ev) {
+            var banner = document.querySelectorAll(".banner");
+            var btns = document.querySelectorAll(".btn");
+            var num=0;
+            setInterval(function () {
+                num++;
+
+                if(num==2){
+                    num=0;
+                }
+                for (var i = 0; i < banner.length; i++) {
+                    // console.log(banner[i]);
+                    // console.log(btns[i]);
+                    banner[i].style.display="none";
+                    btns[i].style.background="white";
+                }
+                // console.log(num);
+                banner[num].style.display="block";
+                btns[num].style.background="orange";
+            },3000)
+
+        }
+
+    </script>
+
+<!--头标签-->
+</head>
+<body>
+<!--头部-->
+    <header>
+        <div class="main-warp"></div>
+        <a href=""><img src="imgs/mh.png" alt=""></a>
+    </header>
+<!--开头-->
+    <div class="box">
+        <div class="con">
+            <div class="left">
+                <a href="" class="action">首页</a>
+                <a href="">国内机票</a>
+                <a href="">国际机票</a>
+                <a href="">明航咨询</a>
+                <a href="">明航问答</a>
+            </div>
+            <div class="right">
+                <a href="" class="user" >登录</a>
+                <a href="">注册</a>
+                <a href="">用户中心 </a>
+                <div class="sanjiao"></div>
+            </div>
+        </div>
+    </div>
+<!---热门城市-->
+<div class="hot">
+    <span>热门城市：</span>
+    <a href="">深圳</a>
+    <a href="">北京</a>
+    <a href="">上海</a>
+    <a href="">广州</a>
+    <a href="">南京</a>
+    <a href="">天津</a>
+    <a href="">武汉</a>
+    <a href="">长沙</a>
+    <a href="">昆明</a>
+    <a href="">贵阳</a>
+    <a href="">成都</a>
+    <a href="">重庆</a>
+    <a href="">海口</a>
+    <a href="">哈尔滨</a>
+    <a href="">更多</a>
+</div>
+
+<!--轮播图-->
+<div class="wheel-box">
+    <div class="banner banner1"></div>
+    <div class="banner banner2"></div>
+    <div class="btns">
+        <div class="btn btn1"></div>
+        <div class="btn btn2"></div>
+    </div>
+</div>
+<!--购票流程-->
+<div class="piao">
+    <div class="piao-left">
+        <h3> 购票流程</h3>
+
+    </div>
+    <ul class="piao-right">
+        <li>
+            <div class="icon">
+                <div class="icon-out">
+                    <div class="icon-in">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="text">
+                <div class="text-title">航班查询</div>
+                <div class="text-info">选择出航航班</div>
+
+            </div>
+
+            <div class="arrow"></div>
+
+        </li>
+        <li>
+            <div class="icon">
+                <div class="icon-out ">
+                    <div class=" icon-in1">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="text">
+                <div class="text-title">提交订单</div>
+                <div class="text-info">登记乘机人和联系人</div>
+
+            </div>
+
+            <div class="arrow"></div>
+        </li>
+        <li>
+            <div class="icon">
+                <div class="icon-out ">
+                    <div class=" icon-in2">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="text">
+                <div class="text-title">在线支付</div>
+                <div class="text-info">支付取票机</div>
+
+            </div>
+
+            <div class="arrow"></div>
+        </li>
+        <li>
+            <div class="icon">
+                <div class="icon-out ">
+                    <div class=" icon-in3">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="text">
+                <div class="text-title">无需取票</div>
+                <div class="text-info">凭电子客票号换登机牌</div>
+
+            </div>
+
+            <div class="arrow"></div>
+        </li>
+
+    </ul>
+
+</div>
+<!--信息-->
+<div class="xinxi">
+    <ul class="left">
+        <li>
+            <div class="tubiao1"></div>
+            <div class="text">订单管理</div>
+        </li>
+        <li>
+            <div class="tubiao2"></div>
+            <div class="text">支付中心</div>
+        </li>
+        <li>
+            <div class="tubiao3"></div>
+            <div class="text">价格趋势</div>
+        </li>
+        <li>
+            <div class="tubiao4"></div>
+            <div class="text">机票验真</div>
+        </li>
+        <li>
+            <div class="tubiao5"></div>
+            <div class="text">航班动态</div>
+        </li>
+        <li>
+            <div class="tubiao6"></div>
+            <div class="text">新手指南</div>
+        </li>
+    </ul>
+    <div class="right">
+        <div class="info1">
+            <h3>
+                <span>最新资讯</span>
+                <a href="">更多>></a>
+            </h3>
+            <div class="sth">
+            <a href="">简单了解一下金鹏航空官网机票购买流程</a>
+            <a href="">东方航空去哪儿网合作举办“校园旅行家</a>
+            <a href="">网上买飞机票为什么只能买9张,10人</a>
+            <a href="">想知道南方航空机票购买流程，南航手机</a>
+            </div>
+        </div>
+        <div class="info2">
+            <h3>
+                <span>网站共告</span>
+                <a href="">更多>></a>
+            </h3>
+            <div class="sth2">
+                <a href="">带你认识飞机经停是什么意思</a>
+                <a href="">12306机票网上订票官网请上民航在</a>
+                <a href="">1岁婴儿机票怎么买 能够从网上购买婴</a>
+                <a href="">了解订机票用什么软件好对你出门旅游帮</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<div class="abox">
+    <div class="a-left">
+        热门航线预定
+    </div>
+    <div class="a-right">
+        <a href="javascript:;" class="select">全国</a>
+        <a href="javascript:;">深圳</a>
+        <a href="javascript:;">北京</a>
+        <a href="javascript:;">上海</a>
+        <a href="javascript:;">广州</a>
+        <a href="javascript:;">武汉</a>
+        <a href="javascript:;">成都</a>
+        <a href="javascript:;">海口</a>
+        <a href="javascript:;">重庆</a>
+        <a href="javascript:;">沈阳</a>
+    </div>
+</div>
+<div class="ooo">
+    <ul class="bbox" style="z-index: 1" >
+    <li class="bbox-opt">
+        <a href="" class="cal">
+            <div class="one">
+                <span class="one-1">
+                        海口0
+                </span>
+                <div class="one-2"></div>
+                <span class="one-3">郑州</span>
+            </div>
+            <div class="two">12月16日</div>
+            <div class="three">
+                <div class="three-1"></div>
+                <div class="three-2">票价:</div>
+                <div class="three-3">￥</div>
+                <div class="three-4">150</div>
+            </div>
+        </a>
+    </li>
+    <li class="bbox-opt">
+        <a href="" class="cal">
+            <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                <div class="one-2"></div>
+                <span class="one-3">郑州</span>
+            </div>
+            <div class="two">12月16日</div>
+            <div class="three">
+                <div class="three-1"></div>
+                <div class="three-2">票价:</div>
+                <div class="three-3">￥</div>
+                <div class="three-4">150</div>
+            </div>
+        </a>
+    </li>
+    <li class="bbox-opt">
+        <a href="" class="cal">
+            <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                <div class="one-2"></div>
+                <span class="one-3">郑州</span>
+            </div>
+            <div class="two">12月16日</div>
+            <div class="three">
+                <div class="three-1"></div>
+                <div class="three-2">票价:</div>
+                <div class="three-3">￥</div>
+                <div class="three-4">150</div>
+            </div>
+        </a>
+    </li>
+    <li class="bbox-opt">
+        <a href="" class="cal">
+            <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                <div class="one-2"></div>
+                <span class="one-3">郑州</span>
+            </div>
+            <div class="two">12月16日</div>
+            <div class="three">
+                <div class="three-1"></div>
+                <div class="three-2">票价:</div>
+                <div class="three-3">￥</div>
+                <div class="three-4">150</div>
+            </div>
+        </a>
+    </li>
+    <li class="bbox-opt">
+        <a href="" class="cal">
+            <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                <div class="one-2"></div>
+                <span class="one-3">郑州</span>
+            </div>
+            <div class="two">12月16日</div>
+            <div class="three">
+                <div class="three-1"></div>
+                <div class="three-2">票价:</div>
+                <div class="three-3">￥</div>
+                <div class="three-4">150</div>
+            </div>
+        </a>
+    </li>
+    <li class="bbox-opt">
+        <a href="" class="cal">
+            <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                <div class="one-2"></div>
+                <span class="one-3">郑州</span>
+            </div>
+            <div class="two">12月16日</div>
+            <div class="three">
+                <div class="three-1"></div>
+                <div class="three-2">票价:</div>
+                <div class="three-3">￥</div>
+                <div class="three-4">150</div>
+            </div>
+        </a>
+    </li>
+    <li class="bbox-opt">
+        <a href="" class="cal">
+            <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                <div class="one-2"></div>
+                <span class="one-3">郑州</span>
+            </div>
+            <div class="two">12月16日</div>
+            <div class="three">
+                <div class="three-1"></div>
+                <div class="three-2">票价:</div>
+                <div class="three-3">￥</div>
+                <div class="three-4">150</div>
+            </div>
+        </a>
+    </li>
+    <li class="bbox-opt">
+        <a href="" class="cal">
+            <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                <div class="one-2"></div>
+                <span class="one-3">郑州</span>
+            </div>
+            <div class="two">12月16日</div>
+            <div class="three">
+                <div class="three-1"></div>
+                <div class="three-2">票价:</div>
+                <div class="three-3">￥</div>
+                <div class="three-4">150</div>
+            </div>
+        </a>
+    </li>
+    <li class="bbox-opt">
+        <a href="" class="cal">
+            <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                <div class="one-2"></div>
+                <span class="one-3">郑州</span>
+            </div>
+            <div class="two">12月16日</div>
+            <div class="three">
+                <div class="three-1"></div>
+                <div class="three-2">票价:</div>
+                <div class="three-3">￥</div>
+                <div class="three-4">150</div>
+            </div>
+        </a>
+    </li>
+    <li class="bbox-opt">
+        <a href="" class="cal">
+            <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                <div class="one-2"></div>
+                <span class="one-3">郑州</span>
+            </div>
+            <div class="two">12月16日</div>
+            <div class="three">
+                <div class="three-1"></div>
+                <div class="three-2">票价:</div>
+                <div class="three-3">￥</div>
+                <div class="three-4">150</div>
+            </div>
+        </a>
+    </li>
+
+</ul>
+    <ul class="bbox">
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口1
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+
+    </ul>
+    <ul class="bbox">
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口2
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+
+    </ul>
+    <ul class="bbox">
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口3
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+
+    </ul>
+    <ul class="bbox">
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口4
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+
+    </ul>
+    <ul class="bbox">
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口5
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+
+    </ul>
+    <ul class="bbox">
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口6
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+
+    </ul>
+    <ul class="bbox">
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口7
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+
+    </ul>
+    <ul class="bbox">
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口8
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+
+    </ul>
+    <ul class="bbox">
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口10
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+        <li class="bbox-opt">
+            <a href="" class="cal">
+                <div class="one">
+                <span class="one-1">
+                        海口
+                </span>
+                    <div class="one-2"></div>
+                    <span class="one-3">郑州</span>
+                </div>
+                <div class="two">12月16日</div>
+                <div class="three">
+                    <div class="three-1"></div>
+                    <div class="three-2">票价:</div>
+                    <div class="three-3">￥</div>
+                    <div class="three-4">150</div>
+                </div>
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+<script>
+
+    var links = document.querySelectorAll(".a-right a")
+    var con=document.querySelectorAll(".bbox")
+
+    for (var i= 0;i<links.length;i++){
+
+        links[i].index=i;
+        links[i].onclick=function (ev) {
+
+         for (var j=0;j<con.length;j++){
+             con[j].style.display="none"
+         }
+             con[this.index].style.display="block"
+            for (a=0;a<links.length;a++){
+                links[a].style.background="white"
+            }
+            links[this.index].style.background="#5f9ea0"
+        }
+
+    }
+
+</script>
+
+<!--热门航空公司-->
+<div class="partbox">
+    <div class="companys">
+        <h3>热门航空公司</h3>
+        <a href="">>></a>
+        <div class="h20"></div>
+        <div class="station">
+            <div class="station-rec">
+                <div class="c1">
+                    <a href=""></a>
+                    <span class="title">中国国际航空公司</span>
+                </div>
+                <div class="c2">
+                    <div class="text">&nbsp;&nbsp;中国国际航空股份有限公司简称“国航”，英文名称为“Air China Limited”，简称“Air China”，其前身 中国国际航空公司成立于1988年。根据国务院批准通过的《民航体制改革方案》，2002年10月，中国国际航空公司联合中国航空总公司和中国西南航空公司，成立了中国航空集团公司，并以联合三方的航空运输资源为基础 ，组建新的中国国际航空公司。</div>
+                    <div class="c2-right"></div>
+                </div>
+            </div>
+            <div class="station-city">
+                <ul>
+                    <li><a href="" class="a1"></a><span>中国南方航空公司</span></li>
+                    <li><a href="" class="a2"></a><span>中国东方航空公司</span></li>
+                    <li><a href="" class="a3"></a><span>海南航空公司</span></li>
+                    <li><a href="" class="a4"></a><span>深圳航空公司</span></li>
+                    <li><a href="" class="a5"></a><span>四川航空公司</span></li>
+                    <li><a href="" class="a6"></a><span>春秋航空公司</span></li>
+
+                </ul>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="fi">
+<!--热门国际机场-->
+<div class="internationalinfo">
+    <div class="mod-hd">
+        <h2>热门国际机场</h2>
+        <span class="mod-more"><a href="">全球机场>></a></span>
+    </div>
+    <div class="jc-info">
+        <a href="" class="gjjc">>>香港赤腊角机场</a>
+        <a href="" class="gjjc">>>首尔仁川机场</a>
+        <a href="" class="gjjc">>>首尔金浦机场</a>
+        <a href="" class="gjjc">>>澳门国际机场</a>
+        <a href="" class="gjjc">>>东京羽田机场</a>
+        <a href="" class="gjjc">>>东京成田机场</a>
+        <a href="" class="gjjc">>>新加坡樟宜机场</a>
+        <a href="" class="gjjc">>>台北桃园中正机场</a>
+        <a href="" class="gjjc">>>曼谷素万那普机场</a>
+        <a href="" class="gjjc">>>曼谷廊曼机场</a>
+        <a href="" class="gjjc">>>大阪伊丹机场</a>
+        <a href="" class="gjjc">>>马尼拉国际机场</a>
+        <a href="" class="gjjc">>>胡志明市国际机场</a>
+        <a href="" class="gjjc">>>伦敦国际机场</a>
+        <a href="" class="gjjc">>>吉隆坡国际机场</a>
+        <a href="" class="gjjc">>>釜山国际机场</a>
+        <a href="" class="gjjc">>>悉尼国际机场</a>
+        <a href="" class="gjjc">>>巴黎奥利机场</a>
+    </div>
+</div>
+    <div class="internationalinfo">
+        <div class="mod-hd">
+            <h2>最新客户咨询</h2>
+            <span class="mod-more"><a href="">更多>></a></span>
+        </div>
+        <div class="jc-info2">
+            <a href="" class="ques">2019/5/16 17:57:21<br>护照可以定机票登机嘛</a>
+            <a href="" class="ques">2019/5/16 14:44:39<br>你好，请问出生两个月的婴儿应该在网上怎么...</a>
+            <a href="" class="ques">2019/5/16 14:28:19<br>你好我现在有事情飞机赶不上了能改签一下吗</a>
+            <a href="" class="ques">2019/5/16 12:15:01<br>温州到徐州的机票哪里买</a>
+            <a href="" class="ques">2019/5/15 15:54:39<br>你好我现在有事情飞机赶不上了能改签一下吗</a>
+            <a href="" class="ques">2019/5/15 15:13:49<br>显示出票没有票号吗</a>
+        </div>
+
+    </div>
+    <div class="internationalinfo2">
+        <div class="mod-hd">
+            <h2>国际特价</h2>
+            <ul class="tabctn">
+                <li>北美</li>
+                <li>亚洲</li>
+                <li>欧洲</li>
+            </ul>
+        </div>
+        <ul class="flight">
+            <li class="item-list">
+                <a href="">
+                    <div class="n-name">
+                        <span class="n-name-start">上海</span>
+                        <div class="n-arrow"></div>
+                        <span class="n-name-end">华盛顿</span>
+                    </div>
+                    <div class="n-date">06月10日</div>
+                    <div class="n-type">
+                        <span>票价：￥1395</span>
+                    </div>
+                </a>
+            </li>
+            <li class="item-list">
+                <a href="">
+                    <div class="n-name">
+                        <span class="n-name-start">北京</span>
+                        <div class="n-arrow"></div>
+                        <span class="n-name-end">洛杉矶</span>
+                    </div>
+                    <div class="n-date">07月19日</div>
+                    <div class="n-type">
+                        <span>票价：￥2950</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="h40"></div>
+
+<!--底部-->
+<div class="foot-main">
+    <div class="foot-nav">
+        <ul>
+            <li>
+                <div class="foot-n1">
+                <div class="foot-n11"></div>
+                </div>
+                <span class="foot-zhifu">支付安全</span>
+                <span class="foot-zhifu1">在线支付100%认证</span>
+            </li>
+            <li>
+                <div class="foot-n2">
+                    <div class="foot-n21"></div>
+                </div>
+                <span class="foot-zhifu">实时同步</span>
+                <span class="foot-zhifu1">全球机票联网售票</span>
+            </li>
+            <li>
+                <div class="foot-n3">
+                    <div class="foot-n31"></div>
+                </div>
+                <span class="foot-zhifu">全天服务</span>
+                <span class="foot-zhifu1">7*24小时专业客服人员为您服务</span>
+            </li>
+            <li>
+                <div class="foot-n4">
+                    <div class="foot-n41"></div>
+                </div>
+                <span class="foot-zhifu">方便快捷</span>
+                <span class="foot-zhifu1">电子客票，身份证直接换登机</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--帮助-->
+<div class="helper">
+    <div class="helpwarp">
+        <div class="helplist">
+            <div class="help1">
+                <span class="xinshou">新手上路</span>
+                <ul>
+                    <li><a href="">查询订阅</a></li>
+                    <li><a href="">订单填写</a></li>
+                    <li><a href="">支付出票</a></li>
+                </ul>
+            </div>
+            <div class="help1">
+                <span class="xinshou">付款方式</span>
+                <ul>
+                    <li><a href="">网上银行</a></li>
+                    <li><a href="">微信支付</a></li>
+                    <li><a href="">信用卡</a></li>
+                </ul>
+            </div>
+            <div class="help1">
+                <span class="xinshou">旅客保障</span>
+                <ul>
+                    <li><a href="">航协认证</a></li>
+                    <li><a href="">支出支票</a></li>
+                    <li><a href="">信用卡</a></li>
+                </ul>
+            </div>
+            <div class="help1">
+                <span class="xinshou">常见问题</span>
+                <ul>
+                    <li><a href="">洛阳北郊机场怎</a></li>
+                    <li><a href="">不太清楚连云港</a></li>
+                    <li><a href="">了解多彩贵州航</a></li>
+                </ul>
+            </div>
+            <div class="help1">
+                <span class="xinshou">关于我们</span>
+                <ul>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">网站介绍</a></li>
+                    <li><a href="">公司简介</a></li>
+                </ul>
+            </div>
+            <div class="helplast">
+                <span class="fuwu">服务热线</span>
+                <div class="phone"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--footer-->
+
+<div class="footer">
+    <div class="footerr">
+    <div class="footer-bd">
+        <p>
+            <em>© 2019 http://www.161580.com 民航在线</em>
+            <b>|</b>
+            <span><a href="">沪ICP备12008257号-2</a></span>
+        </p>
+        <p >
+            <a href="">关于161580</a>
+            <b>|</b>
+            <a href="">联系我们</a>
+            <b>|</b>
+            <a href="">合作伙伴</a>
+            <b>|</b>
+            <a href="">诚征英才</a>
+            <b>|</b>
+            <a href="">用户建议</a>
+        </p>
+    </div>
+    <div class="footer-bd2">
+        <a href="" class="aaaa"></a>
+    </div>
+    </div>
+</div>
+
+
+<div class="table">
+    <div class="tbody">
+        <p>
+            <span>161580官方网站：</span>
+            <a href="">161580.com</a>
+            <b>|</b>
+            <span>全国统一服务热线：</span>
+            <a href="">4000-161580</a>
+            <b>|</b>
+            <a href="">在线咨询</a>
+        </p>
+        <p class="fifi1"> 161580网成立于2009年5月，飞机票网上订票官网提供在线机票查询及预订服务：飞机票查询、飞机票预订、航班时刻查询、全球机场指南。通过互
+            联网、电话呼叫中心以及无线技术为主，整合全国机场进 出港航班实时售票系统，围绕客户提供方便快捷的在线飞机票预订服务的电子商务网站。
+            订火车票上12306订机票最便宜的网站，上中国民航机票网。</p>
+        <p class="fifi1">友情链接QQ434441778:<br>
+            美国旅游|韩国旅游攻略|订机票最便宜的网站|北京旅行社|打折机票|酒店加盟代理|爱侣游网|杭州户外俱乐部|四喜居门票网|
+            深圳国旅|澳洲自由行|汽车票预定|四川青年旅行社|百程旅行网| 重庆青年旅行社|俄罗斯旅游|美国旅游|深圳旅游论坛|重庆
+            中国青年旅行社|青岛崂山|长岛旅游|南宁旅行社|青驿</p>
+    </div>
+</div>
+
+</body>
+</html>
