@@ -10,8 +10,8 @@ maximum-scale=1.0,minimum-scale=1.0">
         window.onload = function (ev) {
             var banner = document.querySelectorAll(".banner img");
             var btn=document.querySelectorAll(".btn");
-            var num = 1
-            var numb = num-1;
+            var num = 1;
+            var top = document.querySelectorAll(".bangdan_two-right-img");
 
 
             setInterval(function () {
@@ -30,6 +30,20 @@ maximum-scale=1.0,minimum-scale=1.0">
 
                 num++;
             }, 5000)
+
+            setInterval(function () {
+
+                if (num == 2) {
+                    num = 0;
+                }
+
+                for (var i = 0; i < top.length; i++) {
+                   top[i].style.display="none";
+                }
+                top[num].style.display="block";
+
+                num++;
+            }, 2000)
         }
     </script>
     <title>天猫TMALL</title>
@@ -128,7 +142,12 @@ maximum-scale=1.0,minimum-scale=1.0">
         </div>
         <div class="bangdan_two">
             <div class="bangdan_two-left"></div>
-            <div class="bangdan_two-right"></div>
+            <div class="bangdan_two-right">
+                <div class="bangdan_two-right-img"></div>
+                <div class="bangdan_two-right-img"></div>
+            </div>
+
+
         </div>
         <a href="" class="bangdan_three">
             <div class="bangdan_three-left">

@@ -87,6 +87,7 @@ a{
     display: flex;
     justify-content: space-around;
     position: relative;
+    overflow: hidden;
 }
 .banner img{
     position: absolute;
@@ -231,8 +232,24 @@ a{
 }
 .bangdan_two-right{
     width: 4rem;height:1.69rem;
-    background:url("../images/bangdan_two-right.jpg") no-repeat center /100% auto;
+    position: relative;
+    overflow: hidden;
+    background:url("../images/bangdan_two-right1.jpg") no-repeat center /100% auto;
 }
+.bangdan_two-right-img:nth-child(1){
+    width: 4rem;height:1.69rem;
+    position: absolute;
+    background:url("../images/bangdan_two-right1.jpg") no-repeat center /100% auto;
+    transition: all 2s linear 0s;
+    z-index: 2;
+}
+.bangdan_two-right-img:nth-child(2){
+    width: 4rem;height:1.69rem;
+    position: absolute;
+    z-index: 1;
+    background:url("../images/bangdan_two-right2.jpg") no-repeat center /100% auto;
+}
+
 .bangdan_three{
     width:3.45rem;height:1.69rem;
     background: rgb(248,248,248);
